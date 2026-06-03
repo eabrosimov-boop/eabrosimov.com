@@ -5,16 +5,17 @@ const CONTENT = {
   ru: {
     nav: { brand: "Евгений Абросимов" },
     lang: "ru",
+    ticker: "Ближайший тур: Северо-Запад Аргентины (Жужуй) · 15–19 июля 2026 · Напишите мне, чтобы забронировать",
     hero: {
       title: "Небольшие группы.\nБольшие приключения.",
-      subtitle: "Более трёх лет я путешествую по Южной Америке и продолжаю исследовать её каждый день. От улиц Буэнос-Айреса до патагонских треков, от Мачу-Пикчу до Антарктиды — я создаю путешествия, которые помогают увидеть континент глубже, чем это позволяют путеводители.",
+      subtitle: "Более трёх лет я исследую Южную Америку — пешком, на автомобиле, в экспедициях и длительных путешествиях. От шумных кварталов Буэнос-Айреса до ледников Патагонии, от древних дорог инков до берегов Антарктиды. Этот опыт лёг в основу путешествий, которые помогают увидеть континент не глазами туриста, а глазами исследователя.",
       cta: "Написать мне"
     },
     about: {
       label: "ОБО МНЕ",
       title: "Привет, я Евгений",
-      p1: "В детстве я зачитывался книгами о путешествиях и мечтал оказаться в местах, которые казались другой планетой. Эта мечта привела меня в Южную Америку, где я живу уже более десяти лет.",
-      p2: "За эти годы были треккинги, восхождения, экспедиции на байдарках и десятки маршрутов по Аргентине, Чили, Перу и Боливии. Сегодня я создаю путешествия для небольших групп, основанные на личном опыте. Мне интересно не просто показать красивые места, а помочь понять страну, её людей и культуру."
+      p1: "В детстве я зачитывался книгами о путешествиях и мечтал увидеть места, которые казались чем-то невероятно далёким. Со временем эта мечта привела меня в Южную Америку, где я живу уже более трёх лет.",
+      p2: "За это время я проехал тысячи километров по Аргентине и соседним странам, побывал в горах, походах и экспедициях. Сейчас я организую путешествия для небольших групп и показываю места, которые люблю сам. Мне важно, чтобы поездка помогала не только увидеть новые пейзажи, но и лучше понять страну, её людей и культуру."
     },
     tabs: {
       excursions: "Экскурсии",
@@ -34,10 +35,10 @@ const CONTENT = {
       excursions: [
         {
           id: "history-ba",
-          title: "История Буэнос-Айреса",
+          title: "Понять Буэнос-Айрес",
           duration: "1 день",
           location: "Буэнос-Айрес",
-          description: "Как иммигранты из десятков стран построили один из самых самобытных городов мира. Прогулка через Монсеррат, Сан-Тельмо и Пуэрто-Мадеро — с рассказом о том, что осталось за кадром учебников.",
+          description: "Как небольшой порт на краю империи превратился в один из самых необычных городов мира. Прогулка по старейшим районам Буэнос-Айреса через историю, людей и большие перемены.",
           image: "images/tours/excursions/history-ba.jpg"
         },
         {
@@ -45,15 +46,15 @@ const CONTENT = {
           title: "Кладбище Реколеты",
           duration: "1 день",
           location: "Буэнос-Айрес",
-          description: "Самое знаменитое кладбище Латинской Америки — и один из лучших способов войти в аргентинскую историю. Гробницы президентов, военных героев и, конечно, Эвиты — каждая со своей историей.",
+          description: "История Аргентины через судьбы людей, которые её создавали. Президенты, национальные герои, миллиардеры и Эвита — все они встретятся нам среди мавзолеев Реколеты.",
           image: "images/tours/excursions/recoleta-cemetery.jpg"
         },
         {
           id: "football",
-          title: "Футбол в Аргентине",
+          title: "Аргентина футбольная",
           duration: "1 день",
           location: "Буэнос-Айрес",
-          description: "Трибуны, ритуалы, история дерби и культ Марадоны. Если позволяет расписание — идём на матч. Если нет — я покажу стадион и объясню, почему это больше чем спорт.",
+          description: "Для многих поездка на аргентинский футбол становится главным впечатлением от путешествия. Если позволяет календарь — идём на матч. Если нет — всё равно поговорим о клубах, легендах и страсти, которая сделала местный футбол знаменитым на весь мир.",
           image: "images/tours/excursions/football-argentina.jpg"
         },
         {
@@ -61,22 +62,22 @@ const CONTENT = {
           title: "Танго-шоу",
           duration: "1 день",
           location: "Буэнос-Айрес",
-          description: "Танго не смотрят — его переживают. Я помогу выбрать правильное шоу под твой бюджет и вкус: от камерных милонг в Сан-Тельмо до больших театральных постановок. Никаких туристических ловушек.",
+          description: "Рекомендации и бронирование танго-шоу в Буэнос-Айресе. Подберу оптимальный вариант по формату, расположению и бюджету, а также помогу получить скидку там, где это возможно.",
           image: "images/tours/excursions/tango-show.jpg"
         }
       ],
       short: [
         {
           id: "mendoza",
-          title: "Мендоса и виноградники",
+          title: "Мендоса: вино и Анды",
           duration: "3 дня",
           location: "Мендоса",
-          description: "Предгорья Анд, лучшие вина Аргентины, неторопливые дегустации и закаты над виноградниками. Едем не только на топовые бодеги — я знаю небольшие семейные хозяйства, куда туристов не возят.",
+          description: "Лучшие вина Аргентины рождаются здесь, у подножия Анд. Нас ждут дегустации, винодельни разных масштабов, гастрономия и несколько дней в одном из самых приятных регионов страны.",
           image: "images/tours/short-programs/mendoza-wine.jpg"
         },
         {
           id: "iguazu-short",
-          title: "Игуасу: мощь воды",
+          title: "Водопады Игуасу",
           duration: "2 дня",
           location: "Аргентина",
           description: "Один из самых впечатляющих природных феноменов планеты. Заходим с аргентинской стороны — ближе и мощнее всего. Звук, брызги, радуги. Это невозможно передать словами.",
@@ -84,18 +85,18 @@ const CONTENT = {
         },
         {
           id: "salta",
-          title: "Северо-Запад Аргентины",
+          title: "Высокогорная Аргентина",
           duration: "4 дня",
           location: "Сальта, Жужуй",
-          description: "Гора семи цветов, соляные поля, индейские рынки, высота 4000+ метров. Это совсем другая Аргентина — древняя, медленная и очень красивая.",
+          description: "Северо-запад Аргентины ближе к Перу и Боливии, чем к Буэнос-Айресу. Край высокогорных деревень, древних культур и дорог, по которым когда-то двигались караваны инков. Здесь сохранились традиции коренных народов и одни из самых необычных пейзажей Южной Америки.",
           image: "images/tours/short-programs/salta-northwest.jpg"
         },
         {
           id: "bariloche",
-          title: "Барилоче и озёра",
+          title: "Барилоче: сердце озёрного края",
           duration: "4 дня",
           location: "Патагония",
-          description: "Горы, прозрачные озёра, национальный парк Науэль-Уапи. Хороший вариант, если хочешь почувствовать Патагонию, но не готов к длинному треккингу. Горный воздух и невероятные виды.",
+          description: "Регион, который сделал Патагонию знаменитой. Озёра ледникового происхождения, горные пейзажи, уютные городки и десятки красивых маршрутов на любой уровень подготовки.",
           image: "images/tours/short-programs/bariloche-lakes.jpg"
         }
       ],
@@ -166,23 +167,23 @@ const CONTENT = {
       subtitle: "Выберите удобный способ связи — отвечу быстро.",
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
-    ticker: "Ближайший тур: Северо-Запад Аргентины (Жужуй) · 15–19 июля 2026 · Напишите мне, чтобы забронировать",
     footer: "© 2025 Евгений Абросимов · Туры по Южной Америке"
   },
 
   en: {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "en",
+    ticker: "Next tour: Northwest Argentina (Jujuy) · 15–19 July 2026 · Get in touch to book your spot",
     hero: {
       title: "Small Groups.\nBig Adventures.",
-      subtitle: "For more than three years I have been travelling across South America, exploring it every day. From the streets of Buenos Aires to Patagonian trails, from Machu Picchu to Antarctica, I create journeys that help travelers discover the continent beyond the guidebooks.",
+      subtitle: "For more than three years I have been exploring South America — on foot, by car, on expeditions and extended journeys. From the vibrant neighborhoods of Buenos Aires to the glaciers of Patagonia, from the ancient Inca roads to the shores of Antarctica. This experience is the foundation of the journeys I create — helping people see the continent not through a tourist's eyes, but through an explorer's.",
       cta: "Get in touch"
     },
     about: {
       label: "ABOUT ME",
       title: "Hi, I'm Evgeny",
-      p1: "A childhood passion for exploration eventually brought me to South America, where I have lived for more than a decade.",
-      p2: "Treks, climbs, kayak expeditions and countless journeys across Argentina, Chile, Peru and Bolivia shaped the way I travel today. My trips are built on personal experience, not brochures."
+      p1: "As a child I devoured travel books and dreamed of seeing places that felt impossibly far away. Over time, that dream brought me to South America, where I have been living for more than three years.",
+      p2: "In that time I have driven thousands of kilometers across Argentina and neighboring countries, and ventured into mountains, hikes and expeditions. Today I organize journeys for small groups and share the places I love myself. What matters to me is that every trip not only brings new landscapes, but helps travelers better understand the country, its people and its culture."
     },
     tabs: {
       excursions: "Day Excursions",
@@ -200,16 +201,16 @@ const CONTENT = {
     },
     tours: {
       excursions: [
-        { id: "history-ba", title: "History of Buenos Aires", duration: "1 day", location: "Buenos Aires", description: "How immigrants from dozens of countries built one of the world's most distinctive cities. A walk through Monserrat, San Telmo and Puerto Madero — with stories that textbooks leave out.", image: "images/tours/excursions/history-ba.jpg" },
-        { id: "recoleta", title: "Recoleta Cemetery", duration: "1 day", location: "Buenos Aires", description: "The most famous cemetery in Latin America — and one of the best entry points into Argentine history. The tombs of presidents, military heroes and, of course, Evita — each with its own story.", image: "images/tours/excursions/recoleta-cemetery.jpg" },
-        { id: "football", title: "Football in Argentina", duration: "1 day", location: "Buenos Aires", description: "The terraces, the rituals, the derby history and the cult of Maradona. If the schedule allows — we go to a match. If not — I'll show you the stadium and explain why this is so much more than a sport.", image: "images/tours/excursions/football-argentina.jpg" },
-        { id: "tango", title: "Tango Show", duration: "1 day", location: "Buenos Aires", description: "Tango isn't watched — it's felt. I'll help you choose the right show for your budget and taste: from intimate milongas in San Telmo to grand theatrical productions. No tourist traps.", image: "images/tours/excursions/tango-show.jpg" }
+        { id: "history-ba", title: "Understanding Buenos Aires", duration: "1 day", location: "Buenos Aires", description: "How a small port on the edge of an empire became one of the world's most unusual cities. A walk through the oldest neighborhoods of Buenos Aires — through history, people and great upheavals.", image: "images/tours/excursions/history-ba.jpg" },
+        { id: "recoleta", title: "Recoleta Cemetery", duration: "1 day", location: "Buenos Aires", description: "Argentine history through the lives of the people who shaped it. Presidents, national heroes, millionaires and Evita — all of them await us among the mausoleums of Recoleta.", image: "images/tours/excursions/recoleta-cemetery.jpg" },
+        { id: "football", title: "Argentina and Football", duration: "1 day", location: "Buenos Aires", description: "For many, attending an Argentine football match becomes the defining memory of their trip. If the schedule allows — we go to a match. If not — we'll still talk about the clubs, the legends and the passion that made Argentine football famous around the world.", image: "images/tours/excursions/football-argentina.jpg" },
+        { id: "tango", title: "Tango Show", duration: "1 day", location: "Buenos Aires", description: "Recommendations and booking assistance for tango shows in Buenos Aires. I'll find the best option by format, venue and budget, and help you get a discount where possible.", image: "images/tours/excursions/tango-show.jpg" }
       ],
       short: [
-        { id: "mendoza", title: "Mendoza and Vineyards", duration: "3 days", location: "Mendoza", description: "Foothills of the Andes, Argentina's finest wines, leisurely tastings and sunsets over the vineyards. We visit not only top wineries — I know small family estates that don't open for regular tourists.", image: "images/tours/short-programs/mendoza-wine.jpg" },
-        { id: "iguazu-short", title: "Iguazu: The Power of Water", duration: "2 days", location: "Argentina", description: "One of the most impressive natural phenomena on the planet. We enter from the Argentine side — closest and most powerful. Sound, spray, rainbows. Impossible to describe in words.", image: "images/tours/short-programs/iguazu-falls.jpg" },
-        { id: "salta", title: "Northwest Argentina", duration: "4 days", location: "Salta, Jujuy", description: "Hill of Seven Colors, salt flats, indigenous markets, 4000+ meters above sea level. A completely different Argentina — ancient, unhurried and very beautiful.", image: "images/tours/short-programs/salta-northwest.jpg" },
-        { id: "bariloche", title: "Bariloche and the Lakes", duration: "4 days", location: "Patagonia", description: "Mountains, crystal-clear lakes, Nahuel Huapi National Park. A great option if you want to feel Patagonia but aren't ready for long trekking. Mountain air and incredible views.", image: "images/tours/short-programs/bariloche-lakes.jpg" }
+        { id: "mendoza", title: "Mendoza: Wine and the Andes", duration: "3 days", location: "Mendoza", description: "Argentina's finest wines are born here, at the foot of the Andes. Tastings, wineries of different scales, gastronomy and a few days in one of the country's most pleasant regions.", image: "images/tours/short-programs/mendoza-wine.jpg" },
+        { id: "iguazu-short", title: "Iguazu Falls", duration: "2 days", location: "Argentina", description: "One of the most impressive natural phenomena on the planet. We enter from the Argentine side — closest and most powerful. Sound, spray, rainbows. Impossible to describe in words.", image: "images/tours/short-programs/iguazu-falls.jpg" },
+        { id: "salta", title: "Highland Argentina", duration: "4 days", location: "Salta, Jujuy", description: "The northwest of Argentina is closer to Peru and Bolivia than to Buenos Aires. A land of high-altitude villages, ancient cultures and roads once traveled by Inca caravans. Here the traditions of indigenous peoples have been preserved alongside some of the most unusual landscapes in South America.", image: "images/tours/short-programs/salta-northwest.jpg" },
+        { id: "bariloche", title: "Bariloche: Heart of the Lake District", duration: "4 days", location: "Patagonia", description: "The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.", image: "images/tours/short-programs/bariloche-lakes.jpg" }
       ],
       long: [
         { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", description: "Cusco, Machu Picchu, Lake Titicaca, Bolivian salt flats, Atacama Desert. A route that covers the heart of South America. Small group, genuine local connections, no bus tourism.", image: "images/tours/long-programs/peru-bolivia-chile.jpg" },
@@ -243,23 +244,23 @@ const CONTENT = {
       label: "CONTACT", title: "Get in Touch", subtitle: "Choose the way you prefer — I reply fast.",
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
-    ticker: "Next tour: Northwest Argentina (Jujuy) · 15–19 July 2026 · Get in touch to book your spot",
     footer: "© 2025 Evgeny Abrosimov · South America Tours"
   },
 
   es: {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "es",
+    ticker: "Próximo tour: Noroeste Argentino (Jujuy) · 15–19 de julio de 2026 · Escríbeme para reservar",
     hero: {
       title: "Grupos pequeños.\nGrandes aventuras.",
-      subtitle: "Hace más de tres años viajo por Sudamérica, descubriendo algo nuevo cada día. Desde las calles de Buenos Aires hasta los senderos de la Patagonia, desde Machu Picchu hasta la Antártida, diseño viajes que permiten descubrir el continente más allá de las guías turísticas.",
+      subtitle: "Hace más de tres años exploro Sudamérica — a pie, en coche, en expediciones y viajes largos. Desde los animados barrios de Buenos Aires hasta los glaciares de la Patagonia, desde los antiguos caminos incas hasta las costas de la Antártida. Esta experiencia es la base de los viajes que diseño — para que cada persona descubra el continente no como turista, sino como explorador.",
       cta: "Escríbeme"
     },
     about: {
       label: "SOBRE MÍ",
       title: "Hola, soy Evgeny",
-      p1: "Mi pasión por los viajes me llevó a Sudamérica, donde vivo desde hace más de diez años.",
-      p2: "Trekking, montañismo, expediciones en kayak y numerosos recorridos por Argentina, Chile, Perú y Bolivia forman la base de los viajes que organizo hoy."
+      p1: "De niño devoraba libros de viajes y soñaba con ver lugares que parecían increíblemente lejanos. Con el tiempo, ese sueño me llevó a Sudamérica, donde llevo más de tres años viviendo.",
+      p2: "En ese tiempo he recorrido miles de kilómetros por Argentina y los países vecinos, y he ido a montañas, caminatas y expediciones. Hoy organizo viajes para grupos pequeños y muestro los lugares que amo. Me importa que cada viaje no solo traiga nuevos paisajes, sino que ayude a entender mejor el país, su gente y su cultura."
     },
     tabs: {
       excursions: "Excursiones",
@@ -277,16 +278,16 @@ const CONTENT = {
     },
     tours: {
       excursions: [
-        { id: "history-ba", title: "Historia de Buenos Aires", duration: "1 día", location: "Buenos Aires", description: "Cómo inmigrantes de decenas de países construyeron una de las ciudades más singulares del mundo. Un recorrido por Monserrat, San Telmo y Puerto Madero — con historias que los libros omiten.", image: "images/tours/excursions/history-ba.jpg" },
-        { id: "recoleta", title: "Cementerio de la Recoleta", duration: "1 día", location: "Buenos Aires", description: "El cementerio más famoso de América Latina — y uno de los mejores puntos de entrada a la historia argentina. Las tumbas de presidentes, héroes militares y, por supuesto, Evita — cada una con su propia historia.", image: "images/tours/excursions/recoleta-cemetery.jpg" },
-        { id: "football", title: "Fútbol en Argentina", duration: "1 día", location: "Buenos Aires", description: "Las tribunas, los rituales, la historia de los clásicos y el culto a Maradona. Si el calendario lo permite — vamos a un partido. Si no — te mostraré el estadio y explicaré por qué esto es mucho más que un deporte.", image: "images/tours/excursions/football-argentina.jpg" },
-        { id: "tango", title: "Show de Tango", duration: "1 día", location: "Buenos Aires", description: "El tango no se ve — se siente. Te ayudaré a elegir el espectáculo adecuado según tu presupuesto y gusto: desde milongas íntimas en San Telmo hasta grandes producciones teatrales. Sin trampas turísticas.", image: "images/tours/excursions/tango-show.jpg" }
+        { id: "history-ba", title: "Entender Buenos Aires", duration: "1 día", location: "Buenos Aires", description: "Cómo un pequeño puerto en el borde de un imperio se convirtió en una de las ciudades más singulares del mundo. Un recorrido por los barrios más antiguos de Buenos Aires — a través de la historia, la gente y los grandes cambios.", image: "images/tours/excursions/history-ba.jpg" },
+        { id: "recoleta", title: "Cementerio de la Recoleta", duration: "1 día", location: "Buenos Aires", description: "La historia argentina a través de las vidas de quienes la construyeron. Presidentes, héroes nacionales, millonarios y Evita — todos nos aguardan entre los mausoleos de la Recoleta.", image: "images/tours/excursions/recoleta-cemetery.jpg" },
+        { id: "football", title: "Argentina y el Fútbol", duration: "1 día", location: "Buenos Aires", description: "Para muchos, asistir a un partido de fútbol argentino se convierte en el recuerdo más especial del viaje. Si el calendario lo permite — vamos al partido. Si no — hablaremos de los clubes, las leyendas y la pasión que hizo famoso al fútbol argentino en todo el mundo.", image: "images/tours/excursions/football-argentina.jpg" },
+        { id: "tango", title: "Show de Tango", duration: "1 día", location: "Buenos Aires", description: "Recomendaciones y asistencia para reservar espectáculos de tango en Buenos Aires. Encontraré la mejor opción según el formato, el lugar y el presupuesto, y te ayudaré a obtener un descuento donde sea posible.", image: "images/tours/excursions/tango-show.jpg" }
       ],
       short: [
-        { id: "mendoza", title: "Mendoza y Viñedos", duration: "3 días", location: "Mendoza", description: "Piedemonte de los Andes, los mejores vinos de Argentina, degustaciones tranquilas y atardeceres sobre los viñedos. Conozco pequeñas fincas familiares que no abren a los turistas comunes.", image: "images/tours/short-programs/mendoza-wine.jpg" },
-        { id: "iguazu-short", title: "Iguazú: El Poder del Agua", duration: "2 días", location: "Argentina", description: "Uno de los fenómenos naturales más impresionantes del planeta. Entramos por el lado argentino — el más cercano y poderoso. Sonido, salpicaduras, arcoíris. Imposible de describir con palabras.", image: "images/tours/short-programs/iguazu-falls.jpg" },
-        { id: "salta", title: "Noroeste Argentino", duration: "4 días", location: "Salta, Jujuy", description: "Cerro de los Siete Colores, salinas, mercados indígenas, más de 4000 metros sobre el nivel del mar. Una Argentina completamente diferente — antigua, tranquila y muy hermosa.", image: "images/tours/short-programs/salta-northwest.jpg" },
-        { id: "bariloche", title: "Bariloche y los Lagos", duration: "4 días", location: "Patagonia", description: "Montañas, lagos cristalinos, Parque Nacional Nahuel Huapi. Una gran opción si quieres sentir la Patagonia pero no estás listo para el trekking largo. Aire de montaña y vistas increíbles.", image: "images/tours/short-programs/bariloche-lakes.jpg" }
+        { id: "mendoza", title: "Mendoza: Vino y los Andes", duration: "3 días", location: "Mendoza", description: "Los mejores vinos de Argentina nacen aquí, al pie de los Andes. Degustaciones, bodegas de distintos tamaños, gastronomía y unos días en una de las regiones más agradables del país.", image: "images/tours/short-programs/mendoza-wine.jpg" },
+        { id: "iguazu-short", title: "Cataratas del Iguazú", duration: "2 días", location: "Argentina", description: "Uno de los fenómenos naturales más impresionantes del planeta. Entramos por el lado argentino — el más cercano y poderoso. Sonido, salpicaduras, arcoíris. Imposible de describir con palabras.", image: "images/tours/short-programs/iguazu-falls.jpg" },
+        { id: "salta", title: "Argentina de Altura", duration: "4 días", location: "Salta, Jujuy", description: "El noroeste argentino está más cerca de Perú y Bolivia que de Buenos Aires. Una tierra de pueblos de altura, culturas antiguas y caminos que alguna vez recorrieron las caravanas incas. Aquí se conservan las tradiciones de los pueblos originarios y algunos de los paisajes más inusuales de América del Sur.", image: "images/tours/short-programs/salta-northwest.jpg" },
+        { id: "bariloche", title: "Bariloche: Corazón de la Región de los Lagos", duration: "4 días", location: "Patagonia", description: "La región que hizo famosa a la Patagonia. Lagos glaciares, paisajes de montaña, pueblos encantadores y decenas de rutas hermosas para todo nivel de condición física.", image: "images/tours/short-programs/bariloche-lakes.jpg" }
       ],
       long: [
         { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", description: "Cusco, Machu Picchu, lago Titicaca, salares bolivianos, desierto de Atacama. Una ruta que cubre el corazón de América del Sur. Grupo pequeño, conexiones locales genuinas, sin turismo de autobús.", image: "images/tours/long-programs/peru-bolivia-chile.jpg" },
@@ -320,7 +321,6 @@ const CONTENT = {
       label: "CONTACTO", title: "Contáctame", subtitle: "Elige cómo prefieres escribirme — respondo rápido.",
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
-    ticker: "Próximo tour: Noroeste Argentino (Jujuy) · 15–19 de julio de 2026 · Escríbeme para reservar",
     footer: "© 2025 Evgeny Abrosimov · Tours por América del Sur"
   }
 };

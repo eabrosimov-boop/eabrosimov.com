@@ -31,17 +31,17 @@
 
 **RU**
 - Заголовок: Небольшие группы. Большие приключения.
-- Подзаголовок: Более трёх лет я путешествую по Южной Америке и продолжаю исследовать её каждый день. От улиц Буэнос-Айреса до патагонских треков, от Мачу-Пикчу до Антарктиды — я создаю путешествия, которые помогают увидеть континент глубже, чем это позволяют путеводители.
+- Подзаголовок: Более трёх лет я исследую Южную Америку — пешком, на автомобиле, в экспедициях и длительных путешествиях. От шумных кварталов Буэнос-Айреса до ледников Патагонии, от древних дорог инков до берегов Антарктиды. Этот опыт лёг в основу путешествий, которые помогают увидеть континент не глазами туриста, а глазами исследователя.
 - Кнопка: Написать мне
 
 **EN**
 - Title: Small Groups. Big Adventures.
-- Subtitle: For more than three years I have been travelling across South America, exploring it every day. From the streets of Buenos Aires to Patagonian trails, from Machu Picchu to Antarctica, I create journeys that help travelers discover the continent beyond the guidebooks.
+- Subtitle: For more than three years I have been exploring South America — on foot, by car, on expeditions and extended journeys. From the vibrant neighborhoods of Buenos Aires to the glaciers of Patagonia, from the ancient Inca roads to the shores of Antarctica. This experience is the foundation of the journeys I create — helping people see the continent not through a tourist's eyes, but through an explorer's.
 - Button: Get in touch
 
 **ES**
 - Título: Grupos pequeños. Grandes aventuras.
-- Subtítulo: Hace más de tres años viajo por Sudamérica, descubriendo algo nuevo cada día. Desde las calles de Buenos Aires hasta los senderos de la Patagonia, desde Machu Picchu hasta la Antártida, diseño viajes que permiten descubrir el continente más allá de las guías turísticas.
+- Subtítulo: Hace más de tres años exploro Sudamérica — a pie, en coche, en expediciones y viajes largos. Desde los animados barrios de Buenos Aires hasta los glaciares de la Patagonia, desde los antiguos caminos incas hasta las costas de la Antártida. Esta experiencia es la base de los viajes que diseño — para que cada persona descubra el continente no como turista, sino como explorador.
 - Botón: Escríbeme
 
 ---
@@ -51,35 +51,35 @@
 **RU**
 - Метка раздела: ОБО МНЕ
 - Заголовок: Привет, я Евгений
-- Абзац 1: В детстве я зачитывался книгами о путешествиях и мечтал оказаться в местах, которые казались другой планетой. Эта мечта привела меня в Южную Америку, где я живу уже более десяти лет.
-- Абзац 2: За эти годы были треккинги, восхождения, экспедиции на байдарках и десятки маршрутов по Аргентине, Чили, Перу и Боливии. Сегодня я создаю путешествия для небольших групп, основанные на личном опыте. Мне интересно не просто показать красивые места, а помочь понять страну, её людей и культуру.
+- Абзац 1: В детстве я зачитывался книгами о путешествиях и мечтал увидеть места, которые казались чем-то невероятно далёким. Со временем эта мечта привела меня в Южную Америку, где я живу уже более трех лет.
+- Абзац 2: За это время я проехал тысячи километров по Аргентине и соседним странам, побывал в горах, походах и экспедициях. Сейчас я организую путешествия для небольших групп и показываю места, которые люблю сам. Мне важно, чтобы поездка помогала не только увидеть новые пейзажи, но и лучше понять страну, её людей и культуру.
 
 **EN**
 - Section label: ABOUT ME
 - Title: Hi, I'm Evgeny
-- Paragraph 1: A childhood passion for exploration eventually brought me to South America, where I have lived for more than a decade.
-- Paragraph 2: Treks, climbs, kayak expeditions and countless journeys across Argentina, Chile, Peru and Bolivia shaped the way I travel today. My trips are built on personal experience, not brochures.
+- Paragraph 1: As a child I devoured travel books and dreamed of seeing places that felt impossibly far away. Over time, that dream brought me to South America, where I have been living for more than three years.
+- Paragraph 2: In that time I have driven thousands of kilometers across Argentina and neighboring countries, and ventured into mountains, hikes and expeditions. Today I organize journeys for small groups and share the places I love myself. What matters to me is that every trip not only brings new landscapes, but helps travelers better understand the country, its people and its culture.
 
 **ES**
 - Etiqueta de sección: SOBRE MÍ
 - Título: Hola, soy Evgeny
-- Párrafo 1: Mi pasión por los viajes me llevó a Sudamérica, donde vivo desde hace más de diez años.
-- Párrafo 2: Trekking, montañismo, expediciones en kayak y numerosos recorridos por Argentina, Chile, Perú y Bolivia forman la base de los viajes que organizo hoy.
+- Párrafo 1: De niño devoraba libros de viajes y soñaba con ver lugares que parecían increíblemente lejanos. Con el tiempo, ese sueño me llevó a Sudamérica, donde llevo más de tres años viviendo.
+- Párrafo 2: En ese tiempo he recorrido miles de kilómetros por Argentina y los países vecinos, y he ido a montañas, caminatas y expediciones. Hoy organizo viajes para grupos pequeños y muestro los lugares que amo. Me importa que cada viaje no solo traiga nuevos paisajes, sino que ayude a entender mejor el país, su gente y su cultura.
 
 ---
 
 ## ЭКСКУРСИИ / DAY EXCURSIONS / EXCURSIONES (1 день, Буэнос-Айрес)
 
-### 1. История Буэнос-Айреса
-- **EN:** History of Buenos Aires
-- **ES:** Historia de Buenos Aires
+### 1. Понять Буэнос-Айрес
+- **EN:** Understanding Buenos Aires
+- **ES:** Entender Buenos Aires
 - Длительность: 1 день / 1 day / 1 día
 - Локация: Буэнос-Айрес / Buenos Aires / Buenos Aires
 - Фото: images/tours/excursions/history-ba.jpg
 
-**RU:** Как иммигранты из десятков стран построили один из самых самобытных городов мира. Прогулка через Монсеррат, Сан-Тельмо и Пуэрто-Мадеро — с рассказом о том, что осталось за кадром учебников.
-**EN:** How immigrants from dozens of countries built one of the world's most distinctive cities. A walk through Monserrat, San Telmo and Puerto Madero — with stories that textbooks leave out.
-**ES:** Cómo inmigrantes de decenas de países construyeron una de las ciudades más singulares del mundo. Un recorrido por Monserrat, San Telmo y Puerto Madero — con historias que los libros omiten.
+**RU:** Как небольшой порт на краю империи превратился в один из самых необычных городов мира. Прогулка по старейшим районам Буэнос-Айреса через историю, людей и большие перемены.
+**EN:** How a small port on the edge of an empire became one of the world's most unusual cities. A walk through the oldest neighborhoods of Buenos Aires — through history, people and great upheavals.
+**ES:** Cómo un pequeño puerto en el borde de un imperio se convirtió en una de las ciudades más singulares del mundo. Un recorrido por los barrios más antiguos de Buenos Aires — a través de la historia, la gente y los grandes cambios.
 
 ### 2. Кладбище Реколеты
 - **EN:** Recoleta Cemetery
@@ -88,20 +88,20 @@
 - Локация: Буэнос-Айрес / Buenos Aires / Buenos Aires
 - Фото: images/tours/excursions/recoleta-cemetery.jpg
 
-**RU:** Самое знаменитое кладбище Латинской Америки — и один из лучших способов войти в аргентинскую историю. Гробницы президентов, военных героев и, конечно, Эвиты — каждая со своей историей.
-**EN:** The most famous cemetery in Latin America — and one of the best entry points into Argentine history. The tombs of presidents, military heroes and, of course, Evita — each with its own story.
-**ES:** El cementerio más famoso de América Latina — y uno de los mejores puntos de entrada a la historia argentina. Las tumbas de presidentes, héroes militares y, por supuesto, Evita — cada una con su propia historia.
+**RU:** История Аргентины через судьбы людей, которые её создавали. Президенты, национальные герои, миллиардеры и Эвита — все они встретятся нам среди мавзолеев Реколеты.
+**EN:** Argentine history through the lives of the people who shaped it. Presidents, national heroes, millionaires and Evita — all of them await us among the mausoleums of Recoleta.
+**ES:** La historia argentina a través de las vidas de quienes la construyeron. Presidentes, héroes nacionales, millonarios y Evita — todos nos aguardan entre los mausoleos de la Recoleta.
 
-### 3. Футбол в Аргентине
-- **EN:** Football in Argentina
-- **ES:** Fútbol en Argentina
+### 3. Аргентина футбольная
+- **EN:** Argentina and Football
+- **ES:** Argentina y el Fútbol
 - Длительность: 1 день / 1 day / 1 día
 - Локация: Буэнос-Айрес / Buenos Aires / Buenos Aires
 - Фото: images/tours/excursions/football-argentina.jpg
 
-**RU:** Трибуны, ритуалы, история дерби и культ Марадоны. Если позволяет расписание — идём на матч. Если нет — я покажу стадион и объясню, почему это больше чем спорт.
-**EN:** The terraces, the rituals, the derby history and the cult of Maradona. If the schedule allows — we go to a match. If not — I'll show you the stadium and explain why this is so much more than a sport.
-**ES:** Las tribunas, los rituales, la historia de los clásicos y el culto a Maradona. Si el calendario lo permite — vamos a un partido. Si no — te mostraré el estadio y explicaré por qué esto es mucho más que un deporte.
+**RU:** Для многих поездка на аргентинский футбол становится главным впечатлением от путешествия. Если позволяет календарь — идём на матч. Если нет — всё равно поговорим о клубах, легендах и страсти, которая сделала местный футбол знаменитым на весь мир.
+**EN:** For many, attending an Argentine football match becomes the defining memory of their trip. If the schedule allows — we go to a match. If not — we'll still talk about the clubs, the legends and the passion that made Argentine football famous around the world.
+**ES:** Para muchos, asistir a un partido de fútbol argentino se convierte en el recuerdo más especial del viaje. Si el calendario lo permite — vamos al partido. Si no — hablaremos de los clubes, las leyendas y la pasión que hizo famoso al fútbol argentino en todo el mundo.
 
 ### 4. Танго-шоу
 - **EN:** Tango Show
@@ -110,28 +110,28 @@
 - Локация: Буэнос-Айрес / Buenos Aires / Buenos Aires
 - Фото: images/tours/excursions/tango-show.jpg
 
-**RU:** Танго не смотрят — его переживают. Я помогу выбрать правильное шоу под твой бюджет и вкус: от камерных милонг в Сан-Тельмо до больших театральных постановок. Никаких туристических ловушек.
-**EN:** Tango isn't watched — it's felt. I'll help you choose the right show for your budget and taste: from intimate milongas in San Telmo to grand theatrical productions. No tourist traps.
-**ES:** El tango no se ve — se siente. Te ayudaré a elegir el espectáculo adecuado según tu presupuesto y gusto: desde milongas íntimas en San Telmo hasta grandes producciones teatrales. Sin trampas turísticas.
+**RU:** Рекомендации и бронирование танго-шоу в Буэнос-Айресе. Подберу оптимальный вариант по формату, расположению и бюджету, а также помогу получить скидку там, где это возможно.
+**EN:** Recommendations and booking assistance for tango shows in Buenos Aires. I'll find the best option by format, venue and budget, and help you get a discount where possible.
+**ES:** Recomendaciones y asistencia para reservar espectáculos de tango en Buenos Aires. Encontraré la mejor opción según el formato, el lugar y el presupuesto, y te ayudaré a obtener un descuento donde sea posible.
 
 ---
 
 ## КОРОТКИЕ ТУРЫ / SHORT TOURS / TOURS CORTOS (2–5 дней, Аргентина)
 
-### 1. Мендоса и виноградники
-- **EN:** Mendoza and Vineyards
-- **ES:** Mendoza y Viñedos
+### 1. Мендоса: вино и Анды
+- **EN:** Mendoza: Wine and the Andes
+- **ES:** Mendoza: Vino y los Andes
 - Длительность: 3 дня / 3 days / 3 días
 - Локация: Мендоса / Mendoza / Mendoza
 - Фото: images/tours/short-programs/mendoza-wine.jpg
 
-**RU:** Предгорья Анд, лучшие вина Аргентины, неторопливые дегустации и закаты над виноградниками. Едем не только на топовые бодеги — я знаю небольшие семейные хозяйства, куда туристов не возят.
-**EN:** Foothills of the Andes, Argentina's finest wines, leisurely tastings and sunsets over the vineyards. We visit not only top wineries — I know small family estates that don't open for regular tourists.
-**ES:** Piedemonte de los Andes, los mejores vinos de Argentina, degustaciones tranquilas y atardeceres sobre los viñedos. Conozco pequeñas fincas familiares que no abren a los turistas comunes.
+**RU:** Лучшие вина Аргентины рождаются здесь, у подножия Анд. Нас ждут дегустации, винодельни разных масштабов, гастрономия и несколько дней в одном из самых приятных регионов страны.
+**EN:** Argentina's finest wines are born here, at the foot of the Andes. Tastings, wineries of different scales, gastronomy and a few days in one of the country's most pleasant regions.
+**ES:** Los mejores vinos de Argentina nacen aquí, al pie de los Andes. Degustaciones, bodegas de distintos tamaños, gastronomía y unos días en una de las regiones más agradables del país.
 
-### 2. Игуасу: мощь воды
-- **EN:** Iguazu: The Power of Water
-- **ES:** Iguazú: El Poder del Agua
+### 2. Водопады Игуасу
+- **EN:** Iguazu Falls
+- **ES:** Cataratas del Iguazú
 - Длительность: 2 дня / 2 days / 2 días
 - Локация: Аргентина / Argentina / Argentina
 - Фото: images/tours/short-programs/iguazu-falls.jpg
@@ -140,27 +140,27 @@
 **EN:** One of the most impressive natural phenomena on the planet. We enter from the Argentine side — closest and most powerful. Sound, spray, rainbows. Impossible to describe in words.
 **ES:** Uno de los fenómenos naturales más impresionantes del planeta. Entramos por el lado argentino — el más cercano y poderoso. Sonido, salpicaduras, arcoíris. Imposible de describir con palabras.
 
-### 3. Северо-Запад Аргентины
-- **EN:** Northwest Argentina
-- **ES:** Noroeste Argentino
+### 3. Высокогорная Аргентина
+- **EN:** Highland Argentina
+- **ES:** Argentina de Altura
 - Длительность: 4 дня / 4 days / 4 días
 - Локация: Сальта, Жужуй / Salta, Jujuy / Salta, Jujuy
 - Фото: images/tours/short-programs/salta-northwest.jpg
 
-**RU:** Гора семи цветов, соляные поля, индейские рынки, высота 4000+ метров. Это совсем другая Аргентина — древняя, медленная и очень красивая.
-**EN:** Hill of Seven Colors, salt flats, indigenous markets, 4000+ meters above sea level. A completely different Argentina — ancient, unhurried and very beautiful.
-**ES:** Cerro de los Siete Colores, salinas, mercados indígenas, más de 4000 metros sobre el nivel del mar. Una Argentina completamente diferente — antigua, tranquila y muy hermosa.
+**RU:** Северо-запад Аргентины ближе к Перу и Боливии, чем к Буэнос-Айресу. Край высокогорных деревень, древних культур и дорог, по которым когда-то двигались караваны инков. Здесь сохранились традиции коренных народов и одни из самых необычных пейзажей Южной Америки.
+**EN:** The northwest of Argentina is closer to Peru and Bolivia than to Buenos Aires. A land of high-altitude villages, ancient cultures and roads once traveled by Inca caravans. Here the traditions of indigenous peoples have been preserved alongside some of the most unusual landscapes in South America.
+**ES:** El noroeste argentino está más cerca de Perú y Bolivia que de Buenos Aires. Una tierra de pueblos de altura, culturas antiguas y caminos que alguna vez recorrieron las caravanas incas. Aquí se conservan las tradiciones de los pueblos originarios y algunos de los paisajes más inusuales de América del Sur.
 
-### 4. Барилоче и озёра
-- **EN:** Bariloche and the Lakes
-- **ES:** Bariloche y los Lagos
+### 4. Барилоче: сердце озёрного края
+- **EN:** Bariloche: Heart of the Lake District
+- **ES:** Bariloche: Corazón de la Región de los Lagos
 - Длительность: 4 дня / 4 days / 4 días
 - Локация: Патагония / Patagonia / Patagonia
 - Фото: images/tours/short-programs/bariloche-lakes.jpg
 
-**RU:** Горы, прозрачные озёра, национальный парк Науэль-Уапи. Хороший вариант, если хочешь почувствовать Патагонию, но не готов к длинному треккингу. Горный воздух и невероятные виды.
-**EN:** Mountains, crystal-clear lakes, Nahuel Huapi National Park. A great option if you want to feel Patagonia but aren't ready for long trekking. Mountain air and incredible views.
-**ES:** Montañas, lagos cristalinos, Parque Nacional Nahuel Huapi. Una gran opción si quieres sentir la Patagonia pero no estás listo para el trekking largo. Aire de montaña y vistas increíbles.
+**RU:** Регион, который сделал Патагонию знаменитой. Озёра ледникового происхождения, горные пейзажи, уютные городки и десятки красивых маршрутов на любой уровень подготовки.
+**EN:** The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.
+**ES:** La región que hizo famosa a la Patagonia. Lagos glaciares, paisajes de montaña, pueblos encantadores y decenas de rutas hermosas para todo nivel de condición física.
 
 ---
 
