@@ -5,7 +5,8 @@ const CONTENT = {
   ru: {
     nav: { brand: "Евгений Абросимов" },
     lang: "ru",
-    ticker: "Ближайший тур: Северо-Запад Аргентины (Жужуй) · 15–19 июля 2026 · Напишите мне, чтобы забронировать",
+    ticker: "Ближайший тур: Северо-Запад Аргентины (Жужуй) · 15–19 июля 2026",
+    tickerCta: { label: "Написать", waText: "Привет! Хочу узнать подробности о ближайшем туре." },
     cardCta: {
       label: "Спросить",
       waTemplate: "Привет! Меня интересует «{tour}». Хочу узнать подробнее."
@@ -177,7 +178,8 @@ const CONTENT = {
   en: {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "en",
-    ticker: "Next tour: Northwest Argentina (Jujuy) · 15–19 July 2026 · Get in touch to book your spot",
+    ticker: "Next tour: Northwest Argentina (Jujuy) · 15–19 July 2026",
+    tickerCta: { label: "Enquire", waText: "Hi! I'd like to learn more about the upcoming tour." },
     cardCta: {
       label: "Ask",
       waTemplate: "Hi! I'm interested in «{tour}». I'd like to learn more."
@@ -258,7 +260,8 @@ const CONTENT = {
   es: {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "es",
-    ticker: "Próximo tour: Noroeste Argentino (Jujuy) · 15–19 de julio de 2026 · Escríbeme para reservar",
+    ticker: "Próximo tour: Noroeste Argentino (Jujuy) · 15–19 de julio de 2026",
+    tickerCta: { label: "Escribir", waText: "¡Hola! Me gustaría saber más sobre el próximo tour." },
     cardCta: {
       label: "Preguntar",
       waTemplate: "¡Hola! Me interesa «{tour}». Me gustaría saber más."

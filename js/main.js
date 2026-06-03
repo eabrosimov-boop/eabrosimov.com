@@ -142,13 +142,20 @@ function renderNav(c) {
 // ===== TICKER =====
 function renderTicker(c) {
   const track = document.getElementById('ticker-track');
+  const btn   = document.getElementById('ticker-btn');
   if (!track) return;
-  const text = c.ticker + '   ·   ';
+
+  const text = c.ticker + '   ·   ';
   track.innerHTML = `<span>${text}</span><span aria-hidden="true">${text}</span>`;
   track.style.animation = 'none';
   void track.offsetWidth;
   track.style.animation = '';
   track.style.animationDuration = Math.max(14, text.length * 0.22) + 's';
+
+  if (btn) {
+    btn.textContent = c.tickerCta.label;
+    btn.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(c.tickerCta.waText)}`;
+  }
 }
 
 // ===== HERO =====
