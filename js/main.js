@@ -8,23 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
   initTabButtons();
   initLangButtons();
   initSlideshow();
+  initFloatingContact();
 });
 
 // ===== SLIDESHOW =====
 const KB_CLASSES = ['kb-1', 'kb-2', 'kb-3', 'kb-4', 'kb-5'];
-const SLIDE_DURATION = 5500; // ms per slide
+const SLIDE_DURATION = 5500;
 
 function initSlideshow() {
   const slides = Array.from(document.querySelectorAll('.slide'));
   const dotsContainer = document.getElementById('slide-dots');
   if (!slides.length) return;
 
-  // Фильтруем слайды без src (пустые плейсхолдеры) — показываем только те, у которых есть фото
-  // Если фото нет вообще, слайдшоу просто показывает тёмный фон
-
   let current = 0;
 
-  // Создаём dot-индикаторы
   slides.forEach((_, i) => {
     const dot = document.createElement('button');
     dot.className = 'slide-dot' + (i === 0 ? ' active' : '');
@@ -37,16 +34,12 @@ function initSlideshow() {
     const dots = dotsContainer.querySelectorAll('.slide-dot');
     const outgoing = slides[current];
 
-    // Убираем только active — KB анимация продолжается во время fade-out
     outgoing.classList.remove('active');
     dots[current].classList.remove('active');
-
-    // Убираем KB класс только после завершения fade-out (1.6s > opacity transition 1.4s)
     setTimeout(() => outgoing.classList.remove(...KB_CLASSES), 1600);
 
     current = index;
 
-    // Активируем новый слайд с нужным Ken Burns
     const kbClass = KB_CLASSES[current % KB_CLASSES.length];
     const slide = slides[current];
     slide.classList.remove(...KB_CLASSES);
@@ -55,13 +48,47 @@ function initSlideshow() {
     dots[current].classList.add('active');
   }
 
-  // Первый слайд
   goTo(0);
+  setInterval(() => goTo((current + 1) % slides.length), SLIDE_DURATION);
+}
 
-  // Автопрокрутка
-  setInterval(() => {
-    goTo((current + 1) % slides.length);
-  }, SLIDE_DURATION);
+// ===== FLOATING CONTACT =====
+function initFloatingContact() {
+  const wrap = document.getElementById('float-contact');
+  const btn  = document.getElementById('float-main');
+  if (!wrap || !btn) return;
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    wrap.classList.toggle('open');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!wrap.contains(e.target)) wrap.classList.remove('open');
+  });
+}
+
+// ===== DATES =====
+function formatDateRange(from, to, lang) {
+  const locale = { ru: 'ru-RU', en: 'en-GB', es: 'es-ES' }[lang] || 'en-GB';
+  const f = new Date(from + 'T12:00:00');
+  const t = new Date(to + 'T12:00:00');
+  const sameYear = f.getFullYear() === t.getFullYear();
+  const fromStr = f.toLocaleDateString(locale, {
+    day: 'numeric', month: 'short',
+    ...(sameYear ? {} : { year: 'numeric' })
+  });
+  const toStr = t.toLocaleDateString(locale, { day: 'numeric', month: 'short', year: 'numeric' });
+  return `${fromStr} – ${toStr}`;
+}
+
+function getDatesHtml(tourId, lang) {
+  const dates = TOUR_DATES[tourId];
+  if (!dates || !dates.length) return '';
+  const badges = dates.map(d =>
+    `<span class="date-badge">${formatDateRange(d.from, d.to, lang)}</span>`
+  ).join('');
+  return `<div class="tour-dates">${badges}</div>`;
 }
 
 // ===== LANGUAGE =====
@@ -85,6 +112,7 @@ function initLangButtons() {
 function render(lang) {
   const c = CONTENT[lang];
   renderNav(c);
+  renderTicker(c);
   renderHero(c);
   renderAbout(c);
   renderTabs(c);
@@ -97,6 +125,18 @@ function render(lang) {
 // ===== NAV =====
 function renderNav(c) {
   document.querySelector('.nav-brand').textContent = c.nav.brand;
+}
+
+// ===== TICKER =====
+function renderTicker(c) {
+  const track = document.getElementById('ticker-track');
+  if (!track) return;
+  const text = c.ticker + '   ·   ';
+  track.innerHTML = `<span>${text}</span><span aria-hidden="true">${text}</span>`;
+  track.style.animation = 'none';
+  void track.offsetWidth;
+  track.style.animation = '';
+  track.style.animationDuration = Math.max(14, text.length * 0.22) + 's';
 }
 
 // ===== HERO =====
@@ -193,6 +233,7 @@ function renderTourPanel(c, tab) {
         </div>
         <h3>${tour.title}</h3>
         <p>${tour.description}</p>
+        ${getDatesHtml(tour.id, currentLang)}
       </div>
     </div>`).join('');
 

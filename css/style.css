@@ -88,6 +88,40 @@ nav {
   color: var(--white);
 }
 
+/* ===== TICKER ===== */
+.ticker-wrap {
+  position: fixed;
+  top: 64px;
+  left: 0; right: 0;
+  height: 34px;
+  background: var(--dark);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  overflow: hidden;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.ticker-wrap:hover .ticker-track { animation-play-state: paused; }
+
+.ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker-move linear infinite;
+}
+.ticker-track span {
+  display: inline-block;
+  padding-right: 40px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.04em;
+}
+@keyframes ticker-move {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 /* ===== HERO ===== */
 #hero {
   position: relative;
@@ -95,7 +129,7 @@ nav {
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: 64px;
+  padding-top: 98px; /* 64px header + 34px ticker */
   background: var(--dark);
 }
 
@@ -451,6 +485,100 @@ nav {
 .contact-btn.telegram:hover { background: #1a8fc2; }
 .contact-btn.email { background: var(--accent); color: var(--white); }
 .contact-btn.email:hover { background: var(--accent-hover); }
+
+/* ===== DATE BADGES ===== */
+.tour-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+.date-badge {
+  font-size: 0.73rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: rgba(193,127,76,0.1);
+  border: 1px solid rgba(193,127,76,0.3);
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ===== FLOATING CONTACT ===== */
+.float-contact {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.float-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+.float-contact.open .float-options {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+.float-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  padding: 8px 16px 8px 10px;
+  border-radius: 28px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.14);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--dark);
+  transition: transform 0.18s ease;
+  text-decoration: none;
+}
+.float-option:hover { transform: translateX(-4px); }
+.float-option svg { width: 22px; height: 22px; flex-shrink: 0; }
+.float-wa { color: #1a7a40; }
+.float-wa svg { fill: #25D366; }
+.float-tg { color: #1270a0; }
+.float-tg svg { fill: #229ED9; }
+.float-em { color: var(--accent-hover); }
+.float-em svg { stroke: var(--accent); }
+
+.float-main {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 18px rgba(193,127,76,0.45);
+  transition: transform 0.2s ease, background 0.2s ease;
+  flex-shrink: 0;
+}
+.float-main svg { width: 22px; height: 22px; }
+.float-main:hover { transform: scale(1.08); }
+.float-contact.open .float-main { background: var(--dark); }
+.icon-close { display: none; }
+.float-contact.open .icon-open  { display: none; }
+.float-contact.open .icon-close { display: block; }
+
+@media (max-width: 480px) {
+  .float-contact { bottom: 18px; right: 16px; }
+  .float-main { width: 48px; height: 48px; }
+}
 
 /* ===== FOOTER ===== */
 footer {

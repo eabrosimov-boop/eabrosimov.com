@@ -166,6 +166,7 @@ const CONTENT = {
       subtitle: "Выберите удобный способ связи — отвечу быстро.",
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
+    ticker: "Ближайший тур: Северо-Запад Аргентины (Жужуй) · 15–19 июля 2026 · Напишите мне, чтобы забронировать",
     footer: "© 2025 Евгений Абросимов · Туры по Южной Америке"
   },
 
@@ -242,6 +243,7 @@ const CONTENT = {
       label: "CONTACT", title: "Get in Touch", subtitle: "Choose the way you prefer — I reply fast.",
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
+    ticker: "Next tour: Northwest Argentina (Jujuy) · 15–19 July 2026 · Get in touch to book your spot",
     footer: "© 2025 Evgeny Abrosimov · South America Tours"
   },
 
@@ -318,6 +320,22 @@ const CONTENT = {
       label: "CONTACTO", title: "Contáctame", subtitle: "Elige cómo prefieres escribirme — respondo rápido.",
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
+    ticker: "Próximo tour: Noroeste Argentino (Jujuy) · 15–19 de julio de 2026 · Escríbeme para reservar",
     footer: "© 2025 Evgeny Abrosimov · Tours por América del Sur"
   }
+};
+
+// Даты длинных туров (ISO формат, без привязки к языку — форматируются в main.js)
+const TOUR_DATES = {
+  'peru-bolivia-chile': [
+    { from: '2026-10-26', to: '2026-11-08' }
+  ],
+  'easter-island': [
+    { from: '2026-11-16', to: '2026-12-02' },
+    { from: '2027-05-02', to: '2027-05-18' }
+  ],
+  'patagonia-trekking': [
+    { from: '2027-02-15', to: '2027-02-28' },
+    { from: '2027-04-04', to: '2027-04-17' }
+  ]
 };
