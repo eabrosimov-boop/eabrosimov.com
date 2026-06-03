@@ -362,15 +362,32 @@ nav {
 }
 .tour-meta {
   display: flex;
-  gap: 12px;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
   margin-bottom: 10px;
-}
-.tour-duration, .tour-location {
   font-size: 0.78rem;
   color: var(--gray);
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  overflow: hidden;
+}
+.tour-meta-icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+.tour-meta-duration {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tour-meta-sep {
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+.tour-meta-location {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
 }
 .tour-card-body h3 { margin-bottom: 10px; font-size: 1.05rem; }
 .tour-card-body p { font-size: 0.9rem; color: var(--gray); flex: 1; }

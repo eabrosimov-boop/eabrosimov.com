@@ -234,14 +234,10 @@ function renderTourPanel(c, tab) {
       </div>
       <div class="tour-card-body">
         <div class="tour-meta">
-          <span class="tour-duration">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 2"/></svg>
-            ${tour.duration}
-          </span>
-          <span class="tour-location">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5s4.5-5 4.5-8.5c0-2.5-2-4.5-4.5-4.5z"/><circle cx="8" cy="6" r="1.5"/></svg>
-            ${tour.location}
-          </span>
+          <svg class="tour-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 2"/></svg>
+          <span class="tour-meta-duration">${tour.duration}</span>
+          <span class="tour-meta-sep">·</span>
+          <span class="tour-meta-location">${tour.location}</span>
         </div>
         <h3>${tour.title}</h3>
         <p>${tour.description}</p>
