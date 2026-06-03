@@ -35,17 +35,20 @@ function initSlideshow() {
 
   function goTo(index) {
     const dots = dotsContainer.querySelectorAll('.slide-dot');
+    const outgoing = slides[current];
 
-    // Убираем Ken Burns с текущего слайда
-    slides[current].classList.remove('active', ...KB_CLASSES);
+    // Убираем только active — KB анимация продолжается во время fade-out
+    outgoing.classList.remove('active');
     dots[current].classList.remove('active');
+
+    // Убираем KB класс только после завершения fade-out (1.6s > opacity transition 1.4s)
+    setTimeout(() => outgoing.classList.remove(...KB_CLASSES), 1600);
 
     current = index;
 
     // Активируем новый слайд с нужным Ken Burns
     const kbClass = KB_CLASSES[current % KB_CLASSES.length];
     const slide = slides[current];
-    // Перезапускаем анимацию через reflow
     slide.classList.remove(...KB_CLASSES);
     void slide.offsetWidth;
     slide.classList.add('active', kbClass);

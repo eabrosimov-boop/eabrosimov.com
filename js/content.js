@@ -7,7 +7,7 @@ const CONTENT = {
     lang: "ru",
     hero: {
       title: "Небольшие группы.\nБольшие приключения.",
-      subtitle: "Более десяти лет я живу в Южной Америке и продолжаю исследовать её каждый день. От улиц Буэнос-Айреса до патагонских треков, от Мачу-Пикчу до Антарктиды — я создаю путешествия, которые помогают увидеть континент глубже, чем это позволяют путеводители.",
+      subtitle: "Более трёх лет я путешествую по Южной Америке и продолжаю исследовать её каждый день. От улиц Буэнос-Айреса до патагонских треков, от Мачу-Пикчу до Антарктиды — я создаю путешествия, которые помогают увидеть континент глубже, чем это позволяют путеводители.",
       cta: "Написать мне"
     },
     about: {
@@ -174,7 +174,7 @@ const CONTENT = {
     lang: "en",
     hero: {
       title: "Small Groups.\nBig Adventures.",
-      subtitle: "For more than ten years South America has been my home. From Buenos Aires to Patagonia, from Machu Picchu to Antarctica, I create journeys that help travelers discover the continent beyond the guidebooks.",
+      subtitle: "For more than three years I have been travelling across South America, exploring it every day. From the streets of Buenos Aires to Patagonian trails, from Machu Picchu to Antarctica, I create journeys that help travelers discover the continent beyond the guidebooks.",
       cta: "Get in touch"
     },
     about: {
@@ -250,7 +250,7 @@ const CONTENT = {
     lang: "es",
     hero: {
       title: "Grupos pequeños.\nGrandes aventuras.",
-      subtitle: "Sudamérica ha sido mi hogar durante más de diez años. Desde Buenos Aires hasta la Patagonia, desde Machu Picchu hasta la Antártida, diseño viajes que permiten descubrir el continente más allá de las guías turísticas.",
+      subtitle: "Hace más de tres años viajo por Sudamérica, descubriendo algo nuevo cada día. Desde las calles de Buenos Aires hasta los senderos de la Patagonia, desde Machu Picchu hasta la Antártida, diseño viajes que permiten descubrir el continente más allá de las guías turísticas.",
       cta: "Escríbeme"
     },
     about: {
