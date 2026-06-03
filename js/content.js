@@ -6,6 +6,10 @@ const CONTENT = {
     nav: { brand: "Евгений Абросимов" },
     lang: "ru",
     ticker: "Ближайший тур: Северо-Запад Аргентины (Жужуй) · 15–19 июля 2026 · Напишите мне, чтобы забронировать",
+    cardCta: {
+      label: "Спросить",
+      waTemplate: "Привет! Меня интересует «{tour}». Хочу узнать подробнее."
+    },
     hero: {
       title: "Небольшие группы.\nБольшие приключения.",
       subtitle: "Более трёх лет я исследую Южную Америку — пешком, на автомобиле, в экспедициях и длительных путешествиях. От шумных кварталов Буэнос-Айреса до ледников Патагонии, от древних дорог инков до берегов Антарктиды. Этот опыт лёг в основу путешествий, которые помогают увидеть континент не глазами туриста, а глазами исследователя.",
@@ -174,6 +178,10 @@ const CONTENT = {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "en",
     ticker: "Next tour: Northwest Argentina (Jujuy) · 15–19 July 2026 · Get in touch to book your spot",
+    cardCta: {
+      label: "Ask",
+      waTemplate: "Hi! I'm interested in «{tour}». I'd like to learn more."
+    },
     hero: {
       title: "Small Groups.\nBig Adventures.",
       subtitle: "For more than three years I have been exploring South America — on foot, by car, on expeditions and extended journeys. From the vibrant neighborhoods of Buenos Aires to the glaciers of Patagonia, from the ancient Inca roads to the shores of Antarctica. This experience is the foundation of the journeys I create — helping people see the continent not through a tourist's eyes, but through an explorer's.",
@@ -251,6 +259,10 @@ const CONTENT = {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "es",
     ticker: "Próximo tour: Noroeste Argentino (Jujuy) · 15–19 de julio de 2026 · Escríbeme para reservar",
+    cardCta: {
+      label: "Preguntar",
+      waTemplate: "¡Hola! Me interesa «{tour}». Me gustaría saber más."
+    },
     hero: {
       title: "Grupos pequeños.\nGrandes aventuras.",
       subtitle: "Hace más de tres años exploro Sudamérica — a pie, en coche, en expediciones y viajes largos. Desde los animados barrios de Buenos Aires hasta los glaciares de la Patagonia, desde los antiguos caminos incas hasta las costas de la Antártida. Esta experiencia es la base de los viajes que diseño — para que cada persona descubra el continente no como turista, sino como explorador.",

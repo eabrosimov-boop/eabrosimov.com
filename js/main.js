@@ -68,6 +68,18 @@ function initFloatingContact() {
   });
 }
 
+// ===== WHATSAPP CTA =====
+const WA_NUMBER = '541134572193';
+
+function buildWaLink(tourTitle, lang) {
+  const text = CONTENT[lang].cardCta.waTemplate.replace('{tour}', tourTitle);
+  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+}
+
+function cardCtaHtml(tourTitle, lang) {
+  return `<a href="${buildWaLink(tourTitle, lang)}" class="tour-card-cta" target="_blank" rel="noopener">${CONTENT[lang].cardCta.label}</a>`;
+}
+
 // ===== DATES =====
 function formatDateRange(from, to, lang) {
   const locale = { ru: 'ru-RU', en: 'en-GB', es: 'es-ES' }[lang] || 'en-GB';
@@ -190,7 +202,7 @@ function renderTourPanel(c, tab) {
           <span class="partner-badge">${t.label}</span>
           <h2>${t.title}</h2>
           <p>${t.description}</p>
-          <a href="#contact" class="btn-primary">${t.cta}</a>
+          <a href="${buildWaLink(t.title, currentLang)}" class="btn-primary" target="_blank" rel="noopener">${c.cardCta.label}</a>
         </div>
       </div>`;
     return;
@@ -208,7 +220,7 @@ function renderTourPanel(c, tab) {
           <h2>${t.title}</h2>
           <p>${t.description}</p>
           <div class="tags-wrap">${tagsHtml}</div>
-          <a href="#contact" class="btn-primary">${t.cta}</a>
+          <a href="${buildWaLink(t.title, currentLang)}" class="btn-primary" target="_blank" rel="noopener">${c.cardCta.label}</a>
         </div>
       </div>`;
     return;
@@ -234,6 +246,7 @@ function renderTourPanel(c, tab) {
         <h3>${tour.title}</h3>
         <p>${tour.description}</p>
         ${getDatesHtml(tour.id, currentLang)}
+        ${cardCtaHtml(tour.title, currentLang)}
       </div>
     </div>`).join('');
 
