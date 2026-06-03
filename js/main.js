@@ -167,12 +167,51 @@ function render(lang) {
   renderNav(c);
   renderTicker(c);
   renderHero(c);
+  renderFeaturedTour(c);
   renderAbout(c);
   renderTabs(c);
   renderTourPanel(c, currentTab);
   renderReviews(c);
   renderContact(c);
   renderFooter(c);
+}
+
+// ===== FEATURED TOUR (ближайший) =====
+function renderFeaturedTour(c) {
+  const container = document.getElementById('featured-tour-card');
+  const nearestTour = findNearestTour(c);
+
+  if (!nearestTour) return;
+
+  const waLink = buildWaLink(nearestTour.title, currentLang);
+  const html = `
+    <div class="featured-tour-card" onclick="window.location.hash='products'">
+      <img src="${nearestTour.image}" alt="${nearestTour.title}" class="featured-tour-img">
+      <div class="featured-tour-body">
+        <span class="featured-tour-label">${c.lang === 'ru' ? 'Ближайший тур' : (c.lang === 'en' ? 'Next tour' : 'Próximo tour')}</span>
+        <h2 class="featured-tour-title">${nearestTour.title}</h2>
+        <div class="featured-tour-meta">
+          <div class="featured-tour-meta-item">⏱️ ${nearestTour.duration}</div>
+          <div class="featured-tour-meta-item">📍 ${nearestTour.location}</div>
+        </div>
+        <p class="featured-tour-desc">${nearestTour.description}</p>
+        <div class="featured-tour-price">${nearestTour.showPrefix ? c.pricePrefix + ' ' : ''}$${nearestTour.price}</div>
+        <a href="${waLink}" class="btn-primary featured-tour-cta" target="_blank" rel="noopener">${c.cardCta.label}</a>
+      </div>
+    </div>
+  `;
+  container.innerHTML = html;
+}
+
+function findNearestTour(c) {
+  // Ищет первый тур с датами (из short или long программ)
+  for (const tour of c.tours.short) {
+    if (TOUR_DATES[tour.id]) return tour;
+  }
+  for (const tour of c.tours.long) {
+    if (TOUR_DATES[tour.id]) return tour;
+  }
+  return null;
 }
 
 // ===== NAV =====

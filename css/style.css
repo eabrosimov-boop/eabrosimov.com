@@ -668,9 +668,121 @@ footer {
   padding: 20px 24px;
   font-size: 0.82rem;
 }
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.footer-instagram {
+  width: 20px;
+  height: 20px;
+  color: rgba(255,255,255,0.6);
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+.footer-instagram:hover {
+  color: #E4405F;
+}
+.footer-instagram svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== FEATURED TOUR ===== */
+#featured-tour {
+  padding: 60px 0;
+  background: linear-gradient(135deg, rgba(193, 127, 76, 0.08), rgba(193, 127, 76, 0.04));
+}
+.featured-tour-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.featured-tour-card:hover {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+.featured-tour-img {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
+}
+.featured-tour-body {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.featured-tour-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.featured-tour-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--dark);
+}
+.featured-tour-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: var(--gray);
+  margin: 8px 0;
+}
+.featured-tour-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.featured-tour-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray);
+  margin: 12px 0;
+}
+.featured-tour-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 8px 0;
+}
+.featured-tour-cta {
+  align-self: flex-start;
+  margin-top: 8px;
+}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  .featured-tour-card {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .featured-tour-img { min-height: 300px; }
+  .featured-tour-body { padding: 32px 24px; }
+  .featured-tour-title { font-size: 1.8rem; }
+}
+
+@media (max-width: 480px) {
+  .featured-tour-card { border-radius: 0; }
+  .featured-tour-title { font-size: 1.4rem; }
+  .featured-tour-body { padding: 24px 16px; }
+}
   .about-grid {
     grid-template-columns: 1fr;
     gap: 40px;
