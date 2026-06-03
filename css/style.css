@@ -533,6 +533,8 @@ nav {
 .contact-btn.telegram:hover { background: #1a8fc2; }
 .contact-btn.email { background: var(--accent); color: var(--white); }
 .contact-btn.email:hover { background: var(--accent-hover); }
+.contact-btn.instagram { background: #E4405F; color: var(--white); }
+.contact-btn.instagram:hover { background: #d73a52; }
 
 /* ===== CARD FOOTER (price + CTA) ===== */
 .card-footer {
@@ -675,21 +677,25 @@ footer {
   gap: 16px;
   flex-wrap: wrap;
 }
-.footer-instagram {
-  width: 20px;
-  height: 20px;
-  color: rgba(255,255,255,0.6);
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+.footer-social {
+  width: 18px;
+  height: 18px;
+  color: rgba(255,255,255,0.5);
   transition: color 0.2s ease;
   display: inline-flex;
   align-items: center;
 }
-.footer-instagram:hover {
-  color: #E4405F;
-}
-.footer-instagram svg {
+.footer-social svg {
   width: 100%;
   height: 100%;
 }
+.footer-wa:hover { color: #25D366; }
+.footer-tg:hover { color: #229ED9; }
+.footer-ig:hover { color: #E4405F; }
 
 /* ===== FEATURED TOUR ===== */
 #featured-tour {

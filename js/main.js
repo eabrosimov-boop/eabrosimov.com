@@ -336,7 +336,7 @@ function renderTourPanel(c, tab) {
         <p>${tour.description}</p>
         ${getDatesHtml(tour.id, currentLang)}
         <div class="card-footer">
-          <span class="tour-price">${tour.showPrefix ? CONTENT[currentLang].pricePrefix + ' ' : ''}<strong>$${tour.price}</strong></span>
+          <span class="tour-price">${(tour.showPrefix !== false) ? CONTENT[currentLang].pricePrefix + ' ' : ''}<strong>$${tour.price || '9999'}</strong></span>
           ${cardCtaHtml(tour.title, currentLang)}
         </div>
       </div>
