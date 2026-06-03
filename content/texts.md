@@ -172,30 +172,30 @@
 - Длительность: 14–17 дней / 14–17 days / 14–17 días
 - Фото: images/tours/long-programs/peru-bolivia-chile.jpg
 
-**RU:** Куско, Мачу-Пикчу, озеро Титикака, боливийские соляные плато, пустыня Атакама. Маршрут, который охватывает сердце Южной Америки. Небольшая группа, живые контакты с местными, никакого автобусного туризма.
-**EN:** Cusco, Machu Picchu, Lake Titicaca, Bolivian salt flats, Atacama Desert. A route that covers the heart of South America. Small group, genuine local connections, no bus tourism.
-**ES:** Cusco, Machu Picchu, lago Titicaca, salares bolivianos, desierto de Atacama. Una ruta que cubre el corazón de América del Sur. Grupo pequeño, conexiones locales genuinas, sin turismo de autobús.
+**RU:** Путешествие через сердце Анд: от столицы инков Куско и Мачу-Пикчу до озера Титикака, солончаков Уюни и пустыни Атакама. Древние культуры, высокогорные дороги и одни из самых впечатляющих пейзажей Южной Америки.
+**EN:** A journey through the heart of the Andes: from the Inca capital Cusco and Machu Picchu to Lake Titicaca, the Uyuni salt flats and the Atacama Desert. Ancient cultures, high-altitude roads and some of the most spectacular landscapes in South America.
+**ES:** Un viaje por el corazón de los Andes: desde la capital inca Cusco y Machu Picchu hasta el lago Titicaca, las salinas de Uyuni y el desierto de Atacama. Culturas antiguas, caminos de altura y algunos de los paisajes más impresionantes de América del Sur.
 
-### 2. Патагония: треккинг
-- **EN:** Patagonia Trekking
-- **ES:** Trekking en la Patagonia
+### 2. Патагония: Аргентина и Чили (треккинг)
+- **EN:** Patagonia: Argentina & Chile Trekking
+- **ES:** Patagonia: Trekking Argentina y Chile
 - Длительность: 13–15 дней / 13–15 days / 13–15 días
 - Фото: images/tours/long-programs/patagonia-trekking.jpg
 
-**RU:** Торрес-дель-Пайне (Чили), Эль-Чальтен и Перито-Морено (Аргентина). Лучшие треки двух стран без палаток — только рефухиос и горные хижины. Программа для тех, кто хочет настоящий треккинг без компромиссов.
-**EN:** Torres del Paine (Chile), El Chaltén and Perito Moreno (Argentina). Patagonia's finest trails across two countries without tents — refugios and mountain huts only. A program for those who want real trekking without compromise.
-**ES:** Torres del Paine (Chile), El Chaltén y Perito Moreno (Argentina). Los mejores senderos de dos países sin carpas — solo refugios y cabañas de montaña. Un programa para quienes quieren trekking real sin compromisos.
+**RU:** Лучшие маршруты аргентинской и чилийской Патагонии в одном путешествии. Торрес-дель-Пайне, Фицрой, Перито-Морено и Огненная Земля — без палаток, тяжёлых рюкзаков и походного быта.
+**EN:** The finest routes of Argentine and Chilean Patagonia in one journey. Torres del Paine, Fitz Roy, Perito Moreno and Tierra del Fuego — without tents, heavy packs or camp life.
+**ES:** Las mejores rutas de la Patagonia argentina y chilena en un solo viaje. Torres del Paine, Fitz Roy, Perito Moreno y Tierra del Fuego — sin carpas, mochilas pesadas ni vida de campamento.
 
-### 3. Остров Пасхи
-- **EN:** Easter Island
-- **ES:** Isla de Pascua
+### 3. Расширение: Остров Пасхи
+- **EN:** Extension: Easter Island
+- **ES:** Extensión: Isla de Pascua
 - Длительность: 4–5 дней / 4–5 days / 4–5 días
 - Примечание: добавляется к программе Перу/Боливия/Чили
 - Фото: images/tours/long-programs/easter-island.jpg
 
-**RU:** Затерянный в Тихом океане остров со статуями моаи и живой культурой рапануи. Добавляется к основной программе — несколько дней, которые меняют масштаб всей поездки.
-**EN:** A remote island in the Pacific with enigmatic moai statues and a living Rapa Nui culture. Added to the main program — a few days that completely change the scale of the entire trip.
-**ES:** Una isla remota en el Pacífico con enigmáticas estatuas moái y una viva cultura rapanui. Se añade al programa principal — unos días que cambian completamente la escala del viaje.
+**RU:** Остров Пасхи находится почти в 4000 километрах от ближайшего материка. Именно эта изоляция помогла создать одну из самых загадочных культур мира и её знаменитые каменные статуи.
+**EN:** Easter Island lies nearly 4,000 kilometers from the nearest mainland. It is precisely this isolation that gave rise to one of the world's most enigmatic cultures and its famous stone statues.
+**ES:** La Isla de Pascua se encuentra a casi 4.000 kilómetros del continente más cercano. Es precisamente ese aislamiento lo que permitió crear una de las culturas más enigmáticas del mundo y sus famosas estatuas de piedra.
 
 ### 4. Расширение: водопады Игуасу
 - **EN:** Iguazu Extension
@@ -204,9 +204,9 @@
 - Примечание: добавляется к любой длинной программе
 - Фото: images/tours/long-programs/iguazu-extension.jpg
 
-**RU:** Дополнительные дни у водопадов Игуасу после основного маршрута. Аргентинская и бразильская стороны, джунгли, лодочные туры под водопады. Лучший финальный аккорд для любой длинной программы.
-**EN:** Extra days at Iguazu Falls after the main itinerary. Argentine and Brazilian sides, rainforest, boat rides under the falls. The perfect final chapter for any long program.
-**ES:** Días adicionales en las cataratas del Iguazú tras el itinerario principal. Lados argentino y brasileño, selva, paseos en bote bajo las cataratas. El final perfecto para cualquier programa largo.
+**RU:** Один из самых впечатляющих водопадов планеты. За два дня увидим Игуасу с аргентинской и бразильской стороны, чтобы оценить его и вблизи, и во всей полноте.
+**EN:** One of the most spectacular waterfalls on the planet. In two days we see Iguazu from both the Argentine and Brazilian sides — up close and in its full panoramic scale.
+**ES:** Una de las cataratas más impresionantes del planeta. En dos días veremos el Iguazú desde el lado argentino y el brasileño — de cerca y en toda su amplitud panorámica.
 
 ---
 

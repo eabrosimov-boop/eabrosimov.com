@@ -5,7 +5,7 @@ const CONTENT = {
   ru: {
     nav: { brand: "Евгений Абросимов" },
     lang: "ru",
-    ticker: "Ближайший тур: Северо-Запад Аргентины (Хухуй) · 15–19 июля 2026",
+    ticker: "Ближайший тур: <strong>Северо-Запад Аргентины (Хухуй)</strong> · 15–19 июля 2026",
     tickerCta: { label: "Написать", waText: "Привет! Хочу узнать подробности о ближайшем туре." },
     pricePrefix: "от",
     cardCta: {
@@ -120,25 +120,25 @@ const CONTENT = {
           title: "Перу / Боливия / Чили",
           duration: "14–17 дней",
           location: "Перу · Боливия · Чили",
-          description: "Куско, Мачу-Пикчу, озеро Титикака, боливийские соляные плато, пустыня Атакама. Маршрут, который охватывает сердце Южной Америки. Небольшая группа, живые контакты с местными, никакого автобусного туризма.",
+          description: "Путешествие через сердце Анд: от столицы инков Куско и Мачу-Пикчу до озера Титикака, солончаков Уюни и пустыни Атакама. Древние культуры, высокогорные дороги и одни из самых впечатляющих пейзажей Южной Америки.",
           image: "images/tours/long-programs/peru-bolivia-chile.jpg",
           price: "$9999"
         },
         {
           id: "patagonia-trekking",
-          title: "Патагония: треккинг",
+          title: "Патагония: Аргентина и Чили (треккинг)",
           duration: "13–15 дней",
           location: "Чили · Аргентина",
-          description: "Торрес-дель-Пайне, Эль-Чальтен и Перито-Морено. Лучшие треки двух стран без палаток — только рефухиос и горные хижины. Программа для тех, кто хочет настоящий треккинг без компромиссов.",
+          description: "Лучшие маршруты аргентинской и чилийской Патагонии в одном путешествии. Торрес-дель-Пайне, Фицрой, Перито-Морено и Огненная Земля — без палаток, тяжёлых рюкзаков и походного быта.",
           image: "images/tours/long-programs/patagonia-trekking.jpg",
           price: "$9999"
         },
         {
           id: "easter-island",
-          title: "Остров Пасхи",
+          title: "Расширение: Остров Пасхи",
           duration: "4–5 дней",
           location: "Остров Пасхи",
-          description: "Затерянный в Тихом океане остров со статуями моаи и живой культурой рапануи. Добавляется к основной программе — несколько дней, которые меняют масштаб всей поездки.",
+          description: "Остров Пасхи находится почти в 4000 километрах от ближайшего материка. Именно эта изоляция помогла создать одну из самых загадочных культур мира и её знаменитые каменные статуи.",
           image: "images/tours/long-programs/easter-island.jpg",
           price: "$9999"
         },
@@ -147,7 +147,7 @@ const CONTENT = {
           title: "Расширение: водопады Игуасу",
           duration: "2–3 дня",
           location: "Аргентина · Бразилия",
-          description: "Дополнительные дни у водопадов Игуасу после основного маршрута. Аргентинская и бразильская стороны, джунгли, лодочные туры под водопады. Лучший финальный аккорд для любой длинной программы.",
+          description: "Один из самых впечатляющих водопадов планеты. За два дня увидим Игуасу с аргентинской и бразильской стороны, чтобы оценить его и вблизи, и во всей полноте.",
           image: "images/tours/long-programs/iguazu-extension.jpg",
           price: "$9999"
         }
@@ -191,7 +191,7 @@ const CONTENT = {
   en: {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "en",
-    ticker: "Next tour: Northwest Argentina (Jujuy) · 15–19 July 2026",
+    ticker: "Next tour: <strong>Northwest Argentina (Jujuy)</strong> · 15–19 July 2026",
     tickerCta: { label: "Enquire", waText: "Hi! I'd like to learn more about the upcoming tour." },
     pricePrefix: "from",
     cardCta: {
@@ -237,10 +237,10 @@ const CONTENT = {
         { id: "bariloche", title: "Bariloche: Heart of the Lake District", duration: "4 days", location: "Patagonia", description: "The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.", image: "images/tours/short-programs/bariloche-lakes.jpg" }
       ],
       long: [
-        { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", description: "Cusco, Machu Picchu, Lake Titicaca, Bolivian salt flats, Atacama Desert. A route that covers the heart of South America. Small group, genuine local connections, no bus tourism.", image: "images/tours/long-programs/peru-bolivia-chile.jpg" },
-        { id: "patagonia-trekking", title: "Patagonia Trekking", duration: "13–15 days", location: "Chile · Argentina", description: "Torres del Paine, El Chaltén and Perito Moreno. Patagonia's finest trails across two countries without tents — refugios and mountain huts only. For those who want real trekking without compromise.", image: "images/tours/long-programs/patagonia-trekking.jpg" },
-        { id: "easter-island", title: "Easter Island", duration: "4–5 days", location: "Easter Island", description: "A remote island in the Pacific with enigmatic moai statues and a living Rapa Nui culture. Added to the main program — a few days that completely change the scale of the entire trip.", image: "images/tours/long-programs/easter-island.jpg" },
-        { id: "iguazu-extension", title: "Iguazu Extension", duration: "2–3 days", location: "Argentina · Brazil", description: "Extra days at Iguazu Falls after the main itinerary. Argentine and Brazilian sides, rainforest, boat rides under the falls. The perfect final chapter for any long program.", image: "images/tours/long-programs/iguazu-extension.jpg" }
+        { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", description: "A journey through the heart of the Andes: from the Inca capital Cusco and Machu Picchu to Lake Titicaca, the Uyuni salt flats and the Atacama Desert. Ancient cultures, high-altitude roads and some of the most spectacular landscapes in South America.", image: "images/tours/long-programs/peru-bolivia-chile.jpg" },
+        { id: "patagonia-trekking", title: "Patagonia: Argentina & Chile Trekking", duration: "13–15 days", location: "Chile · Argentina", description: "The finest routes of Argentine and Chilean Patagonia in one journey. Torres del Paine, Fitz Roy, Perito Moreno and Tierra del Fuego — without tents, heavy packs or camp life.", image: "images/tours/long-programs/patagonia-trekking.jpg" },
+        { id: "easter-island", title: "Extension: Easter Island", duration: "4–5 days", location: "Easter Island", description: "Easter Island lies nearly 4,000 kilometers from the nearest mainland. It is precisely this isolation that gave rise to one of the world's most enigmatic cultures and its famous stone statues.", image: "images/tours/long-programs/easter-island.jpg" },
+        { id: "iguazu-extension", title: "Iguazu Extension", duration: "2–3 days", location: "Argentina · Brazil", description: "One of the most spectacular waterfalls on the planet. In two days we see Iguazu from both the Argentine and Brazilian sides — up close and in its full panoramic scale.", image: "images/tours/long-programs/iguazu-extension.jpg" }
       ],
       antarctica: {
         id: "antarctica", title: "Antarctica — Supported Every Step of the Way", label: "Partner Program",
@@ -274,7 +274,7 @@ const CONTENT = {
   es: {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "es",
-    ticker: "Próximo tour: Noroeste Argentino (Jujuy) · 15–19 de julio de 2026",
+    ticker: "Próximo tour: <strong>Noroeste Argentino (Jujuy)</strong> · 15–19 de julio de 2026",
     tickerCta: { label: "Escribir", waText: "¡Hola! Me gustaría saber más sobre el próximo tour." },
     pricePrefix: "desde",
     cardCta: {
@@ -320,10 +320,10 @@ const CONTENT = {
         { id: "bariloche", title: "Bariloche: Corazón de la Región de los Lagos", duration: "4 días", location: "Patagonia", description: "La región que hizo famosa a la Patagonia. Lagos glaciares, paisajes de montaña, pueblos encantadores y decenas de rutas hermosas para todo nivel de condición física.", image: "images/tours/short-programs/bariloche-lakes.jpg" }
       ],
       long: [
-        { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", description: "Cusco, Machu Picchu, lago Titicaca, salares bolivianos, desierto de Atacama. Una ruta que cubre el corazón de América del Sur. Grupo pequeño, conexiones locales genuinas, sin turismo de autobús.", image: "images/tours/long-programs/peru-bolivia-chile.jpg" },
-        { id: "patagonia-trekking", title: "Trekking en la Patagonia", duration: "13–15 días", location: "Chile · Argentina", description: "Torres del Paine, El Chaltén y Perito Moreno. Los mejores senderos de dos países sin carpas — solo refugios y cabañas de montaña. Para quienes quieren trekking real sin compromisos.", image: "images/tours/long-programs/patagonia-trekking.jpg" },
-        { id: "easter-island", title: "Isla de Pascua", duration: "4–5 días", location: "Isla de Pascua", description: "Una isla remota en el Pacífico con enigmáticas estatuas moái y una viva cultura rapanui. Se añade al programa principal — unos días que cambian completamente la escala del viaje.", image: "images/tours/long-programs/easter-island.jpg" },
-        { id: "iguazu-extension", title: "Extensión Iguazú", duration: "2–3 días", location: "Argentina · Brasil", description: "Días adicionales en las cataratas del Iguazú tras el itinerario principal. Lados argentino y brasileño, selva, paseos en bote bajo las cataratas. El final perfecto para cualquier programa largo.", image: "images/tours/long-programs/iguazu-extension.jpg" }
+        { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", description: "Un viaje por el corazón de los Andes: desde la capital inca Cusco y Machu Picchu hasta el lago Titicaca, las salinas de Uyuni y el desierto de Atacama. Culturas antiguas, caminos de altura y algunos de los paisajes más impresionantes de América del Sur.", image: "images/tours/long-programs/peru-bolivia-chile.jpg" },
+        { id: "patagonia-trekking", title: "Patagonia: Trekking Argentina y Chile", duration: "13–15 días", location: "Chile · Argentina", description: "Las mejores rutas de la Patagonia argentina y chilena en un solo viaje. Torres del Paine, Fitz Roy, Perito Moreno y Tierra del Fuego — sin carpas, mochilas pesadas ni vida de campamento.", image: "images/tours/long-programs/patagonia-trekking.jpg" },
+        { id: "easter-island", title: "Extensión: Isla de Pascua", duration: "4–5 días", location: "Isla de Pascua", description: "La Isla de Pascua se encuentra a casi 4.000 kilómetros del continente más cercano. Es precisamente ese aislamiento lo que permitió crear una de las culturas más enigmáticas del mundo y sus famosas estatuas de piedra.", image: "images/tours/long-programs/easter-island.jpg" },
+        { id: "iguazu-extension", title: "Extensión Iguazú", duration: "2–3 días", location: "Argentina · Brasil", description: "Una de las cataratas más impresionantes del planeta. En dos días veremos el Iguazú desde el lado argentino y el brasileño — de cerca y en toda su amplitud panorámica.", image: "images/tours/long-programs/iguazu-extension.jpg" }
       ],
       antarctica: {
         id: "antarctica", title: "Antártida — Con Apoyo en Cada Paso", label: "Programa de Socios",
