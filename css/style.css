@@ -104,13 +104,18 @@ nav {
 }
 .ticker-wrap:hover .ticker-track { animation-play-state: paused; }
 
+.ticker-track-link {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
 .ticker-track {
   display: flex;
   white-space: nowrap;
   animation: ticker-move linear infinite;
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
 }
 .ticker-track span {
   display: inline-block;
@@ -529,18 +534,34 @@ nav {
 .contact-btn.email { background: var(--accent); color: var(--white); }
 .contact-btn.email:hover { background: var(--accent-hover); }
 
-/* ===== TOUR CARD CTA ===== */
+/* ===== CARD FOOTER (price + CTA) ===== */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 14px;
+}
+.tour-price {
+  font-size: 0.82rem;
+  color: var(--gray);
+  white-space: nowrap;
+}
+.tour-price strong {
+  font-size: 1rem;
+  color: var(--dark);
+  font-weight: 700;
+}
 .tour-card-cta {
-  display: block;
-  margin-top: 16px;
-  padding: 10px 16px;
+  padding: 8px 16px;
   background: var(--accent);
   color: var(--white);
   border-radius: 6px;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
   transition: background var(--transition);
 }
 .tour-card-cta:hover { background: var(--accent-hover); }

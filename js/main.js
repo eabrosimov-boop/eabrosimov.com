@@ -152,9 +152,14 @@ function renderTicker(c) {
   track.style.animation = '';
   track.style.animationDuration = Math.max(14, text.length * 0.22) + 's';
 
+  const waLink = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(c.tickerCta.waText)}`;
+
+  const trackLink = document.getElementById('ticker-track-link');
+  if (trackLink) trackLink.href = waLink;
+
   if (btn) {
     btn.textContent = c.tickerCta.label;
-    btn.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(c.tickerCta.waText)}`;
+    btn.href = waLink;
   }
 }
 
@@ -249,7 +254,10 @@ function renderTourPanel(c, tab) {
         <h3>${tour.title}</h3>
         <p>${tour.description}</p>
         ${getDatesHtml(tour.id, currentLang)}
-        ${cardCtaHtml(tour.title, currentLang)}
+        <div class="card-footer">
+          <span class="tour-price">${CONTENT[currentLang].pricePrefix} <strong>${tour.price}</strong></span>
+          ${cardCtaHtml(tour.title, currentLang)}
+        </div>
       </div>
     </div>`).join('');
 

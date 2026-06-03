@@ -5,8 +5,9 @@ const CONTENT = {
   ru: {
     nav: { brand: "Евгений Абросимов" },
     lang: "ru",
-    ticker: "Ближайший тур: Северо-Запад Аргентины (Жужуй) · 15–19 июля 2026",
+    ticker: "Ближайший тур: Северо-Запад Аргентины (Хухуй) · 15–19 июля 2026",
     tickerCta: { label: "Написать", waText: "Привет! Хочу узнать подробности о ближайшем туре." },
+    pricePrefix: "от",
     cardCta: {
       label: "Спросить",
       waTemplate: "Привет! Меня интересует «{tour}». Хочу узнать подробнее."
@@ -44,7 +45,8 @@ const CONTENT = {
           duration: "1 день",
           location: "Буэнос-Айрес",
           description: "Как небольшой порт на краю империи превратился в один из самых необычных городов мира. Прогулка по старейшим районам Буэнос-Айреса через историю, людей и большие перемены.",
-          image: "images/tours/excursions/history-ba.jpg"
+          image: "images/tours/excursions/history-ba.jpg",
+          price: "$9999"
         },
         {
           id: "recoleta",
@@ -52,7 +54,8 @@ const CONTENT = {
           duration: "1 день",
           location: "Буэнос-Айрес",
           description: "История Аргентины через судьбы людей, которые её создавали. Президенты, национальные герои, миллиардеры и Эвита — все они встретятся нам среди мавзолеев Реколеты.",
-          image: "images/tours/excursions/recoleta-cemetery.jpg"
+          image: "images/tours/excursions/recoleta-cemetery.jpg",
+          price: "$9999"
         },
         {
           id: "football",
@@ -60,7 +63,8 @@ const CONTENT = {
           duration: "1 день",
           location: "Буэнос-Айрес",
           description: "Для многих поездка на аргентинский футбол становится главным впечатлением от путешествия. Если позволяет календарь — идём на матч. Если нет — всё равно поговорим о клубах, легендах и страсти, которая сделала местный футбол знаменитым на весь мир.",
-          image: "images/tours/excursions/football-argentina.jpg"
+          image: "images/tours/excursions/football-argentina.jpg",
+          price: "$9999"
         },
         {
           id: "tango",
@@ -68,7 +72,8 @@ const CONTENT = {
           duration: "1 день",
           location: "Буэнос-Айрес",
           description: "Рекомендации и бронирование танго-шоу в Буэнос-Айресе. Подберу оптимальный вариант по формату, расположению и бюджету, а также помогу получить скидку там, где это возможно.",
-          image: "images/tours/excursions/tango-show.jpg"
+          image: "images/tours/excursions/tango-show.jpg",
+          price: "$9999"
         }
       ],
       short: [
@@ -78,7 +83,8 @@ const CONTENT = {
           duration: "3 дня",
           location: "Мендоса",
           description: "Лучшие вина Аргентины рождаются здесь, у подножия Анд. Нас ждут дегустации, винодельни разных масштабов, гастрономия и несколько дней в одном из самых приятных регионов страны.",
-          image: "images/tours/short-programs/mendoza-wine.jpg"
+          image: "images/tours/short-programs/mendoza-wine.jpg",
+          price: "$9999"
         },
         {
           id: "iguazu-short",
@@ -86,15 +92,17 @@ const CONTENT = {
           duration: "2 дня",
           location: "Аргентина",
           description: "Один из самых впечатляющих природных феноменов планеты. Заходим с аргентинской стороны — ближе и мощнее всего. Звук, брызги, радуги. Это невозможно передать словами.",
-          image: "images/tours/short-programs/iguazu-falls.jpg"
+          image: "images/tours/short-programs/iguazu-falls.jpg",
+          price: "$9999"
         },
         {
           id: "salta",
           title: "Высокогорная Аргентина",
           duration: "4 дня",
-          location: "Сальта, Жужуй",
+          location: "Сальта, Хухуй",
           description: "Северо-запад Аргентины ближе к Перу и Боливии, чем к Буэнос-Айресу. Край высокогорных деревень, древних культур и дорог, по которым когда-то двигались караваны инков. Здесь сохранились традиции коренных народов и одни из самых необычных пейзажей Южной Америки.",
-          image: "images/tours/short-programs/salta-northwest.jpg"
+          image: "images/tours/short-programs/salta-northwest.jpg",
+          price: "$9999"
         },
         {
           id: "bariloche",
@@ -102,7 +110,8 @@ const CONTENT = {
           duration: "4 дня",
           location: "Патагония",
           description: "Регион, который сделал Патагонию знаменитой. Озёра ледникового происхождения, горные пейзажи, уютные городки и десятки красивых маршрутов на любой уровень подготовки.",
-          image: "images/tours/short-programs/bariloche-lakes.jpg"
+          image: "images/tours/short-programs/bariloche-lakes.jpg",
+          price: "$9999"
         }
       ],
       long: [
@@ -112,7 +121,8 @@ const CONTENT = {
           duration: "14–17 дней",
           location: "Перу · Боливия · Чили",
           description: "Куско, Мачу-Пикчу, озеро Титикака, боливийские соляные плато, пустыня Атакама. Маршрут, который охватывает сердце Южной Америки. Небольшая группа, живые контакты с местными, никакого автобусного туризма.",
-          image: "images/tours/long-programs/peru-bolivia-chile.jpg"
+          image: "images/tours/long-programs/peru-bolivia-chile.jpg",
+          price: "$9999"
         },
         {
           id: "patagonia-trekking",
@@ -120,7 +130,8 @@ const CONTENT = {
           duration: "13–15 дней",
           location: "Чили · Аргентина",
           description: "Торрес-дель-Пайне, Эль-Чальтен и Перито-Морено. Лучшие треки двух стран без палаток — только рефухиос и горные хижины. Программа для тех, кто хочет настоящий треккинг без компромиссов.",
-          image: "images/tours/long-programs/patagonia-trekking.jpg"
+          image: "images/tours/long-programs/patagonia-trekking.jpg",
+          price: "$9999"
         },
         {
           id: "easter-island",
@@ -128,7 +139,8 @@ const CONTENT = {
           duration: "4–5 дней",
           location: "Остров Пасхи",
           description: "Затерянный в Тихом океане остров со статуями моаи и живой культурой рапануи. Добавляется к основной программе — несколько дней, которые меняют масштаб всей поездки.",
-          image: "images/tours/long-programs/easter-island.jpg"
+          image: "images/tours/long-programs/easter-island.jpg",
+          price: "$9999"
         },
         {
           id: "iguazu-extension",
@@ -136,7 +148,8 @@ const CONTENT = {
           duration: "2–3 дня",
           location: "Аргентина · Бразилия",
           description: "Дополнительные дни у водопадов Игуасу после основного маршрута. Аргентинская и бразильская стороны, джунгли, лодочные туры под водопады. Лучший финальный аккорд для любой длинной программы.",
-          image: "images/tours/long-programs/iguazu-extension.jpg"
+          image: "images/tours/long-programs/iguazu-extension.jpg",
+          price: "$9999"
         }
       ],
       antarctica: {
@@ -180,6 +193,7 @@ const CONTENT = {
     lang: "en",
     ticker: "Next tour: Northwest Argentina (Jujuy) · 15–19 July 2026",
     tickerCta: { label: "Enquire", waText: "Hi! I'd like to learn more about the upcoming tour." },
+    pricePrefix: "from",
     cardCta: {
       label: "Ask",
       waTemplate: "Hi! I'm interested in «{tour}». I'd like to learn more."
@@ -262,6 +276,7 @@ const CONTENT = {
     lang: "es",
     ticker: "Próximo tour: Noroeste Argentino (Jujuy) · 15–19 de julio de 2026",
     tickerCta: { label: "Escribir", waText: "¡Hola! Me gustaría saber más sobre el próximo tour." },
+    pricePrefix: "desde",
     cardCta: {
       label: "Preguntar",
       waTemplate: "¡Hola! Me interesa «{tour}». Me gustaría saber más."
