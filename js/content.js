@@ -46,7 +46,8 @@ const CONTENT = {
           location: "Буэнос-Айрес",
           description: "Как небольшой порт на краю империи превратился в один из самых необычных городов мира. Прогулка по старейшим районам Буэнос-Айреса через историю, людей и большие перемены.",
           image: "images/tours/excursions/history-ba.jpg",
-          price: "$9999"
+          price: "150",
+          showPrefix: true
         },
         {
           id: "recoleta",
@@ -55,7 +56,8 @@ const CONTENT = {
           location: "Буэнос-Айрес",
           description: "История Аргентины через судьбы людей, которые её создавали. Президенты, национальные герои, миллиардеры и Эвита — все они встретятся нам среди мавзолеев Реколеты.",
           image: "images/tours/excursions/recoleta-cemetery.jpg",
-          price: "$9999"
+          price: "80",
+          showPrefix: true
         },
         {
           id: "football",
@@ -64,7 +66,8 @@ const CONTENT = {
           location: "Буэнос-Айрес",
           description: "Для многих поездка на аргентинский футбол становится главным впечатлением от путешествия. Если позволяет календарь — идём на матч. Если нет — всё равно поговорим о клубах, легендах и страсти, которая сделала местный футбол знаменитым на весь мир.",
           image: "images/tours/excursions/football-argentina.jpg",
-          price: "$9999"
+          price: "150",
+          showPrefix: true
         },
         {
           id: "tango",
@@ -73,7 +76,8 @@ const CONTENT = {
           location: "Буэнос-Айрес",
           description: "Рекомендации и бронирование танго-шоу в Буэнос-Айресе. Подберу оптимальный вариант по формату, расположению и бюджету, а также помогу получить скидку там, где это возможно.",
           image: "images/tours/excursions/tango-show.jpg",
-          price: "$9999"
+          price: "65",
+          showPrefix: true
         }
       ],
       short: [
@@ -84,7 +88,8 @@ const CONTENT = {
           location: "Мендоса",
           description: "Лучшие вина Аргентины рождаются здесь, у подножия Анд. Нас ждут дегустации, винодельни разных масштабов, гастрономия и несколько дней в одном из самых приятных регионов страны.",
           image: "images/tours/short-programs/mendoza-wine.jpg",
-          price: "$9999"
+          price: "750",
+          showPrefix: true
         },
         {
           id: "iguazu-short",
@@ -93,7 +98,8 @@ const CONTENT = {
           location: "Аргентина",
           description: "Один из самых впечатляющих природных феноменов планеты. Заходим с аргентинской стороны — ближе и мощнее всего. Звук, брызги, радуги. Это невозможно передать словами.",
           image: "images/tours/short-programs/iguazu-falls.jpg",
-          price: "$9999"
+          price: "700",
+          showPrefix: true
         },
         {
           id: "salta",
@@ -102,7 +108,8 @@ const CONTENT = {
           location: "Сальта, Хухуй",
           description: "Северо-запад Аргентины ближе к Перу и Боливии, чем к Буэнос-Айресу. Край высокогорных деревень, древних культур и дорог, по которым когда-то двигались караваны инков. Здесь сохранились традиции коренных народов и одни из самых необычных пейзажей Южной Америки.",
           image: "images/tours/short-programs/salta-northwest.jpg",
-          price: "$9999"
+          price: "550",
+          showPrefix: true
         },
         {
           id: "bariloche",
@@ -111,7 +118,8 @@ const CONTENT = {
           location: "Патагония",
           description: "Регион, который сделал Патагонию знаменитой. Озёра ледникового происхождения, горные пейзажи, уютные городки и десятки красивых маршрутов на любой уровень подготовки.",
           image: "images/tours/short-programs/bariloche-lakes.jpg",
-          price: "$9999"
+          price: "650",
+          showPrefix: true
         }
       ],
       long: [
@@ -122,7 +130,8 @@ const CONTENT = {
           location: "Перу · Боливия · Чили",
           description: "Путешествие через сердце Анд: от столицы инков Куско и Мачу-Пикчу до озера Титикака, солончаков Уюни и пустыни Атакама. Древние культуры, высокогорные дороги и одни из самых впечатляющих пейзажей Южной Америки.",
           image: "images/tours/long-programs/peru-bolivia-chile.jpg",
-          price: "$9999"
+          price: "4250",
+          showPrefix: false
         },
         {
           id: "patagonia-trekking",
@@ -131,7 +140,8 @@ const CONTENT = {
           location: "Чили · Аргентина",
           description: "Лучшие маршруты аргентинской и чилийской Патагонии в одном путешествии. Торрес-дель-Пайне, Фицрой, Перито-Морено и Огненная Земля — без палаток, тяжёлых рюкзаков и походного быта.",
           image: "images/tours/long-programs/patagonia-trekking.jpg",
-          price: "$9999"
+          price: "4250",
+          showPrefix: true
         },
         {
           id: "easter-island",
@@ -140,7 +150,8 @@ const CONTENT = {
           location: "Остров Пасхи",
           description: "Остров Пасхи находится почти в 4000 километрах от ближайшего материка. Именно эта изоляция помогла создать одну из самых загадочных культур мира и её знаменитые каменные статуи.",
           image: "images/tours/long-programs/easter-island.jpg",
-          price: "$9999"
+          price: "1400",
+          showPrefix: false
         },
         {
           id: "iguazu-extension",
@@ -149,7 +160,8 @@ const CONTENT = {
           location: "Аргентина · Бразилия",
           description: "Один из самых впечатляющих водопадов планеты. За два дня увидим Игуасу с аргентинской и бразильской стороны, чтобы оценить его и вблизи, и во всей полноте.",
           image: "images/tours/long-programs/iguazu-extension.jpg",
-          price: "$9999"
+          price: "900",
+          showPrefix: false
         }
       ],
       antarctica: {
@@ -158,7 +170,9 @@ const CONTENT = {
         label: "Партнёрская программа",
         description: "Я не веду антарктические экспедиции лично — но помогаю организовать тебе лучшее путешествие на континент. Работаю с проверенными партнёрами: подбираю рейс под твой бюджет и даты, сопровождаю на всех этапах оформления. Антарктида — это сложно, дорого и незабываемо. Я делаю так, чтобы всё прошло без сюрпризов.",
         image: "images/tours/antarctica/antarctica.jpg",
-        cta: "Узнать о программе"
+        cta: "Узнать о программе",
+        price: "9000",
+        showPrefix: true
       },
       individual: {
         id: "individual",
@@ -166,7 +180,9 @@ const CONTENT = {
         description: "Нет программы, которая подходит тебе на 100%? Тогда давай создадим её вместе. Расскажи мне, что тебя зажигает — горы, города, еда, экстрим, уединение, фотография, история — и я составлю маршрут именно под тебя. Сроки и бюджет — твои.",
         image: "images/tours/individual/individual-tour.jpg",
         cta: "Обсудить маршрут",
-        tags: ["Горы", "Города", "Гастрономия", "Экстрим", "Фотография", "История"]
+        tags: ["Горы", "Города", "Гастрономия", "Экстрим", "Фотография", "История"],
+        price: "1000",
+        showPrefix: true
       }
     },
     reviews: {
