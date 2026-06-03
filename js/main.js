@@ -320,11 +320,13 @@ function renderTourPanel(c, tab) {
   }
 
   const tours = c.tours[tab];
-  const cardsHtml = tours.map(tour => `
+  const cardsHtml = tours.map(tour => {
+    const tourLink = currentLang === 'ru' ? `/tours/${tour.id}.html` : `/tours/${tour.id}.${currentLang}.html`;
+    return `
     <div class="tour-card">
-      <div class="tour-card-img">
+      <a href="${tourLink}" class="tour-card-img">
         <img src="${tour.image}" alt="${tour.title}" loading="lazy">
-      </div>
+      </a>
       <div class="tour-card-body">
         <div class="tour-meta">
           <svg class="tour-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 2"/></svg>
@@ -332,7 +334,7 @@ function renderTourPanel(c, tab) {
           <span class="tour-meta-sep">·</span>
           <span class="tour-meta-location">${tour.location}</span>
         </div>
-        <h3>${tour.title}</h3>
+        <a href="${tourLink}" style="text-decoration: none; color: inherit;"><h3>${tour.title}</h3></a>
         <p>${tour.description}</p>
         ${getDatesHtml(tour.id, currentLang)}
         <div class="card-footer">
@@ -340,7 +342,8 @@ function renderTourPanel(c, tab) {
           ${cardCtaHtml(tour.title, currentLang)}
         </div>
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 
   container.innerHTML = `<div class="tours-grid">${cardsHtml}</div>`;
 }

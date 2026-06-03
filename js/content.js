@@ -429,3 +429,7 @@ const TOUR_DATES = {
     { from: '2027-04-04', to: '2027-04-17' }
   ]
 };
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { CONTENT, TOUR_DATES };
+}
