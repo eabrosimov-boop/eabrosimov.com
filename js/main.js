@@ -117,7 +117,7 @@ function buildWaLink(tourTitle, lang) {
 }
 
 function cardCtaHtml(tourTitle, lang) {
-  return `<a href="${buildWaLink(tourTitle, lang)}" class="tour-card-cta" data-track-tour="${tourTitle}" target="_blank" rel="noopener">${CONTENT[lang].cardCta.label}</a>`;
+  return `<a href="${buildWaLink(tourTitle, lang)}" class="tour-card-cta" data-track-tour="${tourTitle}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${CONTENT[lang].cardCta.label}</a>`;
 }
 
 // ===== DATES =====
@@ -320,35 +320,31 @@ function renderTourPanel(c, tab) {
   }
 
   const tours = c.tours[tab];
-  const detailsLabel = { ru: 'Подробнее', en: 'Details', es: 'Ver más' }[currentLang] || 'Details';
   const cardsHtml = tours.map(tour => {
     const tourLink = currentLang === 'ru' ? `tours/${tour.id}.html` : `tours/${tour.id}.${currentLang}.html`;
     return `
-    <div class="tour-card">
-      <a href="${tourLink}" class="tour-card-img">
-        <img src="${tour.image}" alt="${tour.title}" loading="lazy">
-      </a>
-      <div class="tour-card-body">
-        <div class="tour-meta">
-          <svg class="tour-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 2"/></svg>
-          <span class="tour-meta-duration">${tour.duration}</span>
-          <span class="tour-meta-sep">·</span>
-          <span class="tour-meta-location">${tour.location}</span>
+    <a href="${tourLink}" class="tour-card-link">
+      <div class="tour-card">
+        <div class="tour-card-img">
+          <img src="${tour.image}" alt="${tour.title}" loading="lazy">
         </div>
-        <a href="${tourLink}" style="text-decoration: none; color: inherit;"><h3>${tour.title}</h3></a>
-        <p>${tour.description}</p>
-        ${getDatesHtml(tour.id, currentLang)}
-        <div class="card-footer">
-          <div style="flex: 1;">
-            <span class="tour-price">${(tour.showPrefix !== false) ? CONTENT[currentLang].pricePrefix + ' ' : ''}<strong>$${tour.price || '9999'}</strong></span>
+        <div class="tour-card-body">
+          <div class="tour-meta">
+            <svg class="tour-meta-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 2"/></svg>
+            <span class="tour-meta-duration">${tour.duration}</span>
+            <span class="tour-meta-sep">·</span>
+            <span class="tour-meta-location">${tour.location}</span>
           </div>
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <a href="${tourLink}" class="btn-details">${detailsLabel}</a>
+          <h3>${tour.title}</h3>
+          <p>${tour.description}</p>
+          ${getDatesHtml(tour.id, currentLang)}
+          <div class="card-footer">
+            <span class="tour-price">${(tour.showPrefix !== false) ? CONTENT[currentLang].pricePrefix + ' ' : ''}<strong>$${tour.price || '9999'}</strong></span>
             ${cardCtaHtml(tour.title, currentLang)}
           </div>
         </div>
       </div>
-    </div>`;
+    </a>`;
   }).join('');
 
   container.innerHTML = `<div class="tours-grid">${cardsHtml}</div>`;
