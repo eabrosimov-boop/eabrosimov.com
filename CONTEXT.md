@@ -83,6 +83,27 @@ TOUR_DATES[tourId] = [{ from: "2026-07-15", to: "2026-07-19" }]
 ## Критические требования
 ⚠️ **Провинция ХУХУЙ — НИКОГДА "ЖУЖУЙ"**. Это данные, не текст. Во всех файлах только Хухуй/Jujuy.
 
+## Analytics (SEO, трафик)
+
+### Google Analytics 4
+1. Создай/откройся в Google Analytics 4
+2. Копируй GA ID (формат `G-XXXXXXXXXX`)
+3. В `index.html` найди `<script async src="https://www.googletagmanager.com/gtag/js?id=GA_ID">` и замени `GA_ID` 
+4. Найди `gtag('config', 'GA_ID');` и замени `GA_ID`
+
+**Отслеживаемые события:**
+- `language_switch` — когда юзер переключает RU/EN/ES
+- `tab_switch` — клик на табы (excursions, short, long и т.д.)
+- `tour_contact_click` — клик на кнопку "Спросить" на карточке тура
+- `ticker_click` / `ticker_button_click` — клик на бегущую строку и кнопку "Написать"
+- `float_contact_toggle` / `float_contact_click` — открытие плавающей кнопки и клики на WA/TG/Email
+
+### Yandex.Metrika
+1. Создай счётчик на metrica.yandex.com
+2. Копируй ID (8-10 цифр)
+3. В `index.html` найди `ym(METRIC_ID, 'init'` и замени оба вхождения `METRIC_ID` на свой ID
+4. Найди `<img src="https://mc.yandex.ru/watch/METRIC_ID"` и замени `METRIC_ID`
+
 ## Деплой
 ```bash
 git add -A

@@ -2,6 +2,16 @@
 let currentLang = 'ru';
 let currentTab = 'excursions';
 
+// ===== ANALYTICS =====
+function trackEvent(eventName, eventParams = {}) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', eventName, eventParams);
+  }
+  if (typeof ym !== 'undefined') {
+    ym(window.METRIC_ID, 'reachGoal', eventName, eventParams);
+  }
+}
+
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
   render(currentLang);
@@ -9,7 +19,29 @@ document.addEventListener('DOMContentLoaded', () => {
   initLangButtons();
   initSlideshow();
   initFloatingContact();
+  initAnalyticsTracking();
 });
+
+// ===== ANALYTICS TRACKING =====
+function initAnalyticsTracking() {
+  document.addEventListener('click', (e) => {
+    const tourCta = e.target.closest('.tour-card-cta');
+    if (tourCta) {
+      const tourTitle = tourCta.dataset.trackTour;
+      trackEvent('tour_contact_click', { tour: tourTitle, tab: currentTab });
+    }
+
+    const tickerLink = e.target.closest('#ticker-track-link');
+    if (tickerLink) {
+      trackEvent('ticker_click', { language: currentLang });
+    }
+
+    const tickerBtn = e.target.closest('#ticker-btn');
+    if (tickerBtn) {
+      trackEvent('ticker_button_click', { language: currentLang });
+    }
+  });
+}
 
 // ===== SLIDESHOW =====
 const KB_CLASSES = ['kb-1', 'kb-2', 'kb-3', 'kb-4', 'kb-5'];
@@ -60,11 +92,19 @@ function initFloatingContact() {
 
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
-    wrap.classList.toggle('open');
+    const isOpen = wrap.classList.toggle('open');
+    trackEvent('float_contact_toggle', { action: isOpen ? 'open' : 'close' });
   });
 
   document.addEventListener('click', (e) => {
     if (!wrap.contains(e.target)) wrap.classList.remove('open');
+  });
+
+  document.querySelectorAll('.float-option').forEach(link => {
+    link.addEventListener('click', () => {
+      const platform = link.className.split(' ')[1] || 'unknown';
+      trackEvent('float_contact_click', { platform: platform });
+    });
   });
 }
 
@@ -77,7 +117,7 @@ function buildWaLink(tourTitle, lang) {
 }
 
 function cardCtaHtml(tourTitle, lang) {
-  return `<a href="${buildWaLink(tourTitle, lang)}" class="tour-card-cta" target="_blank" rel="noopener">${CONTENT[lang].cardCta.label}</a>`;
+  return `<a href="${buildWaLink(tourTitle, lang)}" class="tour-card-cta" data-track-tour="${tourTitle}" target="_blank" rel="noopener">${CONTENT[lang].cardCta.label}</a>`;
 }
 
 // ===== DATES =====
@@ -106,6 +146,7 @@ function getDatesHtml(tourId, lang) {
 // ===== LANGUAGE =====
 function setLang(lang) {
   currentLang = lang;
+  trackEvent('language_switch', { language: lang });
   render(lang);
   document.documentElement.lang = lang;
   document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -183,6 +224,7 @@ function initTabButtons() {
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       currentTab = btn.dataset.tab;
+      trackEvent('tab_switch', { tab: currentTab });
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       renderTourPanel(CONTENT[currentLang], currentTab);
