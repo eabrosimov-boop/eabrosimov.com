@@ -424,7 +424,7 @@ nav {
 .tour-card-body p { font-size: 0.9rem; color: var(--gray); flex: 1; }
 
 .tour-card-link {
-  display: block;
+  display: contents;
   text-decoration: none;
   color: inherit;
 }
