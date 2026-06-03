@@ -17,6 +17,16 @@
 
 ---
 
+## БЕГУЩАЯ СТРОКА / TICKER / TICKER
+
+Текст прокручивается под хедером. Менять здесь → обновить js/content.js (поле `ticker` в каждом языке).
+
+- **RU:** Ближайший тур: Северо-Запад Аргентины (Жужуй) · 15–19 июля 2026 · Напишите мне, чтобы забронировать
+- **EN:** Next tour: Northwest Argentina (Jujuy) · 15–19 July 2026 · Get in touch to book your spot
+- **ES:** Próximo tour: Noroeste Argentino (Jujuy) · 15–19 de julio de 2026 · Escríbeme para reservar
+
+---
+
 ## HERO — главный экран
 
 **RU**
