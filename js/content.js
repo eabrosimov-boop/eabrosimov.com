@@ -1,4 +1,4 @@
-// Все тексты сайта. Источник истины — content/texts.md
+﻿// Все тексты сайта. Источник истины — content/texts.md
 // При редактировании текстов — обновляйте оба файла
 
 const CONTENT = {
@@ -237,22 +237,46 @@ const CONTENT = {
     },
     tours: {
       excursions: [
-        { id: "history-ba", title: "Understanding Buenos Aires", duration: "1 day", location: "Buenos Aires", description: "How a small port on the edge of an empire became one of the world's most unusual cities. A walk through the oldest neighborhoods of Buenos Aires — through history, people and great upheavals.", image: "images/tours/excursions/history-ba.jpg" },
-        { id: "recoleta", title: "Recoleta Cemetery", duration: "1 day", location: "Buenos Aires", description: "Argentine history through the lives of the people who shaped it. Presidents, national heroes, millionaires and Evita — all of them await us among the mausoleums of Recoleta.", image: "images/tours/excursions/recoleta-cemetery.jpg" },
-        { id: "football", title: "Argentina and Football", duration: "1 day", location: "Buenos Aires", description: "For many, attending an Argentine football match becomes the defining memory of their trip. If the schedule allows — we go to a match. If not — we'll still talk about the clubs, the legends and the passion that made Argentine football famous around the world.", image: "images/tours/excursions/football-argentina.jpg" },
-        { id: "tango", title: "Tango Show", duration: "1 day", location: "Buenos Aires", description: "Recommendations and booking assistance for tango shows in Buenos Aires. I'll find the best option by format, venue and budget, and help you get a discount where possible.", image: "images/tours/excursions/tango-show.jpg" }
+        { id: "history-ba", title: "Understanding Buenos Aires", duration: "1 day", location: "Buenos Aires", description: "How a small port on the edge of an empire became one of the world's most unusual cities. A walk through the oldest neighborhoods of Buenos Aires — through history, people and great upheavals.", image: "images/tours/excursions/history-ba.jpg",
+          "price": "150",
+          "showPrefix": true },
+        { id: "recoleta", title: "Recoleta Cemetery", duration: "1 day", location: "Buenos Aires", description: "Argentine history through the lives of the people who shaped it. Presidents, national heroes, millionaires and Evita — all of them await us among the mausoleums of Recoleta.", image: "images/tours/excursions/recoleta-cemetery.jpg",
+          "price": "80",
+          "showPrefix": true },
+        { id: "football", title: "Argentina and Football", duration: "1 day", location: "Buenos Aires", description: "For many, attending an Argentine football match becomes the defining memory of their trip. If the schedule allows — we go to a match. If not — we'll still talk about the clubs, the legends and the passion that made Argentine football famous around the world.", image: "images/tours/excursions/football-argentina.jpg",
+          "price": "150",
+          "showPrefix": true },
+        { id: "tango", title: "Tango Show", duration: "1 day", location: "Buenos Aires", description: "Recommendations and booking assistance for tango shows in Buenos Aires. I'll find the best option by format, venue and budget, and help you get a discount where possible.", image: "images/tours/excursions/tango-show.jpg",
+          "price": "65",
+          "showPrefix": true }
       ],
       short: [
-        { id: "mendoza", title: "Mendoza: Wine and the Andes", duration: "3 days", location: "Mendoza", description: "Argentina's finest wines are born here, at the foot of the Andes. Tastings, wineries of different scales, gastronomy and a few days in one of the country's most pleasant regions.", image: "images/tours/short-programs/mendoza-wine.jpg" },
-        { id: "iguazu-short", title: "Iguazu Falls", duration: "2 days", location: "Argentina", description: "One of the most impressive natural phenomena on the planet. We enter from the Argentine side — closest and most powerful. Sound, spray, rainbows. Impossible to describe in words.", image: "images/tours/short-programs/iguazu-falls.jpg" },
-        { id: "salta", title: "Highland Argentina", duration: "4 days", location: "Salta, Jujuy", description: "The northwest of Argentina is closer to Peru and Bolivia than to Buenos Aires. A land of high-altitude villages, ancient cultures and roads once traveled by Inca caravans. Here the traditions of indigenous peoples have been preserved alongside some of the most unusual landscapes in South America.", image: "images/tours/short-programs/salta-northwest.jpg" },
-        { id: "bariloche", title: "Bariloche: Heart of the Lake District", duration: "4 days", location: "Patagonia", description: "The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.", image: "images/tours/short-programs/bariloche-lakes.jpg" }
+        { id: "mendoza", title: "Mendoza: Wine and the Andes", duration: "3 days", location: "Mendoza", description: "Argentina's finest wines are born here, at the foot of the Andes. Tastings, wineries of different scales, gastronomy and a few days in one of the country's most pleasant regions.", image: "images/tours/short-programs/mendoza-wine.jpg",
+          "price": "750",
+          "showPrefix": true },
+        { id: "iguazu-short", title: "Iguazu Falls", duration: "2 days", location: "Argentina", description: "One of the most impressive natural phenomena on the planet. We enter from the Argentine side — closest and most powerful. Sound, spray, rainbows. Impossible to describe in words.", image: "images/tours/short-programs/iguazu-falls.jpg",
+          "price": "700",
+          "showPrefix": true },
+        { id: "salta", title: "Highland Argentina", duration: "4 days", location: "Salta, Jujuy", description: "The northwest of Argentina is closer to Peru and Bolivia than to Buenos Aires. A land of high-altitude villages, ancient cultures and roads once traveled by Inca caravans. Here the traditions of indigenous peoples have been preserved alongside some of the most unusual landscapes in South America.", image: "images/tours/short-programs/salta-northwest.jpg",
+          "price": "550",
+          "showPrefix": true },
+        { id: "bariloche", title: "Bariloche: Heart of the Lake District", duration: "4 days", location: "Patagonia", description: "The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.", image: "images/tours/short-programs/bariloche-lakes.jpg",
+          "price": "650",
+          "showPrefix": true }
       ],
       long: [
-        { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", description: "A journey through the heart of the Andes: from the Inca capital Cusco and Machu Picchu to Lake Titicaca, the Uyuni salt flats and the Atacama Desert. Ancient cultures, high-altitude roads and some of the most spectacular landscapes in South America.", image: "images/tours/long-programs/peru-bolivia-chile.jpg" },
-        { id: "patagonia-trekking", title: "Patagonia: Argentina & Chile Trekking", duration: "13–15 days", location: "Chile · Argentina", description: "The finest routes of Argentine and Chilean Patagonia in one journey. Torres del Paine, Fitz Roy, Perito Moreno and Tierra del Fuego — without tents, heavy packs or camp life.", image: "images/tours/long-programs/patagonia-trekking.jpg" },
-        { id: "easter-island", title: "Extension: Easter Island", duration: "4–5 days", location: "Easter Island", description: "Easter Island lies nearly 4,000 kilometers from the nearest mainland. It is precisely this isolation that gave rise to one of the world's most enigmatic cultures and its famous stone statues.", image: "images/tours/long-programs/easter-island.jpg" },
-        { id: "iguazu-extension", title: "Iguazu Extension", duration: "2–3 days", location: "Argentina · Brazil", description: "One of the most spectacular waterfalls on the planet. In two days we see Iguazu from both the Argentine and Brazilian sides — up close and in its full panoramic scale.", image: "images/tours/long-programs/iguazu-extension.jpg" }
+        { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", description: "A journey through the heart of the Andes: from the Inca capital Cusco and Machu Picchu to Lake Titicaca, the Uyuni salt flats and the Atacama Desert. Ancient cultures, high-altitude roads and some of the most spectacular landscapes in South America.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
+          "price": "4250",
+          "showPrefix": false },
+        { id: "patagonia-trekking", title: "Patagonia: Argentina & Chile Trekking", duration: "13–15 days", location: "Chile · Argentina", description: "The finest routes of Argentine and Chilean Patagonia in one journey. Torres del Paine, Fitz Roy, Perito Moreno and Tierra del Fuego — without tents, heavy packs or camp life.", image: "images/tours/long-programs/patagonia-trekking.jpg",
+          "price": "4250",
+          "showPrefix": true },
+        { id: "easter-island", title: "Extension: Easter Island", duration: "4–5 days", location: "Easter Island", description: "Easter Island lies nearly 4,000 kilometers from the nearest mainland. It is precisely this isolation that gave rise to one of the world's most enigmatic cultures and its famous stone statues.", image: "images/tours/long-programs/easter-island.jpg",
+          "price": "1400",
+          "showPrefix": false },
+        { id: "iguazu-extension", title: "Iguazu Extension", duration: "2–3 days", location: "Argentina · Brazil", description: "One of the most spectacular waterfalls on the planet. In two days we see Iguazu from both the Argentine and Brazilian sides — up close and in its full panoramic scale.", image: "images/tours/long-programs/iguazu-extension.jpg",
+          "price": "900",
+          "showPrefix": false }
       ],
       antarctica: {
         id: "antarctica", title: "Antarctica — Supported Every Step of the Way", label: "Partner Program",
@@ -320,22 +344,46 @@ const CONTENT = {
     },
     tours: {
       excursions: [
-        { id: "history-ba", title: "Entender Buenos Aires", duration: "1 día", location: "Buenos Aires", description: "Cómo un pequeño puerto en el borde de un imperio se convirtió en una de las ciudades más singulares del mundo. Un recorrido por los barrios más antiguos de Buenos Aires — a través de la historia, la gente y los grandes cambios.", image: "images/tours/excursions/history-ba.jpg" },
-        { id: "recoleta", title: "Cementerio de la Recoleta", duration: "1 día", location: "Buenos Aires", description: "La historia argentina a través de las vidas de quienes la construyeron. Presidentes, héroes nacionales, millonarios y Evita — todos nos aguardan entre los mausoleos de la Recoleta.", image: "images/tours/excursions/recoleta-cemetery.jpg" },
-        { id: "football", title: "Argentina y el Fútbol", duration: "1 día", location: "Buenos Aires", description: "Para muchos, asistir a un partido de fútbol argentino se convierte en el recuerdo más especial del viaje. Si el calendario lo permite — vamos al partido. Si no — hablaremos de los clubes, las leyendas y la pasión que hizo famoso al fútbol argentino en todo el mundo.", image: "images/tours/excursions/football-argentina.jpg" },
-        { id: "tango", title: "Show de Tango", duration: "1 día", location: "Buenos Aires", description: "Recomendaciones y asistencia para reservar espectáculos de tango en Buenos Aires. Encontraré la mejor opción según el formato, el lugar y el presupuesto, y te ayudaré a obtener un descuento donde sea posible.", image: "images/tours/excursions/tango-show.jpg" }
+        { id: "history-ba", title: "Entender Buenos Aires", duration: "1 día", location: "Buenos Aires", description: "Cómo un pequeño puerto en el borde de un imperio se convirtió en una de las ciudades más singulares del mundo. Un recorrido por los barrios más antiguos de Buenos Aires — a través de la historia, la gente y los grandes cambios.", image: "images/tours/excursions/history-ba.jpg",
+          "price": "150",
+          "showPrefix": true },
+        { id: "recoleta", title: "Cementerio de la Recoleta", duration: "1 día", location: "Buenos Aires", description: "La historia argentina a través de las vidas de quienes la construyeron. Presidentes, héroes nacionales, millonarios y Evita — todos nos aguardan entre los mausoleos de la Recoleta.", image: "images/tours/excursions/recoleta-cemetery.jpg",
+          "price": "80",
+          "showPrefix": true },
+        { id: "football", title: "Argentina y el Fútbol", duration: "1 día", location: "Buenos Aires", description: "Para muchos, asistir a un partido de fútbol argentino se convierte en el recuerdo más especial del viaje. Si el calendario lo permite — vamos al partido. Si no — hablaremos de los clubes, las leyendas y la pasión que hizo famoso al fútbol argentino en todo el mundo.", image: "images/tours/excursions/football-argentina.jpg",
+          "price": "150",
+          "showPrefix": true },
+        { id: "tango", title: "Show de Tango", duration: "1 día", location: "Buenos Aires", description: "Recomendaciones y asistencia para reservar espectáculos de tango en Buenos Aires. Encontraré la mejor opción según el formato, el lugar y el presupuesto, y te ayudaré a obtener un descuento donde sea posible.", image: "images/tours/excursions/tango-show.jpg",
+          "price": "65",
+          "showPrefix": true }
       ],
       short: [
-        { id: "mendoza", title: "Mendoza: Vino y los Andes", duration: "3 días", location: "Mendoza", description: "Los mejores vinos de Argentina nacen aquí, al pie de los Andes. Degustaciones, bodegas de distintos tamaños, gastronomía y unos días en una de las regiones más agradables del país.", image: "images/tours/short-programs/mendoza-wine.jpg" },
-        { id: "iguazu-short", title: "Cataratas del Iguazú", duration: "2 días", location: "Argentina", description: "Uno de los fenómenos naturales más impresionantes del planeta. Entramos por el lado argentino — el más cercano y poderoso. Sonido, salpicaduras, arcoíris. Imposible de describir con palabras.", image: "images/tours/short-programs/iguazu-falls.jpg" },
-        { id: "salta", title: "Argentina de Altura", duration: "4 días", location: "Salta, Jujuy", description: "El noroeste argentino está más cerca de Perú y Bolivia que de Buenos Aires. Una tierra de pueblos de altura, culturas antiguas y caminos que alguna vez recorrieron las caravanas incas. Aquí se conservan las tradiciones de los pueblos originarios y algunos de los paisajes más inusuales de América del Sur.", image: "images/tours/short-programs/salta-northwest.jpg" },
-        { id: "bariloche", title: "Bariloche: Corazón de la Región de los Lagos", duration: "4 días", location: "Patagonia", description: "La región que hizo famosa a la Patagonia. Lagos glaciares, paisajes de montaña, pueblos encantadores y decenas de rutas hermosas para todo nivel de condición física.", image: "images/tours/short-programs/bariloche-lakes.jpg" }
+        { id: "mendoza", title: "Mendoza: Vino y los Andes", duration: "3 días", location: "Mendoza", description: "Los mejores vinos de Argentina nacen aquí, al pie de los Andes. Degustaciones, bodegas de distintos tamaños, gastronomía y unos días en una de las regiones más agradables del país.", image: "images/tours/short-programs/mendoza-wine.jpg",
+          "price": "750",
+          "showPrefix": true },
+        { id: "iguazu-short", title: "Cataratas del Iguazú", duration: "2 días", location: "Argentina", description: "Uno de los fenómenos naturales más impresionantes del planeta. Entramos por el lado argentino — el más cercano y poderoso. Sonido, salpicaduras, arcoíris. Imposible de describir con palabras.", image: "images/tours/short-programs/iguazu-falls.jpg",
+          "price": "700",
+          "showPrefix": true },
+        { id: "salta", title: "Argentina de Altura", duration: "4 días", location: "Salta, Jujuy", description: "El noroeste argentino está más cerca de Perú y Bolivia que de Buenos Aires. Una tierra de pueblos de altura, culturas antiguas y caminos que alguna vez recorrieron las caravanas incas. Aquí se conservan las tradiciones de los pueblos originarios y algunos de los paisajes más inusuales de América del Sur.", image: "images/tours/short-programs/salta-northwest.jpg",
+          "price": "550",
+          "showPrefix": true },
+        { id: "bariloche", title: "Bariloche: Corazón de la Región de los Lagos", duration: "4 días", location: "Patagonia", description: "La región que hizo famosa a la Patagonia. Lagos glaciares, paisajes de montaña, pueblos encantadores y decenas de rutas hermosas para todo nivel de condición física.", image: "images/tours/short-programs/bariloche-lakes.jpg",
+          "price": "650",
+          "showPrefix": true }
       ],
       long: [
-        { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", description: "Un viaje por el corazón de los Andes: desde la capital inca Cusco y Machu Picchu hasta el lago Titicaca, las salinas de Uyuni y el desierto de Atacama. Culturas antiguas, caminos de altura y algunos de los paisajes más impresionantes de América del Sur.", image: "images/tours/long-programs/peru-bolivia-chile.jpg" },
-        { id: "patagonia-trekking", title: "Patagonia: Trekking Argentina y Chile", duration: "13–15 días", location: "Chile · Argentina", description: "Las mejores rutas de la Patagonia argentina y chilena en un solo viaje. Torres del Paine, Fitz Roy, Perito Moreno y Tierra del Fuego — sin carpas, mochilas pesadas ni vida de campamento.", image: "images/tours/long-programs/patagonia-trekking.jpg" },
-        { id: "easter-island", title: "Extensión: Isla de Pascua", duration: "4–5 días", location: "Isla de Pascua", description: "La Isla de Pascua se encuentra a casi 4.000 kilómetros del continente más cercano. Es precisamente ese aislamiento lo que permitió crear una de las culturas más enigmáticas del mundo y sus famosas estatuas de piedra.", image: "images/tours/long-programs/easter-island.jpg" },
-        { id: "iguazu-extension", title: "Extensión Iguazú", duration: "2–3 días", location: "Argentina · Brasil", description: "Una de las cataratas más impresionantes del planeta. En dos días veremos el Iguazú desde el lado argentino y el brasileño — de cerca y en toda su amplitud panorámica.", image: "images/tours/long-programs/iguazu-extension.jpg" }
+        { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", description: "Un viaje por el corazón de los Andes: desde la capital inca Cusco y Machu Picchu hasta el lago Titicaca, las salinas de Uyuni y el desierto de Atacama. Culturas antiguas, caminos de altura y algunos de los paisajes más impresionantes de América del Sur.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
+          "price": "4250",
+          "showPrefix": false },
+        { id: "patagonia-trekking", title: "Patagonia: Trekking Argentina y Chile", duration: "13–15 días", location: "Chile · Argentina", description: "Las mejores rutas de la Patagonia argentina y chilena en un solo viaje. Torres del Paine, Fitz Roy, Perito Moreno y Tierra del Fuego — sin carpas, mochilas pesadas ni vida de campamento.", image: "images/tours/long-programs/patagonia-trekking.jpg",
+          "price": "4250",
+          "showPrefix": true },
+        { id: "easter-island", title: "Extensión: Isla de Pascua", duration: "4–5 días", location: "Isla de Pascua", description: "La Isla de Pascua se encuentra a casi 4.000 kilómetros del continente más cercano. Es precisamente ese aislamiento lo que permitió crear una de las culturas más enigmáticas del mundo y sus famosas estatuas de piedra.", image: "images/tours/long-programs/easter-island.jpg",
+          "price": "1400",
+          "showPrefix": false },
+        { id: "iguazu-extension", title: "Extensión Iguazú", duration: "2–3 días", location: "Argentina · Brasil", description: "Una de las cataratas más impresionantes del planeta. En dos días veremos el Iguazú desde el lado argentino y el brasileño — de cerca y en toda su amplitud panorámica.", image: "images/tours/long-programs/iguazu-extension.jpg",
+          "price": "900",
+          "showPrefix": false }
       ],
       antarctica: {
         id: "antarctica", title: "Antártida — Con Apoyo en Cada Paso", label: "Programa de Socios",
