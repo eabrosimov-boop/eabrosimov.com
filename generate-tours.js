@@ -131,7 +131,7 @@ const genHtml = (tour, lang) => {
     "      btn.addEventListener('click', () => {",
     "        const lang = btn.dataset.lang;",
     "        const file = lang === 'ru' ? tourId + '.html' : tourId + '.' + lang + '.html';",
-    "        window.location.href = '/tours/' + file;",
+    "        window.location.href = file;",
     '      });',
     '    });',
     '  </script>',

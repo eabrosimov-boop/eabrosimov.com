@@ -423,6 +423,16 @@ nav {
 .tour-card-body h3 { margin-bottom: 10px; font-size: 1.05rem; }
 .tour-card-body p { font-size: 0.9rem; color: var(--gray); flex: 1; }
 
+.btn-details {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.btn-details:hover { color: #1a5f8f; text-decoration: underline; }
+
 /* Single-item panels (Antarctica, Individual) */
 .single-panel {
   display: grid;

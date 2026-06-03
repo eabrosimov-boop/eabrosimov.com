@@ -320,8 +320,9 @@ function renderTourPanel(c, tab) {
   }
 
   const tours = c.tours[tab];
+  const detailsLabel = { ru: 'Подробнее', en: 'Details', es: 'Ver más' }[currentLang] || 'Details';
   const cardsHtml = tours.map(tour => {
-    const tourLink = currentLang === 'ru' ? `/tours/${tour.id}.html` : `/tours/${tour.id}.${currentLang}.html`;
+    const tourLink = currentLang === 'ru' ? `tours/${tour.id}.html` : `tours/${tour.id}.${currentLang}.html`;
     return `
     <div class="tour-card">
       <a href="${tourLink}" class="tour-card-img">
@@ -338,8 +339,13 @@ function renderTourPanel(c, tab) {
         <p>${tour.description}</p>
         ${getDatesHtml(tour.id, currentLang)}
         <div class="card-footer">
-          <span class="tour-price">${(tour.showPrefix !== false) ? CONTENT[currentLang].pricePrefix + ' ' : ''}<strong>$${tour.price || '9999'}</strong></span>
-          ${cardCtaHtml(tour.title, currentLang)}
+          <div style="flex: 1;">
+            <span class="tour-price">${(tour.showPrefix !== false) ? CONTENT[currentLang].pricePrefix + ' ' : ''}<strong>$${tour.price || '9999'}</strong></span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="${tourLink}" class="btn-details">${detailsLabel}</a>
+            ${cardCtaHtml(tour.title, currentLang)}
+          </div>
         </div>
       </div>
     </div>`;
