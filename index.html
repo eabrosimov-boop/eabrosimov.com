@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evgeny Abrosimov — South America Tours</title>
+  <meta name="description" content="Туры по Южной Америке с личным гидом. Аргентина, Чили, Перу, Боливия, Патагония.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <nav>
+      <a href="#hero" class="nav-brand">Evgeny Abrosimov</a>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-slideshow">
+      <!-- Замените пути на свои фото. Рекомендуемый формат: горизонтальные JPG, мин. 1920×1080px -->
+      <div class="slide" style="background-image: url('images/hero/hero-1.jpg')"></div>
+      <div class="slide" style="background-image: url('images/hero/hero-2.jpg')"></div>
+      <div class="slide" style="background-image: url('images/hero/hero-3.jpg')"></div>
+      <div class="slide" style="background-image: url('images/hero/hero-4.jpg')"></div>
+      <div class="slide" style="background-image: url('images/hero/hero-5.jpg')"></div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-inner">
+      <h1 class="hero-title"></h1>
+      <p class="hero-subtitle"></p>
+      <a href="#contact" class="btn-primary hero-cta"></a>
+    </div>
+    <div class="slide-dots" id="slide-dots"></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <img src="images/about/evgeny-portrait.jpg" alt="Evgeny Abrosimov" loading="lazy">
+        </div>
+        <div class="about-text">
+          <span class="section-label about-label"></span>
+          <h2 class="about-title"></h2>
+          <p class="about-p1"></p>
+          <p class="about-p2"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section id="products">
+    <div class="container">
+      <div class="tabs-wrap">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="excursions">
+            <span class="tab-label"></span>
+            <span class="tab-sub"></span>
+          </button>
+          <button class="tab-btn" data-tab="short">
+            <span class="tab-label"></span>
+            <span class="tab-sub"></span>
+          </button>
+          <button class="tab-btn" data-tab="long">
+            <span class="tab-label"></span>
+            <span class="tab-sub"></span>
+          </button>
+          <button class="tab-btn" data-tab="antarctica">
+            <span class="tab-label"></span>
+            <span class="tab-sub"></span>
+          </button>
+          <button class="tab-btn" data-tab="individual">
+            <span class="tab-label"></span>
+            <span class="tab-sub"></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="tours-container"></div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section id="reviews">
+    <div class="container">
+      <span class="section-label reviews-label"></span>
+      <h2 class="reviews-title"></h2>
+      <div class="reviews-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <span class="section-label contact-label"></span>
+      <h2 class="contact-title"></h2>
+      <p class="contact-subtitle"></p>
+      <div class="contact-buttons">
+
+        <a href="https://wa.me/541134572193" class="contact-btn whatsapp btn-whatsapp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.114.554 4.1 1.522 5.828L.057 23.571l5.896-1.546A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-4.99-1.362l-.358-.212-3.716.975.99-3.62-.233-.373A9.818 9.818 0 0112 2.182c5.426 0 9.818 4.392 9.818 9.818 0 5.427-4.392 9.818-9.818 9.818z"/></svg>
+          <span></span>
+        </a>
+
+        <a href="https://t.me/eabrosimov" class="contact-btn telegram btn-telegram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 13.664l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.958.895z"/></svg>
+          <span></span>
+        </a>
+
+        <a href="mailto:e.i.abrosimov@gmail.com" class="contact-btn email btn-email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          <span></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p class="footer-text"></p>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
