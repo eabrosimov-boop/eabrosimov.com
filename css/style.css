@@ -782,13 +782,7 @@ footer {
   .featured-tour-img { min-height: 300px; }
   .featured-tour-body { padding: 32px 24px; }
   .featured-tour-title { font-size: 1.8rem; }
-}
 
-@media (max-width: 480px) {
-  .featured-tour-card { border-radius: 0; }
-  .featured-tour-title { font-size: 1.4rem; }
-  .featured-tour-body { padding: 24px 16px; }
-}
   .about-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -803,6 +797,12 @@ footer {
 
   .contact-buttons { flex-direction: column; align-items: center; }
   .contact-btn { width: 100%; max-width: 300px; }
+}
+
+@media (max-width: 480px) {
+  .featured-tour-card { border-radius: 0; }
+  .featured-tour-title { font-size: 1.4rem; }
+  .featured-tour-body { padding: 24px 16px; }
 }
 
 @media (max-width: 480px) {
