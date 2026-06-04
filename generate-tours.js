@@ -36,19 +36,31 @@ const buildItineraryTabs = (tourId, lang) => {
   if (!fs.existsSync(file)) return '';
 
   const content = fs.readFileSync(file, 'utf8');
-  const sections = content.split('##').slice(1);
+  const sections = content.split('\n# ');
+
+  const dayImages = [
+    'images/tours/short-programs/arrival.jpg',
+    'images/tours/short-programs/salta-purmamarca.jpg',
+    'images/tours/short-programs/salinas-grandes.jpg',
+    'images/tours/short-programs/uquia-tilcara.jpg',
+    'images/tours/short-programs/salta-return.jpg'
+  ];
 
   let tabs = '<div class="itinerary-tabs">';
   let panels = '<div class="itinerary-panels">';
 
   sections.forEach((section, idx) => {
     const lines = section.trim().split('\n');
-    const title = lines[0].trim();
-    const body = lines.slice(1).join('\n').trim();
+    let title = lines[0].trim();
+    if (title.startsWith('#')) title = title.replace(/^#+\s*/, '');
+    let body = lines.slice(1).join('\n').trim();
+    body = body.replace(/\n---\n/g, '');
 
     const isActive = idx === 0 ? ' active' : '';
+    const dayImage = dayImages[idx] || 'images/placeholder.jpg';
+
     tabs += '<button class="itinerary-tab' + isActive + '" onclick="switchTab(event)">' + title + '</button>';
-    panels += '<div class="itinerary-panel' + isActive + '"><div class="day-content">' + markdownToHtml(body) + '</div></div>';
+    panels += '<div class="itinerary-panel' + isActive + '"><div class="day-content"><img src="' + dayImage + '" alt="' + title + '" class="day-image"><div class="day-text">' + markdownToHtml(body) + '</div></div></div>';
   });
 
   tabs += '</div>';
