@@ -147,7 +147,18 @@ const formatDateRange = (from, to, lang) => {
 
 const datesHtml = (tourId, lang) => {
   const dates = TOUR_DATES[tourId] || [];
-  return dates.slice(0, 3).map(d => '<div class="date-item">' + formatDateRange(d.from, d.to, lang) + '</div>').join('');
+  const grouped = {};
+
+  dates.slice(0, 3).forEach(d => {
+    const year = new Date(d.from).getFullYear();
+    if (!grouped[year]) grouped[year] = [];
+    grouped[year].push(d);
+  });
+
+  return Object.keys(grouped).sort().map(year => {
+    const items = grouped[year].map(d => '<div class="date-item">' + formatDateRange(d.from, d.to, lang) + '</div>').join('');
+    return '<div class="year-group"><h3 class="year-heading">' + year + '</h3>' + items + '</div>';
+  }).join('');
 };
 
 const genHtml = (tour, lang, tourId) => {

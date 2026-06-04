@@ -774,14 +774,27 @@ nav {
 
 .dates-list {
   display: grid;
+  gap: 24px;
+}
+.year-group {
+  display: grid;
   gap: 12px;
 }
+.year-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 0;
+  padding: 0 0 8px 0;
+  border-bottom: 2px solid var(--accent);
+}
 .date-item {
-  padding: 12px 16px;
+  padding: 16px 20px;
   background: var(--light-bg);
-  border-left: 3px solid var(--accent);
+  border-left: 4px solid var(--accent);
   border-radius: 4px;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: var(--dark);
 }
 
