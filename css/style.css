@@ -704,6 +704,18 @@ nav {
   color: rgba(255,255,255,0.9);
 }
 
+.tour-topcover {
+  width: 100%;
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.tour-topcover-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .tour-article {
   max-width: 900px;
 }
