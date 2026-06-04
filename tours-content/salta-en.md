@@ -2,55 +2,70 @@
 
 **Buenos Aires → Salta**
 
-We fly from the capital southwest. After two hours, we land in the city of Guemes — named after a hero of independence, whose story will accompany us throughout the tour.
+We fly north to Argentina — to a region that culturally and historically is far closer to the Andes, Peru, and Bolivia than to Buenos Aires.
 
-After settling into the hotel — a leisurely walk through Salta's centre. Guemes Street, a statue of a legend, sunset light on colonial facades. Dinner at a restaurant named Guemes — local atmosphere, local food, local stories.
+After settling in, we'll walk through Salta's centre. We'll understand why this is where one of Argentina's key independence struggles played out, talk about General Guemes and the role the north played in the continent's history.
 
-**Flight from airport:** ~2 hours
-**Salta — city of atmosphere and history**
+In the evening — our first shared dinner and introduction to local cuisine.
+
+**Flight Buenos Aires - Salta:** ~2 hours
 
 ---
 
 # Day 2. Salta and Purmamarca
 
-We start the day with the San Bernardo funicular — ascending above the city, a panorama that puts everything into scale. Then the MAAM museum, where the history of indigenous peoples speaks through objects and textiles.
+In the morning we'll climb San Bernardo hill, from where the city and surrounding valleys are clearly visible. Then we'll visit the MAAM museum — one of Argentina's most interesting museums, dedicated to Andean cultures and Inca heritage.
 
-Lunch in the city, then we drive to Purmamarca. Along the way we stop at mountain viewpoints. Purmamarca greets us with the Hill of Seven Colours — geology of the rainbow. Evening — walking and craft shops.
+After lunch we'll head toward Quebrada de Humahuaca. The further north, the more striking the changes in landscapes, architecture and the region's atmosphere.
+
+By evening we'll reach Purmamarca — a small Andean village at the foot of the famous Hill of Seven Colours.
 
 **Salta → Purmamarca**
-**Distance:** ~90 km
-**Travel time:** ~2.5 hours
+**Distance:** ~190 km
+**Travel time:** ~3 hours
 
 ---
 
-# Day 3. Salinas Grandes and Humahúaca
+# Day 3. Salinas Grandes and Humahuaca
 
-The highest day. We drive toward Salinas Grandes — salt flats at 4000+ metres, where the earth becomes a white horizon, and the sky stretches even higher. On the salt flats themselves — we walk on salt that crunches underfoot, photograph ourselves in stone installations.
+Today we're expecting two of the most famous natural attractions of the region.
 
-Then descent to Humahúaca. At 4:00 PM — a jeep excursion to Hornocal, the mountain of 14 colours. Altitude 4300 metres, sunset that shimmers yellow, orange and red. Evening — live music and dinner at Aisito.
+In the morning we'll climb through the Lipan Pass to over 4000 metres and head to the Salinas Grandes salt flat. A white plain stretching to the horizon, salt mining and landscapes that seem more like another planet than familiar Argentina.
 
-**Purmamarca → Salinas Grandes → Humahúaca**
-**Distance:** ~180 km
-**Travel time:** ~3.5 hours (+ 1.5 hours on salt flats, + Hornocal excursion)**
+After lunch we'll continue north through Quebrada de Humahuaca valley. This road has served for thousands of years as an important trade route between the territories of modern Argentina, Bolivia and Peru.
+
+By evening we'll reach Hornocal — the famous Mountain of Fourteen Colours. The viewpoint is at over 4300 metres altitude, and the best time to visit is the last hours before sunset, when the colourful slopes become especially vivid.
+
+We'll spend the night in Humahuaca.
+
+**Purmamarca → Salinas Grandes → Humahuaca**
+**Distance:** ~220 km
+**Travel time:** ~4.5 hours
 
 ---
 
 # Day 4. Uquía and Tilcara
 
-The morning begins with breakfast prepared by a local woman. Then we drive to Uquía — a small town with a historic church, where history is preserved in stone.
+In the morning we'll visit the small town of Uquía. The local church houses one of the most unusual collections of religious art in the region — the famous arquebusier angels, armed with muskets. Through them we'll understand how Spanish and local Andean traditions intertwined in the colonial era.
 
-The main event — trekking through Quebrada de las Señoritas, a canyon among mountains, where water has flowed for thousands of years, carving a path through the rocks. Then Tilcara, an Inca fortress, from where you can see the entire valley. Shopping, crafts, snacks at cafés.
+Then we'll head to Quebrada de las Señoritas — a picturesque canyon of red rocks, shaped by water and wind over millions of years. It's one of the most beautiful hiking routes in the region, yet remains far less known than popular tourist spots in the northwest.
 
-**Humahúaca → Uquía → Tilcara**
-**Distance:** ~80 km
-**Travel time:** ~2 hours**
+After trekking we'll visit Tilcara — one of the most pleasant towns in the Quebrada. We'll have time to walk around the centre, pop into craft shops and feel the atmosphere of Argentina's Andean north.
+
+By evening we return to Salta.
+
+**Humahuaca → Uquía → Tilcara → Salta**
+**Distance:** ~300 km
+**Travel time:** ~4 hours
 
 ---
 
 # Day 5. Salta
 
-We return to the city. The road gives us time for stories and memories. Evening in Salta — our final dinner, where everyone shares impressions. The highlands are left behind, but the hot South American night stays on your skin.
+Morning without rush. You can have your last coffee on Salta's square, buy souvenirs or simply walk through the historic centre one more time.
 
-**Tilcara → Salta**
-**Distance:** ~200 km
-**Travel time:** ~3.5 hours**
+Transfer to the airport and flight to Buenos Aires.
+
+Over several days we've seen Argentina that's rarely imagined beyond the country: ancient Andean trade routes, traces of the Inca Empire, indigenous cultures, high-altitude deserts, salt flats and the multicoloured mountains of the northwest.
+
+**Flight Salta - Buenos Aires:** ~2 hours

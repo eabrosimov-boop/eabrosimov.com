@@ -2,55 +2,70 @@
 
 **Buenos Aires → Salta**
 
-Volamos desde la capital hacia el suroeste. Después de dos horas, aterrizamos en la ciudad de Güemes — nombrada en honor a un héroe de la independencia, cuya historia nos acompañará durante todo el recorrido.
+Volamos al norte de Argentina — a una región que cultural e históricamente está mucho más cerca de los Andes, Perú y Bolivia, que de Buenos Aires.
 
-Después de acomodarnos en el hotel — caminata tranquila por el centro de Salta. Calle Güemes, estatua de una leyenda, luz del atardecer en fachadas coloniales. Cena en un restaurante llamado Güemes — atmósfera local, comida local, historias locales.
+Después de acomodarnos, caminaremos por el centro de Salta. Entenderemos por qué aquí transcurrió una de las luchas clave por la independencia de Argentina, hablaremos del general Güemes y el papel que el norte jugó en la historia del continente.
 
-**Vuelo desde el aeropuerto:** ~2 horas
-**Salta — ciudad de atmósfera e historia**
+Por la noche — nuestra primera cena conjunta e introducción a la cocina local.
+
+**Vuelo Buenos Aires - Salta:** ~2 horas
 
 ---
 
 # Día 2. Salta y Purmamarca
 
-Comenzamos el día con el teleférico San Bernardo — ascenso sobre la ciudad, panorama que pone todo en perspectiva. Luego el museo MAAM, donde la historia de los pueblos originarios habla a través de objetos y textiles.
+Por la mañana subiremos al cerro San Bernardo, desde donde se ve claramente la ciudad y los valles circundantes. Luego visitaremos el museo MAAM — uno de los museos más interesantes de Argentina, dedicado a las culturas andinas y la herencia inca.
 
-Almuerzo en la ciudad, luego viajamos a Purmamarca. En el camino paramos en miradores de montaña. Purmamarca nos recibe con el Cerro de los Siete Colores — geología de arcoíris. Tarde — paseo y tiendas de artesanías.
+Después del almuerzo nos dirigiremos hacia la Quebrada de Humahuaca. Cuanto más al norte, más notables son los cambios en los paisajes, la arquitectura y la atmósfera de la región.
+
+Por la tarde llegaremos a Purmamarca — un pequeño pueblo andino a los pies del famoso Cerro de los Siete Colores.
 
 **Salta → Purmamarca**
-**Distancia:** ~90 km
-**Tiempo de viaje:** ~2.5 horas
+**Distancia:** ~190 km
+**Tiempo de viaje:** ~3 horas
 
 ---
 
-# Día 3. Salinas Grandes y Humahúaca
+# Día 3. Salinas Grandes y Humahuaca
 
-El día más alto. Conducimos hacia Salinas Grandes — salares a 4000+ metros, donde la tierra se convierte en un horizonte blanco, y el cielo se extiende aún más arriba. En los salares mismos — caminamos sobre sal que cruje bajo nuestros pies, nos fotografiamos en instalaciones de piedra.
+Hoy nos esperan dos de las atracciones naturales más famosas de la región.
 
-Luego descenso a Humahúaca. A las 16:00 — excursión en jeeps a Hornocal, la montaña de 14 colores. Altitud 4300 metros, atardecer que brilla amarillo, naranja y rojo. Noche — música en vivo y cena en Aisito.
+Por la mañana subiremos a través del paso Lipán a más de 4000 metros y nos dirigiremos al salar de Salinas Grandes. Una llanura blanca hasta el horizonte, explotación de sal y paisajes que parecen más de otro planeta que de la Argentina familiar.
 
-**Purmamarca → Salinas Grandes → Humahúaca**
-**Distancia:** ~180 km
-**Tiempo de viaje:** ~3.5 horas (+ 1.5 horas en salares, + excursión a Hornocal)**
+Después del almuerzo continuaremos al norte por el valle de la Quebrada de Humahuaca. Este camino ha servido durante miles de años como una importante ruta comercial entre los territorios de la Argentina, Bolivia y Perú modernos.
+
+Al atardecer llegaremos a Hornocal — la famosa Montaña de los Catorce Colores. El mirador está a más de 4300 metros de altitud, y el mejor momento para visitarlo es en las últimas horas antes del atardecer, cuando las laderas de colores se vuelven especialmente vívidas.
+
+Pasaremos la noche en Humahuaca.
+
+**Purmamarca → Salinas Grandes → Humahuaca**
+**Distancia:** ~220 km
+**Tiempo de viaje:** ~4.5 horas
 
 ---
 
 # Día 4. Uquía y Tilcara
 
-La mañana comienza con desayuno preparado por una mujer local. Luego viajamos a Uquía — un pueblo pequeño con una iglesia histórica, donde la historia se conserva en piedra.
+Por la mañana visitaremos el pequeño pueblo de Uquía. La iglesia local alberga una de las colecciones más inusuales de arte religioso de la región — los famosos ángeles arcabuceros, armados con mosquetes. A través de ellos entenderemos cómo se entrelazan las tradiciones españolas y andinas locales en la era colonial.
 
-Lo principal — senderismo por Quebrada de las Señoritas, cañón entre montañas, donde el agua ha fluido durante miles de años, tallando un camino en las rocas. Luego Tilcara, fortaleza inca, desde donde se ve todo el valle. Compras, artesanías, snacks en cafés.
+Luego nos dirigiremos a la Quebrada de las Señoritas — un pintoresco cañón de rocas rojas, formado por agua y viento durante millones de años. Es una de las rutas de senderismo más hermosas de la región, aunque sigue siendo mucho menos conocida que los puntos turísticos populares del noroeste.
 
-**Humahúaca → Uquía → Tilcara**
-**Distancia:** ~80 km
-**Tiempo de viaje:** ~2 horas**
+Después del trekking visitaremos Tilcara — uno de los pueblos más agradables de la Quebrada. Tendremos tiempo para pasear por el centro, visitar tiendas de artesanías y sentir la atmósfera del norte andino de Argentina.
+
+Por la tarde regresamos a Salta.
+
+**Humahuaca → Uquía → Tilcara → Salta**
+**Distancia:** ~300 km
+**Tiempo de viaje:** ~4 horas
 
 ---
 
 # Día 5. Salta
 
-Regresamos a la ciudad. El viaje nos da tiempo para historias y recuerdos. Noche en Salta — nuestra cena final, donde todos compartimos impresiones. Las montañas quedan atrás, pero la noche tropical sudamericana permanece en la piel.
+Mañana sin prisa. Puedes tomar tu último café en la plaza de Salta, comprar souvenirs o simplemente caminar una vez más por el centro histórico de la ciudad.
 
-**Tilcara → Salta**
-**Distancia:** ~200 km
-**Tiempo de viaje:** ~3.5 horas**
+Traslado al aeropuerto y vuelo a Buenos Aires.
+
+En varios días hemos visto una Argentina que rara vez se imagina fuera del país: antiguas rutas comerciales andinas, huellas del Imperio Inca, culturas indígenas, desiertos de alta montaña, salares y las montañas multicolores del noroeste.
+
+**Vuelo Salta - Buenos Aires:** ~2 horas
