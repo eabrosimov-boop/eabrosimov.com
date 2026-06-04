@@ -138,7 +138,7 @@ const genHtml = (tour, lang, tourId) => {
     '    </nav>',
     '  </header>',
     '',
-    '  <section class="tour-hero" style="background-image: url(' + JSON.stringify(topcoverPath) + ')">',
+    '  <section class="tour-hero" style="background-image: url(\'' + topcoverPath + '\')">',
     '    <div class="tour-hero-overlay"></div>',
     '    <div class="tour-hero-content">',
     '      <h1>' + tour.title + '</h1>',
