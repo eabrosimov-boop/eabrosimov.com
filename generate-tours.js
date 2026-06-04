@@ -122,7 +122,7 @@ const genHtml = (tour, lang, tourId) => {
     ? '/images/tours/long-programs/' + tourId + '-topcover.jpg'
     : '/images/tours/short-programs/' + tourId + '-topcover.jpg';
   const bgPosition = (tourId === 'patagonia-trekking')
-    ? (lang === 'ru' ? '; background-position: center calc(50% + 365px)' : '; background-position: center calc(50% + 350px)')
+    ? '; background-position: center calc(50% + 350px)'
     : '';
   const labels = {
     ru: { overview: 'Обзор', itinerary: 'Программа по дням', included: 'Что включено', notIncluded: 'Что не включено', dates: 'Доступные даты', day1: 'День 1', day2: 'День 2', desc1: 'Подробное описание первого дня', desc2: 'Подробное описание второго дня', accom: 'Проживание в отобранных отелях', meals: 'Питание по программе', trans: 'Местный транспорт', guide: 'Профессиональный гид' },
