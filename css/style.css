@@ -958,14 +958,14 @@ footer {
 .featured-tour-image-wrapper {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   overflow: hidden;
 }
 .featured-tour-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center calc(50% + 35px);
 }
 .featured-tour-overlay {
   position: absolute;
@@ -1062,7 +1062,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  .featured-tour-image-wrapper { height: 250px; }
+  .featured-tour-image-wrapper { height: 350px; }
   .featured-tour-body { padding: 32px 24px; }
   .featured-tour-title { font-size: 1.8rem; }
 
