@@ -185,9 +185,18 @@ function renderFeaturedTour(c) {
 
   const waLink = buildWaLink(nearestTour.title, currentLang);
   const tourLink = currentLang === 'ru' ? `tours/${nearestTour.id}.html` : `tours/${nearestTour.id}.${currentLang}.html`;
+  const datesHtml = getDatesHtml(nearestTour.id, currentLang);
   const html = `
     <div class="featured-tour-card" onclick="window.location.href='${tourLink}'">
-      <img src="${nearestTour.image}" alt="${nearestTour.title}" class="featured-tour-img">
+      <div class="featured-tour-image-wrapper">
+        <img src="${nearestTour.image}" alt="${nearestTour.title}" class="featured-tour-img">
+        <div class="featured-tour-overlay">
+          <div class="featured-tour-info">
+            <div class="featured-tour-dates">${datesHtml}</div>
+            <div class="featured-tour-price-badge">${nearestTour.showPrefix ? c.pricePrefix + ' ' : ''}$${nearestTour.price}</div>
+          </div>
+        </div>
+      </div>
       <div class="featured-tour-body">
         <span class="featured-tour-label">${c.lang === 'ru' ? 'Ближайший тур' : (c.lang === 'en' ? 'Next tour' : 'Próximo tour')}</span>
         <h2 class="featured-tour-title">${nearestTour.title}</h2>
@@ -195,8 +204,6 @@ function renderFeaturedTour(c) {
           <div class="featured-tour-meta-item">⏱️ ${nearestTour.duration}</div>
           <div class="featured-tour-meta-item">📍 ${nearestTour.location}</div>
         </div>
-        <p class="featured-tour-desc">${nearestTour.description}</p>
-        <div class="featured-tour-price">${nearestTour.showPrefix ? c.pricePrefix + ' ' : ''}$${nearestTour.price}</div>
         <a href="${waLink}" class="btn-primary featured-tour-cta" target="_blank" rel="noopener">${c.cardCta.label}</a>
       </div>
     </div>
