@@ -494,6 +494,41 @@ const TOUR_DATES = {
   ]
 };
 
+const formatDateRange = (from, to, lang) => {
+  const fromDate = new Date(from);
+  const toDate = new Date(to);
+
+  const monthsRu = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+  const monthsEn = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const monthsEs = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+  if (lang === 'ru') {
+    const day1 = String(fromDate.getDate()).padStart(2, '0');
+    const month1 = monthsRu[fromDate.getMonth()];
+    const year1 = fromDate.getFullYear();
+    const day2 = String(toDate.getDate()).padStart(2, '0');
+    const month2 = monthsRu[toDate.getMonth()];
+    const year2 = toDate.getFullYear();
+    return day1 + ' ' + month1 + ' ' + year1 + ' → ' + day2 + ' ' + month2 + ' ' + year2;
+  } else if (lang === 'en') {
+    const month1 = monthsEn[fromDate.getMonth()];
+    const day1 = fromDate.getDate();
+    const year1 = fromDate.getFullYear();
+    const month2 = monthsEn[toDate.getMonth()];
+    const day2 = toDate.getDate();
+    const year2 = toDate.getFullYear();
+    return month1 + ' ' + day1 + ', ' + year1 + ' → ' + month2 + ' ' + day2 + ', ' + year2;
+  } else if (lang === 'es') {
+    const day1 = fromDate.getDate();
+    const month1 = monthsEs[fromDate.getMonth()];
+    const year1 = fromDate.getFullYear();
+    const day2 = toDate.getDate();
+    const month2 = monthsEs[toDate.getMonth()];
+    const year2 = toDate.getFullYear();
+    return day1 + ' de ' + month1 + ' ' + year1 + ' → ' + day2 + ' de ' + month2 + ' ' + year2;
+  }
+};
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { CONTENT, TOUR_DATES };
 }
