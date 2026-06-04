@@ -184,8 +184,9 @@ function renderFeaturedTour(c) {
   if (!nearestTour) return;
 
   const waLink = buildWaLink(nearestTour.title, currentLang);
+  const tourLink = currentLang === 'ru' ? `tours/${nearestTour.id}.html` : `tours/${nearestTour.id}.${currentLang}.html`;
   const html = `
-    <div class="featured-tour-card" onclick="window.location.hash='products'">
+    <div class="featured-tour-card" onclick="window.location.href='${tourLink}'">
       <img src="${nearestTour.image}" alt="${nearestTour.title}" class="featured-tour-img">
       <div class="featured-tour-body">
         <span class="featured-tour-label">${c.lang === 'ru' ? 'Ближайший тур' : (c.lang === 'en' ? 'Next tour' : 'Próximo tour')}</span>
