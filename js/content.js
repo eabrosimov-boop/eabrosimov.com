@@ -128,7 +128,7 @@ const CONTENT = {
           title: "Перу / Боливия / Чили",
           duration: "14–17 дней",
           location: "Перу · Боливия · Чили",
-          description: "Путешествие через сердце Анд: от столицы инков Куско и Мачу-Пикчу до озера Титикака, солончаков Уюни и пустыни Атакама. Древние культуры, высокогорные дороги и одни из самых впечатляющих пейзажей Южной Америки.",
+          description: "Перу и Боливия — уникальные страны с удивительной историей, богатейшим археологическим наследием, аутентичной колониальной архитектурой и нетронутой природой гор. Побережье Тихого океана, Куско — столица империи инков, Священная долина, затерянный город Мачу Пикчу, Радужные горы, озеро Титикака, долина Марса в Боливии, солончак Уюни, лагуны, вулканы, гейзеры и розовые фламинго. Для граждан РФ, Молдавии, Беларуси виза в Перу не требуется, в Боливию ставится на границе.",
           image: "images/tours/long-programs/peru-bolivia-chile.jpg",
           price: "4250",
           showPrefix: false
@@ -284,7 +284,7 @@ const CONTENT = {
           "showPrefix": true }
       ],
       long: [
-        { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", description: "A journey through the heart of the Andes: from the Inca capital Cusco and Machu Picchu to Lake Titicaca, the Uyuni salt flats and the Atacama Desert. Ancient cultures, high-altitude roads and some of the most spectacular landscapes in South America.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
+        { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", description: "Peru and Bolivia are unique South American countries with amazing history, rich archaeological heritage, authentic colonial architecture and untouched mountain nature. Pacific coast in Lima, Cusco—capital of the Inca empire, Sacred Valley, lost city of Machu Picchu, Rainbow Mountains, Lake Titicaca, Valley of Mars in Bolivia, Uyuni salt flats, lagoons, volcanoes, geysers and pink flamingos. No visa required for citizens of Russia, Moldova, and Belarus to visit Peru; Bolivia visa issued at border.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
           "price": "4250",
           "showPrefix": false },
         { id: "patagonia-trekking", title: "Patagonia: Argentina & Chile Trekking", duration: "13–15 days", location: "Chile · Argentina", description: "The finest routes of Argentine and Chilean Patagonia in one journey. Torres del Paine, Fitz Roy, Perito Moreno and Tierra del Fuego — without tents, heavy packs or camp life.", image: "images/tours/long-programs/patagonia-trekking.jpg",
@@ -411,7 +411,7 @@ const CONTENT = {
           "showPrefix": true }
       ],
       long: [
-        { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", description: "Un viaje por el corazón de los Andes: desde la capital inca Cusco y Machu Picchu hasta el lago Titicaca, las salinas de Uyuni y el desierto de Atacama. Culturas antiguas, caminos de altura y algunos de los paisajes más impresionantes de América del Sur.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
+        { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", description: "Perú y Bolivia son países únicos de América del Sur con historia sorprendente, rico patrimonio arqueológico, arquitectura colonial auténtica y naturaleza montañosa intacta. Costa del Pacífico en Lima, Cusco—capital del imperio inca, Valle Sagrado, ciudad perdida de Machu Picchu, Montañas Arcoíris, lago Titicaca, Valle de Marte en Bolivia, salares de Uyuni, lagunas, volcanes, géiseres y flamencos rosas. No se requiere visa para ciudadanos de Rusia, Moldavia y Bielorrusia para visitar Perú; visa de Bolivia se expide en frontera.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
           "price": "4250",
           "showPrefix": false },
         { id: "patagonia-trekking", title: "Patagonia: Trekking Argentina y Chile", duration: "13–15 días", location: "Chile · Argentina", description: "Las mejores rutas de la Patagonia argentina y chilena en un solo viaje. Torres del Paine, Fitz Roy, Perito Moreno y Tierra del Fuego — sin carpas, mochilas pesadas ni vida de campamento.", image: "images/tours/long-programs/patagonia-trekking.jpg",
