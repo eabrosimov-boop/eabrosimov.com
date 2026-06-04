@@ -101,6 +101,9 @@ const datesHtml = (tourId) => {
 const genHtml = (tour, lang, tourId) => {
   const c = CONTENT[lang];
   const langCode = lang === 'ru' ? 'ru' : (lang === 'en' ? 'en' : 'es');
+  const topcoverPath = (tour.type === 'long')
+    ? 'images/tours/long-programs/' + tourId + '-topcover.webp'
+    : 'images/tours/short-programs/' + tourId + '-topcover.jpg';
   const labels = {
     ru: { overview: 'Обзор', itinerary: 'Программа', included: 'Что включено', dates: 'Доступные даты', day1: 'День 1', day2: 'День 2', desc1: 'Подробное описание первого дня', desc2: 'Подробное описание второго дня', accom: 'Проживание в отобранных отелях', meals: 'Питание по программе', trans: 'Местный транспорт', guide: 'Профессиональный гид' },
     en: { overview: 'Overview', itinerary: 'Itinerary', included: "What's Included", dates: 'Available Dates', day1: 'Day 1', day2: 'Day 2', desc1: 'Detailed description of day 1', desc2: 'Detailed description of day 2', accom: 'Accommodation in selected hotels', meals: 'Meals as per itinerary', trans: 'Local transportation', guide: 'Professional guide' },
@@ -147,7 +150,7 @@ const genHtml = (tour, lang, tourId) => {
     '  </section>',
     '',
     '  <section class="tour-topcover">',
-    '    <img src="images/tours/short-programs/' + tourId + '-topcover.jpg" alt="' + tour.title + '" class="tour-topcover-img">',
+    '    <img src="' + topcoverPath + '" alt="' + tour.title + '" class="tour-topcover-img">',
     '  </section>',
     '',
     '  <article class="container tour-article">',
