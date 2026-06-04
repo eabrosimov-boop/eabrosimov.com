@@ -790,6 +790,78 @@ nav {
   padding: 16px 40px;
 }
 
+/* ===== TOUR ITINERARY TABS ===== */
+.itinerary-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--light-bg);
+}
+.itinerary-tab {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+}
+.itinerary-tab:hover {
+  color: var(--dark);
+}
+.itinerary-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.itinerary-panels {
+  display: grid;
+  gap: 0;
+}
+.itinerary-panel {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+.itinerary-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.day-content {
+  background: var(--light-bg);
+  padding: 32px;
+  border-radius: var(--radius);
+  line-height: 1.8;
+}
+.day-content h3 {
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+.day-content p {
+  margin-bottom: 16px;
+  color: var(--dark);
+  font-size: 1.05rem;
+}
+.route-box {
+  background: white;
+  padding: 20px;
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+  margin-top: 16px;
+  font-weight: 500;
+  color: var(--dark);
+}
+
 /* ===== FOOTER ===== */
 footer {
   background: #111D27;

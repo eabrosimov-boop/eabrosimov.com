@@ -31,6 +31,32 @@ const getTourContent = (tourId, lang) => {
   return '';
 };
 
+const buildItineraryTabs = (tourId, lang) => {
+  const file = `tours-content/${tourId}-${lang}.md`;
+  if (!fs.existsSync(file)) return '';
+
+  const content = fs.readFileSync(file, 'utf8');
+  const sections = content.split('##').slice(1);
+
+  let tabs = '<div class="itinerary-tabs">';
+  let panels = '<div class="itinerary-panels">';
+
+  sections.forEach((section, idx) => {
+    const lines = section.trim().split('\n');
+    const title = lines[0].trim();
+    const body = lines.slice(1).join('\n').trim();
+
+    const isActive = idx === 0 ? ' active' : '';
+    tabs += '<button class="itinerary-tab' + isActive + '" onclick="switchTab(event)">' + title + '</button>';
+    panels += '<div class="itinerary-panel' + isActive + '"><div class="day-content">' + markdownToHtml(body) + '</div></div>';
+  });
+
+  tabs += '</div>';
+  panels += '</div>';
+
+  return tabs + panels;
+};
+
 langs.forEach(lang => {
   const c = CONTENT[lang];
   const tours = [
@@ -110,7 +136,8 @@ const genHtml = (tour, lang, tourId) => {
     '      </section>',
     '',
     '      <section class="tour-section">',
-    getTourContent(tourId, lang) || ('        <h2>' + l.itinerary + '</h2><div class="itinerary"><div class="itinerary-day"><h3>' + l.day1 + '</h3><p>' + l.desc1 + '</p></div><div class="itinerary-day"><h3>' + l.day2 + '</h3><p>' + l.desc2 + '</p></div></div>'),
+    '        <h2>' + l.itinerary + '</h2>',
+    buildItineraryTabs(tourId, lang),
     '      </section>',
     '',
     '      <section class="tour-section">',
@@ -147,6 +174,16 @@ const genHtml = (tour, lang, tourId) => {
     '  </footer>',
     '',
     '  <script>',
+    "    function switchTab(e) {",
+    "      const clicked = e.target;",
+    "      const tabs = clicked.parentElement.querySelectorAll('.itinerary-tab');",
+    "      const panels = clicked.parentElement.nextElementSibling.querySelectorAll('.itinerary-panel');",
+    "      const index = Array.from(tabs).indexOf(clicked);",
+    "      tabs.forEach(t => t.classList.remove('active'));",
+    "      panels.forEach(p => p.classList.remove('active'));",
+    "      clicked.classList.add('active');",
+    "      panels[index].classList.add('active');",
+    "    }",
     "    const tourId = '" + tour.id.replace(/'/g, "\\'") + "';",
     "    document.querySelectorAll('.lang-btn').forEach(btn => {",
     "      btn.addEventListener('click', () => {",

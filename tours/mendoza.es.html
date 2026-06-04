@@ -42,7 +42,8 @@
       </section>
 
       <section class="tour-section">
-        <h2>Itinerario</h2><div class="itinerary"><div class="itinerary-day"><h3>Día 1</h3><p>Descripción detallada del día 1</p></div><div class="itinerary-day"><h3>Día 2</h3><p>Descripción detallada del día 2</p></div></div>
+        <h2>Itinerario</h2>
+
       </section>
 
       <section class="tour-section">
@@ -79,6 +80,16 @@
   </footer>
 
   <script>
+    function switchTab(e) {
+      const clicked = e.target;
+      const tabs = clicked.parentElement.querySelectorAll('.itinerary-tab');
+      const panels = clicked.parentElement.nextElementSibling.querySelectorAll('.itinerary-panel');
+      const index = Array.from(tabs).indexOf(clicked);
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      clicked.classList.add('active');
+      panels[index].classList.add('active');
+    }
     const tourId = 'mendoza';
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', () => {
