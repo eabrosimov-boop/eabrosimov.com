@@ -119,7 +119,7 @@ const genHtml = (tour, lang, tourId) => {
   const c = CONTENT[lang];
   const langCode = lang === 'ru' ? 'ru' : (lang === 'en' ? 'en' : 'es');
   const topcoverPath = (tour.type === 'long')
-    ? '/images/tours/long-programs/' + tourId + '-topcover.webp'
+    ? '/images/tours/long-programs/' + tourId + '-topcover.jpg'
     : '/images/tours/short-programs/' + tourId + '-topcover.jpg';
   const bgPosition = (tourId === 'patagonia-trekking')
     ? (lang === 'ru' ? '; background-position: center calc(50% + 380px)' : '; background-position: center calc(50% + 350px)')
