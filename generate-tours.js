@@ -104,6 +104,7 @@ const genHtml = (tour, lang, tourId) => {
   const topcoverPath = (tour.type === 'long')
     ? '/images/tours/long-programs/' + tourId + '-topcover.webp'
     : '/images/tours/short-programs/' + tourId + '-topcover.jpg';
+  const bgPosition = (tourId === 'patagonia-trekking') ? '; background-position: center calc(50% + 200px)' : '';
   const labels = {
     ru: { overview: 'Обзор', itinerary: 'Программа по дням', included: 'Что включено', dates: 'Доступные даты', day1: 'День 1', day2: 'День 2', desc1: 'Подробное описание первого дня', desc2: 'Подробное описание второго дня', accom: 'Проживание в отобранных отелях', meals: 'Питание по программе', trans: 'Местный транспорт', guide: 'Профессиональный гид' },
     en: { overview: 'Overview', itinerary: 'Day-by-Day Itinerary', included: "What's Included", dates: 'Available Dates', day1: 'Day 1', day2: 'Day 2', desc1: 'Detailed description of day 1', desc2: 'Detailed description of day 2', accom: 'Accommodation in selected hotels', meals: 'Meals as per itinerary', trans: 'Local transportation', guide: 'Professional guide' },
@@ -138,7 +139,7 @@ const genHtml = (tour, lang, tourId) => {
     '    </nav>',
     '  </header>',
     '',
-    '  <section class="tour-hero" style="background-image: url(\'' + topcoverPath + '\')">',
+    '  <section class="tour-hero" style="background-image: url(\'' + topcoverPath + '\')' + bgPosition + '">',
     '    <div class="tour-hero-overlay"></div>',
     '    <div class="tour-hero-content">',
     '      <h1>' + tour.title + '</h1>',
