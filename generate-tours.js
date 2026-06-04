@@ -46,7 +46,24 @@ const buildItineraryTabs = (tourId, lang) => {
       '/images/tours/short-programs/uquia-tilcara.jpg',
       '/images/tours/short-programs/salta-return.jpg'
     ],
-    'patagonia-trekking': Array.from({length: 12}, (_, i) => '/images/tours/long-programs/patagonia-trekking-day' + (i + 1) + '.jpg')
+    'patagonia-trekking': Array.from({length: 12}, (_, i) => '/images/tours/long-programs/patagonia-trekking-day' + (i + 1) + '.jpg'),
+    'peru-bolivia-chile': [
+      '/images/tours/long-programs/peru-bolivia-chile-day1.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day2.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day3.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day4.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day5.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day6.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day7.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day8.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day9.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day10.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day11.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day12.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day13.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day14.jpg',
+      '/images/tours/long-programs/peru-bolivia-chile-day15.jpg'
+    ]
   };
 
   const images = dayImages[tourId] || [];
