@@ -40,13 +40,13 @@ const buildItineraryTabs = (tourId, lang) => {
 
   const dayImages = {
     'salta': [
-      'images/tours/short-programs/arrival.jpg',
-      'images/tours/short-programs/salta-purmamarca.jpg',
-      'images/tours/short-programs/salinas-grandes.jpg',
-      'images/tours/short-programs/uquia-tilcara.jpg',
-      'images/tours/short-programs/salta-return.jpg'
+      '/images/tours/short-programs/arrival.jpg',
+      '/images/tours/short-programs/salta-purmamarca.jpg',
+      '/images/tours/short-programs/salinas-grandes.jpg',
+      '/images/tours/short-programs/uquia-tilcara.jpg',
+      '/images/tours/short-programs/salta-return.jpg'
     ],
-    'patagonia-trekking': Array.from({length: 12}, (_, i) => 'images/tours/long-programs/patagonia-trekking-day' + (i + 1) + '.jpg')
+    'patagonia-trekking': Array.from({length: 12}, (_, i) => '/images/tours/long-programs/patagonia-trekking-day' + (i + 1) + '.jpg')
   };
 
   const images = dayImages[tourId] || [];
@@ -102,8 +102,8 @@ const genHtml = (tour, lang, tourId) => {
   const c = CONTENT[lang];
   const langCode = lang === 'ru' ? 'ru' : (lang === 'en' ? 'en' : 'es');
   const topcoverPath = (tour.type === 'long')
-    ? 'images/tours/long-programs/' + tourId + '-topcover.webp'
-    : 'images/tours/short-programs/' + tourId + '-topcover.jpg';
+    ? '/images/tours/long-programs/' + tourId + '-topcover.webp'
+    : '/images/tours/short-programs/' + tourId + '-topcover.jpg';
   const labels = {
     ru: { overview: 'Обзор', itinerary: 'Программа по дням', included: 'Что включено', dates: 'Доступные даты', day1: 'День 1', day2: 'День 2', desc1: 'Подробное описание первого дня', desc2: 'Подробное описание второго дня', accom: 'Проживание в отобранных отелях', meals: 'Питание по программе', trans: 'Местный транспорт', guide: 'Профессиональный гид' },
     en: { overview: 'Overview', itinerary: 'Day-by-Day Itinerary', included: "What's Included", dates: 'Available Dates', day1: 'Day 1', day2: 'Day 2', desc1: 'Detailed description of day 1', desc2: 'Detailed description of day 2', accom: 'Accommodation in selected hotels', meals: 'Meals as per itinerary', trans: 'Local transportation', guide: 'Professional guide' },
