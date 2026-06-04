@@ -110,9 +110,44 @@ langs.forEach(lang => {
   });
 });
 
-const datesHtml = (tourId) => {
+const formatDateRange = (from, to, lang) => {
+  const fromDate = new Date(from);
+  const toDate = new Date(to);
+
+  const monthsRu = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+  const monthsEn = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const monthsEs = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+  if (lang === 'ru') {
+    const day1 = String(fromDate.getDate()).padStart(2, '0');
+    const month1 = monthsRu[fromDate.getMonth()];
+    const year1 = fromDate.getFullYear();
+    const day2 = String(toDate.getDate()).padStart(2, '0');
+    const month2 = monthsRu[toDate.getMonth()];
+    const year2 = toDate.getFullYear();
+    return day1 + ' ' + month1 + ' ' + year1 + ' → ' + day2 + ' ' + month2 + ' ' + year2;
+  } else if (lang === 'en') {
+    const month1 = monthsEn[fromDate.getMonth()];
+    const day1 = fromDate.getDate();
+    const year1 = fromDate.getFullYear();
+    const month2 = monthsEn[toDate.getMonth()];
+    const day2 = toDate.getDate();
+    const year2 = toDate.getFullYear();
+    return month1 + ' ' + day1 + ', ' + year1 + ' → ' + month2 + ' ' + day2 + ', ' + year2;
+  } else if (lang === 'es') {
+    const day1 = fromDate.getDate();
+    const month1 = monthsEs[fromDate.getMonth()];
+    const year1 = fromDate.getFullYear();
+    const day2 = toDate.getDate();
+    const month2 = monthsEs[toDate.getMonth()];
+    const year2 = toDate.getFullYear();
+    return day1 + ' de ' + month1 + ' ' + year1 + ' → ' + day2 + ' de ' + month2 + ' ' + year2;
+  }
+};
+
+const datesHtml = (tourId, lang) => {
   const dates = TOUR_DATES[tourId] || [];
-  return dates.slice(0, 3).map(d => '<div class="date-item">' + d.from + ' → ' + d.to + '</div>').join('');
+  return dates.slice(0, 3).map(d => '<div class="date-item">' + formatDateRange(d.from, d.to, lang) + '</div>').join('');
 };
 
 const genHtml = (tour, lang, tourId) => {
@@ -191,7 +226,7 @@ const genHtml = (tour, lang, tourId) => {
     '',
     '      <section class="tour-section">',
     '        <h2>' + l.dates + '</h2>',
-    '        <div class="dates-list">' + datesHtml(tour.id) + '</div>',
+    '        <div class="dates-list">' + datesHtml(tour.id, lang) + '</div>',
     '      </section>',
     '',
     '      <section class="tour-section cta-section">',
