@@ -6,6 +6,31 @@ const { CONTENT, TOUR_DATES } = require('./js/content.js');
 const langs = ['ru', 'en', 'es'];
 const allTours = [];
 
+const markdownToHtml = (md) => {
+  if (!md) return '';
+  let html = md
+    .replace(/^### (.*?)$/gm, '<h3>$1</h3>')
+    .replace(/^## (.*?)$/gm, '<h2>$1</h2>')
+    .replace(/^# (.*?)$/gm, '<h1>$1</h1>')
+    .replace(/^\*\*(.*?)\*\*/gm, '<strong>$1</strong>')
+    .replace(/^- (.*?)$/gm, '<li>$1</li>')
+    .replace(/(<li>.*?<\/li>)/s, '<ul>$1</ul>')
+    .replace(/\n\n+/g, '</p><p>')
+    .replace(/^(.+)$/gm, (match) => {
+      if (match.startsWith('<')) return match;
+      return '<p>' + match + '</p>';
+    });
+  return html.replace(/<p><(h[123]|ul|li)/g, '<$1').replace(/<\/(h[123]|ul|li)><\/p>/g, '</$1>');
+};
+
+const getTourContent = (tourId, lang) => {
+  const file = `tours-content/${tourId}-${lang}.md`;
+  if (fs.existsSync(file)) {
+    return markdownToHtml(fs.readFileSync(file, 'utf8'));
+  }
+  return '';
+};
+
 langs.forEach(lang => {
   const c = CONTENT[lang];
   const tours = [
@@ -29,7 +54,7 @@ const datesHtml = (tourId) => {
   return dates.slice(0, 3).map(d => '<div class="date-item">' + d.from + ' → ' + d.to + '</div>').join('');
 };
 
-const genHtml = (tour, lang) => {
+const genHtml = (tour, lang, tourId) => {
   const c = CONTENT[lang];
   const langCode = lang === 'ru' ? 'ru' : (lang === 'en' ? 'en' : 'es');
   const labels = {
@@ -85,11 +110,7 @@ const genHtml = (tour, lang) => {
     '      </section>',
     '',
     '      <section class="tour-section">',
-    '        <h2>' + l.itinerary + '</h2>',
-    '        <div class="itinerary">',
-    '          <div class="itinerary-day"><h3>' + l.day1 + '</h3><p>' + l.desc1 + '</p></div>',
-    '          <div class="itinerary-day"><h3>' + l.day2 + '</h3><p>' + l.desc2 + '</p></div>',
-    '        </div>',
+    getTourContent(tourId, lang) || ('        <h2>' + l.itinerary + '</h2><div class="itinerary"><div class="itinerary-day"><h3>' + l.day1 + '</h3><p>' + l.desc1 + '</p></div><div class="itinerary-day"><h3>' + l.day2 + '</h3><p>' + l.desc2 + '</p></div></div>'),
     '      </section>',
     '',
     '      <section class="tour-section">',
@@ -147,7 +168,7 @@ allTours.forEach(tourGroup => {
     const tour = tourGroup.langs[lang];
     if (!tour) return;
     const filename = lang === 'ru' ? ('tours/' + tourGroup.id + '.html') : ('tours/' + tourGroup.id + '.' + lang + '.html');
-    fs.writeFileSync(filename, genHtml(tour, lang));
+    fs.writeFileSync(filename, genHtml(tour, lang, tourGroup.id));
     console.log('✓ ' + filename);
   });
 });
