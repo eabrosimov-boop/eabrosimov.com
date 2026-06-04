@@ -141,7 +141,26 @@ const CONTENT = {
           description: "Лучшие маршруты аргентинской и чилийской Патагонии в одном путешествии. Торрес-дель-Пайне, Фицрой, Перито-Морено и Огненная Земля — без палаток, тяжёлых рюкзаков и походного быта.",
           image: "images/tours/long-programs/patagonia-trekking.jpg",
           price: "4250",
-          showPrefix: true
+          showPrefix: true,
+          included: [
+            "Встреча в аэропорту в день прилета",
+            "2-х местное проживание в отелях уровня 3-4*",
+            "Групповой автотранспорт по маршруту",
+            "2 внутренних перелета по Аргентине",
+            "Экскурсия по Буэнос-Айресу",
+            "Входные билеты в национальные парки",
+            "Лодка на леднике Перито Морено",
+            "Русскоязычные гиды",
+            "Сопровождение русскоязычным тур-лидером",
+            "Завтраки в отелях",
+            "Все указанные в программе активности",
+            "Помощь в подборе билетов"
+          ],
+          notIncluded: [
+            "Авиаперелет в Аргентину и обратно (~1500$)",
+            "Питание в городах (~60$ в день)",
+            "Личные расходы и сувениры"
+          ]
         },
         {
           id: "easter-island",
@@ -270,7 +289,27 @@ const CONTENT = {
           "showPrefix": false },
         { id: "patagonia-trekking", title: "Patagonia: Argentina & Chile Trekking", duration: "13–15 days", location: "Chile · Argentina", description: "The finest routes of Argentine and Chilean Patagonia in one journey. Torres del Paine, Fitz Roy, Perito Moreno and Tierra del Fuego — without tents, heavy packs or camp life.", image: "images/tours/long-programs/patagonia-trekking.jpg",
           "price": "4250",
-          "showPrefix": true },
+          "showPrefix": true,
+          "included": [
+            "Airport pickup on arrival day",
+            "2-bed accommodation in 3-4* hotels",
+            "Group transport along the route",
+            "2 domestic flights in Argentina",
+            "Buenos Aires city tour",
+            "National park entrance fees",
+            "Boat on Perito Moreno glacier",
+            "English-speaking guides",
+            "English-speaking tour leader support",
+            "Hotel breakfasts",
+            "All activities listed in the itinerary",
+            "Flight booking assistance"
+          ],
+          "notIncluded": [
+            "International flights to Argentina (~$1500)",
+            "Meals in cities (~$60 per day)",
+            "Personal expenses and souvenirs"
+          ]
+        },
         { id: "easter-island", title: "Extension: Easter Island", duration: "4–5 days", location: "Easter Island", description: "Easter Island lies nearly 4,000 kilometers from the nearest mainland. It is precisely this isolation that gave rise to one of the world's most enigmatic cultures and its famous stone statues.", image: "images/tours/long-programs/easter-island.jpg",
           "price": "1400",
           "showPrefix": false },
@@ -377,7 +416,27 @@ const CONTENT = {
           "showPrefix": false },
         { id: "patagonia-trekking", title: "Patagonia: Trekking Argentina y Chile", duration: "13–15 días", location: "Chile · Argentina", description: "Las mejores rutas de la Patagonia argentina y chilena en un solo viaje. Torres del Paine, Fitz Roy, Perito Moreno y Tierra del Fuego — sin carpas, mochilas pesadas ni vida de campamento.", image: "images/tours/long-programs/patagonia-trekking.jpg",
           "price": "4250",
-          "showPrefix": true },
+          "showPrefix": true,
+          "included": [
+            "Recogida en el aeropuerto el día de llegada",
+            "Alojamiento doble en hoteles de 3-4*",
+            "Transporte grupal en la ruta",
+            "2 vuelos nacionales en Argentina",
+            "Tour por Buenos Aires",
+            "Entradas a parques nacionales",
+            "Barco en el glaciar Perito Moreno",
+            "Guías de habla hispana",
+            "Acompañamiento de tour líder hispanohablante",
+            "Desayunos en hoteles",
+            "Todas las actividades mencionadas en el itinerario",
+            "Asistencia con reserva de vuelos"
+          ],
+          "notIncluded": [
+            "Vuelos internacionales a Argentina (~$1500)",
+            "Comidas en ciudades (~$60 por día)",
+            "Gastos personales y recuerdos"
+          ]
+        },
         { id: "easter-island", title: "Extensión: Isla de Pascua", duration: "4–5 días", location: "Isla de Pascua", description: "La Isla de Pascua se encuentra a casi 4.000 kilómetros del continente más cercano. Es precisamente ese aislamiento lo que permitió crear una de las culturas más enigmáticas del mundo y sus famosas estatuas de piedra.", image: "images/tours/long-programs/easter-island.jpg",
           "price": "1400",
           "showPrefix": false },

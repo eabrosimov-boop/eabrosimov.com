@@ -108,9 +108,9 @@ const genHtml = (tour, lang, tourId) => {
     ? (lang === 'ru' ? '; background-position: center calc(50% + 380px)' : '; background-position: center calc(50% + 350px)')
     : '';
   const labels = {
-    ru: { overview: 'Обзор', itinerary: 'Программа по дням', included: 'Что включено', dates: 'Доступные даты', day1: 'День 1', day2: 'День 2', desc1: 'Подробное описание первого дня', desc2: 'Подробное описание второго дня', accom: 'Проживание в отобранных отелях', meals: 'Питание по программе', trans: 'Местный транспорт', guide: 'Профессиональный гид' },
-    en: { overview: 'Overview', itinerary: 'Day-by-Day Itinerary', included: "What's Included", dates: 'Available Dates', day1: 'Day 1', day2: 'Day 2', desc1: 'Detailed description of day 1', desc2: 'Detailed description of day 2', accom: 'Accommodation in selected hotels', meals: 'Meals as per itinerary', trans: 'Local transportation', guide: 'Professional guide' },
-    es: { overview: 'Descripción', itinerary: 'Itinerario por días', included: 'Incluido', dates: 'Fechas disponibles', day1: 'Día 1', day2: 'Día 2', desc1: 'Descripción detallada del día 1', desc2: 'Descripción detallada del día 2', accom: 'Alojamiento en hoteles seleccionados', meals: 'Comidas según itinerario', trans: 'Transporte local', guide: 'Guía profesional' }
+    ru: { overview: 'Обзор', itinerary: 'Программа по дням', included: 'Что включено', notIncluded: 'Что не включено', dates: 'Доступные даты', day1: 'День 1', day2: 'День 2', desc1: 'Подробное описание первого дня', desc2: 'Подробное описание второго дня', accom: 'Проживание в отобранных отелях', meals: 'Питание по программе', trans: 'Местный транспорт', guide: 'Профессиональный гид' },
+    en: { overview: 'Overview', itinerary: 'Day-by-Day Itinerary', included: "What's Included", notIncluded: "What's Not Included", dates: 'Available Dates', day1: 'Day 1', day2: 'Day 2', desc1: 'Detailed description of day 1', desc2: 'Detailed description of day 2', accom: 'Accommodation in selected hotels', meals: 'Meals as per itinerary', trans: 'Local transportation', guide: 'Professional guide' },
+    es: { overview: 'Descripción', itinerary: 'Itinerario por días', included: 'Incluido', notIncluded: 'No incluido', dates: 'Fechas disponibles', day1: 'Día 1', day2: 'Día 2', desc1: 'Descripción detallada del día 1', desc2: 'Descripción detallada del día 2', accom: 'Alojamiento en hoteles seleccionados', meals: 'Comidas según itinerario', trans: 'Transporte local', guide: 'Guía profesional' }
   };
   const l = labels[lang];
   const priceStr = ((tour.showPrefix !== false) ? c.pricePrefix + ' ' : '');
@@ -167,12 +167,10 @@ const genHtml = (tour, lang, tourId) => {
     '      <section class="tour-section">',
     '        <h2>' + l.included + '</h2>',
     '        <ul class="checklist">',
-    '          <li>' + l.accom + '</li>',
-    '          <li>' + l.meals + '</li>',
-    '          <li>' + l.trans + '</li>',
-    '          <li>' + l.guide + '</li>',
+    (tour.included ? tour.included.map(item => '          <li>' + item + '</li>').join('\n') : '          <li>' + l.accom + '</li>\n          <li>' + l.meals + '</li>\n          <li>' + l.trans + '</li>\n          <li>' + l.guide + '</li>'),
     '        </ul>',
     '      </section>',
+    (tour.notIncluded ? '      <section class="tour-section">\n        <h2>' + l.notIncluded + '</h2>\n        <ul class="checklist">\n' + tour.notIncluded.map(item => '          <li>' + item + '</li>').join('\n') + '\n        </ul>\n      </section>' : ''),
     '',
     '      <section class="tour-section">',
     '        <h2>' + l.dates + '</h2>',
