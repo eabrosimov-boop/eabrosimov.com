@@ -140,8 +140,3 @@ Farewell dinner in the evening.
 
 **Return to the capital before going home**
 
----
-
-# Day 13. Optional Extension
-
-For those interested — a meeting with one of the wonders of the world: Iguazu Falls and the famous "Devil's Throat"!

@@ -140,8 +140,3 @@ Cena de despedida por la noche.
 
 **Regreso a la capital antes de irse a casa**
 
----
-
-# Día 13. Extensión Opcional
-
-Para los interesados — un encuentro con una de las maravillas del mundo: las Cataratas del Iguazú y la famosa "Garganta del Diablo"!

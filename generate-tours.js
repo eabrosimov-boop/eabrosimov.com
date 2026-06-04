@@ -38,13 +38,18 @@ const buildItineraryTabs = (tourId, lang) => {
   const content = fs.readFileSync(file, 'utf8');
   const sections = content.split('\n# ');
 
-  const dayImages = [
-    'images/tours/short-programs/arrival.jpg',
-    'images/tours/short-programs/salta-purmamarca.jpg',
-    'images/tours/short-programs/salinas-grandes.jpg',
-    'images/tours/short-programs/uquia-tilcara.jpg',
-    'images/tours/short-programs/salta-return.jpg'
-  ];
+  const dayImages = {
+    'salta': [
+      'images/tours/short-programs/arrival.jpg',
+      'images/tours/short-programs/salta-purmamarca.jpg',
+      'images/tours/short-programs/salinas-grandes.jpg',
+      'images/tours/short-programs/uquia-tilcara.jpg',
+      'images/tours/short-programs/salta-return.jpg'
+    ],
+    'patagonia-trekking': Array.from({length: 12}, (_, i) => 'images/tours/long-programs/patagonia-trekking-day' + (i + 1) + '.jpg')
+  };
+
+  const images = dayImages[tourId] || [];
 
   let tabs = '<div class="itinerary-tabs">';
   let panels = '<div class="itinerary-panels">';
@@ -56,11 +61,12 @@ const buildItineraryTabs = (tourId, lang) => {
     let body = lines.slice(1).join('\n').trim();
     body = body.replace(/\n---\n/g, '');
 
+    const dayNum = idx + 1;
     const isActive = idx === 0 ? ' active' : '';
-    const dayImage = dayImages[idx] || 'images/placeholder.jpg';
+    const dayImage = images[idx] || 'images/placeholder.jpg';
 
-    tabs += '<button class="itinerary-tab' + isActive + '" onclick="switchTab(event)">' + title + '</button>';
-    panels += '<div class="itinerary-panel' + isActive + '"><div class="day-content"><img src="' + dayImage + '" alt="' + title + '" class="day-image"><div class="day-text">' + markdownToHtml(body) + '</div></div></div>';
+    tabs += '<button class="itinerary-tab' + isActive + '" onclick="switchTab(event)">' + dayNum + '</button>';
+    panels += '<div class="itinerary-panel' + isActive + '"><div class="day-header">' + title + '</div><div class="day-content"><img src="' + dayImage + '" alt="' + title + '" class="day-image"><div class="day-text">' + markdownToHtml(body) + '</div></div></div>';
   });
 
   tabs += '</div>';
