@@ -121,8 +121,8 @@ langs.forEach(lang => {
 });
 
 const formatDateRange = (from, to, lang) => {
-  const fromDate = new Date(from);
-  const toDate = new Date(to);
+  const fromDate = new Date(from + 'T12:00:00Z');
+  const toDate = new Date(to + 'T12:00:00Z');
 
   const monthsRu = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
   const monthsEn = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
