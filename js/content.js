@@ -206,7 +206,19 @@ const CONTENT = {
           description: "Один из самых впечатляющих водопадов планеты. За два дня увидим Игуасу с аргентинской и бразильской стороны, чтобы оценить его и вблизи, и во всей полноте.",
           image: "images/tours/long-programs/iguazu-extension.jpg",
           price: "900",
-          showPrefix: false
+          showPrefix: false,
+          included: [
+            "Внутренние перелеты из Буэнос-Айреса и в Буэнос-Айрес",
+            "Проживание в отеле 4 звезды — 2 ночи",
+            "Завтраки в отеле",
+            "Все входы в парки, включая парк птиц",
+            "Все трансферы по программе (аэропорт, экскурсии)"
+          ],
+          notIncluded: [
+            "Прогулка на лодке под водопадом — $80 (по желанию)",
+            "Полет на вертолете над водопадом — $150 (по желанию)",
+            "Обеды и ужины — около $150"
+          ]
         }
       ],
       antarctica: {
@@ -369,7 +381,20 @@ const CONTENT = {
         },
         { id: "iguazu-extension", title: "Iguazu Extension", duration: "2–3 days", location: "Argentina · Brazil", description: "One of the most spectacular waterfalls on the planet. In two days we see Iguazu from both the Argentine and Brazilian sides — up close and in its full panoramic scale.", image: "images/tours/long-programs/iguazu-extension.jpg",
           "price": "900",
-          "showPrefix": false }
+          "showPrefix": false,
+          "included": [
+            "Domestic flights from and to Buenos Aires",
+            "4-star hotel accommodation — 2 nights",
+            "Breakfast at hotel",
+            "All park entrances, including bird park",
+            "All transfers as per program (airport, excursions)"
+          ],
+          "notIncluded": [
+            "Boat ride under the waterfall — $80 (optional)",
+            "Helicopter flight over the waterfall — $150 (optional)",
+            "Lunch and dinner — approximately $150"
+          ]
+        },
       ],
       antarctica: {
         id: "antarctica", title: "Antarctica — Supported Every Step of the Way", label: "Partner Program",
@@ -524,7 +549,20 @@ const CONTENT = {
         },
         { id: "iguazu-extension", title: "Extensión Iguazú", duration: "2–3 días", location: "Argentina · Brasil", description: "Una de las cataratas más impresionantes del planeta. En dos días veremos el Iguazú desde el lado argentino y el brasileño — de cerca y en toda su amplitud panorámica.", image: "images/tours/long-programs/iguazu-extension.jpg",
           "price": "900",
-          "showPrefix": false }
+          "showPrefix": false,
+          "included": [
+            "Vuelos internos desde y hacia Buenos Aires",
+            "Hotel 4 estrellas — 2 noches",
+            "Desayuno en el hotel",
+            "Todas las entradas a parques, incluyendo parque de aves",
+            "Todos los traslados según programa (aeropuerto, excursiones)"
+          ],
+          "notIncluded": [
+            "Paseo en bote bajo la cascada — $80 (opcional)",
+            "Vuelo en helicóptero sobre la cascada — $150 (opcional)",
+            "Comidas y cenas — aproximadamente $150"
+          ]
+        }
       ],
       antarctica: {
         id: "antarctica", title: "Antártida — Con Apoyo en Cada Paso", label: "Programa de Socios",
