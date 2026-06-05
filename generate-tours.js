@@ -63,6 +63,11 @@ const buildItineraryTabs = (tourId, lang) => {
       '/images/tours/long-programs/peru-bolivia-chile-day13.jpg',
       '/images/tours/long-programs/peru-bolivia-chile-day14.jpg',
       '/images/tours/long-programs/peru-bolivia-chile-day15.jpg'
+    ],
+    'easter-island': [
+      '/images/tours/long-programs/easter-island-day1.jpg',
+      '/images/tours/long-programs/easter-island-day2.jpg',
+      '/images/tours/long-programs/easter-island-day3.jpg'
     ]
   };
 
