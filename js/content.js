@@ -611,6 +611,10 @@ const TOUR_DATES = {
   'patagonia-trekking': [
     { from: '2027-02-15', to: '2027-02-28' },
     { from: '2027-04-04', to: '2027-04-17' }
+  ],
+  'iguazu-extension': [
+    { from: '2027-02-26', to: '2027-02-28' },
+    { from: '2027-04-15', to: '2027-04-17' }
   ]
 };
 
