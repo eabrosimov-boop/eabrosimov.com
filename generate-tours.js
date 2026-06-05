@@ -68,6 +68,11 @@ const buildItineraryTabs = (tourId, lang) => {
       '/images/tours/long-programs/easter-island-day1.jpg',
       '/images/tours/long-programs/easter-island-day2.jpg',
       '/images/tours/long-programs/easter-island-day3.jpg'
+    ],
+    'iguazu-extension': [
+      '/images/tours/long-programs/iguazu-extension-day1.jpg',
+      '/images/tours/long-programs/iguazu-extension-day2.jpg',
+      '/images/tours/long-programs/iguazu-extension-day3.jpg'
     ]
   };
 
