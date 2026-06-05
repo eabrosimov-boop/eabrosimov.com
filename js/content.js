@@ -574,5 +574,5 @@ const formatDateRange = (from, to, lang) => {
 };
 
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { CONTENT, TOUR_DATES };
+  module.exports = { CONTENT, TOUR_DATES, formatDateRange };
 }
