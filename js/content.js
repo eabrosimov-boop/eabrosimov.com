@@ -184,7 +184,19 @@ const CONTENT = {
           description: "Остров Пасхи находится почти в 4000 километрах от ближайшего материка. Именно эта изоляция помогла создать одну из самых загадочных культур мира и её знаменитые каменные статуи.",
           image: "images/tours/long-programs/easter-island.jpg",
           price: "1400",
-          showPrefix: false
+          showPrefix: false,
+          included: [
+            "Все трансферы по программе",
+            "Местный гид по острову",
+            "Сопровождающий гид-переводчик на русский язык",
+            "Проживание 2 ночи в двухместных номерах",
+            "Завтрак в отеле и завтрак-пикник на рассвете",
+            "Помощь в подборе и покупке билетов"
+          ],
+          notIncluded: [
+            "Перелёт из Сантьяго и обратно (около 1000 долларов)",
+            "Питание на острове (около 150 долларов)"
+          ]
         },
         {
           id: "iguazu-extension",
@@ -341,7 +353,20 @@ const CONTENT = {
         },
         { id: "easter-island", title: "Extension: Easter Island", duration: "4–5 days", location: "Easter Island", description: "Easter Island lies nearly 4,000 kilometers from the nearest mainland. It is precisely this isolation that gave rise to one of the world's most enigmatic cultures and its famous stone statues.", image: "images/tours/long-programs/easter-island.jpg",
           "price": "1400",
-          "showPrefix": false },
+          "showPrefix": false,
+          "included": [
+            "All transfers as per program",
+            "Local island guide",
+            "Accompanying guide-translator to Russian language",
+            "2 nights accommodation in double rooms",
+            "Breakfast at hotel and sunrise picnic breakfast",
+            "Assistance in selecting and purchasing tickets"
+          ],
+          "notIncluded": [
+            "Flight from Santiago and return (approximately 1000 USD)",
+            "Meals on the island (approximately 150 USD)"
+          ]
+        },
         { id: "iguazu-extension", title: "Iguazu Extension", duration: "2–3 days", location: "Argentina · Brazil", description: "One of the most spectacular waterfalls on the planet. In two days we see Iguazu from both the Argentine and Brazilian sides — up close and in its full panoramic scale.", image: "images/tours/long-programs/iguazu-extension.jpg",
           "price": "900",
           "showPrefix": false }
@@ -483,7 +508,20 @@ const CONTENT = {
         },
         { id: "easter-island", title: "Extensión: Isla de Pascua", duration: "4–5 días", location: "Isla de Pascua", description: "La Isla de Pascua se encuentra a casi 4.000 kilómetros del continente más cercano. Es precisamente ese aislamiento lo que permitió crear una de las culturas más enigmáticas del mundo y sus famosas estatuas de piedra.", image: "images/tours/long-programs/easter-island.jpg",
           "price": "1400",
-          "showPrefix": false },
+          "showPrefix": false,
+          "included": [
+            "Todos los traslados según el programa",
+            "Guía local de la isla",
+            "Guía acompañante-traductor al idioma ruso",
+            "Alojamiento 2 noches en habitaciones dobles",
+            "Desayuno en el hotel y desayuno-pícnic al amanecer",
+            "Asistencia en la selección y compra de entradas"
+          ],
+          "notIncluded": [
+            "Vuelo desde Santiago e ida y vuelta (aproximadamente 1000 USD)",
+            "Comidas en la isla (aproximadamente 150 USD)"
+          ]
+        },
         { id: "iguazu-extension", title: "Extensión Iguazú", duration: "2–3 días", location: "Argentina · Brasil", description: "Una de las cataratas más impresionantes del planeta. En dos días veremos el Iguazú desde el lado argentino y el brasileño — de cerca y en toda su amplitud panorámica.", image: "images/tours/long-programs/iguazu-extension.jpg",
           "price": "900",
           "showPrefix": false }
