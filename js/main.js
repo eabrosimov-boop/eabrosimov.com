@@ -240,14 +240,19 @@ function renderTicker(c) {
   track.style.animation = '';
   track.style.animationDuration = Math.max(14, text.length * 0.22) + 's';
 
+  const nearestTour = findNearestTour(c);
+  const tourLink = nearestTour
+    ? (currentLang === 'ru' ? `tours/${nearestTour.id}.html` : `tours/${nearestTour.id}.${currentLang}.html`)
+    : '#';
+  const contactLink = '#contact';
   const waLink = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(c.tickerCta.waText)}`;
 
   const trackLink = document.getElementById('ticker-track-link');
-  if (trackLink) trackLink.href = waLink;
+  if (trackLink) trackLink.href = tourLink;
 
   if (btn) {
     btn.textContent = c.tickerCta.label;
-    btn.href = waLink;
+    btn.href = contactLink;
   }
 }
 
