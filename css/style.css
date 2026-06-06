@@ -1137,7 +1137,7 @@ footer {
   overflow: hidden;
   border-radius: var(--radius);
   background: var(--light-bg);
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2 / 3;
 }
 
 .carousel-track {
