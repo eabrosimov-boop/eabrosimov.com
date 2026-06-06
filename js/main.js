@@ -338,7 +338,7 @@ function renderTourPanel(c, tab) {
     const isActive = ACTIVE_TOURS[tab] && ACTIVE_TOURS[tab].includes(tour.id);
     const linkStart = isActive ? `<a href="${tourLink}" class="tour-card-link">` : `<div class="tour-card-link tour-card-disabled">`;
     const linkEnd = isActive ? `</a>` : `</div>`;
-    const overlay = !isActive ? `<div class="tour-card-overlay"><div class="tour-card-coming-soon">СКОРО</div></div>` : '';
+    const overlay = !isActive ? `<div class="tour-card-overlay"><div class="tour-card-coming-soon">${c.comingSoon}</div></div>` : '';
     return `
     ${linkStart}
       <div class="tour-card">

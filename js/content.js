@@ -254,7 +254,8 @@ const CONTENT = {
       subtitle: "Выберите удобный способ связи — отвечу быстро.",
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
-    footer: "© 2025 Евгений Абросимов · Туры по Южной Америке"
+    footer: "© 2025 Евгений Абросимов · Туры по Южной Америке",
+    comingSoon: "СКОРО"
   },
 
   en: {
@@ -422,7 +423,8 @@ const CONTENT = {
       label: "CONTACT", title: "Get in Touch", subtitle: "Choose the way you prefer — I reply fast.",
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
-    footer: "© 2025 Evgeny Abrosimov · South America Tours"
+    footer: "© 2025 Evgeny Abrosimov · South America Tours",
+    comingSoon: "COMING SOON"
   },
 
   es: {
@@ -590,7 +592,8 @@ const CONTENT = {
       label: "CONTACTO", title: "Contáctame", subtitle: "Elige cómo prefieres escribirme — respondo rápido.",
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
-    footer: "© 2025 Evgeny Abrosimov · Tours por América del Sur"
+    footer: "© 2025 Evgeny Abrosimov · Tours por América del Sur",
+    comingSoon: "PRÓXIMAMENTE"
   }
 };
 
