@@ -206,7 +206,7 @@ const genHtml = (tour, lang, tourId) => {
     : (tourId === 'easter-island')
     ? '; background-position: center calc(50% - 135px)'
     : (tourId === 'history-ba')
-    ? '; background-position: center calc(50% + 75px)'
+    ? '; background-position: center calc(50% + 175px)'
     : '';
   const labels = {
     ru: { overview: 'Обзор', itinerary: 'Программа по дням', included: 'Что включено', notIncluded: 'Что не включено', dates: 'Доступные даты', day1: 'День 1', day2: 'День 2', desc1: 'Подробное описание первого дня', desc2: 'Подробное описание второго дня', accom: 'Проживание в отобранных отелях', meals: 'Питание по программе', trans: 'Местный транспорт', guide: 'Профессиональный гид' },
