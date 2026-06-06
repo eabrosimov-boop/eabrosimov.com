@@ -88,7 +88,8 @@ const CONTENT = {
           description: "Рекомендации и бронирование танго-шоу в Буэнос-Айресе. Подберу оптимальный вариант по формату, расположению и бюджету, а также помогу получить скидку там, где это возможно.",
           image: "images/tours/excursions/tango.jpg",
           price: "65",
-          showPrefix: true
+          showPrefix: true,
+          photos: ['/images/tours/excursions/tango-1.jpg']
         }
       ],
       short: [
@@ -328,7 +329,9 @@ const CONTENT = {
           "showPrefix": true },
         { id: "tango", title: "Tango Show", duration: "1 day", location: "Buenos Aires", description: "Recommendations and booking assistance for tango shows in Buenos Aires. I'll find the best option by format, venue and budget, and help you get a discount where possible.", image: "images/tours/excursions/tango.jpg",
           "price": "65",
-          "showPrefix": true }
+          "showPrefix": true,
+          photos: ['/images/tours/excursions/tango-1.jpg']
+        }
       ],
       short: [
         { id: "mendoza", title: "Mendoza: Wine and the Andes", duration: "3 days", location: "Mendoza", description: "Argentina's finest wines are born here, at the foot of the Andes. Tastings, wineries of different scales, gastronomy and a few days in one of the country's most pleasant regions.", image: "images/tours/short-programs/mendoza-wine.jpg",
@@ -508,7 +511,9 @@ const CONTENT = {
           "showPrefix": true },
         { id: "tango", title: "Show de Tango", duration: "1 día", location: "Buenos Aires", description: "Recomendaciones y asistencia para reservar espectáculos de tango en Buenos Aires. Encontraré la mejor opción según el formato, el lugar y el presupuesto, y te ayudaré a obtener un descuento donde sea posible.", image: "images/tours/excursions/tango.jpg",
           "price": "65",
-          "showPrefix": true }
+          "showPrefix": true,
+          photos: ['/images/tours/excursions/tango-1.jpg']
+        }
       ],
       short: [
         { id: "mendoza", title: "Mendoza: Vino y los Andes", duration: "3 días", location: "Mendoza", description: "Los mejores vinos de Argentina nacen aquí, al pie de los Andes. Degustaciones, bodegas de distintos tamaños, gastronomía y unos días en una de las regiones más agradables del país.", image: "images/tours/short-programs/mendoza-wine.jpg",
