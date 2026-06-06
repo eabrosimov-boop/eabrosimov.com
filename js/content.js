@@ -623,7 +623,7 @@ const TOUR_DATES = {
 const ACTIVE_TOURS = {
   short: ['salta'], // активные короткие туры
   long: ['patagonia-trekking', 'peru-bolivia-chile', 'easter-island', 'iguazu-extension'], // активные длинные туры
-  oneday: ['football', 'history-ba', 'tango'] // активные однодневные туры
+  excursions: ['football', 'history-ba', 'tango'] // активные однодневные туры
 };
 
 if (typeof module !== "undefined" && module.exports) {
