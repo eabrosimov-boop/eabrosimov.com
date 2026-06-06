@@ -1138,6 +1138,7 @@ footer {
   border-radius: var(--radius);
   background: var(--light-bg);
   aspect-ratio: 2 / 3;
+  max-height: 70vh;
 }
 
 .carousel-track {
