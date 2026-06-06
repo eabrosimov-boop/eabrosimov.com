@@ -42,12 +42,22 @@ const CONTENT = {
         {
           id: "history-ba",
           title: "Понять Буэнос-Айрес",
-          duration: "1 день",
+          duration: "4 часа",
           location: "Буэнос-Айрес",
-          description: "Как небольшой порт на краю империи превратился в один из самых необычных городов мира. Прогулка по старейшим районам Буэнос-Айреса через историю, людей и большие перемены.",
+          description: "Путешествие от колониального прошлого к современности. История города, иммиграция, танго и политика Аргентины через географию районов.",
           image: "images/tours/excursions/history-ba.jpg",
           price: "150",
           showPrefix: true,
+          included: [
+            "Пешеходная прогулка по ключевым районам города (4 часа)",
+            "Профессиональный гид, говорящий на русском языке",
+            "Подробный рассказ об истории города, иммиграции, танго, политике и культуре"
+          ],
+          notIncluded: [
+            "Дополнительные расходы на кофе, напитки или еду по пути",
+            "Входной билет в музей Boca Juniors (~$25, опционально)",
+            "Транспорт до начальной точки маршрута"
+          ],
           photos: Array.from({length: 15}, (_, i) => `/images/tours/excursions/history-ba-${i + 1}.jpg`)
         },
         {
@@ -296,9 +306,20 @@ const CONTENT = {
     },
     tours: {
       excursions: [
-        { id: "history-ba", title: "Understanding Buenos Aires", duration: "1 day", location: "Buenos Aires", description: "How a small port on the edge of an empire became one of the world's most unusual cities. A walk through the oldest neighborhoods of Buenos Aires — through history, people and great upheavals.", image: "images/tours/excursions/history-ba.jpg",
+        { id: "history-ba", title: "Understanding Buenos Aires", duration: "4 hours", location: "Buenos Aires", description: "A journey from colonial past to modernity. The history of the city, immigration, tango and Argentine politics through the geography of neighborhoods.", image: "images/tours/excursions/history-ba.jpg",
           "price": "150",
-          "showPrefix": true },
+          "showPrefix": true,
+          included: [
+            "Walking tour through key neighborhoods of the city (4 hours)",
+            "Professional English-speaking guide",
+            "In-depth commentary on the city's history, immigration, tango, politics and culture"
+          ],
+          notIncluded: [
+            "Additional expenses for coffee, drinks or food along the way",
+            "Entrance fee to the Boca Juniors Museum (~$25, optional)",
+            "Transportation to the starting point of the route"
+          ]
+        },
         { id: "recoleta", title: "Recoleta Cemetery", duration: "1 day", location: "Buenos Aires", description: "Argentine history through the lives of the people who shaped it. Presidents, national heroes, millionaires and Evita — all of them await us among the mausoleums of Recoleta.", image: "images/tours/excursions/recoleta-cemetery.jpg",
           "price": "80",
           "showPrefix": true },
@@ -465,9 +486,20 @@ const CONTENT = {
     },
     tours: {
       excursions: [
-        { id: "history-ba", title: "Entender Buenos Aires", duration: "1 día", location: "Buenos Aires", description: "Cómo un pequeño puerto en el borde de un imperio se convirtió en una de las ciudades más singulares del mundo. Un recorrido por los barrios más antiguos de Buenos Aires — a través de la historia, la gente y los grandes cambios.", image: "images/tours/excursions/history-ba.jpg",
+        { id: "history-ba", title: "Entender Buenos Aires", duration: "4 horas", location: "Buenos Aires", description: "Un viaje del pasado colonial a la modernidad. La historia de la ciudad, inmigración, tango y política argentina a través de la geografía de los barrios.", image: "images/tours/excursions/history-ba.jpg",
           "price": "150",
-          "showPrefix": true },
+          "showPrefix": true,
+          included: [
+            "Recorrido a pie por los barrios clave de la ciudad (4 horas)",
+            "Guía profesional hispanohablante",
+            "Narración detallada sobre la historia de la ciudad, inmigración, tango, política y cultura"
+          ],
+          notIncluded: [
+            "Gastos adicionales en café, bebidas o comida durante el recorrido",
+            "Entrada al Museo de Boca Juniors (~$25, opcional)",
+            "Transporte al punto de inicio del recorrido"
+          ]
+        },
         { id: "recoleta", title: "Cementerio de la Recoleta", duration: "1 día", location: "Buenos Aires", description: "La historia argentina a través de las vidas de quienes la construyeron. Presidentes, héroes nacionales, millonarios y Evita — todos nos aguardan entre los mausoleos de la Recoleta.", image: "images/tours/excursions/recoleta-cemetery.jpg",
           "price": "80",
           "showPrefix": true },

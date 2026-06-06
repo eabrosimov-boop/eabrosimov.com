@@ -265,7 +265,7 @@ const genHtml = (tour, lang, tourId) => {
        '      </section>' +
        '')
       : ('      <section class="tour-section">' +
-         '        <h2>Фотогалерея</h2>' +
+         '        <h2>' + (lang === 'ru' ? 'Фотогалерея' : (lang === 'en' ? 'Photo Gallery' : 'Galería de fotos')) + '</h2>' +
          buildPhotoCarousel(tour) +
          '      </section>' +
          '')),
