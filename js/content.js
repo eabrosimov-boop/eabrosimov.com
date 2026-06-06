@@ -621,8 +621,9 @@ const TOUR_DATES = {
 // Активные туры (с описанием и датами доступности)
 // Отключенные туры будут показаны с наложением "СКОРО"
 const ACTIVE_TOURS = {
-  short: ['salta', 'mendoza', 'tango', 'recoleta'], // активные короткие туры
-  long: ['patagonia-trekking', 'peru-bolivia-chile', 'easter-island', 'iguazu-extension'] // активные длинные туры
+  short: ['salta'], // активные короткие туры
+  long: ['patagonia-trekking', 'peru-bolivia-chile', 'easter-island', 'iguazu-extension'], // активные длинные туры
+  oneday: ['football', 'history-ba', 'tango'] // активные однодневные туры
 };
 
 if (typeof module !== "undefined" && module.exports) {
