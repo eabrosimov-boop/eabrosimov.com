@@ -44,7 +44,7 @@ const CONTENT = {
           title: "Понять Буэнос-Айрес",
           duration: "4 часа",
           location: "Буэнос-Айрес",
-          description: "Путешествие от колониального прошлого к современности. История города, иммиграция, танго и политика Аргентины через географию районов.",
+          description: "Буэнос-Айрес — это не просто красивый город, а ключ к пониманию Аргентины. За одну прогулку мы пройдём путь от старого порта Ла-Бока до ультрасовременного Пуэрто-Мадеро и увидим, как иммиграция, танго, политика, экономические кризисы и футбольная страсть сформировали город таким, каким он является сегодня.\n\nЭто экскурсия не только про историю и архитектуру. Это возможность разобраться, почему Аргентина живёт именно так, как живёт сейчас, и увидеть связь между прошлым и настоящим на улицах Буэнос-Айреса.",
           image: "images/tours/excursions/history-ba.jpg",
           price: "150",
           showPrefix: true,
@@ -306,7 +306,7 @@ const CONTENT = {
     },
     tours: {
       excursions: [
-        { id: "history-ba", title: "Understanding Buenos Aires", duration: "4 hours", location: "Buenos Aires", description: "A journey from colonial past to modernity. The history of the city, immigration, tango and Argentine politics through the geography of neighborhoods.", image: "images/tours/excursions/history-ba.jpg",
+        { id: "history-ba", title: "Understanding Buenos Aires", duration: "4 hours", location: "Buenos Aires", description: "Buenos Aires is not just a beautiful city, but a key to understanding Argentina. In one walk, we'll travel from the old port of La Boca to the ultra-modern Puerto Madero and see how immigration, tango, politics, economic crises, and football passion shaped the city as it is today.\n\nThis is not just a tour about history and architecture. This is an opportunity to understand why Argentina lives the way it does now, and to see the connection between past and present on the streets of Buenos Aires.", image: "images/tours/excursions/history-ba.jpg",
           "price": "150",
           "showPrefix": true,
           included: [
@@ -486,7 +486,7 @@ const CONTENT = {
     },
     tours: {
       excursions: [
-        { id: "history-ba", title: "Entender Buenos Aires", duration: "4 horas", location: "Buenos Aires", description: "Un viaje del pasado colonial a la modernidad. La historia de la ciudad, inmigración, tango y política argentina a través de la geografía de los barrios.", image: "images/tours/excursions/history-ba.jpg",
+        { id: "history-ba", title: "Entender Buenos Aires", duration: "4 horas", location: "Buenos Aires", description: "Buenos Aires no es solo una ciudad hermosa, sino la clave para entender Argentina. En un paseo, viajaremos desde el antiguo puerto de La Boca hasta el ultra moderno Puerto Madero y veremos cómo la inmigración, el tango, la política, las crisis económicas y la pasión por el fútbol moldearon la ciudad tal como es hoy.\n\nEste no es solo un tour sobre historia y arquitectura. Esta es una oportunidad para entender por qué Argentina vive de la manera en que vive ahora, y para ver la conexión entre el pasado y el presente en las calles de Buenos Aires.", image: "images/tours/excursions/history-ba.jpg",
           "price": "150",
           "showPrefix": true,
           included: [
