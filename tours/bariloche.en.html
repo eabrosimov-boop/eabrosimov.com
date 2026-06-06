@@ -41,10 +41,7 @@
         <p>The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.</p>
       </section>
 
-      <section class="tour-section">
-        <h2>Day-by-Day Itinerary</h2>
-
-      </section>
+      <section class="tour-section">        <h2>Day-by-Day Itinerary</h2>      </section>
 
       <section class="tour-section">
         <h2>What's Included</h2>
@@ -90,6 +87,25 @@
       panels.forEach(p => p.classList.remove('active'));
       clicked.classList.add('active');
       panels[index].classList.add('active');
+    }
+    function updateCarousel(current) {
+      const items = document.querySelectorAll('.carousel-item');
+      if (!items.length) return;
+      const idx = ((current % items.length) + items.length) % items.length;
+      items.forEach((item, i) => item.classList.toggle('active', i === idx));
+      const currentEl = document.getElementById('carousel-current');
+      if (currentEl) currentEl.textContent = idx + 1;
+    }
+    let carouselIndex = 0;
+    function prevSlide(e) {
+      e.preventDefault();
+      carouselIndex--;
+      updateCarousel(carouselIndex);
+    }
+    function nextSlide(e) {
+      e.preventDefault();
+      carouselIndex++;
+      updateCarousel(carouselIndex);
     }
     const tourId = 'bariloche';
     document.querySelectorAll('.lang-btn').forEach(btn => {

@@ -41,10 +41,7 @@
         <p>Una de las cataratas más impresionantes del planeta. En dos días veremos el Iguazú desde el lado argentino y el brasileño — de cerca y en toda su amplitud panorámica.</p>
       </section>
 
-      <section class="tour-section">
-        <h2>Itinerario por días</h2>
-<div class="itinerary-tabs"><button class="itinerary-tab active" onclick="switchTab(event)">1</button><button class="itinerary-tab" onclick="switchTab(event)">2</button><button class="itinerary-tab" onclick="switchTab(event)">3</button></div><div class="itinerary-panels"><div class="itinerary-panel active"><div class="day-header">Día 1. Cataratas de Iguazú. Lado Argentino</div><div class="day-content"><img src="/images/tours/long-programs/iguazu-extension-day1.jpg" alt="Día 1. Cataratas de Iguazú. Lado Argentino" class="day-image"><div class="day-text"><p>Hoy volamos a Iguazú, donde veremos una de las cataratas más grandes del mundo desde el lado argentino.</p><p>Los más valientes pueden montar en un bote y acercarse mucho a las cataratas. El costo del bote es ~ $80</p><p>Créeme – las emociones son inolvidables.</p><p>---</p></div></div></div><div class="itinerary-panel"><div class="day-header">Día 2. Cataratas de Iguazú. Lado Brasileño</div><div class="day-content"><img src="/images/tours/long-programs/iguazu-extension-day2.jpg" alt="Día 2. Cataratas de Iguazú. Lado Brasileño" class="day-image"><div class="day-text"><p>Nos despertamos y nos dirigimos al territorio brasileño, donde nos esperan las vistas panorámicas más hermosas de las Cataratas de Iguazú.</p><p>Los interesados pueden volar sobre las cataratas en helicóptero. La cabina tiene capacidad para 5 pasajeros, y el costo por persona es de $150.</p><p>También visitaremos el parque de aves, que cuenta con 900 especies de loros exóticos, flamencos, tucanes y otras aves en su hábitat natural.</p><p>---</p></div></div></div><div class="itinerary-panel"><div class="day-header">Día 3. Buenos Aires. Regreso a Casa</div><div class="day-content"><img src="/images/tours/long-programs/iguazu-extension-day3.jpg" alt="Día 3. Buenos Aires. Regreso a Casa" class="day-image"><div class="day-text"><p>Regresamos a Buenos Aires. Compartimos nuestras impresiones, vemos fotos, nos abrazamos y nos prometemos mutuamente hacer otro viaje. Felices y cansados, nos despedimos para ir a nuestros hogares.</p><p>¡Importante! Reserva tu vuelo de regreso para una salida tarde en este día o al día siguiente.</p><p>También puedes volar más lejos desde Iguazú para explorar más de Brasil, por ejemplo a Río, o volar desde São Paulo de regreso a casa.</p></div></div></div></div>
-      </section>
+      <section class="tour-section">        <h2>Itinerario por días</h2><div class="itinerary-tabs"><button class="itinerary-tab active" onclick="switchTab(event)">1</button><button class="itinerary-tab" onclick="switchTab(event)">2</button><button class="itinerary-tab" onclick="switchTab(event)">3</button></div><div class="itinerary-panels"><div class="itinerary-panel active"><div class="day-header">Día 1. Cataratas de Iguazú. Lado Argentino</div><div class="day-content"><img src="/images/tours/long-programs/iguazu-extension-day1.jpg" alt="Día 1. Cataratas de Iguazú. Lado Argentino" class="day-image"><div class="day-text"><p>Hoy volamos a Iguazú, donde veremos una de las cataratas más grandes del mundo desde el lado argentino.</p><p>Los más valientes pueden montar en un bote y acercarse mucho a las cataratas. El costo del bote es ~ $80</p><p>Créeme – las emociones son inolvidables.</p><p>---</p></div></div></div><div class="itinerary-panel"><div class="day-header">Día 2. Cataratas de Iguazú. Lado Brasileño</div><div class="day-content"><img src="/images/tours/long-programs/iguazu-extension-day2.jpg" alt="Día 2. Cataratas de Iguazú. Lado Brasileño" class="day-image"><div class="day-text"><p>Nos despertamos y nos dirigimos al territorio brasileño, donde nos esperan las vistas panorámicas más hermosas de las Cataratas de Iguazú.</p><p>Los interesados pueden volar sobre las cataratas en helicóptero. La cabina tiene capacidad para 5 pasajeros, y el costo por persona es de $150.</p><p>También visitaremos el parque de aves, que cuenta con 900 especies de loros exóticos, flamencos, tucanes y otras aves en su hábitat natural.</p><p>---</p></div></div></div><div class="itinerary-panel"><div class="day-header">Día 3. Buenos Aires. Regreso a Casa</div><div class="day-content"><img src="/images/tours/long-programs/iguazu-extension-day3.jpg" alt="Día 3. Buenos Aires. Regreso a Casa" class="day-image"><div class="day-text"><p>Regresamos a Buenos Aires. Compartimos nuestras impresiones, vemos fotos, nos abrazamos y nos prometemos mutuamente hacer otro viaje. Felices y cansados, nos despedimos para ir a nuestros hogares.</p><p>¡Importante! Reserva tu vuelo de regreso para una salida tarde en este día o al día siguiente.</p><p>También puedes volar más lejos desde Iguazú para explorar más de Brasil, por ejemplo a Río, o volar desde São Paulo de regreso a casa.</p></div></div></div></div>      </section>
 
       <section class="tour-section">
         <h2>Incluido</h2>
@@ -98,6 +95,25 @@
       panels.forEach(p => p.classList.remove('active'));
       clicked.classList.add('active');
       panels[index].classList.add('active');
+    }
+    function updateCarousel(current) {
+      const items = document.querySelectorAll('.carousel-item');
+      if (!items.length) return;
+      const idx = ((current % items.length) + items.length) % items.length;
+      items.forEach((item, i) => item.classList.toggle('active', i === idx));
+      const currentEl = document.getElementById('carousel-current');
+      if (currentEl) currentEl.textContent = idx + 1;
+    }
+    let carouselIndex = 0;
+    function prevSlide(e) {
+      e.preventDefault();
+      carouselIndex--;
+      updateCarousel(carouselIndex);
+    }
+    function nextSlide(e) {
+      e.preventDefault();
+      carouselIndex++;
+      updateCarousel(carouselIndex);
     }
     const tourId = 'iguazu-extension';
     document.querySelectorAll('.lang-btn').forEach(btn => {

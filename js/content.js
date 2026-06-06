@@ -47,7 +47,8 @@ const CONTENT = {
           description: "Как небольшой порт на краю империи превратился в один из самых необычных городов мира. Прогулка по старейшим районам Буэнос-Айреса через историю, людей и большие перемены.",
           image: "images/tours/excursions/history-ba.jpg",
           price: "150",
-          showPrefix: true
+          showPrefix: true,
+          photos: Array.from({length: 15}, (_, i) => `/images/tours/excursions/history-ba-${i + 1}.jpg`)
         },
         {
           id: "recoleta",

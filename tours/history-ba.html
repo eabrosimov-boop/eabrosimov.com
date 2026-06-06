@@ -23,7 +23,7 @@
     </nav>
   </header>
 
-  <section class="tour-hero" style="background-image: url('/images/tours/short-programs/history-ba-topcover.jpg')">
+  <section class="tour-hero" style="background-image: url('/images/tours/excursions/history-ba-topcover.jpg')">
     <div class="tour-hero-overlay"></div>
     <div class="tour-hero-content">
       <h1>Понять Буэнос-Айрес</h1>
@@ -41,10 +41,7 @@
         <p>Как небольшой порт на краю империи превратился в один из самых необычных городов мира. Прогулка по старейшим районам Буэнос-Айреса через историю, людей и большие перемены.</p>
       </section>
 
-      <section class="tour-section">
-        <h2>Программа по дням</h2>
-
-      </section>
+      <section class="tour-section">        <h2>Фотогалерея</h2><div class="photo-carousel"><div class="carousel-container"><button class="carousel-btn carousel-prev" onclick="prevSlide(event)">❮</button><div class="carousel-viewport"><div class="carousel-track"><div class="carousel-item active" data-index="0">  <img src="/images/tours/excursions/history-ba-1.jpg" alt="Photo 1"></div><div class="carousel-item" data-index="1">  <img src="/images/tours/excursions/history-ba-2.jpg" alt="Photo 2"></div><div class="carousel-item" data-index="2">  <img src="/images/tours/excursions/history-ba-3.jpg" alt="Photo 3"></div><div class="carousel-item" data-index="3">  <img src="/images/tours/excursions/history-ba-4.jpg" alt="Photo 4"></div><div class="carousel-item" data-index="4">  <img src="/images/tours/excursions/history-ba-5.jpg" alt="Photo 5"></div><div class="carousel-item" data-index="5">  <img src="/images/tours/excursions/history-ba-6.jpg" alt="Photo 6"></div><div class="carousel-item" data-index="6">  <img src="/images/tours/excursions/history-ba-7.jpg" alt="Photo 7"></div><div class="carousel-item" data-index="7">  <img src="/images/tours/excursions/history-ba-8.jpg" alt="Photo 8"></div><div class="carousel-item" data-index="8">  <img src="/images/tours/excursions/history-ba-9.jpg" alt="Photo 9"></div><div class="carousel-item" data-index="9">  <img src="/images/tours/excursions/history-ba-10.jpg" alt="Photo 10"></div><div class="carousel-item" data-index="10">  <img src="/images/tours/excursions/history-ba-11.jpg" alt="Photo 11"></div><div class="carousel-item" data-index="11">  <img src="/images/tours/excursions/history-ba-12.jpg" alt="Photo 12"></div><div class="carousel-item" data-index="12">  <img src="/images/tours/excursions/history-ba-13.jpg" alt="Photo 13"></div><div class="carousel-item" data-index="13">  <img src="/images/tours/excursions/history-ba-14.jpg" alt="Photo 14"></div><div class="carousel-item" data-index="14">  <img src="/images/tours/excursions/history-ba-15.jpg" alt="Photo 15"></div></div></div><button class="carousel-btn carousel-next" onclick="nextSlide(event)">❯</button></div><div class="carousel-counter"><span id="carousel-current">1</span> / <span id="carousel-total">15</span></div></div>      </section>
 
       <section class="tour-section">
         <h2>Что включено</h2>
@@ -90,6 +87,25 @@
       panels.forEach(p => p.classList.remove('active'));
       clicked.classList.add('active');
       panels[index].classList.add('active');
+    }
+    function updateCarousel(current) {
+      const items = document.querySelectorAll('.carousel-item');
+      if (!items.length) return;
+      const idx = ((current % items.length) + items.length) % items.length;
+      items.forEach((item, i) => item.classList.toggle('active', i === idx));
+      const currentEl = document.getElementById('carousel-current');
+      if (currentEl) currentEl.textContent = idx + 1;
+    }
+    let carouselIndex = 0;
+    function prevSlide(e) {
+      e.preventDefault();
+      carouselIndex--;
+      updateCarousel(carouselIndex);
+    }
+    function nextSlide(e) {
+      e.preventDefault();
+      carouselIndex++;
+      updateCarousel(carouselIndex);
     }
     const tourId = 'history-ba';
     document.querySelectorAll('.lang-btn').forEach(btn => {

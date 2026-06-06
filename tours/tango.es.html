@@ -23,7 +23,7 @@
     </nav>
   </header>
 
-  <section class="tour-hero" style="background-image: url('/images/tours/short-programs/tango-topcover.jpg')">
+  <section class="tour-hero" style="background-image: url('/images/tours/excursions/tango-topcover.jpg')">
     <div class="tour-hero-overlay"></div>
     <div class="tour-hero-content">
       <h1>Show de Tango</h1>
@@ -41,10 +41,7 @@
         <p>Recomendaciones y asistencia para reservar espectáculos de tango en Buenos Aires. Encontraré la mejor opción según el formato, el lugar y el presupuesto, y te ayudaré a obtener un descuento donde sea posible.</p>
       </section>
 
-      <section class="tour-section">
-        <h2>Itinerario por días</h2>
-
-      </section>
+      <section class="tour-section">        <h2>Фотогалерея</h2>      </section>
 
       <section class="tour-section">
         <h2>Incluido</h2>
@@ -90,6 +87,25 @@
       panels.forEach(p => p.classList.remove('active'));
       clicked.classList.add('active');
       panels[index].classList.add('active');
+    }
+    function updateCarousel(current) {
+      const items = document.querySelectorAll('.carousel-item');
+      if (!items.length) return;
+      const idx = ((current % items.length) + items.length) % items.length;
+      items.forEach((item, i) => item.classList.toggle('active', i === idx));
+      const currentEl = document.getElementById('carousel-current');
+      if (currentEl) currentEl.textContent = idx + 1;
+    }
+    let carouselIndex = 0;
+    function prevSlide(e) {
+      e.preventDefault();
+      carouselIndex--;
+      updateCarousel(carouselIndex);
+    }
+    function nextSlide(e) {
+      e.preventDefault();
+      carouselIndex++;
+      updateCarousel(carouselIndex);
     }
     const tourId = 'tango';
     document.querySelectorAll('.lang-btn').forEach(btn => {

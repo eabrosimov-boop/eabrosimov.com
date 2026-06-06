@@ -171,11 +171,35 @@ const datesHtml = (tourId, lang) => {
   }).join('');
 };
 
+const buildPhotoCarousel = (tour) => {
+  if (!tour.photos || !tour.photos.length) return '';
+  const photoItems = tour.photos.map((photo, idx) =>
+    '<div class="carousel-item' + (idx === 0 ? ' active' : '') + '" data-index="' + idx + '">' +
+    '  <img src="' + photo + '" alt="Photo ' + (idx + 1) + '">' +
+    '</div>'
+  ).join('');
+
+  return '<div class="photo-carousel">' +
+    '<div class="carousel-container">' +
+    '<button class="carousel-btn carousel-prev" onclick="prevSlide(event)">❮</button>' +
+    '<div class="carousel-viewport">' +
+    '<div class="carousel-track">' +
+    photoItems +
+    '</div>' +
+    '</div>' +
+    '<button class="carousel-btn carousel-next" onclick="nextSlide(event)">❯</button>' +
+    '</div>' +
+    '<div class="carousel-counter"><span id="carousel-current">1</span> / <span id="carousel-total">' + tour.photos.length + '</span></div>' +
+    '</div>';
+};
+
 const genHtml = (tour, lang, tourId) => {
   const c = CONTENT[lang];
   const langCode = lang === 'ru' ? 'ru' : (lang === 'en' ? 'en' : 'es');
   const topcoverPath = (tour.type === 'long')
     ? '/images/tours/long-programs/' + tourId + '-topcover.jpg'
+    : (tour.type === 'excursions')
+    ? '/images/tours/excursions/' + tourId + '-topcover.jpg'
     : '/images/tours/short-programs/' + tourId + '-topcover.jpg';
   const bgPosition = (tourId === 'patagonia-trekking')
     ? '; background-position: center calc(50% + 350px)'
@@ -234,10 +258,17 @@ const genHtml = (tour, lang, tourId) => {
     '        <p>' + tour.description + '</p>',
     '      </section>',
     '',
-    '      <section class="tour-section">',
-    '        <h2>' + l.itinerary + '</h2>',
-    buildItineraryTabs(tourId, lang),
-    '      </section>',
+    (tour.type !== 'excursions' ?
+      ('      <section class="tour-section">' +
+       '        <h2>' + l.itinerary + '</h2>' +
+       buildItineraryTabs(tourId, lang) +
+       '      </section>' +
+       '')
+      : ('      <section class="tour-section">' +
+         '        <h2>Фотогалерея</h2>' +
+         buildPhotoCarousel(tour) +
+         '      </section>' +
+         '')),
     '',
     '      <section class="tour-section">',
     '        <h2>' + l.included + '</h2>',
@@ -280,6 +311,25 @@ const genHtml = (tour, lang, tourId) => {
     "      panels.forEach(p => p.classList.remove('active'));",
     "      clicked.classList.add('active');",
     "      panels[index].classList.add('active');",
+    "    }",
+    "    function updateCarousel(current) {",
+    "      const items = document.querySelectorAll('.carousel-item');",
+    "      if (!items.length) return;",
+    "      const idx = ((current % items.length) + items.length) % items.length;",
+    "      items.forEach((item, i) => item.classList.toggle('active', i === idx));",
+    "      const currentEl = document.getElementById('carousel-current');",
+    "      if (currentEl) currentEl.textContent = idx + 1;",
+    "    }",
+    "    let carouselIndex = 0;",
+    "    function prevSlide(e) {",
+    "      e.preventDefault();",
+    "      carouselIndex--;",
+    "      updateCarousel(carouselIndex);",
+    "    }",
+    "    function nextSlide(e) {",
+    "      e.preventDefault();",
+    "      carouselIndex++;",
+    "      updateCarousel(carouselIndex);",
     "    }",
     "    const tourId = '" + tour.id.replace(/'/g, "\\'") + "';",
     "    document.querySelectorAll('.lang-btn').forEach(btn => {",
