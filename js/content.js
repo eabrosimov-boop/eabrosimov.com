@@ -70,7 +70,8 @@ const CONTENT = {
           description: "Буэнос-Айрес — это не просто красивый город, а ключ к пониманию Аргентины. За одну прогулку мы пройдём путь от старого порта Ла-Бока до ультрасовременного Пуэрто-Мадеро и увидим, как иммиграция, танго, политика, экономические кризисы и футбольная страсть сформировали город таким, каким он является сегодня.\n\nЭто экскурсия не только про историю и архитектуру. Это возможность разобраться, почему Аргентина живёт именно так, как живёт сейчас, и увидеть связь между прошлым и настоящим на улицах Буэнос-Айреса.",
           image: "images/tours/excursions/history-ba.jpg",
           price: "170",
-          showPrefix: true,
+          showPrefix: false,
+          priceNote: "фиксированная цена для группы 1–4 чел.",
           included: [
             "Пешеходная прогулка по ключевым районам города (4 часа)",
             "Профессиональный гид, говорящий на русском языке",
@@ -114,6 +115,14 @@ const CONTENT = {
           image: "images/tours/excursions/tango.jpg",
           price: "60",
           showPrefix: true,
+          included: [
+            "Подбор программы под ваши интересы и бюджет",
+            "Помощь с организацией трансфера до места проведения программы",
+            "Ужин/напитки согласно купленному билету"
+          ],
+          notIncluded: [
+            "Дополнительные еда и напитки по меню"
+          ],
           photos: ['/images/tours/excursions/tango-1.jpg']
         }
       ],
@@ -144,7 +153,7 @@ const CONTENT = {
         {
           id: "oktoberfest-cordoba",
           title: "Октоберфест в Кордобе",
-          duration: "3 дня",
+          duration: "4 дня",
           location: "Виша Генерал Бельграно",
           description: "Самый большой пивной фестиваль Латинской Америки. Несколько дней музыки, танцев и немецких традиций в горах Кордовы.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
@@ -169,7 +178,7 @@ const CONTENT = {
           duration: "3 дня",
           location: "Мендоса",
           description: "Лучшие вина Аргентины рождаются здесь, у подножия Анд. Нас ждут дегустации, винодельни разных масштабов, гастрономия и несколько дней в одном из самых приятных регионов страны.",
-          image: "images/tours/short-programs/mendoza-wine.jpg",
+          image: "images/tours/short-programs/mendoza.jpg",
           price: "—",
           showPrefix: false,
           active: false
@@ -191,7 +200,7 @@ const CONTENT = {
           duration: "4 дня",
           location: "Патагония",
           description: "Регион, который сделал Патагонию знаменитой. Озёра ледникового происхождения, горные пейзажи, уютные городки и десятки красивых маршрутов на любой уровень подготовки.",
-          image: "images/tours/short-programs/bariloche-lakes.jpg",
+          image: "images/tours/short-programs/bariloche.jpg",
           price: "—",
           showPrefix: false,
           active: false
@@ -325,6 +334,7 @@ const CONTENT = {
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
     footer: "© 2025 Евгений Абросимов · Туры по Южной Америке",
+    footerCopy: "Все фотографии взяты из личного архива или используются с согласия правообладателей. Копирование и переиспользование без разрешения запрещено.",
     comingSoon: "СКОРО"
   },
 
@@ -368,7 +378,8 @@ const CONTENT = {
       excursions: [
         { id: "history-ba", title: "Understanding Buenos Aires", duration: "4 hours", location: "Buenos Aires", description: "Buenos Aires is not just a beautiful city, but a key to understanding Argentina. In one walk, we'll travel from the old port of La Boca to the ultra-modern Puerto Madero and see how immigration, tango, politics, economic crises, and football passion shaped the city as it is today.\n\nThis is not just a tour about history and architecture. This is an opportunity to understand why Argentina lives the way it does now, and to see the connection between past and present on the streets of Buenos Aires.", image: "images/tours/excursions/history-ba.jpg",
           "price": "170",
-          "showPrefix": true,
+          "showPrefix": false,
+          "priceNote": "fixed price for a group of 1–4 people",
           included: [
             "Walking tour through key neighborhoods of the city (4 hours)",
             "Professional English-speaking guide",
@@ -391,6 +402,14 @@ const CONTENT = {
         { id: "tango", title: "Tango Show", duration: "1 day", location: "Buenos Aires", description: "Recommendations and booking assistance for tango shows in Buenos Aires. I'll find the best option by format, venue and budget, and help you get a discount where possible.", image: "images/tours/excursions/tango.jpg",
           "price": "60",
           "showPrefix": true,
+          included: [
+            "Programme selection tailored to your interests and budget",
+            "Assistance with arranging transfer to the venue",
+            "Dinner / drinks as per your purchased ticket"
+          ],
+          notIncluded: [
+            "Additional food and drinks from the menu"
+          ],
           photos: ['/images/tours/excursions/tango-1.jpg']
         }
       ],
@@ -412,7 +431,7 @@ const CONTENT = {
             "Personal expenses"
           ]
         },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "3 days", location: "Villa General Belgrano", description: "The largest beer festival in Latin America. Several days of music, dancing and German traditions in the mountains of Cordoba.",
+        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", description: "The largest beer festival in Latin America. Several days of music, dancing and German traditions in the mountains of Cordoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "—",
           "showPrefix": false,
@@ -422,7 +441,7 @@ const CONTENT = {
           "price": "—",
           "showPrefix": false,
           "active": false },
-        { id: "mendoza", title: "Mendoza: Wine and the Andes", duration: "3 days", location: "Mendoza", description: "Argentina's finest wines are born here, at the foot of the Andes. Tastings, wineries of different scales, gastronomy and a few days in one of the country's most pleasant regions.", image: "images/tours/short-programs/mendoza-wine.jpg",
+        { id: "mendoza", title: "Mendoza: Wine and the Andes", duration: "3 days", location: "Mendoza", description: "Argentina's finest wines are born here, at the foot of the Andes. Tastings, wineries of different scales, gastronomy and a few days in one of the country's most pleasant regions.", image: "images/tours/short-programs/mendoza.jpg",
           "price": "—",
           "showPrefix": false,
           "active": false },
@@ -430,7 +449,7 @@ const CONTENT = {
           "price": "—",
           "showPrefix": false,
           "active": false },
-        { id: "bariloche", title: "Bariloche: Heart of the Lake District", duration: "4 days", location: "Patagonia", description: "The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.", image: "images/tours/short-programs/bariloche-lakes.jpg",
+        { id: "bariloche", title: "Bariloche: Heart of the Lake District", duration: "4 days", location: "Patagonia", description: "The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.", image: "images/tours/short-programs/bariloche.jpg",
           "price": "—",
           "showPrefix": false,
           "active": false }
@@ -532,6 +551,7 @@ const CONTENT = {
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
     footer: "© 2025 Evgeny Abrosimov · South America Tours",
+    footerCopy: "All photographs are from the personal archive or used with the permission of the copyright holders. Reproduction and reuse without permission is prohibited.",
     comingSoon: "COMING SOON"
   },
 
@@ -575,7 +595,8 @@ const CONTENT = {
       excursions: [
         { id: "history-ba", title: "Entender Buenos Aires", duration: "4 horas", location: "Buenos Aires", description: "Buenos Aires no es solo una ciudad hermosa, sino la clave para entender Argentina. En un paseo, viajaremos desde el antiguo puerto de La Boca hasta el ultra moderno Puerto Madero y veremos cómo la inmigración, el tango, la política, las crisis económicas y la pasión por el fútbol moldearon la ciudad tal como es hoy.\n\nEste no es solo un tour sobre historia y arquitectura. Esta es una oportunidad para entender por qué Argentina vive de la manera en que vive ahora, y para ver la conexión entre el pasado y el presente en las calles de Buenos Aires.", image: "images/tours/excursions/history-ba.jpg",
           "price": "170",
-          "showPrefix": true,
+          "showPrefix": false,
+          "priceNote": "precio fijo para grupos de 1–4 personas",
           included: [
             "Recorrido a pie por los barrios clave de la ciudad (4 horas)",
             "Guía profesional hispanohablante",
@@ -598,6 +619,14 @@ const CONTENT = {
         { id: "tango", title: "Show de Tango", duration: "1 día", location: "Buenos Aires", description: "Recomendaciones y asistencia para reservar espectáculos de tango en Buenos Aires. Encontraré la mejor opción según el formato, el lugar y el presupuesto, y te ayudaré a obtener un descuento donde sea posible.", image: "images/tours/excursions/tango.jpg",
           "price": "60",
           "showPrefix": true,
+          included: [
+            "Selección del programa según sus intereses y presupuesto",
+            "Asistencia para organizar el traslado al lugar del espectáculo",
+            "Cena / bebidas según la entrada adquirida"
+          ],
+          notIncluded: [
+            "Comida y bebidas adicionales del menú"
+          ],
           photos: ['/images/tours/excursions/tango-1.jpg']
         }
       ],
@@ -619,7 +648,7 @@ const CONTENT = {
             "Gastos personales"
           ]
         },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "3 días", location: "Villa General Belgrano", description: "El festival de cerveza más grande de América Latina. Varios días de música, baile y tradiciones alemanas en las montañas de Córdoba.",
+        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", description: "El festival de cerveza más grande de América Latina. Varios días de música, baile y tradiciones alemanas en las montañas de Córdoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "—",
           "showPrefix": false,
@@ -629,7 +658,7 @@ const CONTENT = {
           "price": "—",
           "showPrefix": false,
           "active": false },
-        { id: "mendoza", title: "Mendoza: Vino y los Andes", duration: "3 días", location: "Mendoza", description: "Los mejores vinos de Argentina nacen aquí, al pie de los Andes. Degustaciones, bodegas de distintos tamaños, gastronomía y unos días en una de las regiones más agradables del país.", image: "images/tours/short-programs/mendoza-wine.jpg",
+        { id: "mendoza", title: "Mendoza: Vino y los Andes", duration: "3 días", location: "Mendoza", description: "Los mejores vinos de Argentina nacen aquí, al pie de los Andes. Degustaciones, bodegas de distintos tamaños, gastronomía y unos días en una de las regiones más agradables del país.", image: "images/tours/short-programs/mendoza.jpg",
           "price": "—",
           "showPrefix": false,
           "active": false },
@@ -637,7 +666,7 @@ const CONTENT = {
           "price": "—",
           "showPrefix": false,
           "active": false },
-        { id: "bariloche", title: "Bariloche: Corazón de la Región de los Lagos", duration: "4 días", location: "Patagonia", description: "La región que hizo famosa a la Patagonia. Lagos glaciares, paisajes de montaña, pueblos encantadores y decenas de rutas hermosas para todo nivel de condición física.", image: "images/tours/short-programs/bariloche-lakes.jpg",
+        { id: "bariloche", title: "Bariloche: Corazón de la Región de los Lagos", duration: "4 días", location: "Patagonia", description: "La región que hizo famosa a la Patagonia. Lagos glaciares, paisajes de montaña, pueblos encantadores y decenas de rutas hermosas para todo nivel de condición física.", image: "images/tours/short-programs/bariloche.jpg",
           "price": "—",
           "showPrefix": false,
           "active": false }
@@ -739,6 +768,7 @@ const CONTENT = {
       whatsapp: "WhatsApp", telegram: "Telegram", email: "Email"
     },
     footer: "© 2025 Evgeny Abrosimov · Tours por América del Sur",
+    footerCopy: "Todas las fotografías provienen del archivo personal o se utilizan con permiso de sus titulares. Se prohíbe su reproducción o reutilización sin autorización.",
     comingSoon: "PRÓXIMAMENTE"
   }
 };

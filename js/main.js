@@ -360,7 +360,10 @@ function renderTourPanel(c, tab) {
           <p>${tour.description}</p>
           ${getDatesHtml(tour.id, currentLang)}
           <div class="card-footer">
-            <span class="tour-price">${(tour.showPrefix !== false) ? CONTENT[currentLang].pricePrefix + ' ' : ''}<strong>$${tour.price || '9999'}</strong></span>
+            <div class="tour-price-wrap">
+              <span class="tour-price">${(tour.showPrefix !== false) ? CONTENT[currentLang].pricePrefix + ' ' : ''}<strong>$${tour.price || '9999'}</strong></span>
+              ${tour.priceNote ? `<span class="tour-price-note">${tour.priceNote}</span>` : ''}
+            </div>
             ${cardCtaHtml(tour.title, currentLang)}
           </div>
         </div>
@@ -462,4 +465,6 @@ function renderContact(c) {
 // ===== FOOTER =====
 function renderFooter(c) {
   document.querySelector('.footer-text').textContent = c.footer;
+  const copyEl = document.querySelector('.footer-copy');
+  if (copyEl) copyEl.textContent = c.footerCopy || '';
 }
