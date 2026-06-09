@@ -285,7 +285,7 @@ const CONTENT = {
       individual: {
         id: "individual",
         title: "Ваш маршрут с нуля",
-        description: "Нет программы, которая подходит тебе на 100%? Тогда давай создадим её вместе. Расскажи мне, что тебя зажигает — горы, города, еда, экстрим, уединение, фотография, история — и я составлю маршрут именно под тебя. Сроки и бюджет — твои.",
+        description: "Не нашёл подходящий маршрут?\nБольшинство путешествий начинаются с простого разговора. Расскажи, куда хочется попасть и что тебе интересно, а я помогу собрать маршрут по Аргентине или Южной Америке именно под тебя.",
         image: "images/tours/individual/individual.jpg",
         cta: "Обсудить маршрут"
       }
@@ -499,7 +499,7 @@ const CONTENT = {
       },
       individual: {
         id: "individual", title: "Your Route from Scratch",
-        description: "No program fits you 100%? Let's build one together. Tell me what excites you — mountains, cities, food, adventure, solitude, photography, history — and I'll design a route just for you. Timeline and budget are yours to set.",
+        description: "Didn't find a suitable itinerary?\nMost journeys start with a simple conversation. Tell me where you'd like to go and what interests you, and I'll help you create a route through Argentina or South America tailored just for you.",
         image: "images/tours/individual/individual.jpg", cta: "Discuss your route"
       }
     },
@@ -710,7 +710,7 @@ const CONTENT = {
       },
       individual: {
         id: "individual", title: "Tu Ruta desde Cero",
-        description: "¿Ningún programa te encaja al 100%? Construyamos uno juntos. Cuéntame qué te emociona — montañas, ciudades, gastronomía, aventura, soledad, fotografía, historia — y diseñaré una ruta solo para ti. El tiempo y el presupuesto son tuyos.",
+        description: "¿No encontraste un itinerario adecuado?\nLa mayoría de los viajes comienzan con una simple conversación. Cuéntame adónde quieres ir y qué te interesa, y te ayudaré a crear una ruta por Argentina o América del Sur hecha especialmente para ti.",
         image: "images/tours/individual/individual.jpg", cta: "Hablar de tu ruta"
       }
     },
