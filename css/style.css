@@ -579,14 +579,18 @@ nav {
   margin-top: 14px;
 }
 .tour-price {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--gray);
   white-space: nowrap;
 }
 .tour-price strong {
-  font-size: 1rem;
-  color: var(--dark);
+  font-size: 1.4rem;
+  color: var(--white);
   font-weight: 700;
+  background: var(--accent);
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
 }
 .tour-card-cta {
   padding: 8px 16px;
