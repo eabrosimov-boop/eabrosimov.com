@@ -287,7 +287,8 @@ const CONTENT = {
         title: "Ваш маршрут с нуля",
         description: "Не нашёл подходящий маршрут?\nБольшинство путешествий начинаются с простого разговора. Расскажи, куда хочется попасть и что тебе интересно, а я помогу собрать маршрут по Аргентине или Южной Америке именно под тебя.",
         image: "images/tours/individual/individual.jpg",
-        cta: "Обсудить маршрут"
+        cta: "Обсудить маршрут",
+        tags: null
       }
     },
     reviews: {
@@ -500,7 +501,8 @@ const CONTENT = {
       individual: {
         id: "individual", title: "Your Route from Scratch",
         description: "Didn't find a suitable itinerary?\nMost journeys start with a simple conversation. Tell me where you'd like to go and what interests you, and I'll help you create a route through Argentina or South America tailored just for you.",
-        image: "images/tours/individual/individual.jpg", cta: "Discuss your route"
+        image: "images/tours/individual/individual.jpg", cta: "Discuss your route",
+        tags: null
       }
     },
     reviews: {
@@ -711,7 +713,8 @@ const CONTENT = {
       individual: {
         id: "individual", title: "Tu Ruta desde Cero",
         description: "¿No encontraste un itinerario adecuado?\nLa mayoría de los viajes comienzan con una simple conversación. Cuéntame adónde quieres ir y qué te interesa, y te ayudaré a crear una ruta por Argentina o América del Sur hecha especialmente para ti.",
-        image: "images/tours/individual/individual.jpg", cta: "Hablar de tu ruta"
+        image: "images/tours/individual/individual.jpg", cta: "Hablar de tu ruta",
+        tags: null
       }
     },
     reviews: {
