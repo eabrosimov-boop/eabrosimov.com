@@ -46,17 +46,13 @@ Pasaremos la noche en Humahuaca.
 
 # Día 4. Quebrada de las Señoritas y Festival de Contrapunto de Pialadores
 
-Por la mañana visitaremos la Quebrada de las Señoritas — uno de los cañones más hermosos del valle andino. Las impresionantes formaciones de rocas rojas, esculpidas durante millones de años, crean paisajes espectaculares. Este es un lugar ideal para trekking, donde puedes experimentar la escala de la naturaleza en el noroeste de Argentina.
+Por la mañana nos dirigiremos a la Quebrada de las Señoritas — una de las rutas de senderismo más hermosas y poco conocidas del noroeste de Argentina. Los acantilados rojos, los cañones estrechos y las formas de relieve caprichosas aquí fueron moldeados durante millones de años por agua y viento.
 
-Lo más destacado del día es visitar el Festival de Contrapunto de Pialadores. Este es un evento único y raro que definitivamente vale la pena experimentar.
+Luego nos dirigiremos al Festival de Contrapunto de Pialadores. Los pialadores son vaqueros locales, maestros del trabajo con lazo, cuya cultura creció alrededor de la ganadería en los Andes. Y el contrapunto es algo como una batalla de freestyle, solo que en lugar de rap aquí tienes música folclórica, vida rural y humor local.
 
-**Pialadores** son maestros de la tradición del pialar (lazar animales). Son guardianes de una tradición antigua con raíces en la época colonial y las culturas indígenas.
+Este festival es casi desconocido fuera de la región y reúne a residentes de pueblos cercanos. Aquí puedes ver las tradiciones del noroeste de Argentina no como un espectáculo para turistas, sino tal como existen hoy: música, duelos de improvisación poética, gastronomía local y personas para quienes todo esto es parte de su cultura cotidiana.
 
-**Contrapunto** es una forma de competencia poética donde dos poetas improvisan versos en un diálogo-duelo en vivo, frecuentemente con acompañamiento musical. Es un arte de improvisación e ingenio con raíces en la tradición española y latinoamericana.
-
-En el festival, los pialadores demuestran sus habilidades y compiten en contrapunto — arte poético. Esta sorprendente combinación de habilidad, tradición y creatividad rara vez se encuentra fuera de esta región. Para visitantes, es una oportunidad de sumergirse en la cultura viva del noroeste argentino.
-
-Después del festival, tendremos tiempo para explorar la zona antes de regresar a Salta.
+Después del festival habrá tiempo para pasear y descansar, y por la noche regresaremos a Salta.
 
 **Humahuaca → Quebrada de las Señoritas → Salta**
 **Distancia:** ~240 km

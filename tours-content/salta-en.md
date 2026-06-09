@@ -46,17 +46,13 @@ We'll spend the night in Humahuaca.
 
 # Day 4. Quebrada de las Señoritas and Festival de Contrapunto de Pialadores
 
-In the morning we'll visit Quebrada de las Señoritas (Valley of the Ladies) — one of the most beautiful canyons in the Andean valley. Impressive red rock formations, sculpted over millions of years, create striking landscapes. This is an ideal place for trekking, where you can experience the scale of nature in Argentina's northwest.
+In the morning we'll head to Quebrada de las Señoritas — one of the most beautiful and little-known hiking routes in northwest Argentina. Red cliffs, narrow canyons and peculiar rock formations here were shaped over millions of years by water and wind.
 
-The highlight of the day is visiting the Festival de Contrapunto de Pialadores. This is a unique and rare event that's absolutely worth experiencing.
+Then we'll head to the Festival de Contrapunto de Pialadores. Pialadores are local cowboys, masters of lasso work, whose culture grew around livestock herding in the Andes. And contrapunto is something like a freestyle battle, except instead of rap here you have folk music, rural life and local humor.
 
-**Pialadores** are masters of the pialar tradition (lassoing animals). They're keepers of an ancient tradition rooted in colonial times and indigenous cultures.
+This festival is almost unknown outside the region and brings together residents from nearby villages. Here you can see the traditions of northwest Argentina not as a tourist show, but as they actually exist today: music, poetic improvisation duels, local cuisine and people for whom all this is part of everyday culture.
 
-**Contrapunto** is a form of poetic competition where two poets improvise verses in a live dialogue-duel, often with musical accompaniment. It's an art of improvisation and wit with roots in Spanish and Latin American tradition.
-
-At the festival, pialadores demonstrate their skills and compete in contrapunto — poetic art. This amazing combination of skill, tradition and creativity is rarely found outside this region. For visitors, it's an opportunity to immerse yourself in the living culture of northwest Argentina.
-
-After the festival, we'll have time to explore the area before returning to Salta.
+After the festival we'll have time for a walk and rest, and in the evening we'll return to Salta.
 
 **Humahuaca → Quebrada de las Señoritas → Salta**
 **Distance:** ~240 km
