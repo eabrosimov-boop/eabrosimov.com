@@ -912,6 +912,43 @@ nav {
   font-weight: 500;
   color: var(--dark);
 }
+.date-item--sold-out {
+  border-left-color: #9CA3AF;
+  opacity: 0.8;
+  text-decoration: line-through;
+  color: var(--gray);
+}
+.date-item--sold-out .waitlist-line {
+  text-decoration: none;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--gray);
+}
+.sold-out-badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 8px;
+  background: #EF4444;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.waitlist-link {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.waitlist-link:hover { color: var(--accent-hover); }
+a.inline-link {
+  color: var(--accent);
+  text-decoration: underline;
+}
+a.inline-link:hover { color: var(--accent-hover); }
 
 .cta-section {
   background: var(--light-bg);
