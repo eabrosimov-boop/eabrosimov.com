@@ -68,8 +68,9 @@ const CONTENT = {
           location: "Буэнос-Айрес",
           description: "История Аргентины через судьбы людей, которые её создавали. Президенты, национальные герои, миллиардеры и Эвита — все они встретятся нам среди мавзолеев Реколеты.",
           image: "images/tours/excursions/recoleta-cemetery.jpg",
-          price: "80",
-          showPrefix: true
+          price: "—",
+          showPrefix: false,
+          active: false
         },
         {
           id: "football",
@@ -78,8 +79,9 @@ const CONTENT = {
           location: "Буэнос-Айрес",
           description: "Для многих поездка на аргентинский футбол становится главным впечатлением от путешествия. Если позволяет календарь — идём на матч. Если нет — всё равно поговорим о клубах, легендах и страсти, которая сделала местный футбол знаменитым на весь мир.",
           image: "images/tours/excursions/football-argentina.jpg",
-          price: "150",
-          showPrefix: true
+          price: "—",
+          showPrefix: false,
+          active: false
         },
         {
           id: "tango",
@@ -362,11 +364,13 @@ const CONTENT = {
           ]
         },
         { id: "recoleta", title: "Recoleta Cemetery", duration: "1 day", location: "Buenos Aires", description: "Argentine history through the lives of the people who shaped it. Presidents, national heroes, millionaires and Evita — all of them await us among the mausoleums of Recoleta.", image: "images/tours/excursions/recoleta-cemetery.jpg",
-          "price": "80",
-          "showPrefix": true },
+          "price": "—",
+          "showPrefix": false,
+          "active": false },
         { id: "football", title: "Argentina and Football", duration: "1 day", location: "Buenos Aires", description: "For many, attending an Argentine football match becomes the defining memory of their trip. If the schedule allows — we go to a match. If not — we'll still talk about the clubs, the legends and the passion that made Argentine football famous around the world.", image: "images/tours/excursions/football-argentina.jpg",
-          "price": "150",
-          "showPrefix": true },
+          "price": "—",
+          "showPrefix": false,
+          "active": false },
         { id: "tango", title: "Tango Show", duration: "1 day", location: "Buenos Aires", description: "Recommendations and booking assistance for tango shows in Buenos Aires. I'll find the best option by format, venue and budget, and help you get a discount where possible.", image: "images/tours/excursions/tango.jpg",
           "price": "65",
           "showPrefix": true,
@@ -572,11 +576,13 @@ const CONTENT = {
           ]
         },
         { id: "recoleta", title: "Cementerio de la Recoleta", duration: "1 día", location: "Buenos Aires", description: "La historia argentina a través de las vidas de quienes la construyeron. Presidentes, héroes nacionales, millonarios y Evita — todos nos aguardan entre los mausoleos de la Recoleta.", image: "images/tours/excursions/recoleta-cemetery.jpg",
-          "price": "80",
-          "showPrefix": true },
+          "price": "—",
+          "showPrefix": false,
+          "active": false },
         { id: "football", title: "Argentina y el Fútbol", duration: "1 día", location: "Buenos Aires", description: "Para muchos, asistir a un partido de fútbol argentino se convierte en el recuerdo más especial del viaje. Si el calendario lo permite — vamos al partido. Si no — hablaremos de los clubes, las leyendas y la pasión que hizo famoso al fútbol argentino en todo el mundo.", image: "images/tours/excursions/football-argentina.jpg",
-          "price": "150",
-          "showPrefix": true },
+          "price": "—",
+          "showPrefix": false,
+          "active": false },
         { id: "tango", title: "Show de Tango", duration: "1 día", location: "Buenos Aires", description: "Recomendaciones y asistencia para reservar espectáculos de tango en Buenos Aires. Encontraré la mejor opción según el formato, el lugar y el presupuesto, y te ayudaré a obtener un descuento donde sea posible.", image: "images/tours/excursions/tango.jpg",
           "price": "65",
           "showPrefix": true,
