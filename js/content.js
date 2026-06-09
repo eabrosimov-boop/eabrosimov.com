@@ -286,7 +286,7 @@ const CONTENT = {
         id: "individual",
         title: "Ваш маршрут с нуля",
         description: "Нет программы, которая подходит тебе на 100%? Тогда давай создадим её вместе. Расскажи мне, что тебя зажигает — горы, города, еда, экстрим, уединение, фотография, история — и я составлю маршрут именно под тебя. Сроки и бюджет — твои.",
-        image: "images/tours/individual/individual-tour.jpg",
+        image: "images/tours/individual/individual.jpg",
         cta: "Обсудить маршрут"
       }
     },
@@ -500,7 +500,7 @@ const CONTENT = {
       individual: {
         id: "individual", title: "Your Route from Scratch",
         description: "No program fits you 100%? Let's build one together. Tell me what excites you — mountains, cities, food, adventure, solitude, photography, history — and I'll design a route just for you. Timeline and budget are yours to set.",
-        image: "images/tours/individual/individual-tour.jpg", cta: "Discuss your route"
+        image: "images/tours/individual/individual.jpg", cta: "Discuss your route"
       }
     },
     reviews: {
@@ -711,7 +711,7 @@ const CONTENT = {
       individual: {
         id: "individual", title: "Tu Ruta desde Cero",
         description: "¿Ningún programa te encaja al 100%? Construyamos uno juntos. Cuéntame qué te emociona — montañas, ciudades, gastronomía, aventura, soledad, fotografía, historia — y diseñaré una ruta solo para ti. El tiempo y el presupuesto son tuyos.",
-        image: "images/tours/individual/individual-tour.jpg", cta: "Hablar de tu ruta"
+        image: "images/tours/individual/individual.jpg", cta: "Hablar de tu ruta"
       }
     },
     reviews: {
