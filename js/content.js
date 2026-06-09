@@ -16,10 +16,10 @@ const REVIEW_ITEMS = [
     url: "https://www.instagram.com/reel/DXmOC7XjJ9C/"
   },
   {
-    username: "instagram_user_3",
+    username: "ansemernia",
     image: "images/reviews/review-3.jpg",
-    text: "",
-    url: ""
+    text: "el momento vs la foto\n\nSALTA / JUJUY\nArgentina\nmayo '26\n——\ngracias por el viaje @ah_etot_evgenij",
+    url: "https://www.instagram.com/reel/DZWKtQ0O56A/"
   }
 ];
 
