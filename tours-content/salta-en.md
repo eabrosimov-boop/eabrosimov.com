@@ -48,15 +48,15 @@ We'll spend the night in Humahuaca.
 
 In the morning we'll visit Quebrada de las Señoritas (Valley of the Ladies) — one of the most beautiful canyons in the Andean valley. Impressive red rock formations, sculpted over millions of years, create striking landscapes. This is an ideal place for trekking, where you can experience the scale of nature in Argentina's northwest.
 
-The highlight of the day — if dates align — is visiting the Festival de Contrapunto de Pialadores. This is a unique and rare event that's absolutely worth experiencing.
+The highlight of the day is visiting the Festival de Contrapunto de Pialadores. This is a unique and rare event that's absolutely worth experiencing.
 
-**Pialadores** are masters of traditional horsemanship and the pialar tradition (lassoing animals from horseback). They're not just riders, but keepers of an ancient tradition rooted in colonial times and indigenous cultures.
+**Pialadores** are masters of the pialar tradition (lassoing animals). They're keepers of an ancient tradition rooted in colonial times and indigenous cultures.
 
 **Contrapunto** is a form of poetic competition where two poets improvise verses in a live dialogue-duel, often with musical accompaniment. It's an art of improvisation and wit with roots in Spanish and Latin American tradition.
 
-At the festival, pialadores demonstrate their skills and compete in contrapunto — poetic art. This amazing combination of horsemanship, tradition and creativity is rarely found outside this region. For visitors, it's an opportunity to immerse yourself in the living culture of northwest Argentina.
+At the festival, pialadores demonstrate their skills and compete in contrapunto — poetic art. This amazing combination of skill, tradition and creativity is rarely found outside this region. For visitors, it's an opportunity to immerse yourself in the living culture of northwest Argentina.
 
-After the festival (or if it's not happening), we'll have time to explore the area before returning to Salta.
+After the festival, we'll have time to explore the area before returning to Salta.
 
 **Humahuaca → Quebrada de las Señoritas → Salta**
 **Distance:** ~240 km

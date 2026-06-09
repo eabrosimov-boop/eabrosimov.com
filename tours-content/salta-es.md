@@ -48,15 +48,15 @@ Pasaremos la noche en Humahuaca.
 
 Por la mañana visitaremos la Quebrada de las Señoritas — uno de los cañones más hermosos del valle andino. Las impresionantes formaciones de rocas rojas, esculpidas durante millones de años, crean paisajes espectaculares. Este es un lugar ideal para trekking, donde puedes experimentar la escala de la naturaleza en el noroeste de Argentina.
 
-Lo más destacado del día — si las fechas coinciden — es visitar el Festival de Contrapunto de Pialadores. Este es un evento único y raro que definitivamente vale la pena experimentar.
+Lo más destacado del día es visitar el Festival de Contrapunto de Pialadores. Este es un evento único y raro que definitivamente vale la pena experimentar.
 
-**Pialadores** son maestros de la equitación tradicional y la tradición del pialar (lazar animales desde caballo). No son solo jinetes, sino guardianes de una tradición antigua con raíces en la época colonial y las culturas indígenas.
+**Pialadores** son maestros de la tradición del pialar (lazar animales). Son guardianes de una tradición antigua con raíces en la época colonial y las culturas indígenas.
 
 **Contrapunto** es una forma de competencia poética donde dos poetas improvisan versos en un diálogo-duelo en vivo, frecuentemente con acompañamiento musical. Es un arte de improvisación e ingenio con raíces en la tradición española y latinoamericana.
 
-En el festival, los pialadores demuestran sus habilidades y compiten en contrapunto — arte poético. Esta sorprendente combinación de equitación, tradición y creatividad rara vez se encuentra fuera de esta región. Para visitantes, es una oportunidad de sumergirse en la cultura viva del noroeste argentino.
+En el festival, los pialadores demuestran sus habilidades y compiten en contrapunto — arte poético. Esta sorprendente combinación de habilidad, tradición y creatividad rara vez se encuentra fuera de esta región. Para visitantes, es una oportunidad de sumergirse en la cultura viva del noroeste argentino.
 
-Después del festival (o si no está ocurriendo), tendremos tiempo para explorar la zona antes de regresar a Salta.
+Después del festival, tendremos tiempo para explorar la zona antes de regresar a Salta.
 
 **Humahuaca → Quebrada de las Señoritas → Salta**
 **Distancia:** ~240 km
