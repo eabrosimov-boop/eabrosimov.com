@@ -250,6 +250,7 @@ const genHtml = (tour, lang, tourId) => {
     '        <span>⏱️ ' + tour.duration + '</span>',
     '        <span>📍 ' + tour.location + '</span>',
     '      </p>',
+    '      <div class="tour-hero-price">$' + tour.price + '</div>',
     '    </div>',
     '  </section>',
     '',
