@@ -5,6 +5,7 @@ const CONTENT = {
   ru: {
     nav: { brand: "Евгений Абросимов" },
     lang: "ru",
+    comingSoon: "СКОРО",
     ticker: "Ближайший тур: <strong>Северо-Запад Аргентины (Хухуй)</strong> · 15–19 июля 2026",
     tickerCta: { label: "Написать", waText: "Привет! Хочу узнать подробности о ближайшем туре." },
     pricePrefix: "от",
@@ -46,7 +47,7 @@ const CONTENT = {
           location: "Буэнос-Айрес",
           description: "Буэнос-Айрес — это не просто красивый город, а ключ к пониманию Аргентины. За одну прогулку мы пройдём путь от старого порта Ла-Бока до ультрасовременного Пуэрто-Мадеро и увидим, как иммиграция, танго, политика, экономические кризисы и футбольная страсть сформировали город таким, каким он является сегодня.\n\nЭто экскурсия не только про историю и архитектуру. Это возможность разобраться, почему Аргентина живёт именно так, как живёт сейчас, и увидеть связь между прошлым и настоящим на улицах Буэнос-Айреса.",
           image: "images/tours/excursions/history-ba.jpg",
-          price: "150",
+          price: "170",
           showPrefix: true,
           included: [
             "Пешеходная прогулка по ключевым районам города (4 часа)",
@@ -94,26 +95,6 @@ const CONTENT = {
       ],
       short: [
         {
-          id: "mendoza",
-          title: "Мендоса: вино и Анды",
-          duration: "3 дня",
-          location: "Мендоса",
-          description: "Лучшие вина Аргентины рождаются здесь, у подножия Анд. Нас ждут дегустации, винодельни разных масштабов, гастрономия и несколько дней в одном из самых приятных регионов страны.",
-          image: "images/tours/short-programs/mendoza-wine.jpg",
-          price: "750",
-          showPrefix: true
-        },
-        {
-          id: "iguazu-short",
-          title: "Водопады Игуасу",
-          duration: "2 дня",
-          location: "Аргентина",
-          description: "Один из самых впечатляющих природных феноменов планеты. Заходим с аргентинской стороны — ближе и мощнее всего. Звук, брызги, радуги. Это невозможно передать словами.",
-          image: "images/tours/short-programs/iguazu-falls.jpg",
-          price: "700",
-          showPrefix: true
-        },
-        {
           id: "salta",
           title: "Высокогорная Аргентина",
           duration: "5 дней",
@@ -122,6 +103,7 @@ const CONTENT = {
           image: "images/tours/short-programs/salta-northwest.jpg",
           price: "570",
           showPrefix: false,
+          active: true,
           included: [
             "4 ночи в отелях — 2х местное размещение",
             "Автомобили и бензин",
@@ -136,6 +118,50 @@ const CONTENT = {
           ]
         },
         {
+          id: "mendoza",
+          title: "Мендоса: вино и Анды",
+          duration: "3 дня",
+          location: "Мендоса",
+          description: "Лучшие вина Аргентины рождаются здесь, у подножия Анд. Нас ждут дегустации, винодельни разных масштабов, гастрономия и несколько дней в одном из самых приятных регионов страны.",
+          image: "images/tours/short-programs/mendoza-wine.jpg",
+          price: "750",
+          showPrefix: true,
+          active: true
+        },
+        {
+          id: "iguazu-short",
+          title: "Водопады Игуасу",
+          duration: "2 дня",
+          location: "Аргентина",
+          description: "Один из самых впечатляющих природных феноменов планеты. Заходим с аргентинской стороны — ближе и мощнее всего. Звук, брызги, радуги. Это невозможно передать словами.",
+          image: "images/tours/short-programs/iguazu-falls.jpg",
+          price: "700",
+          showPrefix: true,
+          active: true
+        },
+        {
+          id: "oktoberfest-cordoba",
+          title: "Октоберфест в Кордобе",
+          duration: "3 дня",
+          location: "Кордова",
+          description: "Самый большой пивной фестиваль Латинской Америки. Несколько дней музыки, танцев и немецких традиций в горах Кордовы.",
+          image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
+          price: "—",
+          showPrefix: false,
+          active: false
+        },
+        {
+          id: "whales-punta-piramides",
+          title: "Киты и пингвины в Пуэрто-Мадрине",
+          duration: "3 дня",
+          location: "Пуэрто-Мадрин",
+          description: "Место, куда едят ради встреч с китами. Но кроме них здесь есть пингвины, морские львы, морские слоны и одна из самых впечатляющих экосистем Южной Америки.",
+          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
+          price: "—",
+          showPrefix: false,
+          active: false
+        },
+        {
           id: "bariloche",
           title: "Барилоче: сердце озёрного края",
           duration: "4 дня",
@@ -143,7 +169,8 @@ const CONTENT = {
           description: "Регион, который сделал Патагонию знаменитой. Озёра ледникового происхождения, горные пейзажи, уютные городки и десятки красивых маршрутов на любой уровень подготовки.",
           image: "images/tours/short-programs/bariloche-lakes.jpg",
           price: "650",
-          showPrefix: true
+          showPrefix: true,
+          active: true
         }
       ],
       long: [
@@ -285,6 +312,7 @@ const CONTENT = {
   en: {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "en",
+    comingSoon: "COMING SOON",
     ticker: "Next tour: <strong>Northwest Argentina (Jujuy)</strong> · 15–19 July 2026",
     tickerCta: { label: "Enquire", waText: "Hi! I'd like to learn more about the upcoming tour." },
     pricePrefix: "from",
@@ -320,7 +348,7 @@ const CONTENT = {
     tours: {
       excursions: [
         { id: "history-ba", title: "Understanding Buenos Aires", duration: "4 hours", location: "Buenos Aires", description: "Buenos Aires is not just a beautiful city, but a key to understanding Argentina. In one walk, we'll travel from the old port of La Boca to the ultra-modern Puerto Madero and see how immigration, tango, politics, economic crises, and football passion shaped the city as it is today.\n\nThis is not just a tour about history and architecture. This is an opportunity to understand why Argentina lives the way it does now, and to see the connection between past and present on the streets of Buenos Aires.", image: "images/tours/excursions/history-ba.jpg",
-          "price": "150",
+          "price": "170",
           "showPrefix": true,
           included: [
             "Walking tour through key neighborhoods of the city (4 hours)",
@@ -346,15 +374,10 @@ const CONTENT = {
         }
       ],
       short: [
-        { id: "mendoza", title: "Mendoza: Wine and the Andes", duration: "3 days", location: "Mendoza", description: "Argentina's finest wines are born here, at the foot of the Andes. Tastings, wineries of different scales, gastronomy and a few days in one of the country's most pleasant regions.", image: "images/tours/short-programs/mendoza-wine.jpg",
-          "price": "750",
-          "showPrefix": true },
-        { id: "iguazu-short", title: "Iguazu Falls", duration: "2 days", location: "Argentina", description: "One of the most impressive natural phenomena on the planet. We enter from the Argentine side — closest and most powerful. Sound, spray, rainbows. Impossible to describe in words.", image: "images/tours/short-programs/iguazu-falls.jpg",
-          "price": "700",
-          "showPrefix": true },
         { id: "salta", title: "Highland Argentina", duration: "5 days", location: "Salta, Jujuy", description: "A journey through Argentina that many don't expect to see. High-altitude deserts, salt flats at over 3000 metres, colonial churches, Andean villages and landscapes that look more like Bolivia or Peru. In just a few days we'll see a region where Inca history, Spanish heritage and indigenous cultures still exist side by side.", image: "images/tours/short-programs/salta-northwest.jpg",
           "price": "570",
           "showPrefix": false,
+          "active": true,
           included: [
             "4 nights in hotels — double occupancy",
             "Vehicles and fuel",
@@ -368,9 +391,28 @@ const CONTENT = {
             "Personal expenses"
           ]
         },
+        { id: "mendoza", title: "Mendoza: Wine and the Andes", duration: "3 days", location: "Mendoza", description: "Argentina's finest wines are born here, at the foot of the Andes. Tastings, wineries of different scales, gastronomy and a few days in one of the country's most pleasant regions.", image: "images/tours/short-programs/mendoza-wine.jpg",
+          "price": "750",
+          "showPrefix": true,
+          "active": true },
+        { id: "iguazu-short", title: "Iguazu Falls", duration: "2 days", location: "Argentina", description: "One of the most impressive natural phenomena on the planet. We enter from the Argentine side — closest and most powerful. Sound, spray, rainbows. Impossible to describe in words.", image: "images/tours/short-programs/iguazu-falls.jpg",
+          "price": "700",
+          "showPrefix": true,
+          "active": true },
+        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "3 days", location: "Cordoba", description: "The largest beer festival in Latin America. Several days of music, dancing and German traditions in the mountains of Cordoba.",
+          image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
+          "price": "—",
+          "showPrefix": false,
+          "active": false },
+        { id: "whales-punta-piramides", title: "Whales and Penguins in Puerto Madryn", duration: "3 days", location: "Puerto Madryn", description: "The place to see whales. But besides them here are penguins, sea lions, elephant seals and one of the most impressive ecosystems of South America.",
+          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
+          "price": "—",
+          "showPrefix": false,
+          "active": false },
         { id: "bariloche", title: "Bariloche: Heart of the Lake District", duration: "4 days", location: "Patagonia", description: "The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.", image: "images/tours/short-programs/bariloche-lakes.jpg",
           "price": "650",
-          "showPrefix": true }
+          "showPrefix": true,
+          "active": true }
       ],
       long: [
         { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", description: "Peru and Bolivia are unique South American countries with amazing history, rich archaeological heritage, authentic colonial architecture and untouched mountain nature. Pacific coast in Lima, Cusco—capital of the Inca empire, Sacred Valley, lost city of Machu Picchu, Rainbow Mountains, Lake Titicaca, Valley of Mars in Bolivia, Uyuni salt flats, lagoons, volcanoes, geysers and pink flamingos. No visa required for citizens of Russia, Moldova, and Belarus to visit Peru; Bolivia visa issued at border.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
@@ -480,6 +522,7 @@ const CONTENT = {
   es: {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "es",
+    comingSoon: "PRÓXIMAMENTE",
     ticker: "Próximo tour: <strong>Noroeste Argentino (Jujuy)</strong> · 15–19 de julio de 2026",
     tickerCta: { label: "Escribir", waText: "¡Hola! Me gustaría saber más sobre el próximo tour." },
     pricePrefix: "desde",
@@ -515,7 +558,7 @@ const CONTENT = {
     tours: {
       excursions: [
         { id: "history-ba", title: "Entender Buenos Aires", duration: "4 horas", location: "Buenos Aires", description: "Buenos Aires no es solo una ciudad hermosa, sino la clave para entender Argentina. En un paseo, viajaremos desde el antiguo puerto de La Boca hasta el ultra moderno Puerto Madero y veremos cómo la inmigración, el tango, la política, las crisis económicas y la pasión por el fútbol moldearon la ciudad tal como es hoy.\n\nEste no es solo un tour sobre historia y arquitectura. Esta es una oportunidad para entender por qué Argentina vive de la manera en que vive ahora, y para ver la conexión entre el pasado y el presente en las calles de Buenos Aires.", image: "images/tours/excursions/history-ba.jpg",
-          "price": "150",
+          "price": "170",
           "showPrefix": true,
           included: [
             "Recorrido a pie por los barrios clave de la ciudad (4 horas)",
@@ -541,15 +584,10 @@ const CONTENT = {
         }
       ],
       short: [
-        { id: "mendoza", title: "Mendoza: Vino y los Andes", duration: "3 días", location: "Mendoza", description: "Los mejores vinos de Argentina nacen aquí, al pie de los Andes. Degustaciones, bodegas de distintos tamaños, gastronomía y unos días en una de las regiones más agradables del país.", image: "images/tours/short-programs/mendoza-wine.jpg",
-          "price": "750",
-          "showPrefix": true },
-        { id: "iguazu-short", title: "Cataratas del Iguazú", duration: "2 días", location: "Argentina", description: "Uno de los fenómenos naturales más impresionantes del planeta. Entramos por el lado argentino — el más cercano y poderoso. Sonido, salpicaduras, arcoíris. Imposible de describir con palabras.", image: "images/tours/short-programs/iguazu-falls.jpg",
-          "price": "700",
-          "showPrefix": true },
         { id: "salta", title: "Argentina de Altura", duration: "5 días", location: "Salta, Jujuy", description: "Un viaje por la Argentina que muchos no esperan ver. Desiertos de altura, salares a más de 3000 metros, iglesias coloniales, pueblos andinos y paisajes que parecen más de Bolivia o Perú. En apenas unos días veremos una región donde la historia inca, la herencia española y la cultura de los pueblos originarios aún coexisten lado a lado.", image: "images/tours/short-programs/salta-northwest.jpg",
           "price": "570",
           "showPrefix": false,
+          "active": true,
           included: [
             "4 noches en hoteles — alojamiento doble",
             "Vehículos y gasolina",
@@ -563,9 +601,28 @@ const CONTENT = {
             "Gastos personales"
           ]
         },
+        { id: "mendoza", title: "Mendoza: Vino y los Andes", duration: "3 días", location: "Mendoza", description: "Los mejores vinos de Argentina nacen aquí, al pie de los Andes. Degustaciones, bodegas de distintos tamaños, gastronomía y unos días en una de las regiones más agradables del país.", image: "images/tours/short-programs/mendoza-wine.jpg",
+          "price": "750",
+          "showPrefix": true,
+          "active": true },
+        { id: "iguazu-short", title: "Cataratas del Iguazú", duration: "2 días", location: "Argentina", description: "Uno de los fenómenos naturales más impresionantes del planeta. Entramos por el lado argentino — el más cercano y poderoso. Sonido, salpicaduras, arcoíris. Imposible de describir con palabras.", image: "images/tours/short-programs/iguazu-falls.jpg",
+          "price": "700",
+          "showPrefix": true,
+          "active": true },
+        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "3 días", location: "Córdoba", description: "El festival de cerveza más grande de América Latina. Varios días de música, baile y tradiciones alemanas en las montañas de Córdoba.",
+          image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
+          "price": "—",
+          "showPrefix": false,
+          "active": false },
+        { id: "whales-punta-piramides", title: "Ballenas y Pingüinos en Puerto Madryn", duration: "3 días", location: "Puerto Madryn", description: "El lugar para ver ballenas. Pero además de ellas hay pingüinos, leones marinos, elefantes marinos y uno de los ecosistemas más impresionantes de Sudamérica.",
+          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
+          "price": "—",
+          "showPrefix": false,
+          "active": false },
         { id: "bariloche", title: "Bariloche: Corazón de la Región de los Lagos", duration: "4 días", location: "Patagonia", description: "La región que hizo famosa a la Patagonia. Lagos glaciares, paisajes de montaña, pueblos encantadores y decenas de rutas hermosas para todo nivel de condición física.", image: "images/tours/short-programs/bariloche-lakes.jpg",
           "price": "650",
-          "showPrefix": true }
+          "showPrefix": true,
+          "active": true }
       ],
       long: [
         { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", description: "Perú y Bolivia son países únicos de América del Sur con historia sorprendente, rico patrimonio arqueológico, arquitectura colonial auténtica y naturaleza montañosa intacta. Costa del Pacífico en Lima, Cusco—capital del imperio inca, Valle Sagrado, ciudad perdida de Machu Picchu, Montañas Arcoíris, lago Titicaca, Valle de Marte en Bolivia, salares de Uyuni, lagunas, volcanes, géiseres y flamencos rosas. No se requiere visa para ciudadanos de Rusia, Moldavia y Bielorrusia para visitar Perú; visa de Bolivia se expide en frontera.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",

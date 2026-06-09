@@ -335,7 +335,7 @@ function renderTourPanel(c, tab) {
   const tours = c.tours[tab];
   const cardsHtml = tours.map(tour => {
     const tourLink = currentLang === 'ru' ? `tours/${tour.id}.html` : `tours/${tour.id}.${currentLang}.html`;
-    const isActive = ACTIVE_TOURS[tab] && ACTIVE_TOURS[tab].includes(tour.id);
+    const isActive = tour.active !== false;
     const linkStart = isActive ? `<a href="${tourLink}" class="tour-card-link">` : `<div class="tour-card-link tour-card-disabled">`;
     const linkEnd = isActive ? `</a>` : `</div>`;
     const overlay = !isActive ? `<div class="tour-card-overlay"><div class="tour-card-coming-soon">${c.comingSoon}</div></div>` : '';
