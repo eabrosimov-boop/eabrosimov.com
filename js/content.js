@@ -121,7 +121,7 @@ const CONTENT = {
           id: "oktoberfest-cordoba",
           title: "Октоберфест в Кордобе",
           duration: "3 дня",
-          location: "Кордова",
+          location: "Виша Генерал Бельграно",
           description: "Самый большой пивной фестиваль Латинской Америки. Несколько дней музыки, танцев и немецких традиций в горах Кордовы.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           price: "—",
@@ -168,9 +168,9 @@ const CONTENT = {
           location: "Патагония",
           description: "Регион, который сделал Патагонию знаменитой. Озёра ледникового происхождения, горные пейзажи, уютные городки и десятки красивых маршрутов на любой уровень подготовки.",
           image: "images/tours/short-programs/bariloche-lakes.jpg",
-          price: "650",
-          showPrefix: true,
-          active: true
+          price: "—",
+          showPrefix: false,
+          active: false
         }
       ],
       long: [
@@ -391,7 +391,7 @@ const CONTENT = {
             "Personal expenses"
           ]
         },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "3 days", location: "Cordoba", description: "The largest beer festival in Latin America. Several days of music, dancing and German traditions in the mountains of Cordoba.",
+        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "3 days", location: "Villa General Belgrano", description: "The largest beer festival in Latin America. Several days of music, dancing and German traditions in the mountains of Cordoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "—",
           "showPrefix": false,
@@ -410,9 +410,9 @@ const CONTENT = {
           "showPrefix": false,
           "active": false },
         { id: "bariloche", title: "Bariloche: Heart of the Lake District", duration: "4 days", location: "Patagonia", description: "The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.", image: "images/tours/short-programs/bariloche-lakes.jpg",
-          "price": "650",
-          "showPrefix": true,
-          "active": true }
+          "price": "—",
+          "showPrefix": false,
+          "active": false }
       ],
       long: [
         { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", description: "Peru and Bolivia are unique South American countries with amazing history, rich archaeological heritage, authentic colonial architecture and untouched mountain nature. Pacific coast in Lima, Cusco—capital of the Inca empire, Sacred Valley, lost city of Machu Picchu, Rainbow Mountains, Lake Titicaca, Valley of Mars in Bolivia, Uyuni salt flats, lagoons, volcanoes, geysers and pink flamingos. No visa required for citizens of Russia, Moldova, and Belarus to visit Peru; Bolivia visa issued at border.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
@@ -601,7 +601,7 @@ const CONTENT = {
             "Gastos personales"
           ]
         },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "3 días", location: "Córdoba", description: "El festival de cerveza más grande de América Latina. Varios días de música, baile y tradiciones alemanas en las montañas de Córdoba.",
+        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "3 días", location: "Villa General Belgrano", description: "El festival de cerveza más grande de América Latina. Varios días de música, baile y tradiciones alemanas en las montañas de Córdoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "—",
           "showPrefix": false,
@@ -620,9 +620,9 @@ const CONTENT = {
           "showPrefix": false,
           "active": false },
         { id: "bariloche", title: "Bariloche: Corazón de la Región de los Lagos", duration: "4 días", location: "Patagonia", description: "La región que hizo famosa a la Patagonia. Lagos glaciares, paisajes de montaña, pueblos encantadores y decenas de rutas hermosas para todo nivel de condición física.", image: "images/tours/short-programs/bariloche-lakes.jpg",
-          "price": "650",
-          "showPrefix": true,
-          "active": true }
+          "price": "—",
+          "showPrefix": false,
+          "active": false }
       ],
       long: [
         { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", description: "Perú y Bolivia son países únicos de América del Sur con historia sorprendente, rico patrimonio arqueológico, arquitectura colonial auténtica y naturaleza montañosa intacta. Costa del Pacífico en Lima, Cusco—capital del imperio inca, Valle Sagrado, ciudad perdida de Machu Picchu, Montañas Arcoíris, lago Titicaca, Valle de Marte en Bolivia, salares de Uyuni, lagunas, volcanes, géiseres y flamencos rosas. No se requiere visa para ciudadanos de Rusia, Moldavia y Bielorrusia para visitar Perú; visa de Bolivia se expide en frontera.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
