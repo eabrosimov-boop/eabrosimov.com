@@ -90,7 +90,7 @@ const CONTENT = {
           location: "Буэнос-Айрес",
           description: "Рекомендации и бронирование танго-шоу в Буэнос-Айресе. Подберу оптимальный вариант по формату, расположению и бюджету, а также помогу получить скидку там, где это возможно.",
           image: "images/tours/excursions/tango.jpg",
-          price: "65",
+          price: "60",
           showPrefix: true,
           photos: ['/images/tours/excursions/tango-1.jpg']
         }
@@ -372,7 +372,7 @@ const CONTENT = {
           "showPrefix": false,
           "active": false },
         { id: "tango", title: "Tango Show", duration: "1 day", location: "Buenos Aires", description: "Recommendations and booking assistance for tango shows in Buenos Aires. I'll find the best option by format, venue and budget, and help you get a discount where possible.", image: "images/tours/excursions/tango.jpg",
-          "price": "65",
+          "price": "60",
           "showPrefix": true,
           photos: ['/images/tours/excursions/tango-1.jpg']
         }
@@ -584,7 +584,7 @@ const CONTENT = {
           "showPrefix": false,
           "active": false },
         { id: "tango", title: "Show de Tango", duration: "1 día", location: "Buenos Aires", description: "Recomendaciones y asistencia para reservar espectáculos de tango en Buenos Aires. Encontraré la mejor opción según el formato, el lugar y el presupuesto, y te ayudaré a obtener un descuento donde sea posible.", image: "images/tours/excursions/tango.jpg",
-          "price": "65",
+          "price": "60",
           "showPrefix": true,
           photos: ['/images/tours/excursions/tango-1.jpg']
         }
