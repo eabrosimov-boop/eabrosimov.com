@@ -9,7 +9,7 @@ const CONTENT = {
     tickerCta: { label: "Написать", waText: "Привет! Хочу узнать подробности о ближайшем туре." },
     pricePrefix: "от",
     cardCta: {
-      label: "Спросить",
+      label: "Поехать!",
       waTemplate: "Привет! Меня интересует «{tour}». Хочу узнать подробнее."
     },
     hero: {
@@ -289,7 +289,7 @@ const CONTENT = {
     tickerCta: { label: "Enquire", waText: "Hi! I'd like to learn more about the upcoming tour." },
     pricePrefix: "from",
     cardCta: {
-      label: "Ask",
+      label: "Let's Go!",
       waTemplate: "Hi! I'm interested in «{tour}». I'd like to learn more."
     },
     hero: {
@@ -484,7 +484,7 @@ const CONTENT = {
     tickerCta: { label: "Escribir", waText: "¡Hola! Me gustaría saber más sobre el próximo tour." },
     pricePrefix: "desde",
     cardCta: {
-      label: "Preguntar",
+      label: "¡Vamos!",
       waTemplate: "¡Hola! Me interesa «{tour}». Me gustaría saber más."
     },
     hero: {
