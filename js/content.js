@@ -2,6 +2,27 @@
 // При редактировании текстов — обновляйте оба файла
 // BUILD: 2026-06-09 13:00
 
+const REVIEW_ITEMS = [
+  {
+    username: "instagram_user_1",
+    image: "images/reviews/review-1.jpg",
+    text: "Друзья, я хотела оставить здесь в виде поста осознанное резюме трехнедельного трипа по Аргентине. Но не завезли в душе места ни на осознанность, ни на контроль эмоций и впечатлений, скопившихся за это время. Это было волшебно! Магия вне Хогвартса, переворачивающая сознание.\n\nКогда слайды перед глазами переключаются с такой скоростью, ты не успеваешь выдыхать, не успеваешь перезагружаться, поэтому очень важно, чтобы атмосфера балансировала впечатленческий накал. А это напрямую зависит от того, кто будет твоим проводником.\n\nЗа 20 дней освоен маршрут Москва — Буэнос-Айрес — Барилоче — Эль-Больсон — Тревелин — Пуэрто-Мадрин — Сальта — Пурмамарка — Умауака — Буэнос-Айрес — Москва.\n\nОгромное спасибо за впечатления, которые останутся на всю жизнь! ❤️",
+    url: "https://www.instagram.com/p/DQfENJbDVVY/"
+  },
+  {
+    username: "instagram_user_2",
+    image: "images/reviews/review-2.jpg",
+    text: "",
+    url: ""
+  },
+  {
+    username: "instagram_user_3",
+    image: "images/reviews/review-3.jpg",
+    text: "",
+    url: ""
+  }
+];
+
 const CONTENT = {
   ru: {
     nav: { brand: "Евгений Абросимов" },
@@ -295,12 +316,7 @@ const CONTENT = {
     reviews: {
       label: "ОТЗЫВЫ",
       title: "Что говорят путешественники",
-      items: [
-        { text: "С Женей ты перестаёшь быть туристом и становишься путешественником. Разница — огромная.", name: "Алексей К.", city: "Санкт-Петербург", tour: "Перу / Боливия / Чили" },
-        { text: "Патагония с Евгением — лучшее приключение в жизни. Он знает каждую тропу и каждую хижину.", name: "Мария и Дмитрий Л.", city: "Москва", tour: "Патагония: треккинг" },
-        { text: "Всегда на связи, всегда с решением. Когда наш рейс отменили, Женя нашёл выход за два часа.", name: "Наталья В.", city: "Екатеринбург", tour: "Короткие туры по Аргентине" },
-        { text: "Это уже третья поездка с Евгением. И я снова хочу ещё.", name: "Игорь Р.", city: "Новосибирск", tour: "Буэнос-Айрес + Мендоса" }
-      ]
+      items: REVIEW_ITEMS
     },
     contact: {
       label: "КОНТАКТ",
@@ -509,12 +525,7 @@ const CONTENT = {
     reviews: {
       label: "REVIEWS",
       title: "What Travelers Say",
-      items: [
-        { text: "With Evgeny you stop being a tourist and become a traveler. The difference is huge.", name: "Alexey K.", city: "St. Petersburg", tour: "Peru / Bolivia / Chile" },
-        { text: "Patagonia with Evgeny was the best adventure of my life. He knows every trail and every hut.", name: "Maria & Dmitry L.", city: "Moscow", tour: "Patagonia Trekking" },
-        { text: "Always reachable, always with a solution. When our flight was cancelled, Evgeny found a way out in two hours.", name: "Natalia V.", city: "Yekaterinburg", tour: "Short Argentina Tours" },
-        { text: "This is my third trip with Evgeny. And I want more.", name: "Igor R.", city: "Novosibirsk", tour: "Buenos Aires + Mendoza" }
-      ]
+      items: REVIEW_ITEMS
     },
     contact: {
       label: "CONTACT", title: "Get in Touch", subtitle: "Choose the way you prefer — I reply fast.",
@@ -721,12 +732,7 @@ const CONTENT = {
     reviews: {
       label: "TESTIMONIOS",
       title: "Lo Que Dicen los Viajeros",
-      items: [
-        { text: "Con Evgeny dejas de ser turista y te conviertes en viajero. La diferencia es enorme.", name: "Alexey K.", city: "San Petersburgo", tour: "Perú / Bolivia / Chile" },
-        { text: "La Patagonia con Evgeny fue la mejor aventura de mi vida. Conoce cada sendero y cada cabaña.", name: "Maria y Dmitry L.", city: "Moscú", tour: "Trekking en la Patagonia" },
-        { text: "Siempre disponible, siempre con una solución. Cuando cancelaron nuestro vuelo, Evgeny encontró la salida en dos horas.", name: "Natalia V.", city: "Ekaterimburgo", tour: "Tours Cortos por Argentina" },
-        { text: "Este es mi tercer viaje con Evgeny. Y quiero más.", name: "Igor R.", city: "Novosibirsk", tour: "Buenos Aires + Mendoza" }
-      ]
+      items: REVIEW_ITEMS
     },
     contact: {
       label: "CONTACTO", title: "Contáctame", subtitle: "Elige cómo prefieres escribirme — respondo rápido.",

@@ -505,7 +505,7 @@ nav {
   border-radius: 20px;
 }
 
-/* ===== REVIEWS ===== */
+/* ===== REVIEWS — Instagram style ===== */
 #reviews {
   padding: 96px 0;
   background: var(--white);
@@ -513,25 +513,75 @@ nav {
 #reviews > .container > h2 { margin-bottom: 48px; }
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-.review-card {
-  background: var(--light-bg);
-  border-radius: var(--radius);
-  padding: 28px;
+.ig-card {
+  display: block;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  transition: box-shadow var(--transition);
+  text-decoration: none;
 }
-.review-text {
-  font-style: italic;
-  font-size: 0.98rem;
-  color: var(--dark);
-  margin-bottom: 20px;
-  line-height: 1.7;
+.ig-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.12); }
+.ig-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
 }
-.review-text::before { content: '\201C'; font-size: 2rem; line-height: 0; vertical-align: -0.4em; color: var(--accent); margin-right: 2px; }
-.review-text::after  { content: '\201D'; font-size: 2rem; line-height: 0; vertical-align: -0.4em; color: var(--accent); margin-left: 2px; }
-.review-author { font-weight: 600; font-size: 0.9rem; }
-.review-meta { font-size: 0.8rem; color: var(--gray); margin-top: 2px; }
+.ig-avatar-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  padding: 2px;
+  flex-shrink: 0;
+}
+.ig-avatar-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.ig-avatar-inner svg { width: 20px; height: 20px; }
+.ig-username { font-size: 14px; font-weight: 600; color: #262626; flex: 1; line-height: 1; }
+.ig-logo { width: 20px; height: 20px; color: #262626; opacity: 0.6; flex-shrink: 0; }
+.ig-img-wrap { width: 100%; aspect-ratio: 1; overflow: hidden; }
+.ig-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ig-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px 4px;
+}
+.ig-actions-left { display: flex; gap: 14px; }
+.ig-actions svg { width: 24px; height: 24px; color: #262626; }
+.ig-caption {
+  padding: 4px 14px 16px;
+  font-size: 13.5px;
+  color: #262626;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ig-cap-user { font-weight: 600; }
+@media (max-width: 900px) {
+  .reviews-grid { grid-template-columns: 1fr; max-width: 470px; }
+}
+@media (max-width: 500px) {
+  .reviews-grid { max-width: 100%; }
+}
 
 /* ===== CONTACT ===== */
 #contact {
