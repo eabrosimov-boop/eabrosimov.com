@@ -10,3 +10,6 @@ desktop.ini
 # Node (если понадобится в будущем)
 node_modules/
 package-lock.json
+
+# Claude Code
+.claude/
