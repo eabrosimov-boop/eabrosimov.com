@@ -316,6 +316,8 @@ function renderTourPanel(c, tab) {
 
   if (tab === 'individual') {
     const t = c.tours.individual;
+    console.log('Individual tour object:', t);
+    console.log('Tags:', t.tags);
     const tagsHtml = t.tags ? t.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : '';
     const tagsWrap = t.tags ? `<div class="tags-wrap">${tagsHtml}</div>` : '';
     container.innerHTML = `
