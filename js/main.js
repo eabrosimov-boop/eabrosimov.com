@@ -316,7 +316,8 @@ function renderTourPanel(c, tab) {
 
   if (tab === 'individual') {
     const t = c.tours.individual;
-    const tagsHtml = t.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+    const tagsHtml = t.tags ? t.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : '';
+    const tagsWrap = t.tags ? `<div class="tags-wrap">${tagsHtml}</div>` : '';
     container.innerHTML = `
       <div class="single-panel">
         <div class="single-panel-img">
@@ -325,8 +326,8 @@ function renderTourPanel(c, tab) {
         <div class="single-panel-body">
           <h2>${t.title}</h2>
           <p>${t.description}</p>
-          <div class="tags-wrap">${tagsHtml}</div>
-          <a href="${buildWaLink(t.title, currentLang)}" class="btn-primary" target="_blank" rel="noopener">${c.cardCta.label}</a>
+          ${tagsWrap}
+          <a href="${buildWaLink(t.title, currentLang)}" class="btn-primary" target="_blank" rel="noopener">${t.cta}</a>
         </div>
       </div>`;
     return;
