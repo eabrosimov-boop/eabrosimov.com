@@ -511,12 +511,40 @@ nav {
   background: var(--white);
 }
 #reviews > .container > h2 { margin-bottom: 48px; }
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+.reviews-grid { position: relative; }
+.reviews-slider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
+.reviews-track-wrap {
+  flex: 1;
+  overflow: hidden;
+}
+.reviews-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease;
+}
+.reviews-arrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition), opacity var(--transition);
+}
+.reviews-arrow:hover:not(:disabled) { background: #f5f5f5; }
+.reviews-arrow:disabled { opacity: 0.25; cursor: default; }
+.reviews-arrow svg { width: 18px; height: 18px; color: #262626; }
 .ig-card {
+  flex: 0 0 calc((100% - 40px) / 3);
+  min-width: 0;
   display: block;
   background: #fff;
   border: 1px solid #dbdbdb;
@@ -577,10 +605,7 @@ nav {
 }
 .ig-cap-user { font-weight: 600; }
 @media (max-width: 900px) {
-  .reviews-grid { grid-template-columns: 1fr; max-width: 470px; }
-}
-@media (max-width: 500px) {
-  .reviews-grid { max-width: 100%; }
+  .ig-card { flex: 0 0 100%; }
 }
 
 /* ===== CONTACT ===== */

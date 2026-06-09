@@ -372,54 +372,81 @@ function renderTourPanel(c, tab) {
 }
 
 // ===== REVIEWS =====
+function igCardHtml(r) {
+  const captionHtml = r.text.replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>');
+  return `
+  <a class="ig-card" href="${r.url}" target="_blank" rel="noopener">
+    <div class="ig-header">
+      <div class="ig-avatar-wrap">
+        <div class="ig-avatar-inner">
+          <svg viewBox="0 0 24 24" fill="#c0c0c0"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        </div>
+      </div>
+      <span class="ig-username">${r.username}</span>
+      <svg class="ig-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <circle cx="12" cy="12" r="4.5"/>
+        <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+      </svg>
+    </div>
+    <div class="ig-img-wrap"><img src="${r.image}" alt="${r.username}" loading="lazy"></div>
+    <div class="ig-actions">
+      <div class="ig-actions-left">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+    </div>
+    <div class="ig-caption"><span class="ig-cap-user">${r.username} </span>${captionHtml}</div>
+  </a>`;
+}
+
 function renderReviews(c) {
   document.querySelector('.reviews-label').textContent = c.reviews.label;
   document.querySelector('.reviews-title').textContent = c.reviews.title;
   const grid = document.querySelector('.reviews-grid');
-  grid.innerHTML = c.reviews.items.map(r => {
-    if (!r.url) return '';
-    const captionHtml = r.text.replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>');
-    return `
-    <a class="ig-card" href="${r.url}" target="_blank" rel="noopener">
-      <div class="ig-header">
-        <div class="ig-avatar-wrap">
-          <div class="ig-avatar-inner">
-            <svg viewBox="0 0 24 24" fill="#c0c0c0" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
-            </svg>
-          </div>
-        </div>
-        <span class="ig-username">${r.username}</span>
-        <svg class="ig-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-          <circle cx="12" cy="12" r="4.5"/>
-          <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
-        </svg>
+
+  const items = c.reviews.items.filter(r => r.url);
+  const cardsHtml = items.map(igCardHtml).join('');
+
+  grid.innerHTML = `
+    <div class="reviews-slider">
+      <button class="reviews-arrow reviews-prev" aria-label="Назад" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="reviews-track-wrap">
+        <div class="reviews-track">${cardsHtml}</div>
       </div>
-      <div class="ig-img-wrap">
-        <img src="${r.image}" alt="${r.username}" loading="lazy">
-      </div>
-      <div class="ig-actions">
-        <div class="ig-actions-left">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-          </svg>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-          </svg>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
-          </svg>
-        </div>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
-        </svg>
-      </div>
-      <div class="ig-caption">
-        <span class="ig-cap-user">${r.username} </span>${captionHtml}
-      </div>
-    </a>`;
-  }).join('');
+      <button class="reviews-arrow reviews-next" aria-label="Вперёд">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>`;
+
+  initReviewsSlider(grid, items.length);
+}
+
+function initReviewsSlider(grid, total) {
+  const track  = grid.querySelector('.reviews-track');
+  const prev   = grid.querySelector('.reviews-prev');
+  const next   = grid.querySelector('.reviews-next');
+  let index = 0;
+
+  function visible() { return window.innerWidth >= 900 ? 3 : 1; }
+
+  function update() {
+    const card = track.querySelector('.ig-card');
+    const gap  = 20;
+    const step = card.offsetWidth + gap;
+    track.style.transform = `translateX(-${index * step}px)`;
+    prev.disabled = index === 0;
+    next.disabled = index >= total - visible();
+  }
+
+  prev.addEventListener('click', () => { index = Math.max(0, index - 1); update(); });
+  next.addEventListener('click', () => { index = Math.min(total - visible(), index + 1); update(); });
+  window.addEventListener('resize', () => { index = Math.min(index, total - visible()); update(); });
+  update();
 }
 
 // ===== CONTACT =====
