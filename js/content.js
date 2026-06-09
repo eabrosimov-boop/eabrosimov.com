@@ -121,7 +121,19 @@ const CONTENT = {
           description: "Путешествие по той Аргентине, которую многие не ожидают увидеть. Высокогорные пустыни, солончаки на высоте более 3000 метров, колониальные церкви, андские деревни и пейзажи, больше похожие на Боливию или Перу. За несколько дней мы увидим регион, где история инков, испанское наследие и культура коренных народов до сих пор существуют бок о бок.",
           image: "images/tours/short-programs/salta-northwest.jpg",
           price: "550",
-          showPrefix: true
+          showPrefix: true,
+          included: [
+            "4 ночи в отелях — 2х местное размещение",
+            "Автомобили и бензин",
+            "Пермиты на вход в регионы",
+            "Входные билеты в национальные парки и достопримечательности",
+            "Профессиональные русскоязычные гиды"
+          ],
+          notIncluded: [
+            "Авиабилеты",
+            "Питание (кроме завтраков в отелях)",
+            "Личные расходы"
+          ]
         },
         {
           id: "bariloche",
@@ -342,7 +354,20 @@ const CONTENT = {
           "showPrefix": true },
         { id: "salta", title: "Highland Argentina", duration: "5 days", location: "Salta, Jujuy", description: "A journey through Argentina that many don't expect to see. High-altitude deserts, salt flats at over 3000 metres, colonial churches, Andean villages and landscapes that look more like Bolivia or Peru. In just a few days we'll see a region where Inca history, Spanish heritage and indigenous cultures still exist side by side.", image: "images/tours/short-programs/salta-northwest.jpg",
           "price": "550",
-          "showPrefix": true },
+          "showPrefix": true,
+          included: [
+            "4 nights in hotels — double occupancy",
+            "Vehicles and fuel",
+            "Permits for access to regions",
+            "Entrance fees to national parks and attractions",
+            "Professional English-speaking guides"
+          ],
+          notIncluded: [
+            "Airfare",
+            "Meals (except hotel breakfasts)",
+            "Personal expenses"
+          ]
+        },
         { id: "bariloche", title: "Bariloche: Heart of the Lake District", duration: "4 days", location: "Patagonia", description: "The region that made Patagonia famous. Glacial lakes, mountain scenery, charming towns and dozens of beautiful routes for every fitness level.", image: "images/tours/short-programs/bariloche-lakes.jpg",
           "price": "650",
           "showPrefix": true }
@@ -524,7 +549,20 @@ const CONTENT = {
           "showPrefix": true },
         { id: "salta", title: "Argentina de Altura", duration: "5 días", location: "Salta, Jujuy", description: "Un viaje por la Argentina que muchos no esperan ver. Desiertos de altura, salares a más de 3000 metros, iglesias coloniales, pueblos andinos y paisajes que parecen más de Bolivia o Perú. En apenas unos días veremos una región donde la historia inca, la herencia española y la cultura de los pueblos originarios aún coexisten lado a lado.", image: "images/tours/short-programs/salta-northwest.jpg",
           "price": "550",
-          "showPrefix": true },
+          "showPrefix": true,
+          included: [
+            "4 noches en hoteles — alojamiento doble",
+            "Vehículos y gasolina",
+            "Permisos de acceso a regiones",
+            "Entradas a parques nacionales y atracciones",
+            "Guías profesionales hispanohablantes"
+          ],
+          notIncluded: [
+            "Pasajes aéreos",
+            "Comidas (excepto desayunos en hoteles)",
+            "Gastos personales"
+          ]
+        },
         { id: "bariloche", title: "Bariloche: Corazón de la Región de los Lagos", duration: "4 días", location: "Patagonia", description: "La región que hizo famosa a la Patagonia. Lagos glaciares, paisajes de montaña, pueblos encantadores y decenas de rutas hermosas para todo nivel de condición física.", image: "images/tours/short-programs/bariloche-lakes.jpg",
           "price": "650",
           "showPrefix": true }

@@ -44,19 +44,23 @@ We'll spend the night in Humahuaca.
 
 ---
 
-# Day 4. Uquía and Tilcara
+# Day 4. Quebrada de las Señoritas and Festival de Contrapunto de Pialadores
 
-In the morning we'll visit the small town of Uquía. The local church houses one of the most unusual collections of religious art in the region — the famous arquebusier angels, armed with muskets. Through them we'll understand how Spanish and local Andean traditions intertwined in the colonial era.
+In the morning we'll visit Quebrada de las Señoritas (Valley of the Ladies) — one of the most beautiful canyons in the Andean valley. Impressive red rock formations, sculpted over millions of years, create striking landscapes. This is an ideal place for trekking, where you can experience the scale of nature in Argentina's northwest.
 
-Then we'll head to Quebrada de las Señoritas — a picturesque canyon of red rocks, shaped by water and wind over millions of years. It's one of the most beautiful hiking routes in the region, yet remains far less known than popular tourist spots in the northwest.
+The highlight of the day — if dates align — is visiting the Festival de Contrapunto de Pialadores. This is a unique and rare event that's absolutely worth experiencing.
 
-After trekking we'll visit Tilcara — one of the most pleasant towns in the Quebrada. We'll have time to walk around the centre, pop into craft shops and feel the atmosphere of Argentina's Andean north.
+**Pialadores** are masters of traditional horsemanship and the pialar tradition (lassoing animals from horseback). They're not just riders, but keepers of an ancient tradition rooted in colonial times and indigenous cultures.
 
-By evening we return to Salta.
+**Contrapunto** is a form of poetic competition where two poets improvise verses in a live dialogue-duel, often with musical accompaniment. It's an art of improvisation and wit with roots in Spanish and Latin American tradition.
 
-**Humahuaca → Uquía → Tilcara → Salta**
-**Distance:** ~300 km
-**Travel time:** ~4 hours
+At the festival, pialadores demonstrate their skills and compete in contrapunto — poetic art. This amazing combination of horsemanship, tradition and creativity is rarely found outside this region. For visitors, it's an opportunity to immerse yourself in the living culture of northwest Argentina.
+
+After the festival (or if it's not happening), we'll have time to explore the area before returning to Salta.
+
+**Humahuaca → Quebrada de las Señoritas → Salta**
+**Distance:** ~240 km
+**Travel time:** ~3.5 hours
 
 ---
 
