@@ -264,7 +264,9 @@ const genHtml = (tour, lang, tourId) => {
     (tour.type !== 'excursions' ?
       ('      <section class="tour-section">' +
        '        <h2>' + l.itinerary + '</h2>' +
-       buildItineraryTabs(tourId, lang) +
+       (tour.days
+         ? '<div class="itinerary-list">' + tour.days.map(d => '<p class="itinerary-day">' + d + '</p>').join('') + '</div>'
+         : buildItineraryTabs(tourId, lang)) +
        '      </section>' +
        '')
       : ('      <section class="tour-section">' +

@@ -154,7 +154,7 @@ const CONTENT = {
           id: "oktoberfest-cordoba",
           title: "Октоберфест в Кордобе",
           duration: "4 дня",
-          location: "Виша Генерал Бельграно",
+          location: "Вилья-Хенераль-Бельграно",
           description: "Врываемся дружной компанией на самый настоящий пивной Октоберфест! Вилья-Хенераль-Бельграно — город с богатым немецким прошлым, множеством эмигрантов и богатейшими пивоваренными традициями. Мы едем проживать главную из них — <strong>Октоберфест</strong>.<br><br>Нас ждёт парад исторических communidades, торжественные вскрытия сотен бочек, костюмы, флаги, улицы, заполненные людьми... Каждый вечер — концерты аргентинской музыки, конкурсы, танцы и, безусловно, специальные сорта фестивального пива!<br><br>Утренние часы мы будем проводить с ненавязчивой культурной программой и насыщением прекрасным весенним воздухом гор Кордобы!",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           price: "1100",
@@ -163,13 +163,19 @@ const CONTENT = {
           included: [
             "Дорога на машинах из Буэнос-Айреса туда и обратно",
             "Входные билеты на фестиваль",
-            "Прогулка по Вилья-Хенераль-Бельграно",
+            "Обзорная экскурсия по Вилья-Хенераль-Бельграно",
             "Проживание в 2-х местных номерах в Вилья-Хенераль-Бельграно",
             "Сюрпризы, конкурсы, активности по ходу поездки"
           ],
           notIncluded: [
             "Пиво",
             "Сувениры"
+          ],
+          days: [
+            "<strong>День 1 (Четверг).</strong> Выезд из Буэнос-Айреса, дорога до ВГБ (~9 часов). По дороге — остановка на обед и короткую прогулку по Росарио — родине Аргентинского флага и Лео Месси. Ночуем в Вилья-Хенераль-Бельграно.",
+            "<strong>День 2 (Пятница).</strong> Отправляемся на обзорную экскурсию по городку, а также снаряжаемся традиционными атрибутами — костюмами, кружками, шляпами. Открытие первой бочки пива встречаем уже во всеоружии! Далее вплоть до вечера перемещаемся между пивоварнями в поисках лучшей атмосферы и лучшего напитка. Вечером — отрываемся на концерте аргентинской рок-музыки!",
+            "<strong>День 3 (Суббота).</strong> Неспешно просыпаемся, отдыхаем и готовимся к параду communidades. По желанию — будем пытаться не просто посмотреть, но и поучаствовать в шествии! Вечером — еще один концерт и еще один вечер в атмосфере праздника, самый шумный и масштабный!",
+            "<strong>День 4 (Воскресенье).</strong> День, когда мы прощаемся с Вилья-Хенераль-Бельграно и, пусть немного помятые, но очень счастливые, стартуем домой, в БА."
           ]
         },
         {
@@ -450,13 +456,19 @@ const CONTENT = {
           "included": [
             "Transport by car from Buenos Aires and back",
             "Festival entrance tickets",
-            "Walk around Villa General Belgrano",
+            "Guided tour of Villa General Belgrano",
             "Accommodation in double rooms in Villa General Belgrano",
             "Surprises, contests and activities along the way"
           ],
           "notIncluded": [
             "Beer",
             "Souvenirs"
+          ],
+          "days": [
+            "<strong>Day 1 (Thursday).</strong> We depart Buenos Aires and drive to VGB (~9 hours). On the way — a stop for lunch and a short walk around Rosario, birthplace of the Argentine flag and Leo Messi. We stay the night in Villa General Belgrano.",
+            "<strong>Day 2 (Friday).</strong> We head out on a guided tour of the town and kit ourselves out with the traditional festival gear — costumes, steins, hats. We're in full battle dress for the tapping of the first barrel! From there we spend the day hopping between breweries in search of the best atmosphere and the best drink. Evening — we let loose at an Argentine rock concert!",
+            "<strong>Day 3 (Saturday).</strong> A slow morning, rest, and then we get ready for the communidades parade. If the mood strikes — we'll try not just to watch but to join the procession! Evening — another concert and another night of festival spirit, the loudest and biggest one yet!",
+            "<strong>Day 4 (Sunday).</strong> The day we say goodbye to Villa General Belgrano — a little dented, but very happy — and head back home to BA."
           ] },
         { id: "whales-punta-piramides", title: "Whales and Penguins in Puerto Madryn", duration: "3 days", location: "Puerto Madryn", description: "The place to see whales. But besides them here are penguins, sea lions, elephant seals and one of the most impressive ecosystems of South America.",
           image: "images/tours/short-programs/whales-puerto-madryn.jpg",
@@ -678,13 +690,19 @@ const CONTENT = {
           "included": [
             "Transporte en auto desde Buenos Aires ida y vuelta",
             "Entradas al festival",
-            "Paseo por Villa General Belgrano",
+            "Visita guiada por Villa General Belgrano",
             "Alojamiento en habitaciones dobles en Villa General Belgrano",
             "Sorpresas, concursos y actividades durante el viaje"
           ],
           "notIncluded": [
             "Cerveza",
             "Souvenirs"
+          ],
+          "days": [
+            "<strong>Día 1 (Jueves).</strong> Salimos de Buenos Aires y manejamos hasta VGB (~9 horas). En el camino — parada para almorzar y un corto paseo por Rosario, cuna de la bandera argentina y de Leo Messi. Dormimos en Villa General Belgrano.",
+            "<strong>Día 2 (Viernes).</strong> Salimos en visita guiada por el pueblo y nos equipamos con los atributos tradicionales — disfraces, jarras, sombreros. ¡Recibimos el primer destape de barril completamente listos! Luego pasamos el día recorriendo las cervecerías en busca de la mejor atmósfera y la mejor bebida. Por la noche — ¡nos soltamos en un concierto de rock argentino!",
+            "<strong>Día 3 (Sábado).</strong> Mañana tranquila, descanso y preparativos para el desfile de communidades. Si el ánimo da — intentaremos no solo mirar sino también participar en la procesión. Por la noche — otro concierto y otra noche de fiesta, ¡la más ruidosa y multitudinaria!",
+            "<strong>Día 4 (Domingo).</strong> El día en que nos despedimos de Villa General Belgrano — un poco maltrechos, pero muy felices — y arrancamos de vuelta a BA."
           ] },
         { id: "whales-punta-piramides", title: "Ballenas y Pingüinos en Puerto Madryn", duration: "3 días", location: "Puerto Madryn", description: "El lugar para ver ballenas. Pero además de ellas hay pingüinos, leones marinos, elefantes marinos y uno de los ecosistemas más impresionantes de Sudamérica.",
           image: "images/tours/short-programs/whales-puerto-madryn.jpg",
