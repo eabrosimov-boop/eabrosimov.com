@@ -56,7 +56,7 @@ const CONTENT = {
     tabSub: {
       excursions: "1 день · Буэнос-Айрес",
       short: "2–5 дней · Аргентина",
-      long: "13–17 дней · Перу, Боливия, Чили, Патагония",
+      long: "Перу, Боливия, Чили, Патагония",
       antarctica: "Партнёрская программа",
       individual: "Ваш маршрут с нуля"
     },
@@ -405,7 +405,7 @@ const CONTENT = {
     tabSub: {
       excursions: "1 day · Buenos Aires",
       short: "2–5 days · Argentina",
-      long: "13–17 days · Peru, Bolivia, Chile, Patagonia",
+      long: "Peru, Bolivia, Chile, Patagonia",
       antarctica: "Partner program",
       individual: "Your route from scratch"
     },
@@ -654,7 +654,7 @@ const CONTENT = {
     tabSub: {
       excursions: "1 día · Buenos Aires",
       short: "2–5 días · Argentina",
-      long: "13–17 días · Perú, Bolivia, Chile, Patagonia",
+      long: "Perú, Bolivia, Chile, Patagonia",
       antarctica: "Programa de socios",
       individual: "Tu ruta desde cero"
     },
@@ -878,7 +878,7 @@ const TOUR_DATES = {
     { from: '2026-07-15', to: '2026-07-19' }
   ],
   'peru-bolivia-chile': [
-    { from: '2026-10-26', to: '2026-11-08' },
+    { from: '2026-10-26', to: '2026-11-08', soldOut: true },
     { from: '2026-11-16', to: '2026-11-30' },
     { from: '2027-05-02', to: '2027-05-16' }
   ],

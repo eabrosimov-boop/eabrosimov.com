@@ -166,7 +166,19 @@ const datesHtml = (tourId, lang) => {
   });
 
   return Object.keys(grouped).sort().map(year => {
-    const items = grouped[year].map(d => '<div class="date-item">' + formatDateRange(d.from, d.to, lang) + '</div>').join('');
+    const items = grouped[year].map(d => {
+      const dateText = formatDateRange(d.from, d.to, lang);
+      if (d.soldOut) {
+        const waitlistText = lang === 'ru' ? 'Доступна запись в лист ожидания' : lang === 'en' ? 'Join the waitlist' : 'Únete a la lista de espera';
+        const badgeText = lang === 'ru' ? 'МЕСТ НЕТ' : lang === 'en' ? 'SOLD OUT' : 'AGOTADO';
+        return '<div class="date-item date-item--sold-out">' +
+          '<span class="date-text">' + dateText + '</span>' +
+          ' <span class="sold-out-badge">' + badgeText + '</span>' +
+          '<div class="waitlist-line"><a class="waitlist-link" href="https://wa.me/541134572193">' + waitlistText + '</a></div>' +
+          '</div>';
+      }
+      return '<div class="date-item">' + dateText + '</div>';
+    }).join('');
     return '<div class="year-group"><h3 class="year-heading">' + year + '</h3>' + items + '</div>';
   }).join('');
 };
