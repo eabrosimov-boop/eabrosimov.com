@@ -157,9 +157,9 @@ const CONTENT = {
           location: "Виша Генерал Бельграно",
           description: "Самый большой пивной фестиваль Латинской Америки. Несколько дней музыки, танцев и немецких традиций в горах Кордовы.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
-          price: "—",
-          showPrefix: false,
-          active: false
+          price: "1100",
+          showPrefix: true,
+          active: true
         },
         {
           id: "whales-punta-piramides",
@@ -433,9 +433,9 @@ const CONTENT = {
         },
         { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", description: "The largest beer festival in Latin America. Several days of music, dancing and German traditions in the mountains of Cordoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
-          "price": "—",
-          "showPrefix": false,
-          "active": false },
+          "price": "1100",
+          "showPrefix": true,
+          "active": true },
         { id: "whales-punta-piramides", title: "Whales and Penguins in Puerto Madryn", duration: "3 days", location: "Puerto Madryn", description: "The place to see whales. But besides them here are penguins, sea lions, elephant seals and one of the most impressive ecosystems of South America.",
           image: "images/tours/short-programs/whales-puerto-madryn.jpg",
           "price": "—",
@@ -650,9 +650,9 @@ const CONTENT = {
         },
         { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", description: "El festival de cerveza más grande de América Latina. Varios días de música, baile y tradiciones alemanas en las montañas de Córdoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
-          "price": "—",
-          "showPrefix": false,
-          "active": false },
+          "price": "1100",
+          "showPrefix": true,
+          "active": true },
         { id: "whales-punta-piramides", title: "Ballenas y Pingüinos en Puerto Madryn", duration: "3 días", location: "Puerto Madryn", description: "El lugar para ver ballenas. Pero además de ellas hay pingüinos, leones marinos, elefantes marinos y uno de los ecosistemas más impresionantes de Sudamérica.",
           image: "images/tours/short-programs/whales-puerto-madryn.jpg",
           "price": "—",
@@ -794,13 +794,16 @@ const TOUR_DATES = {
   'iguazu-extension': [
     { from: '2027-02-26', to: '2027-02-28' },
     { from: '2027-04-15', to: '2027-04-17' }
+  ],
+  'oktoberfest-cordoba': [
+    { from: '2026-10-08', to: '2026-10-11' }
   ]
 };
 
 // Активные туры (с описанием и датами доступности)
 // Отключенные туры будут показаны с наложением "СКОРО"
 const ACTIVE_TOURS = {
-  short: ['salta'], // активные короткие туры
+  short: ['salta', 'oktoberfest-cordoba'], // активные короткие туры
   long: ['patagonia-trekking', 'peru-bolivia-chile', 'easter-island', 'iguazu-extension'], // активные длинные туры
   excursions: ['football', 'history-ba', 'tango'] // активные однодневные туры
 };
