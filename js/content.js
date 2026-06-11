@@ -155,7 +155,7 @@ const CONTENT = {
           title: "Октоберфест в Кордобе",
           duration: "4 дня",
           location: "Виша Генерал Бельграно",
-          description: "Врываемся дружной компанией на самый настоящий пивной Октоберфест! Вилья-Хенераль-Бельграно — город с богатым немецким прошлым, множеством эмигрантов и богатейшими пивоваренными традициями. Мы едем проживать главную из них — Октоберфест. Нас ждёт парад исторических communidades, торжественные вскрытия сотен бочек, костюмы, флаги, улицы, заполненные людьми... Каждый вечер — концерты аргентинской музыки, конкурсы, танцы и, безусловно, специальные сорта фестивального пива! Утренние часы мы будем проводить с ненавязчивой культурной программой и насыщением прекрасным весенним воздухом гор Кордобы!",
+          description: "Врываемся дружной компанией на самый настоящий пивной Октоберфест! Вилья-Хенераль-Бельграно — город с богатым немецким прошлым, множеством эмигрантов и богатейшими пивоваренными традициями. Мы едем проживать главную из них — <strong>Октоберфест</strong>.<br><br>Нас ждёт парад исторических communidades, торжественные вскрытия сотен бочек, костюмы, флаги, улицы, заполненные людьми... Каждый вечер — концерты аргентинской музыки, конкурсы, танцы и, безусловно, специальные сорта фестивального пива!<br><br>Утренние часы мы будем проводить с ненавязчивой культурной программой и насыщением прекрасным весенним воздухом гор Кордобы!",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           price: "1100",
           showPrefix: false,
@@ -442,7 +442,7 @@ const CONTENT = {
             "Personal expenses"
           ]
         },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", description: "We're crashing the real deal — an authentic beer Oktoberfest with a great group! Villa General Belgrano is a town with a rich German past, generations of immigrants and a deep brewing tradition. We're going to live the biggest one — Oktoberfest. Expect parades of historic communidades, solemn tapping of hundreds of barrels, costumes, flags, streets packed with people... Every evening: concerts of Argentine music, contests, dancing and, of course, special festival beer varieties! Mornings we'll spend with a light cultural programme and the gorgeous spring mountain air of Córdoba!",
+        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", description: "We're crashing the real deal — an authentic beer Oktoberfest with a great group! Villa General Belgrano is a town with a rich German past, generations of immigrants and a deep brewing tradition. We're going to live the biggest one — <strong>Oktoberfest</strong>.<br><br>Expect parades of historic communidades, solemn tapping of hundreds of barrels, costumes, flags, streets packed with people... Every evening: concerts of Argentine music, contests, dancing and, of course, special festival beer varieties!<br><br>Mornings we'll spend with a light cultural programme and the gorgeous spring mountain air of Córdoba!",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
           "showPrefix": false,
@@ -670,7 +670,7 @@ const CONTENT = {
             "Gastos personales"
           ]
         },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", description: "¡Nos metemos de lleno en el auténtico Oktoberfest cervecero con una gran pandilla! Villa General Belgrano es una ciudad con un rico pasado alemán, multitud de emigrantes y riquísimas tradiciones cerveceras. Vamos a vivir la más importante de todas: el Oktoberfest. Nos esperan desfiles de históricas communidades, el solemne destape de cientos de barriles, disfraces, banderas, calles llenas de gente... Cada noche: conciertos de música argentina, concursos, bailes y, por supuesto, ¡variedades especiales de cerveza del festival! Las mañanas las pasaremos con un programa cultural ligero y disfrutando del maravilloso aire primaveral de las sierras de Córdoba.",
+        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", description: "¡Nos metemos de lleno en el auténtico Oktoberfest cervecero con una gran pandilla! Villa General Belgrano es una ciudad con un rico pasado alemán, multitud de emigrantes y riquísimas tradiciones cerveceras. Vamos a vivir la más importante de todas: el <strong>Oktoberfest</strong>.<br><br>Nos esperan desfiles de históricas communidades, el solemne destape de cientos de barriles, disfraces, banderas, calles llenas de gente... Cada noche: conciertos de música argentina, concursos, bailes y, por supuesto, ¡variedades especiales de cerveza del festival!<br><br>Las mañanas las pasaremos con un programa cultural ligero y disfrutando del maravilloso aire primaveral de las sierras de Córdoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
           "showPrefix": false,
