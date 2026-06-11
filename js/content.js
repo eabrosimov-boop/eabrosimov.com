@@ -176,6 +176,21 @@ const CONTENT = {
             "<strong>День 2 (Пятница).</strong> Отправляемся на обзорную экскурсию по городку, а также снаряжаемся традиционными атрибутами — костюмами, кружками, шляпами. Открытие первой бочки пива встречаем уже во всеоружии! Далее вплоть до вечера перемещаемся между пивоварнями в поисках лучшей атмосферы и лучшего напитка. Вечером — отрываемся на концерте аргентинской рок-музыки!",
             "<strong>День 3 (Суббота).</strong> Неспешно просыпаемся, отдыхаем и готовимся к параду communidades. По желанию — будем пытаться не просто посмотреть, но и поучаствовать в шествии! Вечером — еще один концерт и еще один вечер в атмосфере праздника, самый шумный и масштабный.",
             "<strong>День 4 (Воскресенье).</strong> День, когда мы прощаемся с Вилья-Хенераль-Бельграно и, пусть немного помятые, но очень счастливые, стартуем домой, в БА."
+          ],
+          youtubeEmbed: "nP_IFsDOCao",
+          faq: [
+            {
+              q: "Сколько нужно закладывать на доп. расходы?",
+              a: "Точных цен ещё нет — ориентироваться можно на ~8–10 тысяч песо за кружку пива. Сувениры: кружки 50–100 тысяч, шляпа 50–100 тысяч, костюмы в аренду — цен 2026 ещё нет."
+            },
+            {
+              q: "Какие исполнители будут играть?",
+              a: "Лайнапа на 2026 ещё нет, но, как правило, речь идёт о популярных исполнителях аргентинского рока. В 2025, к примеру, были Los Pericos, Babasonicos, Abel, а также кавер-группы The Beatles Symphonic Fantasy и EXPERIENCIA QUEEN."
+            },
+            {
+              q: "Где мы будем жить?",
+              a: "Непосредственно в городе, в пешей доступности от основных локаций. Напрямую звук от сцены доходить не должен, но нужно понимать, что эти несколько суток — самые шумные ночи за весь год. Гудеть город будет 24/7."
+            }
           ]
         },
         {
@@ -467,8 +482,23 @@ const CONTENT = {
           "days": [
             "<strong>Day 1 (Thursday).</strong> We depart Buenos Aires and drive to VGB (~9 hours). On the way — a stop for lunch and a short walk around Rosario, birthplace of the Argentine flag and Leo Messi. We stay the night in Villa General Belgrano.",
             "<strong>Day 2 (Friday).</strong> We head out on a guided tour of the town and kit ourselves out with the traditional festival gear — costumes, steins, hats. We're in full battle dress for the tapping of the first barrel! From there we spend the day hopping between breweries in search of the best atmosphere and the best drink. Evening — we let loose at an Argentine rock concert!",
-            "<strong>Day 3 (Saturday).</strong> A slow morning, rest, and then we get ready for the communidades parade. If the mood strikes — we'll try not just to watch but to join the procession! Evening — another concert and another night of festival spirit, the loudest and biggest one yet!",
+            "<strong>Day 3 (Saturday).</strong> A slow morning, rest, and then we get ready for the communidades parade. If the mood strikes — we'll try not just to watch but to join the procession! Evening — another concert and another night of festival spirit, the loudest and biggest one yet.",
             "<strong>Day 4 (Sunday).</strong> The day we say goodbye to Villa General Belgrano — a little dented, but very happy — and head back home to BA."
+          ],
+          "youtubeEmbed": "nP_IFsDOCao",
+          "faq": [
+            {
+              "q": "How much should I budget for extra expenses?",
+              "a": "Final prices aren't confirmed yet — you can estimate ~8,000–10,000 pesos per beer stein. Souvenirs: steins 50,000–100,000 pesos, hat 50,000–100,000 pesos, costume rental — 2026 prices not yet available."
+            },
+            {
+              "q": "Who's performing?",
+              "a": "The 2026 lineup hasn't been announced yet, but it's typically popular Argentine rock acts. In 2025, for example, there were Los Pericos, Babasonicos, Abel, and cover bands The Beatles Symphonic Fantasy and EXPERIENCIA QUEEN."
+            },
+            {
+              "q": "Where will we be staying?",
+              "a": "Right in town, within walking distance of the main venues. Direct sound from the stage shouldn't reach the rooms, but keep in mind that these few nights are the loudest of the entire year — the town will be buzzing 24/7."
+            }
           ] },
         { id: "whales-punta-piramides", title: "Whales and Penguins in Puerto Madryn", duration: "3 days", location: "Puerto Madryn", description: "The place to see whales. But besides them here are penguins, sea lions, elephant seals and one of the most impressive ecosystems of South America.",
           image: "images/tours/short-programs/whales-puerto-madryn.jpg",
@@ -701,8 +731,23 @@ const CONTENT = {
           "days": [
             "<strong>Día 1 (Jueves).</strong> Salimos de Buenos Aires y manejamos hasta VGB (~9 horas). En el camino — parada para almorzar y un corto paseo por Rosario, cuna de la bandera argentina y de Leo Messi. Dormimos en Villa General Belgrano.",
             "<strong>Día 2 (Viernes).</strong> Salimos en visita guiada por el pueblo y nos equipamos con los atributos tradicionales — disfraces, jarras, sombreros. ¡Recibimos el primer destape de barril completamente listos! Luego pasamos el día recorriendo las cervecerías en busca de la mejor atmósfera y la mejor bebida. Por la noche — ¡nos soltamos en un concierto de rock argentino!",
-            "<strong>Día 3 (Sábado).</strong> Mañana tranquila, descanso y preparativos para el desfile de communidades. Si el ánimo da — intentaremos no solo mirar sino también participar en la procesión. Por la noche — otro concierto y otra noche de fiesta, ¡la más ruidosa y multitudinaria!",
+            "<strong>Día 3 (Sábado).</strong> Mañana tranquila, descanso y preparativos para el desfile de communidades. Si el ánimo da — intentaremos no solo mirar sino también participar en la procesión. Por la noche — otro concierto y otra noche de fiesta, la más ruidosa y multitudinaria.",
             "<strong>Día 4 (Domingo).</strong> El día en que nos despedimos de Villa General Belgrano — un poco maltrechos, pero muy felices — y arrancamos de vuelta a BA."
+          ],
+          "youtubeEmbed": "nP_IFsDOCao",
+          "faq": [
+            {
+              "q": "¿Cuánto hay que presupuestar para gastos adicionales?",
+              "a": "Los precios definitivos aún no están confirmados — se puede estimar ~8.000–10.000 pesos por jarra de cerveza. Souvenirs: jarras 50.000–100.000 pesos, sombrero 50.000–100.000 pesos, alquiler de disfraz — precios 2026 no disponibles aún."
+            },
+            {
+              "q": "¿Quiénes van a tocar?",
+              "a": "El line-up 2026 todavía no está anunciado, pero por lo general son artistas populares del rock argentino. En 2025, por ejemplo, estuvieron Los Pericos, Babasonicos, Abel, y las bandas tributo The Beatles Symphonic Fantasy y EXPERIENCIA QUEEN."
+            },
+            {
+              "q": "¿Dónde vamos a alojarnos?",
+              "a": "En el propio pueblo, a pie de las principales locaciones. El sonido directo del escenario no debería llegar a las habitaciones, pero hay que tener en cuenta que estas noches son las más ruidosas del año — la ciudad estará en movimiento las 24 horas."
+            }
           ] },
         { id: "whales-punta-piramides", title: "Ballenas y Pingüinos en Puerto Madryn", duration: "3 días", location: "Puerto Madryn", description: "El lugar para ver ballenas. Pero además de ellas hay pingüinos, leones marinos, elefantes marinos y uno de los ecosistemas más impresionantes de Sudamérica.",
           image: "images/tours/short-programs/whales-puerto-madryn.jpg",

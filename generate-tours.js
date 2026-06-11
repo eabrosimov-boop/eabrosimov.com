@@ -275,6 +275,14 @@ const genHtml = (tour, lang, tourId) => {
          '      </section>' +
          '')),
     '',
+    (tour.youtubeEmbed
+      ? '      <section class="tour-section">\n        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/' + tour.youtubeEmbed + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>\n      </section>\n'
+      : ''),
+    (tour.faq && tour.faq.length
+      ? '      <section class="tour-section">\n        <h2>' + (lang === 'ru' ? 'Частые вопросы' : lang === 'en' ? 'FAQ' : 'Preguntas frecuentes') + '</h2>\n        <div class="faq-list">\n' +
+        tour.faq.map(item => '          <div class="faq-item"><div class="faq-question">' + item.q + '</div><div class="faq-answer">' + item.a + '</div></div>').join('\n') +
+        '\n        </div>\n      </section>\n'
+      : ''),
     '      <section class="tour-section">',
     '        <h2>' + l.included + '</h2>',
     '        <ul class="checklist">',
