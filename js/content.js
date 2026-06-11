@@ -238,8 +238,8 @@ const CONTENT = {
           location: "Чили · Аргентина",
           description: "Лучшие маршруты аргентинской и чилийской Патагонии в одном путешествии. Торрес-дель-Пайне, Фицрой, Перито-Морено и Огненная Земля — без палаток, тяжёлых рюкзаков и походного быта.",
           image: "images/tours/long-programs/patagonia-trekking.jpg",
-          price: "4250",
-          showPrefix: true,
+          price: "4500",
+          showPrefix: false,
           included: [
             "Встреча в аэропорту в день прилета",
             "2-х местное проживание в отелях уровня 3-4*",
@@ -474,8 +474,8 @@ const CONTENT = {
           ]
         },
         { id: "patagonia-trekking", title: "Patagonia: Argentina & Chile Trekking", duration: "13–15 days", location: "Chile · Argentina", description: "The finest routes of Argentine and Chilean Patagonia in one journey. Torres del Paine, Fitz Roy, Perito Moreno and Tierra del Fuego — without tents, heavy packs or camp life.", image: "images/tours/long-programs/patagonia-trekking.jpg",
-          "price": "4250",
-          "showPrefix": true,
+          "price": "4500",
+          "showPrefix": false,
           "included": [
             "Airport pickup on arrival day",
             "2-bed accommodation in 3-4* hotels",
@@ -691,8 +691,8 @@ const CONTENT = {
           ]
         },
         { id: "patagonia-trekking", title: "Patagonia: Trekking Argentina y Chile", duration: "13–15 días", location: "Chile · Argentina", description: "Las mejores rutas de la Patagonia argentina y chilena en un solo viaje. Torres del Paine, Fitz Roy, Perito Moreno y Tierra del Fuego — sin carpas, mochilas pesadas ni vida de campamento.", image: "images/tours/long-programs/patagonia-trekking.jpg",
-          "price": "4250",
-          "showPrefix": true,
+          "price": "4500",
+          "showPrefix": false,
           "included": [
             "Recogida en el aeropuerto el día de llegada",
             "Alojamiento doble en hoteles de 3-4*",
