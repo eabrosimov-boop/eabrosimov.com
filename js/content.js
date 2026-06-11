@@ -159,7 +159,18 @@ const CONTENT = {
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           price: "1100",
           showPrefix: false,
-          active: true
+          active: true,
+          included: [
+            "Дорога на машинах из Буэнос-Айреса туда и обратно",
+            "Входные билеты на фестиваль",
+            "Прогулка по Вилья-Хенераль-Бельграно",
+            "Сопровождение по маршруту",
+            "Сюрпризы, конкурсы, активности по ходу поездки"
+          ],
+          notIncluded: [
+            "Пиво",
+            "Сувениры"
+          ]
         },
         {
           id: "whales-punta-piramides",
@@ -435,7 +446,18 @@ const CONTENT = {
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
           "showPrefix": false,
-          "active": true },
+          "active": true,
+          "included": [
+            "Transport by car from Buenos Aires and back",
+            "Festival entrance tickets",
+            "Walk around Villa General Belgrano",
+            "Escort along the route",
+            "Surprises, contests and activities along the way"
+          ],
+          "notIncluded": [
+            "Beer",
+            "Souvenirs"
+          ] },
         { id: "whales-punta-piramides", title: "Whales and Penguins in Puerto Madryn", duration: "3 days", location: "Puerto Madryn", description: "The place to see whales. But besides them here are penguins, sea lions, elephant seals and one of the most impressive ecosystems of South America.",
           image: "images/tours/short-programs/whales-puerto-madryn.jpg",
           "price": "—",
@@ -652,7 +674,18 @@ const CONTENT = {
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
           "showPrefix": false,
-          "active": true },
+          "active": true,
+          "included": [
+            "Transporte en auto desde Buenos Aires ida y vuelta",
+            "Entradas al festival",
+            "Paseo por Villa General Belgrano",
+            "Acompañamiento en la ruta",
+            "Sorpresas, concursos y actividades durante el viaje"
+          ],
+          "notIncluded": [
+            "Cerveza",
+            "Souvenirs"
+          ] },
         { id: "whales-punta-piramides", title: "Ballenas y Pingüinos en Puerto Madryn", duration: "3 días", location: "Puerto Madryn", description: "El lugar para ver ballenas. Pero además de ellas hay pingüinos, leones marinos, elefantes marinos y uno de los ecosistemas más impresionantes de Sudamérica.",
           image: "images/tours/short-programs/whales-puerto-madryn.jpg",
           "price": "—",
