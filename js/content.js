@@ -155,7 +155,7 @@ const CONTENT = {
           title: "Октоберфест в Кордобе",
           duration: "4 дня",
           location: "Виша Генерал Бельграно",
-          description: "Самый большой пивной фестиваль Латинской Америки. Несколько дней музыки, танцев и немецких традиций в горах Кордовы.",
+          description: "Врываемся дружной компанией на самый настоящий пивной Октоберфест! Вилья-Хенераль-Бельграно — город с богатым немецким прошлым, множеством эмигрантов и богатейшими пивоваренными традициями. Мы едем проживать главную из них — Октоберфест. Нас ждёт парад исторических communidades, торжественные вскрытия сотен бочек, костюмы, флаги, улицы, заполненные людьми... Каждый вечер — концерты аргентинской музыки, конкурсы, танцы и, безусловно, специальные сорта фестивального пива! Утренние часы мы будем проводить с ненавязчивой культурной программой и насыщением прекрасным весенним воздухом гор Кордобы!",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           price: "1100",
           showPrefix: false,
@@ -164,7 +164,7 @@ const CONTENT = {
             "Дорога на машинах из Буэнос-Айреса туда и обратно",
             "Входные билеты на фестиваль",
             "Прогулка по Вилья-Хенераль-Бельграно",
-            "Сопровождение по маршруту",
+            "Проживание в 2-х местных номерах в Вилья-Хенераль-Бельграно",
             "Сюрпризы, конкурсы, активности по ходу поездки"
           ],
           notIncluded: [
@@ -442,7 +442,7 @@ const CONTENT = {
             "Personal expenses"
           ]
         },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", description: "The largest beer festival in Latin America. Several days of music, dancing and German traditions in the mountains of Cordoba.",
+        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", description: "We're crashing the real deal — an authentic beer Oktoberfest with a great group! Villa General Belgrano is a town with a rich German past, generations of immigrants and a deep brewing tradition. We're going to live the biggest one — Oktoberfest. Expect parades of historic communidades, solemn tapping of hundreds of barrels, costumes, flags, streets packed with people... Every evening: concerts of Argentine music, contests, dancing and, of course, special festival beer varieties! Mornings we'll spend with a light cultural programme and the gorgeous spring mountain air of Córdoba!",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
           "showPrefix": false,
@@ -451,7 +451,7 @@ const CONTENT = {
             "Transport by car from Buenos Aires and back",
             "Festival entrance tickets",
             "Walk around Villa General Belgrano",
-            "Escort along the route",
+            "Accommodation in double rooms in Villa General Belgrano",
             "Surprises, contests and activities along the way"
           ],
           "notIncluded": [
@@ -670,7 +670,7 @@ const CONTENT = {
             "Gastos personales"
           ]
         },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", description: "El festival de cerveza más grande de América Latina. Varios días de música, baile y tradiciones alemanas en las montañas de Córdoba.",
+        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", description: "¡Nos metemos de lleno en el auténtico Oktoberfest cervecero con una gran pandilla! Villa General Belgrano es una ciudad con un rico pasado alemán, multitud de emigrantes y riquísimas tradiciones cerveceras. Vamos a vivir la más importante de todas: el Oktoberfest. Nos esperan desfiles de históricas communidades, el solemne destape de cientos de barriles, disfraces, banderas, calles llenas de gente... Cada noche: conciertos de música argentina, concursos, bailes y, por supuesto, ¡variedades especiales de cerveza del festival! Las mañanas las pasaremos con un programa cultural ligero y disfrutando del maravilloso aire primaveral de las sierras de Córdoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
           "showPrefix": false,
@@ -679,7 +679,7 @@ const CONTENT = {
             "Transporte en auto desde Buenos Aires ida y vuelta",
             "Entradas al festival",
             "Paseo por Villa General Belgrano",
-            "Acompañamiento en la ruta",
+            "Alojamiento en habitaciones dobles en Villa General Belgrano",
             "Sorpresas, concursos y actividades durante el viaje"
           ],
           "notIncluded": [
