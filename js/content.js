@@ -244,9 +244,9 @@ const CONTENT = {
         {
           id: "peru-bolivia-chile",
           title: "Перу / Боливия / Чили",
-          duration: "14–17 дней",
+          duration: "15 дней",
           location: "Перу · Боливия · Чили",
-          shortDescription: "Мачу Пикчу, Радужные горы, солончак Уюни и озеро Титикака — три страны, 14–17 дней, одно большое путешествие.",
+          shortDescription: "Мачу Пикчу, Радужные горы, солончак Уюни и озеро Титикака — три страны, 15 дней, одно большое путешествие.",
           description: "Перу и Боливия — уникальные страны с удивительной историей, богатейшим археологическим наследием, аутентичной колониальной архитектурой и нетронутой природой гор. Побережье Тихого океана, Куско — столица империи инков, Священная долина, затерянный город Мачу Пикчу, Радужные горы, озеро Титикака, долина Марса в Боливии, солончак Уюни, лагуны, вулканы, гейзеры и розовые фламинго. Для граждан РФ, Молдавии, Беларуси виза в Перу не требуется, в Боливию ставится на границе.",
           image: "images/tours/long-programs/peru-bolivia-chile.jpg",
           price: "4250",
@@ -269,7 +269,7 @@ const CONTENT = {
         {
           id: "patagonia-trekking",
           title: "Патагония: Аргентина и Чили (треккинг)",
-          duration: "13–15 дней",
+          duration: "12 дней",
           location: "Чили · Аргентина",
           description: "Лучшие маршруты аргентинской и чилийской Патагонии в одном путешествии. Торрес-дель-Пайне, Фицрой, Перито-Морено и Огненная Земля — без палаток, тяжёлых рюкзаков и походного быта.",
           image: "images/tours/long-programs/patagonia-trekking.jpg",
@@ -298,7 +298,7 @@ const CONTENT = {
         {
           id: "easter-island",
           title: "Расширение: Остров Пасхи",
-          duration: "4–5 дней",
+          duration: "3 дня",
           location: "Остров Пасхи",
           description: "Остров Пасхи находится почти в 4000 километрах от ближайшего материка. Именно эта изоляция помогла создать одну из самых загадочных культур мира и её знаменитые каменные статуи.",
           image: "images/tours/long-programs/easter-island.jpg",
@@ -320,7 +320,7 @@ const CONTENT = {
         {
           id: "iguazu-extension",
           title: "Расширение: водопады Игуасу",
-          duration: "2–3 дня",
+          duration: "3 дня",
           location: "Аргентина · Бразилия",
           description: "Один из самых впечатляющих водопадов планеты. За два дня увидим Игуасу с аргентинской и бразильской стороны, чтобы оценить его и вблизи, и во всей полноте.",
           image: "images/tours/long-programs/iguazu-extension.jpg",
@@ -522,7 +522,7 @@ const CONTENT = {
           "active": false }
       ],
       long: [
-        { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", shortDescription: "Machu Picchu, Rainbow Mountains, Uyuni Salt Flat and Lake Titicaca — three countries, 14–17 days, one unforgettable journey.", description: "Peru and Bolivia are unique South American countries with amazing history, rich archaeological heritage, authentic colonial architecture and untouched mountain nature. Pacific coast in Lima, Cusco—capital of the Inca empire, Sacred Valley, lost city of Machu Picchu, Rainbow Mountains, Lake Titicaca, Valley of Mars in Bolivia, Uyuni salt flats, lagoons, volcanoes, geysers and pink flamingos. No visa required for citizens of Russia, Moldova, and Belarus to visit Peru; Bolivia visa issued at border.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
+        { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "15 days", location: "Peru · Bolivia · Chile", shortDescription: "Machu Picchu, Rainbow Mountains, Uyuni Salt Flat and Lake Titicaca — three countries, 15 days, one unforgettable journey.", description: "Peru and Bolivia are unique South American countries with amazing history, rich archaeological heritage, authentic colonial architecture and untouched mountain nature. Pacific coast in Lima, Cusco—capital of the Inca empire, Sacred Valley, lost city of Machu Picchu, Rainbow Mountains, Lake Titicaca, Valley of Mars in Bolivia, Uyuni salt flats, lagoons, volcanoes, geysers and pink flamingos. No visa required for citizens of Russia, Moldova, and Belarus to visit Peru; Bolivia visa issued at border.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
           "price": "4250",
           "showPrefix": false,
           "included": [
@@ -540,7 +540,7 @@ const CONTENT = {
             "Souvenirs (the most authentic in these regions, leave space in luggage)"
           ]
         },
-        { id: "patagonia-trekking", title: "Patagonia: Argentina & Chile Trekking", duration: "13–15 days", location: "Chile · Argentina", description: "The finest routes of Argentine and Chilean Patagonia in one journey. Torres del Paine, Fitz Roy, Perito Moreno and Tierra del Fuego — without tents, heavy packs or camp life.", image: "images/tours/long-programs/patagonia-trekking.jpg",
+        { id: "patagonia-trekking", title: "Patagonia: Argentina & Chile Trekking", duration: "12 days", location: "Chile · Argentina", description: "The finest routes of Argentine and Chilean Patagonia in one journey. Torres del Paine, Fitz Roy, Perito Moreno and Tierra del Fuego — without tents, heavy packs or camp life.", image: "images/tours/long-programs/patagonia-trekking.jpg",
           "price": "4500",
           "showPrefix": false,
           "included": [
@@ -563,7 +563,7 @@ const CONTENT = {
             "Personal expenses and souvenirs"
           ]
         },
-        { id: "easter-island", title: "Extension: Easter Island", duration: "4–5 days", location: "Easter Island", description: "Easter Island lies nearly 4,000 kilometers from the nearest mainland. It is precisely this isolation that gave rise to one of the world's most enigmatic cultures and its famous stone statues.", image: "images/tours/long-programs/easter-island.jpg",
+        { id: "easter-island", title: "Extension: Easter Island", duration: "3 days", location: "Easter Island", description: "Easter Island lies nearly 4,000 kilometers from the nearest mainland. It is precisely this isolation that gave rise to one of the world's most enigmatic cultures and its famous stone statues.", image: "images/tours/long-programs/easter-island.jpg",
           "price": "1400",
           "showPrefix": false,
           "included": [
@@ -579,7 +579,7 @@ const CONTENT = {
             "Meals on the island (approximately 150 USD)"
           ]
         },
-        { id: "iguazu-extension", title: "Iguazu Extension", duration: "2–3 days", location: "Argentina · Brazil", description: "One of the most spectacular waterfalls on the planet. In two days we see Iguazu from both the Argentine and Brazilian sides — up close and in its full panoramic scale.", image: "images/tours/long-programs/iguazu-extension.jpg",
+        { id: "iguazu-extension", title: "Iguazu Extension", duration: "3 days", location: "Argentina · Brazil", description: "One of the most spectacular waterfalls on the planet. In two days we see Iguazu from both the Argentine and Brazilian sides — up close and in its full panoramic scale.", image: "images/tours/long-programs/iguazu-extension.jpg",
           "price": "900",
           "showPrefix": false,
           "included": [
@@ -771,7 +771,7 @@ const CONTENT = {
           "active": false }
       ],
       long: [
-        { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", shortDescription: "Machu Picchu, Montañas Arcoíris, Salar de Uyuni y Lago Titicaca — tres países, 14–17 días, un gran viaje.", description: "Perú y Bolivia son países únicos de América del Sur con historia sorprendente, rico patrimonio arqueológico, arquitectura colonial auténtica y naturaleza montañosa intacta. Costa del Pacífico en Lima, Cusco—capital del imperio inca, Valle Sagrado, ciudad perdida de Machu Picchu, Montañas Arcoíris, lago Titicaca, Valle de Marte en Bolivia, salares de Uyuni, lagunas, volcanes, géiseres y flamencos rosas. No se requiere visa para ciudadanos de Rusia, Moldavia y Bielorrusia para visitar Perú; visa de Bolivia se expide en frontera.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
+        { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "15 días", location: "Perú · Bolivia · Chile", shortDescription: "Machu Picchu, Montañas Arcoíris, Salar de Uyuni y Lago Titicaca — tres países, 15 días, un gran viaje.", description: "Perú y Bolivia son países únicos de América del Sur con historia sorprendente, rico patrimonio arqueológico, arquitectura colonial auténtica y naturaleza montañosa intacta. Costa del Pacífico en Lima, Cusco—capital del imperio inca, Valle Sagrado, ciudad perdida de Machu Picchu, Montañas Arcoíris, lago Titicaca, Valle de Marte en Bolivia, salares de Uyuni, lagunas, volcanes, géiseres y flamencos rosas. No se requiere visa para ciudadanos de Rusia, Moldavia y Bielorrusia para visitar Perú; visa de Bolivia se expide en frontera.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
           "price": "4250",
           "showPrefix": false,
           "included": [
@@ -789,7 +789,7 @@ const CONTENT = {
             "Recuerdos (los más auténticos en estas regiones, deja espacio en el equipaje)"
           ]
         },
-        { id: "patagonia-trekking", title: "Patagonia: Trekking Argentina y Chile", duration: "13–15 días", location: "Chile · Argentina", description: "Las mejores rutas de la Patagonia argentina y chilena en un solo viaje. Torres del Paine, Fitz Roy, Perito Moreno y Tierra del Fuego — sin carpas, mochilas pesadas ni vida de campamento.", image: "images/tours/long-programs/patagonia-trekking.jpg",
+        { id: "patagonia-trekking", title: "Patagonia: Trekking Argentina y Chile", duration: "12 días", location: "Chile · Argentina", description: "Las mejores rutas de la Patagonia argentina y chilena en un solo viaje. Torres del Paine, Fitz Roy, Perito Moreno y Tierra del Fuego — sin carpas, mochilas pesadas ni vida de campamento.", image: "images/tours/long-programs/patagonia-trekking.jpg",
           "price": "4500",
           "showPrefix": false,
           "included": [
@@ -812,7 +812,7 @@ const CONTENT = {
             "Gastos personales y recuerdos"
           ]
         },
-        { id: "easter-island", title: "Extensión: Isla de Pascua", duration: "4–5 días", location: "Isla de Pascua", description: "La Isla de Pascua se encuentra a casi 4.000 kilómetros del continente más cercano. Es precisamente ese aislamiento lo que permitió crear una de las culturas más enigmáticas del mundo y sus famosas estatuas de piedra.", image: "images/tours/long-programs/easter-island.jpg",
+        { id: "easter-island", title: "Extensión: Isla de Pascua", duration: "3 días", location: "Isla de Pascua", description: "La Isla de Pascua se encuentra a casi 4.000 kilómetros del continente más cercano. Es precisamente ese aislamiento lo que permitió crear una de las culturas más enigmáticas del mundo y sus famosas estatuas de piedra.", image: "images/tours/long-programs/easter-island.jpg",
           "price": "1400",
           "showPrefix": false,
           "included": [
@@ -828,7 +828,7 @@ const CONTENT = {
             "Comidas en la isla (aproximadamente 150 USD)"
           ]
         },
-        { id: "iguazu-extension", title: "Extensión Iguazú", duration: "2–3 días", location: "Argentina · Brasil", description: "Una de las cataratas más impresionantes del planeta. En dos días veremos el Iguazú desde el lado argentino y el brasileño — de cerca y en toda su amplitud panorámica.", image: "images/tours/long-programs/iguazu-extension.jpg",
+        { id: "iguazu-extension", title: "Extensión Iguazú", duration: "3 días", location: "Argentina · Brasil", description: "Una de las cataratas más impresionantes del planeta. En dos días veremos el Iguazú desde el lado argentino y el brasileño — de cerca y en toda su amplitud panorámica.", image: "images/tours/long-programs/iguazu-extension.jpg",
           "price": "900",
           "showPrefix": false,
           "included": [
