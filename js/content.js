@@ -133,6 +133,7 @@ const CONTENT = {
           duration: "5 дней",
           location: "Сальта, Хухуй",
           description: "Путешествие по той Аргентине, которую многие не ожидают увидеть. Высокогорные пустыни, солончаки на высоте более 3000 метров, колониальные церкви, андские деревни и пейзажи, больше похожие на Боливию или Перу. За несколько дней мы увидим регион, где история инков, испанское наследие и культура коренных народов до сих пор существуют бок о бок.",
+          shortDescription: "Высокогорные пустыни, солончаки и разноцветные горы — та Аргентина, которую мало кто ожидает увидеть.",
           image: "images/tours/short-programs/salta-northwest.jpg",
           price: "570",
           showPrefix: false,
@@ -155,6 +156,7 @@ const CONTENT = {
           title: "Октоберфест в Кордобе",
           duration: "4 дня",
           location: "Вилья-Хенераль-Бельграно",
+          shortDescription: "Самый большой пивной фестиваль Латинской Америки — в горах Кордовы. Парад communidades, концерты аргентинского рока и 4 дня немецких пивных традиций.",
           description: "Врываемся дружной компанией на самый настоящий пивной Октоберфест! Вилья-Хенераль-Бельграно — город с богатым немецким прошлым, множеством эмигрантов и богатейшими пивоваренными традициями. Мы едем проживать главную из них — <strong>Октоберфест</strong>.<br><br>Нас ждёт парад исторических communidades, торжественные вскрытия сотен бочек, костюмы, флаги, улицы, заполненные людьми... Каждый вечер — концерты аргентинской музыки, конкурсы, танцы и, безусловно, специальные сорта фестивального пива!<br><br>Утренние часы мы будем проводить с ненавязчивой культурной программой и насыщением прекрасным весенним воздухом гор Кордобы!",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           price: "1100",
@@ -244,6 +246,7 @@ const CONTENT = {
           title: "Перу / Боливия / Чили",
           duration: "14–17 дней",
           location: "Перу · Боливия · Чили",
+          shortDescription: "Мачу Пикчу, Радужные горы, солончак Уюни и озеро Титикака — три страны, 14–17 дней, одно большое путешествие.",
           description: "Перу и Боливия — уникальные страны с удивительной историей, богатейшим археологическим наследием, аутентичной колониальной архитектурой и нетронутой природой гор. Побережье Тихого океана, Куско — столица империи инков, Священная долина, затерянный город Мачу Пикчу, Радужные горы, озеро Титикака, долина Марса в Боливии, солончак Уюни, лагуны, вулканы, гейзеры и розовые фламинго. Для граждан РФ, Молдавии, Беларуси виза в Перу не требуется, в Боливию ставится на границе.",
           image: "images/tours/long-programs/peru-bolivia-chile.jpg",
           price: "4250",
@@ -446,7 +449,7 @@ const CONTENT = {
         }
       ],
       short: [
-        { id: "salta", title: "Highland Argentina", duration: "5 days", location: "Salta, Jujuy", description: "A journey through Argentina that many don't expect to see. High-altitude deserts, salt flats at over 3000 metres, colonial churches, Andean villages and landscapes that look more like Bolivia or Peru. In just a few days we'll see a region where Inca history, Spanish heritage and indigenous cultures still exist side by side.", image: "images/tours/short-programs/salta-northwest.jpg",
+        { id: "salta", title: "Highland Argentina", duration: "5 days", location: "Salta, Jujuy", description: "A journey through Argentina that many don't expect to see. High-altitude deserts, salt flats at over 3000 metres, colonial churches, Andean villages and landscapes that look more like Bolivia or Peru. In just a few days we'll see a region where Inca history, Spanish heritage and indigenous cultures still exist side by side.", shortDescription: "High-altitude deserts, salt flats and colourful mountains — the Argentina that few people expect to find.", image: "images/tours/short-programs/salta-northwest.jpg",
           "price": "570",
           "showPrefix": false,
           "active": true,
@@ -463,7 +466,7 @@ const CONTENT = {
             "Personal expenses"
           ]
         },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", description: "We're crashing the real deal — an authentic beer Oktoberfest with a great group! Villa General Belgrano is a town with a rich German past, generations of immigrants and a deep brewing tradition. We're going to live the biggest one — <strong>Oktoberfest</strong>.<br><br>Expect parades of historic communidades, solemn tapping of hundreds of barrels, costumes, flags, streets packed with people... Every evening: concerts of Argentine music, contests, dancing and, of course, special festival beer varieties!<br><br>Mornings we'll spend with a light cultural programme and the gorgeous spring mountain air of Córdoba!",
+        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", shortDescription: "The biggest beer festival in Latin America, in the mountains of Córdoba. Communidades parades, Argentine rock concerts and 4 days of German brewing traditions.", description: "We're crashing the real deal — an authentic beer Oktoberfest with a great group! Villa General Belgrano is a town with a rich German past, generations of immigrants and a deep brewing tradition. We're going to live the biggest one — <strong>Oktoberfest</strong>.<br><br>Expect parades of historic communidades, solemn tapping of hundreds of barrels, costumes, flags, streets packed with people... Every evening: concerts of Argentine music, contests, dancing and, of course, special festival beer varieties!<br><br>Mornings we'll spend with a light cultural programme and the gorgeous spring mountain air of Córdoba!",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
           "showPrefix": false,
@@ -519,7 +522,7 @@ const CONTENT = {
           "active": false }
       ],
       long: [
-        { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", description: "Peru and Bolivia are unique South American countries with amazing history, rich archaeological heritage, authentic colonial architecture and untouched mountain nature. Pacific coast in Lima, Cusco—capital of the Inca empire, Sacred Valley, lost city of Machu Picchu, Rainbow Mountains, Lake Titicaca, Valley of Mars in Bolivia, Uyuni salt flats, lagoons, volcanoes, geysers and pink flamingos. No visa required for citizens of Russia, Moldova, and Belarus to visit Peru; Bolivia visa issued at border.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
+        { id: "peru-bolivia-chile", title: "Peru / Bolivia / Chile", duration: "14–17 days", location: "Peru · Bolivia · Chile", shortDescription: "Machu Picchu, Rainbow Mountains, Uyuni Salt Flat and Lake Titicaca — three countries, 14–17 days, one unforgettable journey.", description: "Peru and Bolivia are unique South American countries with amazing history, rich archaeological heritage, authentic colonial architecture and untouched mountain nature. Pacific coast in Lima, Cusco—capital of the Inca empire, Sacred Valley, lost city of Machu Picchu, Rainbow Mountains, Lake Titicaca, Valley of Mars in Bolivia, Uyuni salt flats, lagoons, volcanoes, geysers and pink flamingos. No visa required for citizens of Russia, Moldova, and Belarus to visit Peru; Bolivia visa issued at border.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
           "price": "4250",
           "showPrefix": false,
           "included": [
@@ -695,7 +698,7 @@ const CONTENT = {
         }
       ],
       short: [
-        { id: "salta", title: "Argentina de Altura", duration: "5 días", location: "Salta, Jujuy", description: "Un viaje por la Argentina que muchos no esperan ver. Desiertos de altura, salares a más de 3000 metros, iglesias coloniales, pueblos andinos y paisajes que parecen más de Bolivia o Perú. En apenas unos días veremos una región donde la historia inca, la herencia española y la cultura de los pueblos originarios aún coexisten lado a lado.", image: "images/tours/short-programs/salta-northwest.jpg",
+        { id: "salta", title: "Argentina de Altura", duration: "5 días", location: "Salta, Jujuy", description: "Un viaje por la Argentina que muchos no esperan ver. Desiertos de altura, salares a más de 3000 metros, iglesias coloniales, pueblos andinos y paisajes que parecen más de Bolivia o Perú. En apenas unos días veremos una región donde la historia inca, la herencia española y la cultura de los pueblos originarios aún coexisten lado a lado.", shortDescription: "Desiertos de altura, salares y montañas de colores — la Argentina que pocos esperan encontrar.", image: "images/tours/short-programs/salta-northwest.jpg",
           "price": "570",
           "showPrefix": false,
           "active": true,
@@ -712,7 +715,7 @@ const CONTENT = {
             "Gastos personales"
           ]
         },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", description: "¡Nos metemos de lleno en el auténtico Oktoberfest cervecero con una gran pandilla! Villa General Belgrano es una ciudad con un rico pasado alemán, multitud de emigrantes y riquísimas tradiciones cerveceras. Vamos a vivir la más importante de todas: el <strong>Oktoberfest</strong>.<br><br>Nos esperan desfiles de históricas communidades, el solemne destape de cientos de barriles, disfraces, banderas, calles llenas de gente... Cada noche: conciertos de música argentina, concursos, bailes y, por supuesto, ¡variedades especiales de cerveza del festival!<br><br>Las mañanas las pasaremos con un programa cultural ligero y disfrutando del maravilloso aire primaveral de las sierras de Córdoba.",
+        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", shortDescription: "El mayor festival cervecero de América Latina, en las sierras de Córdoba. Desfiles de communidades, conciertos de rock argentino y 4 días de tradiciones cerveceras alemanas.", description: "¡Nos metemos de lleno en el auténtico Oktoberfest cervecero con una gran pandilla! Villa General Belgrano es una ciudad con un rico pasado alemán, multitud de emigrantes y riquísimas tradiciones cerveceras. Vamos a vivir la más importante de todas: el <strong>Oktoberfest</strong>.<br><br>Nos esperan desfiles de históricas communidades, el solemne destape de cientos de barriles, disfraces, banderas, calles llenas de gente... Cada noche: conciertos de música argentina, concursos, bailes y, por supuesto, ¡variedades especiales de cerveza del festival!<br><br>Las mañanas las pasaremos con un programa cultural ligero y disfrutando del maravilloso aire primaveral de las sierras de Córdoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
           "showPrefix": false,
@@ -768,7 +771,7 @@ const CONTENT = {
           "active": false }
       ],
       long: [
-        { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", description: "Perú y Bolivia son países únicos de América del Sur con historia sorprendente, rico patrimonio arqueológico, arquitectura colonial auténtica y naturaleza montañosa intacta. Costa del Pacífico en Lima, Cusco—capital del imperio inca, Valle Sagrado, ciudad perdida de Machu Picchu, Montañas Arcoíris, lago Titicaca, Valle de Marte en Bolivia, salares de Uyuni, lagunas, volcanes, géiseres y flamencos rosas. No se requiere visa para ciudadanos de Rusia, Moldavia y Bielorrusia para visitar Perú; visa de Bolivia se expide en frontera.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
+        { id: "peru-bolivia-chile", title: "Perú / Bolivia / Chile", duration: "14–17 días", location: "Perú · Bolivia · Chile", shortDescription: "Machu Picchu, Montañas Arcoíris, Salar de Uyuni y Lago Titicaca — tres países, 14–17 días, un gran viaje.", description: "Perú y Bolivia son países únicos de América del Sur con historia sorprendente, rico patrimonio arqueológico, arquitectura colonial auténtica y naturaleza montañosa intacta. Costa del Pacífico en Lima, Cusco—capital del imperio inca, Valle Sagrado, ciudad perdida de Machu Picchu, Montañas Arcoíris, lago Titicaca, Valle de Marte en Bolivia, salares de Uyuni, lagunas, volcanes, géiseres y flamencos rosas. No se requiere visa para ciudadanos de Rusia, Moldavia y Bielorrusia para visitar Perú; visa de Bolivia se expide en frontera.", image: "images/tours/long-programs/peru-bolivia-chile.jpg",
           "price": "4250",
           "showPrefix": false,
           "included": [

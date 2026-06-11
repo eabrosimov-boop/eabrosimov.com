@@ -357,7 +357,7 @@ function renderTourPanel(c, tab) {
             <span class="tour-meta-location">${tour.location}</span>
           </div>
           <h3>${tour.title}</h3>
-          <p>${tour.description}</p>
+          <p>${tour.shortDescription || tour.description}</p>
           ${getDatesHtml(tour.id, currentLang)}
           <div class="card-footer">
             <div class="tour-price-wrap">
