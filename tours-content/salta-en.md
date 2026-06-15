@@ -44,15 +44,13 @@ We'll spend the night in Humahuaca.
 
 ---
 
-# Day 4. Quebrada de las Señoritas and Festival de Contrapunto de Pialadores
+# Day 4. Quebrada de las Señoritas and Tilcara
 
 In the morning we'll head to Quebrada de las Señoritas — one of the most beautiful and little-known hiking routes in northwest Argentina. Red cliffs, narrow canyons and peculiar rock formations here were shaped over millions of years by water and wind.
 
-Then we'll head to the Festival de Contrapunto de Pialadores. Pialadores are local cowboys, masters of lasso work, whose culture grew around livestock herding in the Andes. And contrapunto is something like a freestyle battle, except instead of rap here you have folk music, rural life and local humor.
+On the way back we'll stop in Tilcara — one of the most vibrant Andean towns on the route. We'll take time for some relaxed shopping: craft markets, local workshops, woollen goods, ceramics, jewellery. A stroll through the cobblestone streets — Tilcara is the kind of place where it's nice just to walk and take it all in.
 
-This festival is almost unknown outside the region and brings together residents from nearby villages. Here you can see the traditions of northwest Argentina not as a tourist show, but as they actually exist today: music, poetic improvisation duels, local cuisine and people for whom all this is part of everyday culture.
-
-After the festival we'll have time for a walk and rest, and in the evening we'll return to Salta.
+In the evening we'll return to Salta.
 
 **Humahuaca → Quebrada de las Señoritas → Salta**
 **Distance:** ~240 km

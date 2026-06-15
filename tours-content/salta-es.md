@@ -44,15 +44,13 @@ Pasaremos la noche en Humahuaca.
 
 ---
 
-# Día 4. Quebrada de las Señoritas y Festival de Contrapunto de Pialadores
+# Día 4. Quebrada de las Señoritas y Tilcara
 
 Por la mañana nos dirigiremos a la Quebrada de las Señoritas — una de las rutas de senderismo más hermosas y poco conocidas del noroeste de Argentina. Los acantilados rojos, los cañones estrechos y las formas de relieve caprichosas aquí fueron moldeados durante millones de años por agua y viento.
 
-Luego nos dirigiremos al Festival de Contrapunto de Pialadores. Los pialadores son vaqueros locales, maestros del trabajo con lazo, cuya cultura creció alrededor de la ganadería en los Andes. Y el contrapunto es algo como una batalla de freestyle, solo que en lugar de rap aquí tienes música folclórica, vida rural y humor local.
+De camino a casa haremos una parada en Tilcara — uno de los pueblos andinos más animados del recorrido. Tendremos tiempo para ir de compras con calma: mercados artesanales, talleres locales, tejidos de lana, cerámica, joyería. Un paseo por las calles empedradas — Tilcara es un lugar donde simplemente caminar y mirar alrededor resulta un placer.
 
-Este festival es casi desconocido fuera de la región y reúne a residentes de pueblos cercanos. Aquí puedes ver las tradiciones del noroeste de Argentina no como un espectáculo para turistas, sino tal como existen hoy: música, duelos de improvisación poética, gastronomía local y personas para quienes todo esto es parte de su cultura cotidiana.
-
-Después del festival habrá tiempo para pasear y descansar, y por la noche regresaremos a Salta.
+Por la noche regresaremos a Salta.
 
 **Humahuaca → Quebrada de las Señoritas → Salta**
 **Distancia:** ~240 km
