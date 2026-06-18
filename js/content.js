@@ -156,8 +156,8 @@ const CONTENT = {
           title: "Киты и пингвины в Пуэрто-Мадрине",
           duration: "5 дней",
           location: "Пуэрто-Мадрин",
-          shortDescription: "Киты, пингвины, морские львы и снорклинг — 5 дней на побережье Патагонии, в одном из главных мест планеты для наблюдения за дикой природой.",
-          description: "Место, куда едут ради встреч с китами. Но кроме них здесь есть пингвины, морские львы, морские слоны и одна из самых впечатляющих экосистем Южной Америки.",
+          shortDescription: "Главная китовая столица страны, крупнейшая колония пингвинов, снорклинг с морскими львами и каяки на закате — всё лучшее за одну поездку.",
+          description: "Сезон китов в Пуэрто-Мадрине уже начался — и мы отправляемся в насыщенное путешествие, чтобы по полной прожить этот уникальный регион океана и дикой природы.<br><br>За пять дней мы увидим крупнейшую континентальную колонию пингвинов на планете, выйдем в океан на полу-субмарине, будем искать китов с берега и с воды, встретим закат на каяках, поплаваем с морскими львами и познакомимся с крупнейшими динозаврами, когда-либо найденными на Земле. За одну поездку — всё главное, ради чего сюда приезжают.",
           image: "images/tours/short-programs/whales-punta-piramides.jpg",
           price: "1300",
           showPrefix: false,
@@ -467,7 +467,7 @@ const CONTENT = {
             "Personal expenses"
           ]
         },
-        { id: "whales-punta-piramides", title: "Whales and Penguins in Puerto Madryn", duration: "5 days", location: "Puerto Madryn", shortDescription: "Whales, penguins, sea lions and snorkelling — 5 days on the Patagonian coast, one of the world's top wildlife destinations.", description: "The place to see whales. But besides them here are penguins, sea lions, elephant seals and one of the most impressive ecosystems of South America.",
+        { id: "whales-punta-piramides", title: "Whales and Penguins in Puerto Madryn", duration: "5 days", location: "Puerto Madryn", shortDescription: "The whale capital of the country, the world's largest penguin colony, snorkelling with sea lions and sunset kayaking — the best of it all in one trip.", description: "Whale season in Puerto Madryn has begun — and we're heading out for an immersive journey through this unique region of ocean and wildlife.<br><br>Over five days we'll see the world's largest continental penguin colony, go out to sea on a semi-submarine, search for whales from shore and water, watch the sunset from kayaks, swim with sea lions and meet the largest dinosaurs ever found on Earth. One trip — everything worth coming here for.",
           image: "images/tours/short-programs/whales-punta-piramides.jpg",
           "price": "1300",
           "showPrefix": false,
@@ -716,7 +716,7 @@ const CONTENT = {
             "Gastos personales"
           ]
         },
-        { id: "whales-punta-piramides", title: "Ballenas y Pingüinos en Puerto Madryn", duration: "5 días", location: "Puerto Madryn", shortDescription: "Ballenas, pingüinos, lobos marinos y snorkel — 5 días en la costa patagónica, uno de los mejores destinos del planeta para observar vida silvestre.", description: "El lugar para ver ballenas. Pero además de ellas hay pingüinos, leones marinos, elefantes marinos y uno de los ecosistemas más impresionantes de Sudamérica.",
+        { id: "whales-punta-piramides", title: "Ballenas y Pingüinos en Puerto Madryn", duration: "5 días", location: "Puerto Madryn", shortDescription: "La capital ballenera del país, la colonia de pingüinos más grande del mundo, snorkel con lobos marinos y kayaks al atardecer — lo mejor de todo en un solo viaje.", description: "La temporada de ballenas en Puerto Madryn ya comenzó — y nos embarcamos en un viaje intenso para vivir al máximo esta región única de océano y vida silvestre.<br><br>En cinco días veremos la colonia continental de pingüinos más grande del planeta, saldremos al mar en un semi-submarino, buscaremos ballenas desde la orilla y desde el agua, contemplaremos el atardecer en kayaks, nadaremos con lobos marinos y conoceremos los dinosaurios más grandes jamás encontrados en la Tierra. Un solo viaje — todo lo que vale la pena ver aquí.",
           image: "images/tours/short-programs/whales-punta-piramides.jpg",
           "price": "1300",
           "showPrefix": false,
