@@ -158,7 +158,7 @@ const CONTENT = {
           location: "Пуэрто-Мадрин",
           shortDescription: "Киты, пингвины, морские львы и снорклинг — 5 дней на побережье Патагонии, в одном из главных мест планеты для наблюдения за дикой природой.",
           description: "Место, куда едут ради встреч с китами. Но кроме них здесь есть пингвины, морские львы, морские слоны и одна из самых впечатляющих экосистем Южной Америки.",
-          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
+          image: "images/tours/short-programs/whales-punta-piramides.jpg",
           price: "1300",
           showPrefix: false,
           active: true
@@ -468,7 +468,7 @@ const CONTENT = {
           ]
         },
         { id: "whales-punta-piramides", title: "Whales and Penguins in Puerto Madryn", duration: "5 days", location: "Puerto Madryn", shortDescription: "Whales, penguins, sea lions and snorkelling — 5 days on the Patagonian coast, one of the world's top wildlife destinations.", description: "The place to see whales. But besides them here are penguins, sea lions, elephant seals and one of the most impressive ecosystems of South America.",
-          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
+          image: "images/tours/short-programs/whales-punta-piramides.jpg",
           "price": "1300",
           "showPrefix": false,
           "active": true },
@@ -717,7 +717,7 @@ const CONTENT = {
           ]
         },
         { id: "whales-punta-piramides", title: "Ballenas y Pingüinos en Puerto Madryn", duration: "5 días", location: "Puerto Madryn", shortDescription: "Ballenas, pingüinos, lobos marinos y snorkel — 5 días en la costa patagónica, uno de los mejores destinos del planeta para observar vida silvestre.", description: "El lugar para ver ballenas. Pero además de ellas hay pingüinos, leones marinos, elefantes marinos y uno de los ecosistemas más impresionantes de Sudamérica.",
-          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
+          image: "images/tours/short-programs/whales-punta-piramides.jpg",
           "price": "1300",
           "showPrefix": false,
           "active": true },
