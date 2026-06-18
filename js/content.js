@@ -157,11 +157,23 @@ const CONTENT = {
           duration: "5 дней",
           location: "Пуэрто-Мадрин",
           shortDescription: "Главная китовая столица страны, крупнейшая колония пингвинов, снорклинг с морскими львами и каяки на закате — всё лучшее за одну поездку.",
-          description: "Сезон китов в Пуэрто-Мадрине уже начался — и мы отправляемся в насыщенное путешествие, чтобы по полной прожить этот уникальный регион океана и дикой природы.<br><br>За пять дней мы увидим крупнейшую континентальную колонию пингвинов на планете, выйдем в океан на полу-субмарине, будем искать китов с берега и с воды, встретим закат на каяках, поплаваем с морскими львами и познакомимся с крупнейшими динозаврами, когда-либо найденными на Земле. За одну поездку — всё главное, ради чего сюда приезжают.",
+          description: "Сезон китов в Пуэрто-Мадрине уже начался — и мы отправляемся в насыщенное путешествие, чтобы по полной прожить этот уникальный регион океана и дикой природы.<br><br>За пять дней мы увидим крупнейшую континентальную колонию пингвинов на планете, выйдем в океан на полу-субмарине, будем искать китов с берега и с воды, встретим закат на каяках, поплаваем с морскими львами и познакомимся с крупнейшими динозаврами, когда-либо найденными на Земле.<br>За одну поездку — всё главное, ради чего сюда приезжают.",
           image: "images/tours/short-programs/whales-punta-piramides.jpg",
           price: "1300",
           showPrefix: false,
-          active: true
+          active: true,
+          included: [
+            "4 ночи в отелях — 2х местное размещение",
+            "Автомобили и бензин, входные билеты в национальные парки и музеи",
+            "Места на лодках и каяки",
+            "Аренда гидрокостюмов",
+            "Профессиональный русскоязычный гид"
+          ],
+          notIncluded: [
+            "Авиабилеты",
+            "Питание (кроме завтраков в отелях)",
+            "Личные расходы"
+          ]
         },
         {
           id: "oktoberfest-cordoba",
@@ -471,7 +483,19 @@ const CONTENT = {
           image: "images/tours/short-programs/whales-punta-piramides.jpg",
           "price": "1300",
           "showPrefix": false,
-          "active": true },
+          "active": true,
+          "included": [
+            "4 nights in hotels — double occupancy",
+            "Vehicles and fuel, entrance fees to national parks and museums",
+            "Boat seats and kayaks",
+            "Wetsuit rental",
+            "Professional English-speaking guide"
+          ],
+          "notIncluded": [
+            "Airfare",
+            "Meals (except hotel breakfasts)",
+            "Personal expenses"
+          ] },
         { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", shortDescription: "The biggest beer festival in Latin America, in the mountains of Córdoba. Communidades parades, Argentine rock concerts and 4 days of German brewing traditions.", description: "We're crashing the real deal — an authentic beer Oktoberfest with a great group! Villa General Belgrano is a town with a rich German past, generations of immigrants and a deep brewing tradition. We're going to live the biggest one — <strong>Oktoberfest</strong>.<br><br>Expect parades of historic communidades, solemn tapping of hundreds of barrels, costumes, flags, streets packed with people... Every evening: concerts of Argentine music, contests, dancing and, of course, special festival beer varieties!<br><br>Mornings we'll spend with a light cultural programme and the gorgeous spring mountain air of Córdoba!",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
@@ -720,7 +744,19 @@ const CONTENT = {
           image: "images/tours/short-programs/whales-punta-piramides.jpg",
           "price": "1300",
           "showPrefix": false,
-          "active": true },
+          "active": true,
+          "included": [
+            "4 noches en hoteles — alojamiento doble",
+            "Vehículos y gasolina, entradas a parques nacionales y museos",
+            "Lugares en los barcos y kayaks",
+            "Alquiler de trajes de neopreno",
+            "Guía profesional hispanohablante"
+          ],
+          "notIncluded": [
+            "Pasajes aéreos",
+            "Comidas (excepto desayunos en hoteles)",
+            "Gastos personales"
+          ] },
         { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", shortDescription: "El mayor festival cervecero de América Latina, en las sierras de Córdoba. Desfiles de communidades, conciertos de rock argentino y 4 días de tradiciones cerveceras alemanas.", description: "¡Nos metemos de lleno en el auténtico Oktoberfest cervecero con una gran pandilla! Villa General Belgrano es una ciudad con un rico pasado alemán, multitud de emigrantes y riquísimas tradiciones cerveceras. Vamos a vivir la más importante de todas: el <strong>Oktoberfest</strong>.<br><br>Nos esperan desfiles de históricas communidades, el solemne destape de cientos de barriles, disfraces, banderas, calles llenas de gente... Cada noche: conciertos de música argentina, concursos, bailes y, por supuesto, ¡variedades especiales de cerveza del festival!<br><br>Las mañanas las pasaremos con un programa cultural ligero y disfrutando del maravilloso aire primaveral de las sierras de Córdoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
