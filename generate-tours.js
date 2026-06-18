@@ -77,7 +77,7 @@ const buildItineraryTabs = (tourId, lang) => {
     'whales-punta-piramides': [
       '/images/tours/short-programs/whales-punta-piramides-day1.jpg',
       '/images/tours/short-programs/whales-punta-piramides-day2.jpg',
-      '/images/tours/short-programs/whales-punta-piramides-day3.jpg',
+      '/images/tours/short-programs/whales-punta-piramides-day3.png',
       '/images/tours/short-programs/whales-punta-piramides-day4.jpg',
       '/images/tours/short-programs/whales-punta-piramides-day5.jpg'
     ]
