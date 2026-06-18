@@ -152,6 +152,18 @@ const CONTENT = {
           ]
         },
         {
+          id: "whales-punta-piramides",
+          title: "Киты и пингвины в Пуэрто-Мадрине",
+          duration: "5 дней",
+          location: "Пуэрто-Мадрин",
+          shortDescription: "Киты, пингвины, морские львы и снорклинг — 5 дней на побережье Патагонии, в одном из главных мест планеты для наблюдения за дикой природой.",
+          description: "Место, куда едут ради встреч с китами. Но кроме них здесь есть пингвины, морские львы, морские слоны и одна из самых впечатляющих экосистем Южной Америки.",
+          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
+          price: "1300",
+          showPrefix: false,
+          active: true
+        },
+        {
           id: "oktoberfest-cordoba",
           title: "Октоберфест в Кордобе",
           duration: "4 дня",
@@ -194,17 +206,6 @@ const CONTENT = {
               a: "Непосредственно в городе, в пешей доступности от основных локаций. Напрямую звук от сцены доходить не должен, но нужно понимать, что эти несколько суток — самые шумные ночи за весь год. Гудеть город будет 24/7."
             }
           ]
-        },
-        {
-          id: "whales-punta-piramides",
-          title: "Киты и пингвины в Пуэрто-Мадрине",
-          duration: "3 дня",
-          location: "Пуэрто-Мадрин",
-          description: "Место, куда едут ради встреч с китами. Но кроме них здесь есть пингвины, морские львы, морские слоны и одна из самых впечатляющих экосистем Южной Америки.",
-          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
-          price: "—",
-          showPrefix: false,
-          active: false
         },
         {
           id: "mendoza",
@@ -466,6 +467,11 @@ const CONTENT = {
             "Personal expenses"
           ]
         },
+        { id: "whales-punta-piramides", title: "Whales and Penguins in Puerto Madryn", duration: "5 days", location: "Puerto Madryn", shortDescription: "Whales, penguins, sea lions and snorkelling — 5 days on the Patagonian coast, one of the world's top wildlife destinations.", description: "The place to see whales. But besides them here are penguins, sea lions, elephant seals and one of the most impressive ecosystems of South America.",
+          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
+          "price": "1300",
+          "showPrefix": false,
+          "active": true },
         { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", shortDescription: "The biggest beer festival in Latin America, in the mountains of Córdoba. Communidades parades, Argentine rock concerts and 4 days of German brewing traditions.", description: "We're crashing the real deal — an authentic beer Oktoberfest with a great group! Villa General Belgrano is a town with a rich German past, generations of immigrants and a deep brewing tradition. We're going to live the biggest one — <strong>Oktoberfest</strong>.<br><br>Expect parades of historic communidades, solemn tapping of hundreds of barrels, costumes, flags, streets packed with people... Every evening: concerts of Argentine music, contests, dancing and, of course, special festival beer varieties!<br><br>Mornings we'll spend with a light cultural programme and the gorgeous spring mountain air of Córdoba!",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
@@ -503,11 +509,6 @@ const CONTENT = {
               "a": "Right in town, within walking distance of the main venues. Direct sound from the stage shouldn't reach the rooms, but keep in mind that these few nights are the loudest of the entire year — the town will be buzzing 24/7."
             }
           ] },
-        { id: "whales-punta-piramides", title: "Whales and Penguins in Puerto Madryn", duration: "3 days", location: "Puerto Madryn", description: "The place to see whales. But besides them here are penguins, sea lions, elephant seals and one of the most impressive ecosystems of South America.",
-          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
-          "price": "—",
-          "showPrefix": false,
-          "active": false },
         { id: "mendoza", title: "Mendoza: Wine and the Andes", duration: "3 days", location: "Mendoza", description: "Argentina's finest wines are born here, at the foot of the Andes. Tastings, wineries of different scales, gastronomy and a few days in one of the country's most pleasant regions.", image: "images/tours/short-programs/mendoza.jpg",
           "price": "—",
           "showPrefix": false,
@@ -715,6 +716,11 @@ const CONTENT = {
             "Gastos personales"
           ]
         },
+        { id: "whales-punta-piramides", title: "Ballenas y Pingüinos en Puerto Madryn", duration: "5 días", location: "Puerto Madryn", shortDescription: "Ballenas, pingüinos, lobos marinos y snorkel — 5 días en la costa patagónica, uno de los mejores destinos del planeta para observar vida silvestre.", description: "El lugar para ver ballenas. Pero además de ellas hay pingüinos, leones marinos, elefantes marinos y uno de los ecosistemas más impresionantes de Sudamérica.",
+          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
+          "price": "1300",
+          "showPrefix": false,
+          "active": true },
         { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", shortDescription: "El mayor festival cervecero de América Latina, en las sierras de Córdoba. Desfiles de communidades, conciertos de rock argentino y 4 días de tradiciones cerveceras alemanas.", description: "¡Nos metemos de lleno en el auténtico Oktoberfest cervecero con una gran pandilla! Villa General Belgrano es una ciudad con un rico pasado alemán, multitud de emigrantes y riquísimas tradiciones cerveceras. Vamos a vivir la más importante de todas: el <strong>Oktoberfest</strong>.<br><br>Nos esperan desfiles de históricas communidades, el solemne destape de cientos de barriles, disfraces, banderas, calles llenas de gente... Cada noche: conciertos de música argentina, concursos, bailes y, por supuesto, ¡variedades especiales de cerveza del festival!<br><br>Las mañanas las pasaremos con un programa cultural ligero y disfrutando del maravilloso aire primaveral de las sierras de Córdoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
@@ -752,11 +758,6 @@ const CONTENT = {
               "a": "En el propio pueblo, a pie de las principales locaciones. El sonido directo del escenario no debería llegar a las habitaciones, pero hay que tener en cuenta que estas noches son las más ruidosas del año — la ciudad estará en movimiento las 24 horas."
             }
           ] },
-        { id: "whales-punta-piramides", title: "Ballenas y Pingüinos en Puerto Madryn", duration: "3 días", location: "Puerto Madryn", description: "El lugar para ver ballenas. Pero además de ellas hay pingüinos, leones marinos, elefantes marinos y uno de los ecosistemas más impresionantes de Sudamérica.",
-          image: "images/tours/short-programs/whales-puerto-madryn.jpg",
-          "price": "—",
-          "showPrefix": false,
-          "active": false },
         { id: "mendoza", title: "Mendoza: Vino y los Andes", duration: "3 días", location: "Mendoza", description: "Los mejores vinos de Argentina nacen aquí, al pie de los Andes. Degustaciones, bodegas de distintos tamaños, gastronomía y unos días en una de las regiones más agradables del país.", image: "images/tours/short-programs/mendoza.jpg",
           "price": "—",
           "showPrefix": false,
@@ -877,6 +878,9 @@ const TOUR_DATES = {
   'salta': [
     { from: '2026-07-22', to: '2026-07-26' }
   ],
+  'whales-punta-piramides': [
+    { from: '2026-09-09', to: '2026-09-13' }
+  ],
   'peru-bolivia-chile': [
     { from: '2026-10-26', to: '2026-11-08', soldOut: true },
     { from: '2026-11-16', to: '2026-11-30' },
@@ -902,7 +906,7 @@ const TOUR_DATES = {
 // Активные туры (с описанием и датами доступности)
 // Отключенные туры будут показаны с наложением "СКОРО"
 const ACTIVE_TOURS = {
-  short: ['salta', 'oktoberfest-cordoba'], // активные короткие туры
+  short: ['salta', 'whales-punta-piramides', 'oktoberfest-cordoba'], // активные короткие туры
   long: ['patagonia-trekking', 'peru-bolivia-chile', 'easter-island', 'iguazu-extension'], // активные длинные туры
   excursions: ['football', 'history-ba', 'tango'] // активные однодневные туры
 };

@@ -73,6 +73,13 @@ const buildItineraryTabs = (tourId, lang) => {
       '/images/tours/long-programs/iguazu-extension-day1.jpg',
       '/images/tours/long-programs/iguazu-extension-day2.jpg',
       '/images/tours/long-programs/iguazu-extension-day3.jpg'
+    ],
+    'whales-punta-piramides': [
+      '/images/tours/short-programs/whales-punta-piramides-day1.jpg',
+      '/images/tours/short-programs/whales-punta-piramides-day2.jpg',
+      '/images/tours/short-programs/whales-punta-piramides-day3.jpg',
+      '/images/tours/short-programs/whales-punta-piramides-day4.jpg',
+      '/images/tours/short-programs/whales-punta-piramides-day5.jpg'
     ]
   };
 
