@@ -28,7 +28,7 @@ const CONTENT = {
     nav: { brand: "Евгений Абросимов" },
     lang: "ru",
     comingSoon: "СКОРО",
-    ticker: "Ближайший тур: <strong>Северо-Запад Аргентины (Хухуй)</strong> · 22–26 июля 2026",
+    ticker: "Ближайший тур: <strong>Северо-Запад Аргентины (Хухуй)</strong> · 19–23 августа 2026",
     tickerCta: { label: "Написать", waText: "Привет! Хочу узнать подробности о ближайшем туре." },
     pricePrefix: "от",
     cardCta: {
@@ -390,7 +390,7 @@ const CONTENT = {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "en",
     comingSoon: "COMING SOON",
-    ticker: "Next tour: <strong>Northwest Argentina (Jujuy)</strong> · 22–26 July 2026",
+    ticker: "Next tour: <strong>Northwest Argentina (Jujuy)</strong> · 19–23 August 2026",
     tickerCta: { label: "Enquire", waText: "Hi! I'd like to learn more about the upcoming tour." },
     pricePrefix: "from",
     cardCta: {
@@ -651,7 +651,7 @@ const CONTENT = {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "es",
     comingSoon: "PRÓXIMAMENTE",
-    ticker: "Próximo tour: <strong>Noroeste Argentino (Jujuy)</strong> · 22–26 de julio de 2026",
+    ticker: "Próximo tour: <strong>Noroeste Argentino (Jujuy)</strong> · 19–23 de agosto de 2026",
     tickerCta: { label: "Escribir", waText: "¡Hola! Me gustaría saber más sobre el próximo tour." },
     pricePrefix: "desde",
     cardCta: {
@@ -912,7 +912,7 @@ const CONTENT = {
 // Даты длинных туров (ISO формат, без привязки к языку — форматируются в main.js)
 const TOUR_DATES = {
   'salta': [
-    { from: '2026-07-22', to: '2026-07-26' }
+    { from: '2026-08-19', to: '2026-08-23' }
   ],
   'whales-punta-piramides': [
     { from: '2026-09-09', to: '2026-09-13' }
