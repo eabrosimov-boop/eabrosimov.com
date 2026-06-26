@@ -1,6 +1,6 @@
 // ===== STATE =====
 let currentLang = 'ru';
-let currentTab = 'excursions';
+let currentTab = 'short';
 
 // ===== ANALYTICS =====
 function trackEvent(eventName, eventParams = {}) {
