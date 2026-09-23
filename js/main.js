@@ -134,12 +134,23 @@ function formatDateRange(from, to, lang) {
   return `${fromStr} – ${toStr}`;
 }
 
+// Даты, которые ещё не прошли. Тур считается прошедшим на следующий день после to.
+function upcomingDates(tourId) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return (TOUR_DATES[tourId] || []).filter(d => new Date(d.to + 'T12:00:00') >= today);
+}
+
 function getDatesHtml(tourId, lang) {
-  const dates = TOUR_DATES[tourId];
-  if (!dates || !dates.length) return '';
-  const badges = dates.map(d =>
-    `<span class="date-badge">${formatDateRange(d.from, d.to, lang)}</span>`
-  ).join('');
+  const dates = upcomingDates(tourId);
+  if (!dates.length) return '';
+  const soldOutText = lang === 'ru' ? 'МЕСТ НЕТ' : lang === 'en' ? 'SOLD OUT' : 'AGOTADO';
+  const badges = dates.map(d => {
+    if (d.soldOut) {
+      return `<span class="date-badge date-badge--sold-out">${formatDateRange(d.from, d.to, lang)} · ${soldOutText}</span>`;
+    }
+    return `<span class="date-badge">${formatDateRange(d.from, d.to, lang)}</span>`;
+  }).join('');
   return `<div class="tour-dates">${badges}</div>`;
 }
 
@@ -179,13 +190,14 @@ function render(lang) {
 // ===== FEATURED TOUR (ближайший) =====
 function renderFeaturedTour(c) {
   const container = document.getElementById('featured-tour-card');
-  const nearestTour = findNearestTour(c);
+  const nearest = findNearestDeparture(c);
 
-  if (!nearestTour) return;
+  if (!nearest) { container.innerHTML = ''; return; }
 
+  const nearestTour = nearest.tour;
   const waLink = buildWaLink(nearestTour.title, currentLang);
   const tourLink = currentLang === 'ru' ? `tours/${nearestTour.id}.html` : `tours/${nearestTour.id}.${currentLang}.html`;
-  const datesHtml = getDatesHtml(nearestTour.id, currentLang);
+  const datesHtml = `<div class="tour-dates"><span class="date-badge">${formatDateRange(nearest.date.from, nearest.date.to, currentLang)}</span></div>`;
   const html = `
     <div class="featured-tour-card" onclick="window.location.href='${tourLink}'">
       <div class="featured-tour-image-wrapper">
@@ -211,15 +223,20 @@ function renderFeaturedTour(c) {
   container.innerHTML = html;
 }
 
-function findNearestTour(c) {
-  // Ищет первый тур с датами (из short или long программ)
-  for (const tour of c.tours.short) {
-    if (TOUR_DATES[tour.id]) return tour;
+// Ближайший выезд, на который ещё есть места: {tour, date} или null.
+// Прошедшие, распроданные и скрытые туры пропускаются.
+function findNearestDeparture(c) {
+  let best = null;
+  for (const group of [c.tours.short, c.tours.long]) {
+    for (const tour of group) {
+      if (tour.hidden || tour.active === false) continue;
+      for (const d of upcomingDates(tour.id)) {
+        if (d.soldOut) continue;
+        if (!best || d.from < best.date.from) best = { tour, date: d };
+      }
+    }
   }
-  for (const tour of c.tours.long) {
-    if (TOUR_DATES[tour.id]) return tour;
-  }
-  return null;
+  return best;
 }
 
 // ===== NAV =====
@@ -233,17 +250,22 @@ function renderTicker(c) {
   const btn   = document.getElementById('ticker-btn');
   if (!track) return;
 
-  const text = c.ticker + '   ·   ';
+  const nearest = findNearestDeparture(c);
+  const wrap = document.querySelector('.ticker-wrap');
+  if (!nearest) { if (wrap) wrap.style.display = 'none'; return; }
+  if (wrap) wrap.style.display = '';
+
+  const text = c.ticker
+    .replace('{tour}', nearest.tour.title)
+    .replace('{dates}', formatDateRange(nearest.date.from, nearest.date.to, currentLang)) + '   ·   ';
   track.innerHTML = `<span>${text}</span><span aria-hidden="true">${text}</span>`;
   track.style.animation = 'none';
   void track.offsetWidth;
   track.style.animation = '';
   track.style.animationDuration = Math.max(14, text.length * 0.22) + 's';
 
-  const nearestTour = findNearestTour(c);
-  const tourLink = nearestTour
-    ? (currentLang === 'ru' ? `tours/${nearestTour.id}.html` : `tours/${nearestTour.id}.${currentLang}.html`)
-    : '#';
+  const nearestTour = nearest.tour;
+  const tourLink = currentLang === 'ru' ? `tours/${nearestTour.id}.html` : `tours/${nearestTour.id}.${currentLang}.html`;
   const contactLink = '#contact';
   const waLink = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(c.tickerCta.waText)}`;
 
@@ -335,7 +357,7 @@ function renderTourPanel(c, tab) {
     return;
   }
 
-  const tours = c.tours[tab];
+  const tours = c.tours[tab].filter(tour => !tour.hidden);
   const cardsHtml = tours.map(tour => {
     const tourLink = currentLang === 'ru' ? `tours/${tour.id}.html` : `tours/${tour.id}.${currentLang}.html`;
     const isActive = tour.active !== false;

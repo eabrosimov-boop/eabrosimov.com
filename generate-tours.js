@@ -163,7 +163,10 @@ const formatDateRange = (from, to, lang) => {
 };
 
 const datesHtml = (tourId, lang) => {
-  const dates = TOUR_DATES[tourId] || [];
+  // прошедшие выезды не показываем
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const dates = (TOUR_DATES[tourId] || []).filter(d => new Date(d.to + 'T12:00:00') >= today);
   const grouped = {};
 
   dates.slice(0, 3).forEach(d => {
@@ -310,10 +313,13 @@ const genHtml = (tour, lang, tourId) => {
     '      </section>',
     (tour.notIncluded ? '      <section class="tour-section">\n        <h2>' + l.notIncluded + '</h2>\n        <ul class="checklist">\n' + tour.notIncluded.map(item => '          <li>' + item + '</li>').join('\n') + '\n        </ul>\n      </section>' : ''),
     '',
-    '      <section class="tour-section">',
-    '        <h2>' + l.dates + '</h2>',
-    '        <div class="dates-list">' + datesHtml(tour.id, lang) + '</div>',
-    '      </section>',
+    // блок дат убирается целиком, когда будущих выездов не осталось
+    (datesHtml(tour.id, lang)
+      ? '      <section class="tour-section">' + '\n' +
+        '        <h2>' + l.dates + '</h2>' + '\n' +
+        '        <div class="dates-list">' + datesHtml(tour.id, lang) + '</div>' + '\n' +
+        '      </section>'
+      : ''),
     '',
     '      <section class="tour-section cta-section">',
     '        <p class="tour-price-large">' + priceStr + '<strong>$' + tour.price + '</strong></p>',

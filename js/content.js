@@ -28,7 +28,7 @@ const CONTENT = {
     nav: { brand: "Евгений Абросимов" },
     lang: "ru",
     comingSoon: "СКОРО",
-    ticker: "Ближайший тур: <strong>Северо-Запад Аргентины (Хухуй)</strong> · 19–23 августа 2026",
+    ticker: "Ближайший тур: <strong>{tour}</strong> · {dates}",  // {tour} и {dates} подставляет main.js
     tickerCta: { label: "Написать", waText: "Привет! Хочу узнать подробности о ближайшем туре." },
     pricePrefix: "от",
     cardCta: {
@@ -177,6 +177,7 @@ const CONTENT = {
         },
         {
           id: "oktoberfest-cordoba",
+          hidden: true,
           title: "Октоберфест в Кордобе",
           duration: "4 дня",
           location: "Вилья-Хенераль-Бельграно",
@@ -390,7 +391,7 @@ const CONTENT = {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "en",
     comingSoon: "COMING SOON",
-    ticker: "Next tour: <strong>Northwest Argentina (Jujuy)</strong> · 19–23 August 2026",
+    ticker: "Next tour: <strong>{tour}</strong> · {dates}",
     tickerCta: { label: "Enquire", waText: "Hi! I'd like to learn more about the upcoming tour." },
     pricePrefix: "from",
     cardCta: {
@@ -496,7 +497,7 @@ const CONTENT = {
             "Meals (except hotel breakfasts)",
             "Personal expenses"
           ] },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", shortDescription: "The biggest beer festival in Latin America, in the mountains of Córdoba. Communidades parades, Argentine rock concerts and 4 days of German brewing traditions.", description: "We're crashing the real deal — an authentic beer Oktoberfest with a great group! Villa General Belgrano is a town with a rich German past, generations of immigrants and a deep brewing tradition. We're going to live the biggest one — <strong>Oktoberfest</strong>.<br><br>Expect parades of historic communidades, solemn tapping of hundreds of barrels, costumes, flags, streets packed with people... Every evening: concerts of Argentine music, contests, dancing and, of course, special festival beer varieties!<br><br>Mornings we'll spend with a light cultural programme and the gorgeous spring mountain air of Córdoba!",
+        { id: "oktoberfest-cordoba", hidden: true, title: "Oktoberfest in Cordoba", duration: "4 days", location: "Villa General Belgrano", shortDescription: "The biggest beer festival in Latin America, in the mountains of Córdoba. Communidades parades, Argentine rock concerts and 4 days of German brewing traditions.", description: "We're crashing the real deal — an authentic beer Oktoberfest with a great group! Villa General Belgrano is a town with a rich German past, generations of immigrants and a deep brewing tradition. We're going to live the biggest one — <strong>Oktoberfest</strong>.<br><br>Expect parades of historic communidades, solemn tapping of hundreds of barrels, costumes, flags, streets packed with people... Every evening: concerts of Argentine music, contests, dancing and, of course, special festival beer varieties!<br><br>Mornings we'll spend with a light cultural programme and the gorgeous spring mountain air of Córdoba!",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
           "showPrefix": false,
@@ -651,7 +652,7 @@ const CONTENT = {
     nav: { brand: "Evgeny Abrosimov" },
     lang: "es",
     comingSoon: "PRÓXIMAMENTE",
-    ticker: "Próximo tour: <strong>Noroeste Argentino (Jujuy)</strong> · 19–23 de agosto de 2026",
+    ticker: "Próximo tour: <strong>{tour}</strong> · {dates}",
     tickerCta: { label: "Escribir", waText: "¡Hola! Me gustaría saber más sobre el próximo tour." },
     pricePrefix: "desde",
     cardCta: {
@@ -757,7 +758,7 @@ const CONTENT = {
             "Comidas (excepto desayunos en hoteles)",
             "Gastos personales"
           ] },
-        { id: "oktoberfest-cordoba", title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", shortDescription: "El mayor festival cervecero de América Latina, en las sierras de Córdoba. Desfiles de communidades, conciertos de rock argentino y 4 días de tradiciones cerveceras alemanas.", description: "¡Nos metemos de lleno en el auténtico Oktoberfest cervecero con una gran pandilla! Villa General Belgrano es una ciudad con un rico pasado alemán, multitud de emigrantes y riquísimas tradiciones cerveceras. Vamos a vivir la más importante de todas: el <strong>Oktoberfest</strong>.<br><br>Nos esperan desfiles de históricas communidades, el solemne destape de cientos de barriles, disfraces, banderas, calles llenas de gente... Cada noche: conciertos de música argentina, concursos, bailes y, por supuesto, ¡variedades especiales de cerveza del festival!<br><br>Las mañanas las pasaremos con un programa cultural ligero y disfrutando del maravilloso aire primaveral de las sierras de Córdoba.",
+        { id: "oktoberfest-cordoba", hidden: true, title: "Oktoberfest en Córdoba", duration: "4 días", location: "Villa General Belgrano", shortDescription: "El mayor festival cervecero de América Latina, en las sierras de Córdoba. Desfiles de communidades, conciertos de rock argentino y 4 días de tradiciones cerveceras alemanas.", description: "¡Nos metemos de lleno en el auténtico Oktoberfest cervecero con una gran pandilla! Villa General Belgrano es una ciudad con un rico pasado alemán, multitud de emigrantes y riquísimas tradiciones cerveceras. Vamos a vivir la más importante de todas: el <strong>Oktoberfest</strong>.<br><br>Nos esperan desfiles de históricas communidades, el solemne destape de cientos de barriles, disfraces, banderas, calles llenas de gente... Cada noche: conciertos de música argentina, concursos, bailes y, por supuesto, ¡variedades especiales de cerveza del festival!<br><br>Las mañanas las pasaremos con un programa cultural ligero y disfrutando del maravilloso aire primaveral de las sierras de Córdoba.",
           image: "images/tours/short-programs/oktoberfest-cordoba.jpg",
           "price": "1100",
           "showPrefix": false,
@@ -919,7 +920,7 @@ const TOUR_DATES = {
   ],
   'peru-bolivia-chile': [
     { from: '2026-10-26', to: '2026-11-08', soldOut: true },
-    { from: '2026-11-16', to: '2026-11-30' },
+    { from: '2026-11-16', to: '2026-11-30', soldOut: true },
     { from: '2027-05-02', to: '2027-05-16' }
   ],
   'easter-island': [
@@ -942,7 +943,7 @@ const TOUR_DATES = {
 // Активные туры (с описанием и датами доступности)
 // Отключенные туры будут показаны с наложением "СКОРО"
 const ACTIVE_TOURS = {
-  short: ['salta', 'whales-punta-piramides', 'oktoberfest-cordoba'], // активные короткие туры
+  short: ['salta', 'whales-punta-piramides'], // активные короткие туры
   long: ['patagonia-trekking', 'peru-bolivia-chile', 'easter-island', 'iguazu-extension'], // активные длинные туры
   excursions: ['football', 'history-ba', 'tango'] // активные однодневные туры
 };

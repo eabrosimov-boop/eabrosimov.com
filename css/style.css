@@ -698,6 +698,11 @@ nav {
   border-radius: 20px;
   white-space: nowrap;
 }
+.date-badge--sold-out {
+  color: #8a8a8a;
+  background: rgba(0,0,0,0.05);
+  border-color: rgba(0,0,0,0.15);
+}
 
 /* ===== FLOATING CONTACT ===== */
 .float-contact {
