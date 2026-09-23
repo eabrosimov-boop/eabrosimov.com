@@ -924,7 +924,7 @@ const TOUR_DATES = {
     { from: '2027-05-02', to: '2027-05-16' }
   ],
   'easter-island': [
-    { from: '2026-11-30', to: '2026-12-02' },
+    { from: '2026-11-30', to: '2026-12-02', soldOut: true },
     { from: '2027-05-16', to: '2027-05-18' }
   ],
   'patagonia-trekking': [
